@@ -1,0 +1,16 @@
+{
+  "rows": 285318,
+  "documents": 23156,
+  "epoch": 2,
+  "pretrained": false,
+  "uploaded": false,
+  "dev_replay_verified": true,
+  "submission_sha256": "587dd76b8cfc3d8b06b5c24cdea56b469a6e8affbb113300638612dccf8e0fc4",
+  "head_sha256": "520646a7295797707e11fa24a8f06a5670c9d3f3201e81cf911ff11ec15b3e06",
+  "encoder_sha256": "dfe225b3645eaacee30005ec49addea0f47b5bb3bc00e6885ed817592bcd4924",
+  "vocab_sha256": "770f54af4ffcc695a2feff5b427ecc741bcabfc3a62104277e98afcd6adc5f15",
+  "test_sha256": "a7104443eb01e50ed01613f12668ad410e9c77e97a9e48e1ecda4e1e2744ee95",
+  "slots_sha256": "30054e78155381ce6ff3a42ea0ff203f0c4413eba9208e6e2f3fa882d982c77a",
+  "predictor_sha256": "861f5a510f53ca6f26b99651ee45f044820dfd58166bf5c8bc1fc6b0e090e7f9",
+  "seconds": 155.75665619999927
+}

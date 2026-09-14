@@ -1,0 +1,261 @@
+{
+  "selected_epoch": 2,
+  "epochs": {
+    "2": {
+      "dev": {
+        "known_k": {
+          "counts": {
+            "documents": 6943,
+            "gold": 85336,
+            "predicted": 85336,
+            "entity_correct": 79352,
+            "boundary_correct": 79757,
+            "slot_correct": 68560,
+            "exact_documents": 3622,
+            "count_correct_documents": 6943,
+            "under_count_documents": 0,
+            "over_count_documents": 0,
+            "missing_count": 0,
+            "excess_count": 0
+          },
+          "slot_accuracy": 0.8034123933627074,
+          "entity_micro": {
+            "precision": 0.9298771913377707,
+            "recall": 0.9298771913377707,
+            "f1": 0.9298771913377707
+          },
+          "boundary_micro": {
+            "precision": 0.9346231367769757,
+            "recall": 0.9346231367769757,
+            "f1": 0.9346231367769757
+          },
+          "exact_document_rate": 0.5216765087138124,
+          "count_correct_document_rate": 1.0,
+          "per_label": {
+            "NAME": {
+              "predicted": 25645,
+              "gold": 26009,
+              "correct": 23195,
+              "slot_correct": 20309,
+              "precision": 0.904464807954767,
+              "recall": 0.89180668230228,
+              "f1": 0.8980911449258527,
+              "slot_accuracy": 0.7808450920835096
+            },
+            "DATE": {
+              "predicted": 16981,
+              "gold": 16239,
+              "correct": 15657,
+              "slot_correct": 13312,
+              "precision": 0.9220305046817031,
+              "recall": 0.9641603547016442,
+              "f1": 0.9426249247441301,
+              "slot_accuracy": 0.8197549110166882
+            },
+            "EMAIL": {
+              "predicted": 9748,
+              "gold": 9723,
+              "correct": 9628,
+              "slot_correct": 8158,
+              "precision": 0.9876897825194911,
+              "recall": 0.990229353080325,
+              "f1": 0.9889579374454317,
+              "slot_accuracy": 0.8390414481127224
+            },
+            "PHONE": {
+              "predicted": 9311,
+              "gold": 9300,
+              "correct": 9153,
+              "slot_correct": 7689,
+              "precision": 0.9830308237568467,
+              "recall": 0.9841935483870968,
+              "f1": 0.983611842458761,
+              "slot_accuracy": 0.8267741935483871
+            },
+            "ADDRESS": {
+              "predicted": 8011,
+              "gold": 8226,
+              "correct": 7542,
+              "slot_correct": 6440,
+              "precision": 0.9414554986893022,
+              "recall": 0.9168490153172867,
+              "f1": 0.9289893453224117,
+              "slot_accuracy": 0.7828835399951374
+            },
+            "USERNAME": {
+              "predicted": 7602,
+              "gold": 7642,
+              "correct": 6806,
+              "slot_correct": 5861,
+              "precision": 0.895290712970271,
+              "recall": 0.8906045537817325,
+              "f1": 0.8929414851744949,
+              "slot_accuracy": 0.7669458257000785
+            },
+            "JOB_TITLE": {
+              "predicted": 8038,
+              "gold": 8197,
+              "correct": 7371,
+              "slot_correct": 6791,
+              "precision": 0.9170191589947748,
+              "recall": 0.8992314261315115,
+              "f1": 0.9080381890976286,
+              "slot_accuracy": 0.8284738318897158
+            }
+          },
+          "output_stage": {
+            "correct_slot": 68560,
+            "overlap_same_label": 2775,
+            "exact_span_wrong_slot": 10792,
+            "no_overlapping_prediction": 2727,
+            "same_boundary_wrong_label": 405,
+            "overlap_wrong_label": 77
+          },
+          "output_stage_by_label": {
+            "NAME": {
+              "correct_slot": 20309,
+              "no_overlapping_prediction": 1153,
+              "overlap_same_label": 1613,
+              "exact_span_wrong_slot": 2886,
+              "overlap_wrong_label": 7,
+              "same_boundary_wrong_label": 41
+            },
+            "DATE": {
+              "correct_slot": 13312,
+              "overlap_same_label": 358,
+              "no_overlapping_prediction": 194,
+              "exact_span_wrong_slot": 2345,
+              "same_boundary_wrong_label": 29,
+              "overlap_wrong_label": 1
+            },
+            "ADDRESS": {
+              "correct_slot": 6440,
+              "overlap_same_label": 491,
+              "exact_span_wrong_slot": 1102,
+              "no_overlapping_prediction": 161,
+              "same_boundary_wrong_label": 27,
+              "overlap_wrong_label": 5
+            },
+            "USERNAME": {
+              "correct_slot": 5861,
+              "exact_span_wrong_slot": 945,
+              "overlap_same_label": 127,
+              "no_overlapping_prediction": 415,
+              "same_boundary_wrong_label": 261,
+              "overlap_wrong_label": 33
+            },
+            "PHONE": {
+              "correct_slot": 7689,
+              "exact_span_wrong_slot": 1464,
+              "no_overlapping_prediction": 51,
+              "overlap_same_label": 73,
+              "overlap_wrong_label": 7,
+              "same_boundary_wrong_label": 16
+            },
+            "EMAIL": {
+              "correct_slot": 8158,
+              "exact_span_wrong_slot": 1470,
+              "no_overlapping_prediction": 40,
+              "overlap_same_label": 43,
+              "same_boundary_wrong_label": 11,
+              "overlap_wrong_label": 1
+            },
+            "JOB_TITLE": {
+              "correct_slot": 6791,
+              "exact_span_wrong_slot": 580,
+              "same_boundary_wrong_label": 20,
+              "no_overlapping_prediction": 713,
+              "overlap_same_label": 70,
+              "overlap_wrong_label": 23
+            }
+          },
+          "exact_boundary_label_confusion": {
+            "NAME->NAME": 23195,
+            "DATE->DATE": 15657,
+            "ADDRESS->ADDRESS": 7542,
+            "USERNAME->USERNAME": 6806,
+            "PHONE->PHONE": 9153,
+            "EMAIL->EMAIL": 9628,
+            "JOB_TITLE->JOB_TITLE": 7371,
+            "JOB_TITLE->NAME": 15,
+            "USERNAME->NAME": 233,
+            "NAME->USERNAME": 22,
+            "PHONE->USERNAME": 16,
+            "ADDRESS->NAME": 13,
+            "EMAIL->USERNAME": 10,
+            "NAME->ADDRESS": 18,
+            "DATE->USERNAME": 29,
+            "USERNAME->PHONE": 6,
+            "JOB_TITLE->USERNAME": 5,
+            "ADDRESS->USERNAME": 12,
+            "USERNAME->JOB_TITLE": 1,
+            "USERNAME->EMAIL": 10,
+            "USERNAME->ADDRESS": 8,
+            "ADDRESS->PHONE": 2,
+            "EMAIL->JOB_TITLE": 1,
+            "USERNAME->DATE": 3,
+            "NAME->JOB_TITLE": 1
+          }
+        }
+      },
+      "prediction_sha256": "7adf4d2524a2ce4cbb9025095d646e8305ce3891f63b8ff5c22943e73444a840",
+      "seconds": 28.356815299994196,
+      "model_sha256": "b22db4a23c00b79f9ba36c4f51255cd26b38ec36f312ddc79ab513607c8cecec"
+    }
+  },
+  "bootstrap": {
+    "BIO4": {
+      "observed_delta": 0.009187212899596888,
+      "median": 0.009210788819442936,
+      "ci95": [
+        0.0039459657862118795,
+        0.014618034793168968
+      ],
+      "replicates": 10000,
+      "paired_unit": "document",
+      "baseline_sha256": "8c792feb69a65306035438c16537782826ab490741b9785cfedd82886032a942",
+      "selection_bias_corrected": false
+    },
+    "ensemble": {
+      "observed_delta": -0.0006445111090278429,
+      "median": -0.0006099635315750848,
+      "ci95": [
+        -0.005942010477754112,
+        0.0047525945374915085
+      ],
+      "replicates": 10000,
+      "paired_unit": "document",
+      "baseline_sha256": "4fed2e07dbdf99629e24b88677349541d25ae82a38d94f9d037dca1f5677d806",
+      "selection_bias_corrected": false
+    }
+  },
+  "sampling": {
+    "documents": 55582,
+    "positive": 684811,
+    "forced_negatives": 4849915,
+    "unaligned": 187,
+    "long": 28,
+    "raw_population": 203082848,
+    "eligible_population": 203048013,
+    "random_stratum_weight_document_quantiles": [
+      6.8046875,
+      13.80859375,
+      17.03515625,
+      25.88671875
+    ],
+    "min_q": 0.03862984759317942,
+    "plan_seed_index": "original prepared document row"
+  },
+  "dev_coverage": {
+    "gold": 85336,
+    "representable": 85293,
+    "unaligned": 41,
+    "long": 2
+  },
+  "research_positive": true,
+  "promotion_candidate": false,
+  "seconds": 197.69498739999835,
+  "selected_model_sha256": "b22db4a23c00b79f9ba36c4f51255cd26b38ec36f312ddc79ab513607c8cecec",
+  "pretrained": false,
+  "uploaded": false
+}

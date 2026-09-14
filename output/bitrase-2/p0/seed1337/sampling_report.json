@@ -1,0 +1,17 @@
+{
+  "documents": 55582,
+  "positive": 684811,
+  "forced_negatives": 4849915,
+  "unaligned": 187,
+  "long": 28,
+  "raw_population": 203082848,
+  "eligible_population": 203048013,
+  "random_stratum_weight_document_quantiles": [
+    6.8046875,
+    13.80859375,
+    17.03515625,
+    25.88671875
+  ],
+  "min_q": 0.03862984759317942,
+  "plan_seed_index": "original prepared document row"
+}

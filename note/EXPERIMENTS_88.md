@@ -1,6 +1,6 @@
 # Pencarian metode menuju 88% exact-slot
 
-Target kerja: mencapai sekurangnya 88% exact-slot pada dev, lalu menyediakan file untuk validasi Kaggle manual oleh Vian. Target Kaggle tidak bisa dinyatakan tercapai dari dev saja. User diminta memperjelas apakah target utamanya Kaggle atau dev; sambil menunggu, eksperimen berjalan pada dev.
+Target terbaru dalam protokol P0:92% exact-slot, dengan88% sebagai milestone. Eksperimen dipilih pada dev dan file disediakan untuk validasi Kaggle manual oleh Vian. Target Kaggle tidak bisa dinyatakan tercapai dari dev saja.
 
 Semua metode tanpa pretrained, external datasets, atau test labels. Prepared v1 train/dev dipertahankan. Reserved holdout tidak digunakan untuk pencarian. Dev telah dipakai berulang untuk diagnosis dan pemilihan, sehingga hasil merupakan development selection dan bukan estimasi final yang bebas selection bias.
 
@@ -26,10 +26,13 @@ Semua metode tanpa pretrained, external datasets, atau test labels. Prepared v1 
 | Byte-CNN BiLSTM epoch4, exact-K | 79,4225% | Checkpoint tunggal terpilih |
 | Byte-CNN BiLSTM epoch8, exact-K | 79,4085% | Tidak mengungguli epoch4 |
 | Neural epoch4 + honorific adjustment | 78,8811% | Regresi; ditolak |
-| Neural ensemble epoch4/8, exact-K | **80,4057%** | Terbaik sementara; belum88% |
+| Neural ensemble epoch4/8, exact-K | 80,4057% | Pembanding ensemble |
 | Neural epoch4 + trained CRF transitions | 80,0670% | Membantu single checkpoint; kalah dari ensemble |
+| bitrase-2/P0 frozen span head, seed2026 epoch2 | **80,9354%** | Discovery terpilih; CSV tervalidasi |
+| P0 fixed2epochs, seed3407 | 80,3412% | Mengungguli BIO; sedikit di bawah ensemble |
+| P0 fixed2epochs, seed1337 | 80,8416% | Mengungguli BIO dan point estimate ensemble |
 
-## Hasil putaran ini
+## Hasil putaran bitrase-1 sebelumnya
 
 Terbaik80,4057% exact-slot dev (68.615/85.336), naik8,9528 percentage points dibanding baseline71,4528%. Belum memenuhi88%; masih perlu6.481 slot benar tambahan untuk setidaknya88%. Entity F1 ensemble91,8428% tidak boleh dilaporkan sebagai keberhasilan target88%.
 
@@ -42,3 +45,11 @@ Hasil style adjustment awal77,3823% dibatalkan karena gold-dependent eligibility
 Keluarga boosted trees tetap memakai candidate pool frozen agar mengukur manfaat nonlinearity dalam scorer. Keluarga CRF mengganti pendekatan menjadi sequence labelling; fitur/representasinya ikut berubah sehingga tidak ditafsirkan sebagai ablation satu variabel. Eksperimen dipisahkan dari baseline dan tidak otomatis dipromosikan menjadi bitrase-2.
 
 Pemilihan berdasarkan exact-slot, disertai entity F1, count correctness, dokumen sempurna, validasi independen, dan biaya run. Scaling data train atau training iterations dilakukan sebagai run terpisah bila hasil awal memberi alasan. Tidak akan mengklaim 88% jika percobaan belum mencapainya, atau menganggap batas oracle sebagai skor model.
+
+## Putaran P0 selesai
+
+[Laporan P0](bitrase-2/p0/report.md): frozen encoder epoch4 + direct-span MLP + exact-K interval DP, tanpa pretrained. Discovery80,9354% (69.067slot benar), entity F1 93,1740%. Tiga seed menghasilkan80,3412–80,9354%, mean80,7061%; seluruhnya mengungguli BIO epoch4, tetapi keunggulan atas ensemble tidak konsisten pada semua seed.
+
+CSV baru: `output/bitrase-2/p0/seed2026/submission.csv`,285.318rows/23.156dokumen, validator ready=true/errors kosong. SHA256:`587dd76b8cfc3d8b06b5c24cdea56b469a6e8affbb113300638612dccf8e0fc4`. Semua raw-dev predictions direplay identik sebelum test inference. Belum diunggah. Target88/92 belum tercapai.
+
+Same-label overlap errors turun4083->2760 terhadap BIO, tetapi exact-span wrong-slot masih10.444. [Pertanyaan riset berikutnya untuk Aestem](bitrase-2/p0/research_questions.md) memusatkan perhatian pada interval MAP vs slot-aware MBR di atas skor yang sama, beserta asumsi kalibrasinya. Tidak ada model lanjutan yang dijalankan otomatis.
