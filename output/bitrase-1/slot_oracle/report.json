@@ -1,0 +1,80 @@
+{
+  "baseline": "bitrase-1",
+  "purpose": "gold-assisted diagnostic, not deployable prediction",
+  "objective": "maximum exact-slot matches at exactly K non-overlapping candidate spans",
+  "split": "prepared v1 dev only",
+  "counts": {
+    "documents": 6943,
+    "gold_slots": 85336,
+    "actual_correct": 60975,
+    "oracle_correct": 81698,
+    "candidate_gold_found": 81830,
+    "selection_gap": 20723,
+    "pool_ceiling_gap": 3638,
+    "direct_missing_gold": 3506,
+    "additional_slot_constraint_gap": 132,
+    "actual_exact_documents": 2397,
+    "oracle_exact_documents": 4572,
+    "documents_with_selection_gap": 4156
+  },
+  "metrics": {
+    "actual_slot_accuracy": 0.7145284522358676,
+    "oracle_slot_accuracy": 0.9573685197337584,
+    "selection_gap_pp": 24.284006749789068,
+    "pool_ceiling_gap_pp": 4.263148026624168
+  },
+  "groups": {
+    "all_gold_available": {
+      "documents": 4572,
+      "gold_slots": 54200,
+      "actual_correct": 44265,
+      "oracle_correct": 54200,
+      "candidate_gold_found": 54200,
+      "selection_gap": 9935,
+      "pool_ceiling_gap": 0,
+      "direct_missing_gold": 0,
+      "additional_slot_constraint_gap": 0,
+      "actual_exact_documents": 2397,
+      "oracle_exact_documents": 4572,
+      "documents_with_selection_gap": 2175
+    },
+    "missing_gold_candidates": {
+      "documents": 2371,
+      "gold_slots": 31136,
+      "actual_correct": 16710,
+      "oracle_correct": 27498,
+      "candidate_gold_found": 27630,
+      "selection_gap": 10788,
+      "pool_ceiling_gap": 3638,
+      "direct_missing_gold": 3506,
+      "additional_slot_constraint_gap": 132,
+      "actual_exact_documents": 0,
+      "oracle_exact_documents": 0,
+      "documents_with_selection_gap": 1981
+    }
+  },
+  "missing_gold_by_label": {
+    "USERNAME": 1783,
+    "ADDRESS": 693,
+    "JOB_TITLE": 244,
+    "NAME": 503,
+    "DATE": 128,
+    "PHONE": 102,
+    "EMAIL": 53
+  },
+  "source_sha256": {
+    "src/train_m1.py": "07df4483d9de1a6e8479cec64c31f4533c8c78396a2232a3438e24a67092241b",
+    "src/train_m1.py.lock": "38fe13f787bf4c8bf896cc50916d7b07953164f729bf98bfee55a4c68065b467",
+    "src/run_m0.py": "235cb07a4fb47e6b49349fadac31a4f8fcb08d5af7cedca1e430e59d2b78f9c9",
+    "src/baseline_probe.py": "39c8a623501e3fb7449d2b6314e94363e6167b042275f93dd5c54b948a48b8f2",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "src/submit_m0.py": "884d6489947ba877f6868eee11e77402746aadb8d1384fc33fe17d63cad4b67a",
+    "output/m0/v1/dictionary.parquet": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+    "note/M1_PROTOCOL.md": "d3b9787527d86f7c9c97efb7eae860aeee602603c70ffcca6340d4b84a61e37b",
+    "src/audit_slot_oracle.py": "5d814cfa64f6064240db903f829c706b585b1d66662df7fad4515867114d5aae",
+    "output/m1/v1/dev_predictions.parquet": "80c5be8193523cd4b926577a2ab523605db165c426baf8582be40a4e937f2a3c"
+  },
+  "seconds": 2.8904066999966744
+}

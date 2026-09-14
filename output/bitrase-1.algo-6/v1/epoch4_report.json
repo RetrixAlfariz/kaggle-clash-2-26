@@ -1,0 +1,392 @@
+{
+  "epoch": 4,
+  "dev": {
+    "known_k": {
+      "counts": {
+        "documents": 6943,
+        "gold": 85336,
+        "predicted": 85336,
+        "entity_correct": 78132,
+        "boundary_correct": 78266,
+        "slot_correct": 67776,
+        "exact_documents": 3295,
+        "count_correct_documents": 6943,
+        "under_count_documents": 0,
+        "over_count_documents": 0,
+        "missing_count": 0,
+        "excess_count": 0
+      },
+      "slot_accuracy": 0.7942251804631105,
+      "entity_micro": {
+        "precision": 0.9155807631011531,
+        "recall": 0.9155807631011531,
+        "f1": 0.9155807631011531
+      },
+      "boundary_micro": {
+        "precision": 0.9171510265304209,
+        "recall": 0.9171510265304209,
+        "f1": 0.9171510265304209
+      },
+      "exact_document_rate": 0.4745787123721734,
+      "count_correct_document_rate": 1.0,
+      "per_label": {
+        "NAME": {
+          "predicted": 26537,
+          "gold": 26009,
+          "correct": 23285,
+          "slot_correct": 20390,
+          "precision": 0.8774541206617176,
+          "recall": 0.895267022953593,
+          "f1": 0.8862710767708294,
+          "slot_accuracy": 0.7839593986696912
+        },
+        "DATE": {
+          "predicted": 16792,
+          "gold": 16239,
+          "correct": 15440,
+          "slot_correct": 13317,
+          "precision": 0.9194854692710814,
+          "recall": 0.9507974628979617,
+          "f1": 0.9348793557567134,
+          "slot_accuracy": 0.8200628117494919
+        },
+        "EMAIL": {
+          "predicted": 9792,
+          "gold": 9723,
+          "correct": 9614,
+          "slot_correct": 8161,
+          "precision": 0.9818218954248366,
+          "recall": 0.9887894682711097,
+          "f1": 0.9852933640789137,
+          "slot_accuracy": 0.8393499948575542
+        },
+        "PHONE": {
+          "predicted": 9353,
+          "gold": 9300,
+          "correct": 9156,
+          "slot_correct": 7688,
+          "precision": 0.9789372393884315,
+          "recall": 0.984516129032258,
+          "f1": 0.9817187583766687,
+          "slot_accuracy": 0.8266666666666667
+        },
+        "ADDRESS": {
+          "predicted": 8048,
+          "gold": 8226,
+          "correct": 7473,
+          "slot_correct": 6371,
+          "precision": 0.9285536779324056,
+          "recall": 0.9084609773887673,
+          "f1": 0.9183974437753472,
+          "slot_accuracy": 0.774495502066618
+        },
+        "USERNAME": {
+          "predicted": 6802,
+          "gold": 7642,
+          "correct": 6098,
+          "slot_correct": 5289,
+          "precision": 0.8965010291090856,
+          "recall": 0.7979586495681759,
+          "f1": 0.8443644419828302,
+          "slot_accuracy": 0.692096309866527
+        },
+        "JOB_TITLE": {
+          "predicted": 8012,
+          "gold": 8197,
+          "correct": 7066,
+          "slot_correct": 6560,
+          "precision": 0.881927109335996,
+          "recall": 0.8620226912284983,
+          "f1": 0.8718613116170029,
+          "slot_accuracy": 0.8002927900451384
+        }
+      },
+      "output_stage": {
+        "correct_slot": 67776,
+        "overlap_same_label": 4083,
+        "exact_span_wrong_slot": 10356,
+        "no_overlapping_prediction": 2678,
+        "overlap_wrong_label": 309,
+        "same_boundary_wrong_label": 134
+      },
+      "output_stage_by_label": {
+        "NAME": {
+          "correct_slot": 20390,
+          "no_overlapping_prediction": 617,
+          "overlap_same_label": 2088,
+          "exact_span_wrong_slot": 2895,
+          "overlap_wrong_label": 14,
+          "same_boundary_wrong_label": 5
+        },
+        "DATE": {
+          "correct_slot": 13317,
+          "overlap_same_label": 522,
+          "exact_span_wrong_slot": 2123,
+          "no_overlapping_prediction": 252,
+          "same_boundary_wrong_label": 16,
+          "overlap_wrong_label": 9
+        },
+        "ADDRESS": {
+          "correct_slot": 6371,
+          "overlap_same_label": 606,
+          "exact_span_wrong_slot": 1102,
+          "no_overlapping_prediction": 109,
+          "overlap_wrong_label": 30,
+          "same_boundary_wrong_label": 8
+        },
+        "USERNAME": {
+          "correct_slot": 5289,
+          "exact_span_wrong_slot": 809,
+          "overlap_same_label": 326,
+          "no_overlapping_prediction": 916,
+          "overlap_wrong_label": 213,
+          "same_boundary_wrong_label": 89
+        },
+        "PHONE": {
+          "correct_slot": 7688,
+          "exact_span_wrong_slot": 1468,
+          "no_overlapping_prediction": 45,
+          "overlap_same_label": 89,
+          "overlap_wrong_label": 6,
+          "same_boundary_wrong_label": 4
+        },
+        "EMAIL": {
+          "correct_slot": 8161,
+          "overlap_same_label": 78,
+          "exact_span_wrong_slot": 1453,
+          "no_overlapping_prediction": 21,
+          "same_boundary_wrong_label": 7,
+          "overlap_wrong_label": 3
+        },
+        "JOB_TITLE": {
+          "correct_slot": 6560,
+          "exact_span_wrong_slot": 506,
+          "no_overlapping_prediction": 718,
+          "overlap_same_label": 374,
+          "overlap_wrong_label": 34,
+          "same_boundary_wrong_label": 5
+        }
+      },
+      "exact_boundary_label_confusion": {
+        "NAME->NAME": 23285,
+        "DATE->DATE": 15440,
+        "ADDRESS->ADDRESS": 7473,
+        "USERNAME->USERNAME": 6098,
+        "PHONE->PHONE": 9156,
+        "EMAIL->EMAIL": 9614,
+        "JOB_TITLE->JOB_TITLE": 7066,
+        "USERNAME->PHONE": 15,
+        "NAME->JOB_TITLE": 1,
+        "EMAIL->USERNAME": 7,
+        "PHONE->USERNAME": 4,
+        "USERNAME->NAME": 60,
+        "DATE->USERNAME": 15,
+        "ADDRESS->USERNAME": 5,
+        "USERNAME->JOB_TITLE": 3,
+        "USERNAME->EMAIL": 10,
+        "NAME->ADDRESS": 1,
+        "NAME->USERNAME": 3,
+        "JOB_TITLE->NAME": 4,
+        "ADDRESS->NAME": 1,
+        "JOB_TITLE->USERNAME": 1,
+        "DATE->JOB_TITLE": 1,
+        "ADDRESS->PHONE": 2,
+        "USERNAME->DATE": 1
+      }
+    },
+    "raw": {
+      "counts": {
+        "documents": 6943,
+        "gold": 85336,
+        "predicted": 86501,
+        "entity_correct": 78480,
+        "boundary_correct": 78565,
+        "slot_correct": 50788,
+        "exact_documents": 2309,
+        "count_correct_documents": 3285,
+        "under_count_documents": 1396,
+        "over_count_documents": 2262,
+        "missing_count": 2280,
+        "excess_count": 3445
+      },
+      "slot_accuracy": 0.5951532764601106,
+      "entity_micro": {
+        "precision": 0.9072727482919273,
+        "recall": 0.9196587606637293,
+        "f1": 0.9134237678730425
+      },
+      "boundary_micro": {
+        "precision": 0.9082553958913769,
+        "recall": 0.9206548232867723,
+        "f1": 0.9144130775095003
+      },
+      "exact_document_rate": 0.33256517355609966,
+      "count_correct_document_rate": 0.4731384127898603,
+      "per_label": {
+        "NAME": {
+          "predicted": 26487,
+          "gold": 26009,
+          "correct": 23387,
+          "slot_correct": 16532,
+          "precision": 0.8829614527881602,
+          "recall": 0.8991887423584144,
+          "f1": 0.8910012191405059,
+          "slot_accuracy": 0.6356261294167403
+        },
+        "DATE": {
+          "predicted": 16946,
+          "gold": 16239,
+          "correct": 15473,
+          "slot_correct": 10730,
+          "precision": 0.913076832290806,
+          "recall": 0.9528296077344665,
+          "f1": 0.9325297574205214,
+          "slot_accuracy": 0.6607549725968348
+        },
+        "EMAIL": {
+          "predicted": 9814,
+          "gold": 9723,
+          "correct": 9611,
+          "slot_correct": 5571,
+          "precision": 0.9793152639087018,
+          "recall": 0.9884809215262779,
+          "f1": 0.9838767466857757,
+          "slot_accuracy": 0.5729713051527306
+        },
+        "PHONE": {
+          "predicted": 9347,
+          "gold": 9300,
+          "correct": 9134,
+          "slot_correct": 5165,
+          "precision": 0.9772119396597839,
+          "recall": 0.9821505376344086,
+          "f1": 0.9796750147476806,
+          "slot_accuracy": 0.5553763440860215
+        },
+        "ADDRESS": {
+          "predicted": 8164,
+          "gold": 8226,
+          "correct": 7413,
+          "slot_correct": 4589,
+          "precision": 0.9080107790298874,
+          "recall": 0.9011670313639679,
+          "f1": 0.9045759609517999,
+          "slot_accuracy": 0.5578653051300754
+        },
+        "USERNAME": {
+          "predicted": 7110,
+          "gold": 7642,
+          "correct": 6151,
+          "slot_correct": 3595,
+          "precision": 0.8651195499296765,
+          "recall": 0.8048940068045014,
+          "f1": 0.8339208242950108,
+          "slot_accuracy": 0.47042658989793246
+        },
+        "JOB_TITLE": {
+          "predicted": 8633,
+          "gold": 8197,
+          "correct": 7311,
+          "slot_correct": 4606,
+          "precision": 0.8468666743889726,
+          "recall": 0.8919116750030499,
+          "f1": 0.8688057040998217,
+          "slot_accuracy": 0.5619128949615713
+        }
+      },
+      "output_stage": {
+        "correct_slot": 50788,
+        "overlap_same_label": 3762,
+        "no_overlapping_prediction": 2884,
+        "exact_span_wrong_slot": 27692,
+        "overlap_wrong_label": 125,
+        "same_boundary_wrong_label": 85
+      },
+      "output_stage_by_label": {
+        "NAME": {
+          "correct_slot": 16532,
+          "no_overlapping_prediction": 654,
+          "overlap_same_label": 1962,
+          "exact_span_wrong_slot": 6855,
+          "overlap_wrong_label": 4,
+          "same_boundary_wrong_label": 2
+        },
+        "DATE": {
+          "correct_slot": 10730,
+          "overlap_same_label": 425,
+          "exact_span_wrong_slot": 4743,
+          "no_overlapping_prediction": 321,
+          "overlap_wrong_label": 10,
+          "same_boundary_wrong_label": 10
+        },
+        "ADDRESS": {
+          "correct_slot": 4589,
+          "exact_span_wrong_slot": 2824,
+          "overlap_same_label": 667,
+          "no_overlapping_prediction": 138,
+          "overlap_wrong_label": 7,
+          "same_boundary_wrong_label": 1
+        },
+        "USERNAME": {
+          "correct_slot": 3595,
+          "exact_span_wrong_slot": 2556,
+          "no_overlapping_prediction": 1072,
+          "overlap_same_label": 292,
+          "overlap_wrong_label": 73,
+          "same_boundary_wrong_label": 54
+        },
+        "PHONE": {
+          "correct_slot": 5165,
+          "exact_span_wrong_slot": 3969,
+          "no_overlapping_prediction": 67,
+          "overlap_same_label": 91,
+          "overlap_wrong_label": 4,
+          "same_boundary_wrong_label": 4
+        },
+        "EMAIL": {
+          "correct_slot": 5571,
+          "overlap_same_label": 87,
+          "exact_span_wrong_slot": 4040,
+          "no_overlapping_prediction": 20,
+          "overlap_wrong_label": 3,
+          "same_boundary_wrong_label": 2
+        },
+        "JOB_TITLE": {
+          "correct_slot": 4606,
+          "no_overlapping_prediction": 612,
+          "exact_span_wrong_slot": 2705,
+          "overlap_same_label": 238,
+          "overlap_wrong_label": 24,
+          "same_boundary_wrong_label": 12
+        }
+      },
+      "exact_boundary_label_confusion": {
+        "NAME->NAME": 23387,
+        "DATE->DATE": 15473,
+        "ADDRESS->ADDRESS": 7413,
+        "USERNAME->USERNAME": 6151,
+        "PHONE->PHONE": 9134,
+        "EMAIL->EMAIL": 9611,
+        "JOB_TITLE->JOB_TITLE": 7311,
+        "NAME->JOB_TITLE": 1,
+        "PHONE->USERNAME": 4,
+        "EMAIL->USERNAME": 2,
+        "USERNAME->NAME": 39,
+        "USERNAME->PHONE": 5,
+        "JOB_TITLE->NAME": 10,
+        "DATE->USERNAME": 9,
+        "USERNAME->EMAIL": 9,
+        "JOB_TITLE->USERNAME": 2,
+        "DATE->JOB_TITLE": 1,
+        "ADDRESS->PHONE": 1,
+        "NAME->USERNAME": 1,
+        "USERNAME->DATE": 1
+      }
+    }
+  },
+  "model_sha256": "dfe225b3645eaacee30005ec49addea0f47b5bb3bc00e6885ed817592bcd4924",
+  "prediction_hashes": {
+    "known_k": "8c792feb69a65306035438c16537782826ab490741b9785cfedd82886032a942",
+    "raw": "0d8c2d30a93c298d1f924259172c539d463e20a9440cad9440f3f2c9611fd18b"
+  }
+}

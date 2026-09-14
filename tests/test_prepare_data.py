@@ -1,13 +1,69 @@
 """Contract tests: uv run --with pyarrow python -m unittest discover -s tests -v."""
 import sys
 import unittest
+import tempfile
 from pathlib import Path
+import pyarrow as pa
+import pyarrow.parquet as pq
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
-from prepare_data import assemble, assign_splits, group_hash, validate_entities
+from prepare_data import assemble, assign_splits, group_hash, validate_entities, verify_parquet, verify_artifacts, ARTIFACT_NAMES
 
 
 class PreparationContracts(unittest.TestCase):
+    def test_serialized_faults_rejected(self):
+        fixtures = [
+            ("train.parquet", [{"document_id": "a"}, {"document_id": "b"}], [], "row count"),
+            ("train.parquet", [{"document_id": "a"}, {"document_id": "b"}], [{"document_id": "a"}, {"document_id": "a"}], "duplicate"),
+            ("train.parquet", [{"document_id": "a"}], [{"document_id": "z"}], "coverage"),
+            ("split_assignments.parquet", [{"document_id": "a", "partition": "train"}], [{"document_id": "a", "partition": "dev"}], "content"),
+            ("metadata_audit_only.parquet", [{"document_id": "a", "n_chars": 4}], [{"document_id": "a", "n_chars": 5}], "content"),
+            ("test_slots.parquet", [{"row_id": "a_01"}, {"row_id": "a_02"}], [{"row_id": "a_02"}, {"row_id": "a_01"}], "order"),
+            ("train.parquet", [{"document_id": "a", "full_text": "é\n"}], [{"document_id": "a", "full_text": "e\n"}], "content"),
+        ]
+        with tempfile.TemporaryDirectory() as folder:
+            for name, expected, actual, message in fixtures:
+                with self.subTest(name=name, fault=message):
+                    schema = pa.Table.from_pylist(expected).schema
+                    path = Path(folder) / name
+                    pq.write_table(pa.Table.from_pylist(actual, schema=schema), path)
+                    with self.assertRaisesRegex(ValueError, message):
+                        verify_parquet(path, expected, schema)
+
+    def test_schema_change_rejected(self):
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "train.parquet"
+            rows = [{"document_id": "a", "extra": "unexpected"}]
+            pq.write_table(pa.Table.from_pylist(rows), path)
+            with self.assertRaisesRegex(ValueError, "schema"):
+                verify_parquet(path, [{"document_id": "a"}], pa.schema([("document_id", pa.string())]))
+
+    def test_nested_gold_schema_roundtrip(self):
+        from prepare_data import GOLD_SCHEMA
+        rows = [{"document_id": "a", "full_text": "Alice", "entities": [{"label": "NAME", "start": 0, "end": 5, "text": "Alice"}], "expected_entity_count": 1}]
+        with tempfile.TemporaryDirectory() as folder:
+            path = Path(folder) / "train.parquet"
+            pq.write_table(pa.Table.from_pylist(rows, schema=GOLD_SCHEMA), path)
+            verify_parquet(path, rows, GOLD_SCHEMA)
+
+    def test_all_eight_artifacts_required_and_verified(self):
+        with tempfile.TemporaryDirectory() as folder:
+            folder = Path(folder)
+            expected = {}
+            for name in ARTIFACT_NAMES:
+                key = "row_id" if name == "test_slots.parquet" else "document_id"
+                rows = [{key: "a"}]
+                table = pa.Table.from_pylist(rows)
+                expected[name] = (rows, table.schema)
+                pq.write_table(table, folder / name)
+            verify_artifacts(folder, expected)
+            pq.write_table(pa.table({"document_id": ["wrong"]}), folder / "metadata_audit_only.parquet")
+            with self.assertRaisesRegex(ValueError, "metadata_audit_only.*coverage"):
+                verify_artifacts(folder, expected)
+            (folder / "metadata_audit_only.parquet").unlink()
+            with self.assertRaisesRegex(ValueError, "inventory"):
+                verify_artifacts(folder, expected)
+
     def test_shuffled_blank_lines_and_unicode_keep_python_offsets(self):
         text = assemble([(2, "é😀"), (0, "A"), (1, "")],
                         {"n_chars": 5, "n_segments": 3, "n_words": 2, "n_nonempty_segments": 2})

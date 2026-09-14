@@ -1,6 +1,6 @@
 # /// script
-# requires-python = ">=3.13"
-# dependencies = ["pyarrow>=18"]
+# requires-python = "==3.13.2"
+# dependencies = ["pyarrow==25.0.1"]
 # ///
 """Prepare immutable, verified document data; no normalization or tokenization.
 
@@ -158,11 +158,48 @@ def write_parquet(folder, name, rows, schema=None):
     pq.write_table(table, folder / name, compression="zstd", row_group_size=1024)
 
 
+def require(condition, message):
+    if not condition:
+        raise ValueError(message)
+
+
+def verify_parquet(path, expected_rows, expected_schema):
+    """Validate complete serialized content, including missing/duplicate rows."""
+    loaded = pq.read_table(path)
+    # Parquet renames list children item -> element; Arrow semantic equality
+    # preserves field names/types/nullability while accepting that round trip.
+    require(loaded.schema.equals(expected_schema) and loaded.schema.metadata == expected_schema.metadata,
+            f"{path.name}: schema mismatch")
+    require(loaded.num_rows == len(expected_rows), f"{path.name}: row count mismatch")
+    key = "row_id" if path.name == "test_slots.parquet" else "document_id"
+    rows = loaded.to_pylist()
+    expected_ids = [r[key] for r in expected_rows]
+    actual_ids = [r[key] for r in rows]
+    require(len(set(expected_ids)) == len(expected_ids), f"{path.name}: duplicate source IDs")
+    require(len(set(actual_ids)) == len(actual_ids), f"{path.name}: duplicate serialized IDs")
+    require(set(actual_ids) == set(expected_ids), f"{path.name}: ID coverage mismatch")
+    for index, (actual, expected) in enumerate(zip(rows, expected_rows)):
+        require(actual == expected, f"{path.name}: content/order mismatch at row {index}, ID {expected[key]}")
+
+
+ARTIFACT_NAMES = {"train.parquet", "dev.parquet", "holdout.parquet", "test.parquet",
+                  "test_slots.parquet", "split_assignments.parquet", "metadata_audit_only.parquet",
+                  "weak_pool_not_for_supervised_training.parquet"}
+
+
+def verify_artifacts(folder, expected):
+    require(set(expected) == ARTIFACT_NAMES, "Expected artifact inventory mismatch")
+    require({p.name for p in folder.glob("*.parquet")} == ARTIFACT_NAMES, "Serialized artifact inventory mismatch")
+    for name, (rows, schema) in expected.items():
+        verify_parquet(folder / name, rows, schema)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--output", type=Path, default=ROOT / "output/prepared/v1")
+    parser.add_argument("--output", type=Path, required=True, help="New build path; historical v1 is preserved")
     args = parser.parse_args()
     destination = args.output.resolve()
+    require(platform.python_version() == "3.13.2" and pa.__version__ == "25.0.1", "Preparation requires Python 3.13.2 and PyArrow 25.0.1")
     audit = ROOT / "output/data_understanding"
     baseline = ROOT / "output/baseline_probe/report.json"
     provenance = [ROOT / "Data" / path for path in (
@@ -170,14 +207,18 @@ def main():
         "test/test_segments.csv", "test/test_metadata.parquet", "sample_submission.csv",
         "extra/weak_labeled_documents.jsonl", "README.txt")]
     provenance += [baseline, audit / "annotations_examples.json", audit / "annotations.json",
-                   Path(__file__).resolve(), ROOT / "src/audit_reconstruction.py"]
+                   Path(__file__).resolve(), ROOT / "src/audit_reconstruction.py",
+                   ROOT / "src/prepare_data.py.lock", ROOT / ".python-version"]
     sources = {p.relative_to(ROOT).as_posix(): file_hash(p) for p in provenance}
     config = {"seed": SEED, "split_fraction_target": {"train": .8, "dev": .1, "holdout": .1},
-              "stratification": ["channel", "domain", "entity_count_band"], "format_version": 1}
+              "stratification": ["channel", "domain", "entity_count_band"], "format_version": 1,
+              "validation_revision": 2}
     if destination.exists():
         previous = json.loads((destination / "manifest.json").read_text(encoding="utf-8"))
         if previous["sources"] != sources or previous["config"] != config:
             raise ValueError("Existing output belongs to a different build. Choose a new --output path.")
+        require(set(previous["files"]) == ARTIFACT_NAMES, "Manifest artifact inventory mismatch")
+        require({p.name for p in destination.glob("*.parquet")} == ARTIFACT_NAMES, "Build artifact inventory mismatch")
         for name, info in previous["files"].items():
             if file_hash(destination / name) != info["sha256"]:
                 raise ValueError(f"Prepared artifact changed: {name}")
@@ -217,18 +258,18 @@ def main():
     if set(partition) != set(train_text):
         raise ValueError("Incomplete split assignment")
     for doc in prior_train:
-        assert partition[doc] == "train"
+        require(partition[doc] == "train", f"Historical train role changed: {doc}")
     for doc in prior_dev:
-        assert partition[doc] == "dev"
+        require(partition[doc] == "dev", f"Historical dev role changed: {doc}")
     for doc in reviewed & train_text.keys():
-        assert partition[doc] != "holdout"
+        require(partition[doc] != "holdout", f"Reviewed document entered holdout: {doc}")
     group_partitions = collections.defaultdict(set)
     for row in records:
         row["partition"] = partition[row["document_id"]]
         row["prior_probe_role"] = "train" if row["document_id"] in prior_train else "dev" if row["document_id"] in prior_dev else "none"
         row["reviewed_example"] = row["document_id"] in reviewed
         group_partitions[row["duplicate_group"]].add(row["partition"])
-    assert all(len(parts) == 1 for parts in group_partitions.values())
+    require(all(len(parts) == 1 for parts in group_partitions.values()), "Duplicate group crosses partitions")
     test_groups = {group_hash(text) for text in test_text.values()}
     if test_groups & group_partitions.keys():
         raise ValueError("Normalized text overlap with competition test; review before preparing")
@@ -248,25 +289,32 @@ def main():
         slots.append({"row_order": index, "row_id": rid, "document_id": d, "slot": number})
     if set(slots_by_doc) != set(test_text):
         raise ValueError("Test slot coverage mismatch")
-    assert all(sorted(numbers) == list(range(1, len(numbers) + 1)) for numbers in slots_by_doc.values())
+    require(all(sorted(numbers) == list(range(1, len(numbers) + 1)) for numbers in slots_by_doc.values()), "Noncontiguous submission slots")
 
     destination.parent.mkdir(parents=True, exist_ok=True)
     staging = Path(tempfile.mkdtemp(prefix=".preparing-", dir=destination.parent))
     totals = {}
+    expected_artifacts = {}
+
+    def emit(name, rows, schema=None):
+        expected_schema = schema if schema is not None else pa.Table.from_pylist(rows).schema
+        expected_artifacts[name] = (rows, expected_schema)
+        write_parquet(staging, name, rows, expected_schema)
+
     for part in ("train", "dev", "holdout"):
         rows = [{"document_id": d, "full_text": train_text[d], "entities": entities[d],
                  "expected_entity_count": len(entities[d])} for d in sorted(train_text) if partition[d] == part]
-        write_parquet(staging, f"{part}.parquet", rows, GOLD_SCHEMA)
+        emit(f"{part}.parquet", rows, GOLD_SCHEMA)
         totals[part] = {"documents": len(rows), "entities": sum(len(r["entities"]) for r in rows),
                         "labels": dict(collections.Counter(e["label"] for r in rows for e in r["entities"]))}
         print(f"Prepared {part}: {len(rows):,} documents", flush=True)
     test_rows = [{"document_id": d, "full_text": test_text[d], "expected_entity_count": len(slots_by_doc[d])} for d in sorted(test_text)]
-    write_parquet(staging, "test.parquet", test_rows, TEST_SCHEMA)
-    write_parquet(staging, "test_slots.parquet", slots)
-    write_parquet(staging, "split_assignments.parquet", records)
+    emit("test.parquet", test_rows, TEST_SCHEMA)
+    emit("test_slots.parquet", slots)
+    emit("split_assignments.parquet", records)
     metadata = [{**train_meta[d], "partition": partition[d]} for d in sorted(train_meta)]
     metadata += [{**test_meta[d], "partition": "test"} for d in sorted(test_meta)]
-    write_parquet(staging, "metadata_audit_only.parquet", metadata)
+    emit("metadata_audit_only.parquet", metadata)
 
     weak_rows, weak_ids = [], set()
     weak_overlap = collections.Counter()
@@ -286,20 +334,11 @@ def main():
             weak_overlap.update(overlap)
             weak_rows.append({"document_id": d, "full_text": text, "weak_entities": weak_spans,
                               "annotation_source": row["annotation_source"], "overlap_partitions": overlap})
-    write_parquet(staging, "weak_pool_not_for_supervised_training.parquet", sorted(weak_rows, key=lambda r: r["document_id"]), WEAK_SCHEMA)
+    emit("weak_pool_not_for_supervised_training.parquet", sorted(weak_rows, key=lambda r: r["document_id"]), WEAK_SCHEMA)
 
-    # Read back every serialized document and span; compare to source-level records.
-    for part in ("train", "dev", "holdout"):
-        loaded = pq.read_table(staging / f"{part}.parquet").to_pylist()
-        for row in loaded:
-            d = row["document_id"]
-            assert row["full_text"] == train_text[d] and row["entities"] == entities[d]
-            assert row["expected_entity_count"] == len(entities[d]) and partition[d] == part
-    assert pq.read_table(staging / "test.parquet").to_pylist() == test_rows
-    assert pq.read_table(staging / "test_slots.parquet").to_pylist() == slots
-    assert pq.read_table(staging / "weak_pool_not_for_supervised_training.parquet").to_pylist() == sorted(weak_rows, key=lambda r: r["document_id"])
-    assert sum(v["documents"] for v in totals.values()) == len(train_text)
-    assert sum(v["entities"] for v in totals.values()) == sum(map(len, entities.values()))
+    verify_artifacts(staging, expected_artifacts)
+    require(sum(v["documents"] for v in totals.values()) == len(train_text), "Gold document total mismatch")
+    require(sum(v["entities"] for v in totals.values()) == sum(map(len, entities.values())), "Gold entity total mismatch")
     for path, expected in sources.items():
         if file_hash(ROOT / path) != expected:
             raise ValueError(f"Input changed during preparation: {path}")

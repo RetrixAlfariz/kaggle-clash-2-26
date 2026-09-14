@@ -1,0 +1,171 @@
+{
+  "method": {
+    "normalization": "lowercase and whitespace word splitting; original files unchanged",
+    "shingle_words": 5,
+    "thresholds_fixed_before_scoring": [
+      0.8,
+      0.9
+    ],
+    "signature": "8 deterministic affine minhash permutations of 64-bit BLAKE2b shingle hashes",
+    "bands": 4,
+    "rows_per_band": 2,
+    "verification": "64-bit hashed-shingle Jaccard on retrieved candidates; every pair reaching 0.8 rechecked with exact string-shingle Jaccard",
+    "pair_scope": "all dev versus train and all holdout versus train; no query or candidate caps; within-split pairs not searched"
+  },
+  "runtime": {
+    "python": "3.13.2",
+    "pyarrow": "25.0.1"
+  },
+  "source_hashes": {
+    "output\\prepared\\v1\\train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output\\prepared\\v1\\dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+    "output\\prepared\\v1\\holdout.parquet": "7675bedc3640ecbd5bb54e055f143d30a7283fc0e3650be816f94f53b6ae282a"
+  },
+  "audit_code_sha256": "374b8e6640da102cfdabb902814a021c52639d8f3ec361493ae81d7126cda510",
+  "train_documents": 55582,
+  "train_short_documents_excluded": 0,
+  "comparisons": {
+    "dev_to_train": {
+      "query_documents": 6943,
+      "short_documents_excluded": 0,
+      "unique_candidate_pairs_scored": 76011,
+      "queries_without_candidates": 4680,
+      "threshold_pair_counts": {
+        "0.8": 0,
+        "0.9": 0
+      },
+      "threshold_query_document_counts": {
+        "0.8": 0,
+        "0.9": 0
+      },
+      "reference_documents_in_verified_pairs_at_0.8": 0,
+      "candidate_score_bins": {
+        "0-0.5": 76011
+      },
+      "best_retrieved_score": {
+        "mean": 0.022737432180566428,
+        "p50": 0.0,
+        "p95": 0.112,
+        "max": 0.3037383177570093
+      }
+    },
+    "holdout_to_train": {
+      "query_documents": 6943,
+      "short_documents_excluded": 0,
+      "unique_candidate_pairs_scored": 75634,
+      "queries_without_candidates": 4618,
+      "threshold_pair_counts": {
+        "0.8": 0,
+        "0.9": 0
+      },
+      "threshold_query_document_counts": {
+        "0.8": 0,
+        "0.9": 0
+      },
+      "reference_documents_in_verified_pairs_at_0.8": 0,
+      "candidate_score_bins": {
+        "0-0.5": 75634
+      },
+      "best_retrieved_score": {
+        "mean": 0.023380256833189523,
+        "p50": 0.0,
+        "p95": 0.1169811320754717,
+        "max": 0.3305084745762712
+      }
+    }
+  },
+  "observed_train_dev_families": {
+    "0.8": {
+      "connected_components": 0,
+      "documents": 0,
+      "largest_component_documents": 0
+    },
+    "0.9": {
+      "connected_components": 0,
+      "documents": 0,
+      "largest_component_documents": 0
+    }
+  },
+  "examples_train_dev": [
+    {
+      "dev_id": "DOC_047225",
+      "train_id": "DOC_039124",
+      "retrieved_jaccard": 0.3037383177570093,
+      "exact_string_jaccard": 0.3037383177570093,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your upcoming medical appointment with Dr. Anya Sharma at our clinic. Your appointment is scheduled for Tuesday, October 26, 2023, at 2:00 PM. Please arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. Our clinic is located at 123 Maple Street, Anytown, CA 90210. \n\nWe kindly request that you bring your insurance card and a list of any current medications you are taking. For any urgent queries or to reschedule, please do not hesitate to contact our office directly at (555) 123-4567. You can also reach our administrative assistant, Mr. David Chen, at d.chen@anytownmedical.com. Your patient portal username is 'evance_patient' for accessing your medical records online.\n\nWe look forward to seeing you soon.\n\nSincerely,\nAnytown Medical Clinic",
+      "train_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your upcoming appointment with Dr. Benjamin Carter at our clinic. Your appointment is scheduled for Tuesday, October 26, 2023, at 2:00 PM. Please arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. \n\nOur clinic is located at 123 Maple Street, Anytown, CA 90210. For any urgent inquiries before your appointment, please do not hesitate to contact our reception desk at (555) 123-4567. You can also reach out to Dr. Carter's office assistant, Mr. David Chen, via email at d.chen@medicalclinic.com. His direct line is (555) 987-6543.\n\nKindly remember to bring your insurance card and a list of any current medications you are taking. If you need to reschedule or cancel, please provide at least 24 hours' notice. We look forward to seeing you on October 26, 2023. Your patient portal username is evance2023.\n\nSincerely,\nThe Administrative Team\nMediCare Clinic"
+    },
+    {
+      "dev_id": "DOC_014374",
+      "train_id": "DOC_074555",
+      "retrieved_jaccard": 0.2938775510204082,
+      "exact_string_jaccard": 0.2938775510204082,
+      "meets_0.8": false,
+      "dev_excerpt": "Subject: Follow-up Regarding Case File #789012 - Appointment Confirmation\n\nDear Ms. Eleanor Vance,\n\nThis email serves as a formal confirmation of your upcoming appointment with Dr. Anya Sharma at our clinic, located at 123 Maple Street, Anytown, CA 90210. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:00 AM.\n\nPlease ensure you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. Should you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. You may also reach our administrative assistant, Mr. David Chen, directly via email at david.chen@medicalclinic.com.\n\nWe kindly remind you to bring your insurance card and a valid photo ID to your appointment. If you have any questions prior to your visit, please do not hesitate to call. We look forward to seeing you on October 26, 2023.\n\nSincerely,\nThe Anytown Medical Clinic Team\nPatient Coordinator: Sarah Miller\nUsername for Port",
+      "train_excerpt": "Dear Ms. Evelyn Reed,\n\nThis letter serves as a formal confirmation of your upcoming appointment with Dr. Anya Sharma at our clinic, located at 123 Maple Street, Anytown, CA 90210. Your appointment is scheduled for October 26, 2023, at 10:30 AM. Please ensure you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. \n\nWe kindly request that you bring your insurance card and a valid form of identification. Should you need to reschedule or cancel your appointment, please contact our office at 555-123-4567 at least 24 hours in advance. You can also reach our administrative assistant, Mr. David Chen, directly via email at david.chen@healthcareclinic.com for any urgent inquiries.\n\nYour patient portal username is 'ereed87' and you can access your medical records and appointment details by logging in at www.healthcareclinic.com/portal. We look forward to seeing you on October 26, 2023. If you have any questions regarding your upcoming visit, please do not hesitate"
+    },
+    {
+      "dev_id": "DOC_103301",
+      "train_id": "DOC_008710",
+      "retrieved_jaccard": 0.28342245989304815,
+      "exact_string_jaccard": 0.28342245989304815,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal notification regarding your upcoming appointment with Dr. Samuel Peterson. Your consultation is scheduled for Tuesday, October 26, 2023, at 10:30 AM at our clinic located at 123 Maple Street, Anytown, CA 90210. Please arrive 15 minutes prior to your appointment time to complete any necessary paperwork.\n\nTo ensure a smooth check-in process, please bring your insurance card and a valid form of identification. If you have any questions or need to reschedule, please do not hesitate to contact our office at (555) 123-4567. Our receptionist, Sarah Jenkins, will be happy to assist you. You can also reach us via email at info@exampleclinic.com. For your reference, your patient portal username is EVance1026. We look forward to seeing you soon.\n\nSincerely,\n\nThe Anytown Clinic Administration",
+      "train_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your upcoming appointment with Dr. Alan Sterling. The consultation is scheduled for Tuesday, October 26, 2023, at 10:30 AM at our clinic located at 123 Maple Street, Anytown, CA 90210. Please arrive 15 minutes prior to your appointment time to complete any necessary paperwork. Your patient portal username is EVance42, and you can access your records at www.anytownmedical.com/portal. For any urgent inquiries before your appointment, please do not hesitate to contact our office at (555) 123-4567. Our receptionist, Ms. Brenda Smith, will be available to assist you. We look forward to seeing you soon.\n\nSincerely,\nAnytown Medical Clinic\nPatient Services Coordinator\nBrenda Smith"
+    },
+    {
+      "dev_id": "DOC_115952",
+      "train_id": "DOC_009008",
+      "retrieved_jaccard": 0.27751196172248804,
+      "exact_string_jaccard": 0.27751196172248804,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent appointment with Dr. Anya Sharma at our clinic, located at 123 Maple Street, Anytown, CA 90210. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:00 AM. We kindly request that you arrive 15 minutes prior to your scheduled time for check-in.\n\nTo ensure a smooth process, please bring your insurance card and a valid photo ID. If you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. Our office manager, Mr. Benjamin Carter, will be available to assist you.\n\nFor any administrative inquiries or to update your contact information, please email us at info@anytownmedical.com. We look forward to seeing you on October 26, 2023. Please note that your patient portal username is 'eleanorvance1026'.\n\nSincerely,\nAnytown Medical Clinic\nPatient Services Department",
+      "train_excerpt": "Dear Mr. Johnathan A. Smith,\n\nThis letter serves as confirmation of your recent appointment with Dr. Emily Carter at our clinic, located at 123 Main Street, Anytown, CA 90210. Your appointment is scheduled for Tuesday, October 26, 2023, at 2:00 PM.\n\nWe kindly request that you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. Please bring your insurance card and a valid photo ID. Should you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. For any urgent inquiries, you may also reach our administrative assistant, Ms. Sarah Chen, directly at sarah.chen@medicalclinic.com.\n\nWe look forward to seeing you on October 26, 2023. Your patient portal username is JSmith2023.\n\nSincerely,\nThe Anytown Medical Clinic Staff"
+    },
+    {
+      "dev_id": "DOC_071229",
+      "train_id": "DOC_026272",
+      "retrieved_jaccard": 0.275,
+      "exact_string_jaccard": 0.275,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent appointment with Dr. Arthur Pendelton, scheduled for Tuesday, October 26, 2023, at 10:00 AM. Your patient identification number is PX789012. Please arrive 15 minutes prior to your appointment to complete any necessary paperwork.\n\nOur office is located at 123 Maple Street, Anytown, CA 90210. If you need to reschedule or cancel your appointment, kindly contact our reception desk at (555) 123-4567 at least 24 hours in advance. You can also reach us via email at info@anytownmedical.com. Our patient portal username for secure communication is EVance23.\n\nWe look forward to seeing you then. For any urgent matters outside of business hours, please proceed to the nearest emergency room.\n\nSincerely,\nThe Anytown Medical Group Administration",
+      "train_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent appointment with Dr. Arthur Jenkins, scheduled for Tuesday, October 26, 2023, at 3:00 PM. Your patient record, under the username 'evance1985', has been updated with the details of this consultation. Please arrive 15 minutes prior to your appointment to complete any necessary paperwork.\n\nOur office is located at 123 Maple Street, Anytown, CA 90210. If you need to reschedule or cancel your appointment, please contact our reception desk at (555) 123-4567 at least 24 hours in advance. For urgent matters, Dr. Jenkins can be reached via his direct line at (555) 987-6543. Your primary contact email for administrative inquiries is admin@medicalcenter.com.\n\nWe look forward to seeing you on October 26, 2023. \n\nSincerely,\n\nThe Administrative Team\nAnytown Medical Center\nOperations Manager: Brenda Miller\nDate: October 19, 2023"
+    },
+    {
+      "dev_id": "DOC_071294",
+      "train_id": "DOC_051215",
+      "retrieved_jaccard": 0.2644628099173554,
+      "exact_string_jaccard": 0.2644628099173554,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent appointment with Dr. Alistair Finch, scheduled for Tuesday, October 24, 2023, at 10:00 AM. Your appointment will take place at our clinic located at 123 Maple Street, Suite 4B, Anytown, CA 90210.\n\nYour patient ID is PV789012. Please arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. If you need to reschedule or cancel your appointment, kindly contact our office at (555) 123-4567 at least 24 hours in advance. You may also reach us via email at appointments@exampleclinic.com. For urgent matters, you can also use the patient portal under your username 'evance24'.\n\nWe look forward to seeing you on October 24, 2023. Should you have any questions prior to your visit, please do not hesitate to reach out.\n\nSincerely,\nThe Anytown Medical Clinic Administrative Team",
+      "train_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your recent appointment with Dr. Alistair Finch, a specialist in Cardiology, scheduled for Tuesday, October 24, 2023, at 10:00 AM. Your appointment will take place at our primary facility located at 123 Maple Street, Suite 4B, Anytown, CA 90210. We kindly request that you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork.\n\nPlease bring your insurance card and a list of current medications. If you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. You can also reach our administrative assistant, Mr. Benjamin Carter, directly via email at b.carter@heartclinic.com for any urgent inquiries. Your patient portal username is EVance23, and you can access your medical records and appointment details by logging in at www.heartclinic.com/patientportal.\n\nWe look forward to seeing you on October 24, 2023. Should you have any q"
+    },
+    {
+      "dev_id": "DOC_128625",
+      "train_id": "DOC_009008",
+      "retrieved_jaccard": 0.2523364485981308,
+      "exact_string_jaccard": 0.2523364485981308,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent appointment with Dr. Alistair Finch at our clinic, located at 123 Maple Street, Anytown, CA 90210. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:00 AM. Please arrive 15 minutes prior to your scheduled time to complete any necessary new patient paperwork.\n\nWe kindly request that you bring your insurance card and a valid photo ID. If you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. For any urgent matters prior to your visit, you may reach Dr. Finch's nurse, Sarah Jenkins, at extension 205. Please ensure your patient portal username, 'evance87', is used for all online communications. Your patient identification number is 987654321.\n\nWe look forward to providing you with excellent care.\n\nSincerely,\n\nThe Anytown Medical Clinic Administrative Team",
+      "train_excerpt": "Dear Mr. Johnathan A. Smith,\n\nThis letter serves as confirmation of your recent appointment with Dr. Emily Carter at our clinic, located at 123 Main Street, Anytown, CA 90210. Your appointment is scheduled for Tuesday, October 26, 2023, at 2:00 PM.\n\nWe kindly request that you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. Please bring your insurance card and a valid photo ID. Should you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. For any urgent inquiries, you may also reach our administrative assistant, Ms. Sarah Chen, directly at sarah.chen@medicalclinic.com.\n\nWe look forward to seeing you on October 26, 2023. Your patient portal username is JSmith2023.\n\nSincerely,\nThe Anytown Medical Clinic Staff"
+    },
+    {
+      "dev_id": "DOC_105200",
+      "train_id": "DOC_027021",
+      "retrieved_jaccard": 0.25225225225225223,
+      "exact_string_jaccard": 0.25225225225225223,
+      "meets_0.8": false,
+      "dev_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your upcoming appointment with Dr. Anya Sharma at our clinic. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:00 AM. The clinic is located at 123 Maple Street, Anytown, CA 90210. Please bring your insurance card and a list of any current medications you are taking.\n\nYour patient ID is PV789012. If you need to reschedule or cancel your appointment, please contact the front desk at (555) 123-4567 at least 24 hours in advance. Our primary contact for administrative matters is Mr. David Lee, the Office Manager, whose email is dlee@anytownclinic.org. He can be reached at extension 305. We look forward to seeing you on the scheduled date.\n\nSincerely,\nThe Anytown Clinic Administration\n\ncc: Dr. Anya Sharma, Chief of Medicine",
+      "train_excerpt": "Dear Ms. Eleanor Vance,\n\nThis letter serves as a formal confirmation of your recent appointment with Dr. Alistair Finch at the Sterling Health Clinic. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:00 AM. The clinic is located at 123 Maple Street, Anytown, CA 90210.\n\nWe kindly request that you arrive 15 minutes prior to your scheduled time to complete any necessary paperwork. Please bring your insurance card and a list of any current medications you are taking. If you need to reschedule or cancel your appointment, please contact our office at (555) 123-4567 at least 24 hours in advance. Our administrative assistant, Mr. David Miller, will be available to assist you with this.  Your patient portal username is EVance87.  Should you have any questions before your visit, feel free to email us at info@sterlinghealth.com.\n\nWe look forward to seeing you on October 26, 2023.\n\nSincerely,\nSterling Health Clinic Administration"
+    }
+  ],
+  "limitations": [
+    "Approximate retrieval: verified pair counts are lower bounds, not exhaustive overlap counts.",
+    "Best retrieved scores are not guaranteed true nearest-neighbor scores; zero can mean no candidate retrieved.",
+    "Family counts are connected components of discovered CROSS-SPLIT edges only; they exclude unseen/within-split edges and are not generator-family ground truth.",
+    "Below-threshold candidate scores use 64-bit hashes; hash collisions are possible. Reported positive pairs use exact string shingles.",
+    "No gold labels, entity masking, holdout IDs/examples, test documents or model scores used in output.",
+    "No structural-line or semantic similarity audit performed; substantially rewritten templates can evade word shingles."
+  ]
+}

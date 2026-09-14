@@ -1,0 +1,42 @@
+{
+  "run": "m0-v1",
+  "fitting": "all v1 train",
+  "evaluation": "all v1 dev",
+  "dev_tuning": false,
+  "regex": [
+    [
+      "EMAIL",
+      "(?<![\\w.+-])[\\w.+-]+@[\\w-]+(?:\\.[\\w-]+)+",
+      0.85
+    ],
+    [
+      "PHONE",
+      "(?<!\\w)(?:\\+1[ -]?)?\\(\\d{3}\\)[ -]?\\d{3}-\\d{4}(?!\\d)",
+      0.8
+    ],
+    [
+      "DATE",
+      "\\b(?:January|February|March|April|May|June|July|August|September|October|November|December) \\d{1,2}, \\d{4}\\b|\\b\\d{4}-\\d{2}-\\d{2}\\b",
+      0.8
+    ]
+  ],
+  "known_count": "expected_entity_count",
+  "dictionary_tie": "frequency descending then label alphabetical",
+  "sources": {
+    "output/prepared/v1/train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+    "output/prepared/v1/manifest.json": "89b82c23b3053fc429b2cd6fd8a532c39fcc8758a88af0e4263ffc14b05e3848",
+    "src/run_m0.py": "235cb07a4fb47e6b49349fadac31a4f8fcb08d5af7cedca1e430e59d2b78f9c9",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "src/baseline_probe.py": "39c8a623501e3fb7449d2b6314e94363e6167b042275f93dd5c54b948a48b8f2",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "note/M0_EVALUATION_PROTOCOL.md": "3a4f1759dc631c473b73e5ecf5974d226ef763e40f66c972fa46a3c92de9d7d0",
+    "pyproject.toml": "336ab7b6fdc066f51daa0d86c9da61081e80773483f69194416d885fe588b7ed",
+    "uv.lock": "a8c70b458c27e4cb82cd8aac60d416b35c6ca9c4dfd939dc184b59397b897e8f",
+    ".python-version": "f8237a9fc32a95b709a7ebe37ce43ffe209e90001405f777fc6075d93bce1eb8"
+  },
+  "runtime": {
+    "python": "3.13.2",
+    "pyarrow": "25.0.1"
+  }
+}

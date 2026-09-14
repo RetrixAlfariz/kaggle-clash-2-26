@@ -1,0 +1,11 @@
+{
+  "artifact_byte_identity": {
+    "frozen_config.json": true,
+    "dictionary.parquet": true,
+    "dev_predictions.parquet": true,
+    "error_examples.json": true
+  },
+  "results_identical": true,
+  "source_hashes_identical": true,
+  "elapsed_seconds_can_differ": true
+}

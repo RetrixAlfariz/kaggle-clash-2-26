@@ -1,0 +1,67 @@
+{
+  "passed": true,
+  "v1_manifest_unchanged": true,
+  "artifacts": {
+    "dev.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "holdout.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "metadata_audit_only.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "split_assignments.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "test.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "test_slots.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "train.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    },
+    "weak_pool_not_for_supervised_training.parquet": {
+      "v1_unchanged": true,
+      "hardened_bytes_equal_v1": true
+    }
+  },
+  "unit_tests": {
+    "normal": {
+      "returncode": 0,
+      "output": "test_all_eight_artifacts_required_and_verified (test_prepare_data.PreparationContracts.test_all_eight_artifacts_required_and_verified) ... ok\ntest_boundaries_preserve_whitespace_and_multiline_addresses (test_prepare_data.PreparationContracts.test_boundaries_preserve_whitespace_and_multiline_addresses) ... ok\ntest_deterministic_split_groups_and_historical_exposure (test_prepare_data.PreparationContracts.test_deterministic_split_groups_and_historical_exposure) ... ok\ntest_duplicate_gap_and_metadata_mismatch_fail (test_prepare_data.PreparationContracts.test_duplicate_gap_and_metadata_mismatch_fail) ... ok\ntest_duplicate_group_conflicting_probe_roles_fail (test_prepare_data.PreparationContracts.test_duplicate_group_conflicting_probe_roles_fail) ... ok\ntest_invalid_bounds_label_slice_and_nested_spans_fail (test_prepare_data.PreparationContracts.test_invalid_bounds_label_slice_and_nested_spans_fail) ... ok\ntest_nested_gold_schema_roundtrip (test_prepare_data.PreparationContracts.test_nested_gold_schema_roundtrip) ... ok\ntest_normalization_is_only_a_duplicate_key (test_prepare_data.PreparationContracts.test_normalization_is_only_a_duplicate_key) ... ok\ntest_schema_change_rejected (test_prepare_data.PreparationContracts.test_schema_change_rejected) ... ok\ntest_serialized_faults_rejected (test_prepare_data.PreparationContracts.test_serialized_faults_rejected) ... ok\ntest_shuffled_blank_lines_and_unicode_keep_python_offsets (test_prepare_data.PreparationContracts.test_shuffled_blank_lines_and_unicode_keep_python_offsets) ... ok\ntest_explicit_purposes_and_holdout_gate (test_prepared_loader.PreparedLoaderTests.test_explicit_purposes_and_holdout_gate) ... ok\ntest_fit_purposes_are_denied_for_dev_and_test (test_prepared_loader.PreparedLoaderTests.test_fit_purposes_are_denied_for_dev_and_test) ... ok\ntest_hash_corruption_and_unsafe_purpose_fail (test_prepared_loader.PreparedLoaderTests.test_hash_corruption_and_unsafe_purpose_fail) ... ok\ntest_independent_schema_rejects_manifest_updated_extra_or_wrong_type (test_prepared_loader.PreparedLoaderTests.test_independent_schema_rejects_manifest_updated_extra_or_wrong_type) ... ok\ntest_manifest_count_and_schema_are_checked (test_prepared_loader.PreparedLoaderTests.test_manifest_count_and_schema_are_checked) ... ok\ntest_model_loader_does_not_expose_audit_or_weak_artifacts (test_prepared_loader.PreparedLoaderTests.test_model_loader_does_not_expose_audit_or_weak_artifacts) ... ok\ntest_identical_and_near_duplicate_shingles (test_template_similarity.SimilarityTests.test_identical_and_near_duplicate_shingles) ... ok\ntest_lsh_retrieves_identical_signature (test_template_similarity.SimilarityTests.test_lsh_retrieves_identical_signature) ... ok\ntest_near_duplicate_is_retrieved_and_empty_is_excluded (test_template_similarity.SimilarityTests.test_near_duplicate_is_retrieved_and_empty_is_excluded) ... ok\ntest_threshold_components_are_transitive (test_template_similarity.SimilarityTests.test_threshold_components_are_transitive) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.256s\n\nOK\n"
+    },
+    "optimized": {
+      "returncode": 0,
+      "output": "test_all_eight_artifacts_required_and_verified (test_prepare_data.PreparationContracts.test_all_eight_artifacts_required_and_verified) ... ok\ntest_boundaries_preserve_whitespace_and_multiline_addresses (test_prepare_data.PreparationContracts.test_boundaries_preserve_whitespace_and_multiline_addresses) ... ok\ntest_deterministic_split_groups_and_historical_exposure (test_prepare_data.PreparationContracts.test_deterministic_split_groups_and_historical_exposure) ... ok\ntest_duplicate_gap_and_metadata_mismatch_fail (test_prepare_data.PreparationContracts.test_duplicate_gap_and_metadata_mismatch_fail) ... ok\ntest_duplicate_group_conflicting_probe_roles_fail (test_prepare_data.PreparationContracts.test_duplicate_group_conflicting_probe_roles_fail) ... ok\ntest_invalid_bounds_label_slice_and_nested_spans_fail (test_prepare_data.PreparationContracts.test_invalid_bounds_label_slice_and_nested_spans_fail) ... ok\ntest_nested_gold_schema_roundtrip (test_prepare_data.PreparationContracts.test_nested_gold_schema_roundtrip) ... ok\ntest_normalization_is_only_a_duplicate_key (test_prepare_data.PreparationContracts.test_normalization_is_only_a_duplicate_key) ... ok\ntest_schema_change_rejected (test_prepare_data.PreparationContracts.test_schema_change_rejected) ... ok\ntest_serialized_faults_rejected (test_prepare_data.PreparationContracts.test_serialized_faults_rejected) ... ok\ntest_shuffled_blank_lines_and_unicode_keep_python_offsets (test_prepare_data.PreparationContracts.test_shuffled_blank_lines_and_unicode_keep_python_offsets) ... ok\ntest_explicit_purposes_and_holdout_gate (test_prepared_loader.PreparedLoaderTests.test_explicit_purposes_and_holdout_gate) ... ok\ntest_fit_purposes_are_denied_for_dev_and_test (test_prepared_loader.PreparedLoaderTests.test_fit_purposes_are_denied_for_dev_and_test) ... ok\ntest_hash_corruption_and_unsafe_purpose_fail (test_prepared_loader.PreparedLoaderTests.test_hash_corruption_and_unsafe_purpose_fail) ... ok\ntest_independent_schema_rejects_manifest_updated_extra_or_wrong_type (test_prepared_loader.PreparedLoaderTests.test_independent_schema_rejects_manifest_updated_extra_or_wrong_type) ... ok\ntest_manifest_count_and_schema_are_checked (test_prepared_loader.PreparedLoaderTests.test_manifest_count_and_schema_are_checked) ... ok\ntest_model_loader_does_not_expose_audit_or_weak_artifacts (test_prepared_loader.PreparedLoaderTests.test_model_loader_does_not_expose_audit_or_weak_artifacts) ... ok\ntest_identical_and_near_duplicate_shingles (test_template_similarity.SimilarityTests.test_identical_and_near_duplicate_shingles) ... ok\ntest_lsh_retrieves_identical_signature (test_template_similarity.SimilarityTests.test_lsh_retrieves_identical_signature) ... ok\ntest_near_duplicate_is_retrieved_and_empty_is_excluded (test_template_similarity.SimilarityTests.test_near_duplicate_is_retrieved_and_empty_is_excluded) ... ok\ntest_threshold_components_are_transitive (test_template_similarity.SimilarityTests.test_threshold_components_are_transitive) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 0.301s\n\nOK\n"
+    }
+  },
+  "loader_actual_rows": {
+    "train": 55582,
+    "dev": 6943,
+    "test": 23156,
+    "test_slots": 285318
+  },
+  "default_holdout_blocked": true,
+  "independent_audit_failed_checks": {
+    "audit_v1": 0,
+    "audit_build": 0
+  },
+  "code_hashes": {
+    "src/prepare_data.py": "de3b23ddda58919e9935681eb9067d73bdb31634300888032c33b0b7e501083b",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "src/prepare_data.py.lock": "9a16e4ff6862755e0a0c6ae05416c78901f361808bbadfb3e2faf02ea63a6005",
+    "pyproject.toml": "336ab7b6fdc066f51daa0d86c9da61081e80773483f69194416d885fe588b7ed",
+    "uv.lock": "a8c70b458c27e4cb82cd8aac60d416b35c6ca9c4dfd939dc184b59397b897e8f",
+    ".python-version": "f8237a9fc32a95b709a7ebe37ce43ffe209e90001405f777fc6075d93bce1eb8"
+  }
+}

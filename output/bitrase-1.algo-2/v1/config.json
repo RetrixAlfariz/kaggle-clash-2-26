@@ -1,0 +1,21 @@
+{
+  "experiment": "bitrase-1.algo-2",
+  "parent": "bitrase-1",
+  "method": "LightGBM binary boosted trees from scratch",
+  "pretrained": false,
+  "candidate_pool": "frozen M1 propose",
+  "negative_cap_per_document": 30,
+  "train_document_cap": 12000,
+  "trees": 350,
+  "seed": 2026,
+  "dev_tuning": false,
+  "sources": {
+    "src/run_boosted_candidates.py": "a9571a96caafd5ae132705ec565dad9fbe2fc3caca64859bab6085c24edf0ff4",
+    "src/train_m1.py": "07df4483d9de1a6e8479cec64c31f4533c8c78396a2232a3438e24a67092241b",
+    "src/run_m0.py": "235cb07a4fb47e6b49349fadac31a4f8fcb08d5af7cedca1e430e59d2b78f9c9",
+    "src/slot_decoder.py": "6ba11174b5f12f5fc068038296655a0afb540675e02881ef8867ff23b8eeaef3",
+    "output/m0/v1/dictionary.parquet": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+    "output/prepared/v1/train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432"
+  }
+}

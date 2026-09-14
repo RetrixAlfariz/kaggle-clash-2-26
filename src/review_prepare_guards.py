@@ -1,11 +1,16 @@
 """Small isolated fault fixtures for current builder validation; no data edits."""
 import ast
 import json
+import hashlib
 from pathlib import Path
 from types import SimpleNamespace
 
 ROOT = Path(__file__).resolve().parents[1]
-tree = ast.parse((ROOT / "src/prepare_data.py").read_text())
+source = ROOT / "output/preparation_audit/source_snapshots/prepare_data.py"
+expected = json.loads((ROOT / "output/prepared/v1/manifest.json").read_text())["sources"]["src/prepare_data.py"]
+if hashlib.sha256(source.read_bytes()).hexdigest() != expected:
+    raise ValueError("Historical builder snapshot hash mismatch")
+tree = ast.parse(source.read_text())
 main = next(n for n in tree.body if isinstance(n, ast.FunctionDef) and n.name == "main")
 start = next(i for i, n in enumerate(main.body) if isinstance(n, ast.For) and isinstance(n.target, ast.Name) and n.target.id == "part" and any(isinstance(x, ast.Name) and x.id == "loaded" for x in ast.walk(n)))
 end = next(i for i in range(start + 1, len(main.body)) if isinstance(main.body[i], ast.For))
@@ -25,7 +30,7 @@ def run_case(loaded_gold, optimize):
 
 
 result = {
-    "scope": "Extracted actual readback block, synthetic in-memory parquet reader; no actual artifact mutated.",
+    "scope": "Historical v1 builder snapshot verified against v1 manifest; synthetic reader. Does not describe the hardened current builder.",
     "assert_count_in_builder": sum(isinstance(n, ast.Assert) for n in ast.walk(tree)),
     "assert_count_compiled_optimized": "Python compile(optimize=1) removes assert statements",
     "missing_all_gold_rows_normal_mode": run_case([], 0),

@@ -1,0 +1,14 @@
+{
+  "submission": "E:\\Developen\\Github\\kaggle-clash-2-26\\output\\submissions\\m0\\submission.csv",
+  "csv_sha256": "e2dad6cc569645d2792093bc14c7d28803ea8cb5d549895f932368f5ebcd8cbc",
+  "dictionary_sha256": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+  "sample_sha256": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584",
+  "rows": 285318,
+  "expected_rows": 285318,
+  "documents": 23156,
+  "expected_documents": 23156,
+  "errors": [],
+  "ready": true,
+  "kaggle_cli_version": "Kaggle CLI 2.2.4",
+  "kaggle_submissions_status": "unavailable: Kaggle CLI 2.2.4 with Windows truststore reported authentication required; legacy kaggle 1.6.17 with same credentials returned 401 Unauthorized; no submission was sent"
+}

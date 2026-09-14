@@ -1,0 +1,18 @@
+{
+  "predictions": "E:\\Developen\\Github\\kaggle-clash-2-26\\output\\bitrase-1.algo-5\\text_only_v2\\dev_predictions.parquet",
+  "prediction_sha256": "70bdc280624164cab63b80c134aec0093699e1c0d6129d935589785ac2ea89f3",
+  "documents": 6943,
+  "metrics": {
+    "slot_accuracy": 0.776366363551139,
+    "entity_f1": 0.914467516640105,
+    "boundary_f1": 0.9184752038998781,
+    "slot_correct": 66252,
+    "entity_correct": 78037,
+    "gold": 85336,
+    "predicted": 85336,
+    "exact_documents": 3340,
+    "count_correct_documents": 6943
+  },
+  "errors": [],
+  "verified": true
+}

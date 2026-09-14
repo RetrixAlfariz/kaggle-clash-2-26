@@ -1,0 +1,50 @@
+{
+  "artifact_dir": "output/bitrase-1.algo-1/v1",
+  "independent_checks": {
+    "slot_mbr": {
+      "documents": 6943,
+      "gold": 85336,
+      "predicted": 85336,
+      "slot_correct": 61700,
+      "slot_accuracy": 0.7230242804912347,
+      "entity_correct": 75891,
+      "entity_exact_f1": 0.8893198650042187,
+      "boundary_correct": 76242,
+      "boundary_exact_f1": 0.8934330177181963,
+      "errors": [],
+      "matches_report": {
+        "slot_accuracy": true,
+        "entity_f1": true
+      }
+    },
+    "map": {
+      "documents": 6943,
+      "gold": 85336,
+      "predicted": 85336,
+      "slot_correct": 60979,
+      "slot_accuracy": 0.7145753257710696,
+      "entity_correct": 76138,
+      "entity_exact_f1": 0.8922143058029437,
+      "boundary_correct": 76486,
+      "boundary_exact_f1": 0.8962923033655198,
+      "errors": [],
+      "matches_report": {
+        "slot_accuracy": true,
+        "entity_f1": true
+      }
+    }
+  },
+  "reported": {
+    "slot_mbr": {
+      "slot_accuracy": 0.7230242804912347,
+      "entity_f1": 0.8893198650042187,
+      "candidate_recall": 0.9589153463954252
+    },
+    "map": {
+      "slot_accuracy": 0.7145753257710696,
+      "entity_f1": 0.8922143058029437,
+      "candidate_recall": 0.9589153463954252
+    }
+  },
+  "status": "passed"
+}

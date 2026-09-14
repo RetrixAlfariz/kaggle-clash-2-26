@@ -1,0 +1,153 @@
+{
+  "metric_mismatches": [],
+  "dev_documents_checked": 6943,
+  "recomputed_counts": {
+    "known_count": {
+      "gold": 85336,
+      "predicted": 85336,
+      "entity_correct": 73237,
+      "slot_correct": 54617,
+      "boundary_correct": 73595
+    },
+    "unconstrained": {
+      "gold": 85336,
+      "predicted": 78492,
+      "entity_correct": 69976,
+      "slot_correct": 37537,
+      "boundary_correct": 70001
+    }
+  },
+  "independent_candidate_found_by_label": {
+    "NAME": 25506,
+    "DATE": 16111,
+    "PHONE": 9198,
+    "EMAIL": 9670,
+    "ADDRESS": 7533,
+    "JOB_TITLE": 7953,
+    "USERNAME": 4845
+  },
+  "rank_shift_predicted_index_minus_gold_index": {
+    "-3": 8,
+    "-2": 308,
+    "-1": 4922,
+    "1": 12081,
+    "2": 1204,
+    "3": 92,
+    "4": 4,
+    "5": 1
+  },
+  "boundary_diagnostics": {
+    "USERNAME": {
+      "prediction_inside_gold": 579,
+      "prediction_contains_gold": 27
+    },
+    "NAME": {
+      "prediction_inside_gold": 3541,
+      "title_only_difference": 3572,
+      "prediction_contains_gold": 274,
+      "crossing_boundaries": 11
+    },
+    "ADDRESS": {
+      "prediction_inside_gold": 346,
+      "prediction_contains_gold": 472
+    },
+    "PHONE": {
+      "prediction_inside_gold": 104,
+      "prediction_contains_gold": 37
+    },
+    "JOB_TITLE": {
+      "prediction_inside_gold": 80,
+      "prediction_contains_gold": 29
+    },
+    "DATE": {
+      "prediction_inside_gold": 362,
+      "prediction_contains_gold": 60
+    },
+    "EMAIL": {
+      "prediction_inside_gold": 37,
+      "prediction_contains_gold": 20
+    }
+  },
+  "title_only_examples": [
+    {
+      "document_id": "DOC_000003",
+      "gold": "Mr. Robert Johnson",
+      "predicted": "Robert Johnson",
+      "gold_span": [
+        87,
+        105,
+        "NAME"
+      ],
+      "predicted_span": [
+        91,
+        105,
+        "NAME"
+      ]
+    },
+    {
+      "document_id": "DOC_000038",
+      "gold": "Mr. David Miller",
+      "predicted": "David Miller",
+      "gold_span": [
+        192,
+        208,
+        "NAME"
+      ],
+      "predicted_span": [
+        196,
+        208,
+        "NAME"
+      ]
+    },
+    {
+      "document_id": "DOC_000044",
+      "gold": "Mr. David Chen",
+      "predicted": "David Chen",
+      "gold_span": [
+        18,
+        32,
+        "NAME"
+      ],
+      "predicted_span": [
+        22,
+        32,
+        "NAME"
+      ]
+    },
+    {
+      "document_id": "DOC_000044",
+      "gold": "Mr. David Chen",
+      "predicted": "David Chen",
+      "gold_span": [
+        556,
+        570,
+        "NAME"
+      ],
+      "predicted_span": [
+        560,
+        570,
+        "NAME"
+      ]
+    },
+    {
+      "document_id": "DOC_000044",
+      "gold": "Ms. Emily White",
+      "predicted": "Emily White",
+      "gold_span": [
+        1404,
+        1419,
+        "NAME"
+      ],
+      "predicted_span": [
+        1408,
+        1419,
+        "NAME"
+      ]
+    }
+  ],
+  "definitions": {
+    "boundary_representative": "For same-label overlaps with no exact predicted triple/boundaries, choose largest character intersection then tuple order. Diagnostics can be many-to-one.",
+    "title_only_difference": "^(?:Mr|Mrs|Ms|Miss|Dr|Prof|Mx)\\.?\\s+",
+    "candidate_check": "Direct dictionary lookup at gold substring plus independent boundary predicate OR exact regex match. Does not call trie matcher."
+  }
+}

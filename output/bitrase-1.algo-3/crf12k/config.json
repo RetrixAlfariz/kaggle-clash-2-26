@@ -1,0 +1,29 @@
+{
+  "experiment": "bitrase-1.algo-3",
+  "method": "linear-chain BIO CRF from scratch",
+  "pretrained": false,
+  "external_data": false,
+  "train_docs_requested": 12000,
+  "seed": 2026,
+  "params": {
+    "c1": 0.1,
+    "c2": 0.1,
+    "max_iterations": 60,
+    "feature.possible_transitions": true,
+    "feature.minfreq": 2.0
+  },
+  "versions": {
+    "pyarrow": "25.0.1",
+    "numpy": "2.5.3",
+    "python-crfsuite": "0.9.12"
+  },
+  "sources": {
+    "src/sequence_crf.py": "5284a8a99850b1eaf0582668f81d14acc84200265398a76453a08fd586610013",
+    "src/run_sequence_crf.py": "177b594fb7b45449e8f13bdbc06208df538231d9b8b723a13d708983c9be6b51",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "output/prepared/v1/train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+    "note/bitrase-1.algo-3/protocol.md": "ee0e1fc6e085da154f50316b8b6dc83fd854aee38247b49801e4053b7b4d8176"
+  }
+}

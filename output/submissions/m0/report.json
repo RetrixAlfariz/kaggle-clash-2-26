@@ -1,0 +1,14 @@
+{
+  "run": "m0-v1-test-submission",
+  "test_documents": 23156,
+  "expected_rows": 285318,
+  "decoded_rows": 285318,
+  "blocked_document_count": 0,
+  "blocked_documents": [],
+  "dictionary_sha256": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+  "test_manifest_sha256": "89b82c23b3053fc429b2cd6fd8a532c39fcc8758a88af0e4263ffc14b05e3848",
+  "model": "frozen output/m0/v1/dictionary.parquet + run_m0 candidates_for + baseline_probe.decode; no refit",
+  "holdout_read": false,
+  "csv_sha256": "e2dad6cc569645d2792093bc14c7d28803ea8cb5d549895f932368f5ebcd8cbc",
+  "csv_rows": 285318
+}

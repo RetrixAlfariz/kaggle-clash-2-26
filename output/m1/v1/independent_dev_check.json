@@ -1,0 +1,34 @@
+{
+  "artifact": "output/m1/v1/dev_predictions.parquet",
+  "independent": {
+    "documents": 6943,
+    "gold": 85336,
+    "predicted": 85336,
+    "slot_correct": 60975,
+    "slot_accuracy": 0.7145284522358676,
+    "entity_exact_f1": 0.8921439955001407,
+    "boundary_exact_f1": 0.8962337114465173,
+    "entity_correct": 76132,
+    "boundary_correct": 76481,
+    "errors": [],
+    "report_match": {
+      "slot_accuracy": true,
+      "entity_micro_f1": true
+    }
+  },
+  "reported": {
+    "slot_accuracy": 0.7145284522358676,
+    "entity_micro_f1": 0.8921439955001407,
+    "candidate_recall": 0.9589153463954252
+  },
+  "m0_known_count": {
+    "slot_accuracy": 0.640022968032249,
+    "entity_micro_f1": 0.8582192743976751,
+    "candidate_recall": 0.9470329052217118
+  },
+  "comparison_to_m0": {
+    "slot_accuracy_delta": 0.07450548420361858,
+    "entity_micro_f1_delta": 0.03392472110246558,
+    "candidate_recall_delta": 0.011882441173713398
+  }
+}

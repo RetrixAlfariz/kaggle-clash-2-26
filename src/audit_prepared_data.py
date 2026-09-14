@@ -4,6 +4,7 @@
 # ///
 """Independent full readback audit; never imports preparation implementation."""
 import collections
+import argparse
 import csv
 import hashlib
 import json
@@ -32,6 +33,12 @@ def normalized(text):
 
 
 def main():
+    global BUILD, OUT
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--build", type=Path, default=BUILD)
+    parser.add_argument("--output", type=Path, default=ROOT / "output/hardening_validation/audit_v1")
+    args = parser.parse_args()
+    BUILD, OUT = args.build.resolve(), args.output.resolve()
     OUT.mkdir(parents=True, exist_ok=True)
     checks = []
 
@@ -39,7 +46,16 @@ def main():
         checks.append({"name": name, "failed_units": failures, "scoped_units": units})
 
     manifest = json.loads((BUILD / "manifest.json").read_text())
-    check("source_hashes", sum(sha(ROOT / p) != h for p, h in manifest["sources"].items()), len(manifest["sources"]))
+    source_failures, historical_sources = 0, []
+    for p, expected_hash in manifest["sources"].items():
+        if sha(ROOT / p) == expected_hash:
+            continue
+        snapshot = ROOT / "output/preparation_audit/source_snapshots" / Path(p).name
+        if p == "src/prepare_data.py" and snapshot.exists() and sha(snapshot) == expected_hash:
+            historical_sources.append({"source": p, "verified_snapshot": str(snapshot.relative_to(ROOT)), "current_source_changed": True})
+        else:
+            source_failures += 1
+    check("source_hashes_or_verified_historical_snapshot", source_failures, len(manifest["sources"]))
     check("artifact_hashes", sum(sha(BUILD / p) != v["sha256"] for p, v in manifest["files"].items()), len(manifest["files"]))
     assignment_rows = pq.read_table(BUILD / "split_assignments.parquet").to_pylist()
     assignments = {r["document_id"]: r for r in assignment_rows}
@@ -171,6 +187,8 @@ def main():
     if (rebuilt / "manifest.json").exists():
         check("fresh_rebuild_parquet_bytes", sum(sha(rebuilt / p) != sha(BUILD / p) for p in manifest["files"]), len(manifest["files"]))
     result = {"created_at": datetime.now(timezone.utc).isoformat(), "audit_code_sha256": sha(Path(__file__)), "build_manifest_sha256": sha(BUILD / "manifest.json"), "checks": checks, "failed_checks": sum(c["failed_units"] > 0 for c in checks), "distributions": distributions, "weak_overlap": dict(overlap), "limits": ["Saved reviewed IDs cannot reconstruct unrecorded prior human exposure.", "No semantic near-duplicate detection, tokenizer validation, or predictive modelling."]}
+    result["historical_source_snapshots"] = historical_sources
+    result["build"] = str(BUILD.relative_to(ROOT)) if BUILD.is_relative_to(ROOT) else str(BUILD)
     (OUT / "data_checks.json").write_text(json.dumps(result, indent=2), encoding="utf-8")
     print(json.dumps({"checks": len(checks), "failed_checks": result["failed_checks"], "distributions": {k: {"documents": v["documents"], "entities": v["entities"]} for k, v in distributions.items()}, "weak_overlap": dict(overlap)}, indent=2))
     if result["failed_checks"]:

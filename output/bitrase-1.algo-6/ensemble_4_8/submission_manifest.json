@@ -1,0 +1,17 @@
+{
+  "rows": 285318,
+  "documents": 23156,
+  "epoch": null,
+  "ensemble": true,
+  "sha256": "5bd13ceb311db06cc779ce574c7be5b0bde99ff9b1e61c034df9e0430d5a6206",
+  "checkpoint_hashes": {
+    "4": "dfe225b3645eaacee30005ec49addea0f47b5bb3bc00e6885ed817592bcd4924",
+    "8": "005b2934b292a9b513c7296022f10f3bcdcc6a31fa844ab6e613b1dde20ae9ee"
+  },
+  "test_sha256": "a7104443eb01e50ed01613f12668ad410e9c77e97a9e48e1ecda4e1e2744ee95",
+  "slots_sha256": "30054e78155381ce6ff3a42ea0ff203f0c4413eba9208e6e2f3fa882d982c77a",
+  "inference_script_sha256": "f19c185fb6b87ffcf3b81b4765a911ea53b88915db64d784734ab1252faef646",
+  "pretrained": false,
+  "uploaded": false,
+  "seconds": 133.06979909999063
+}

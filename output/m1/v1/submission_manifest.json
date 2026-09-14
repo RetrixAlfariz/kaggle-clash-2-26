@@ -1,0 +1,8 @@
+{
+  "rows": 285318,
+  "sha256": "795acaf78cf60a2a91549afe5d10917c03a5c7dd436d1e7eeaa955b5fdb0b8e8",
+  "model_sha256": "3b744c3c8bad6070f5831aa30f808891dbbf8c9f5a9f69200979feae39f09d61",
+  "test_hash": "a7104443eb01e50ed01613f12668ad410e9c77e97a9e48e1ecda4e1e2744ee95",
+  "slots_hash": "30054e78155381ce6ff3a42ea0ff203f0c4413eba9208e6e2f3fa882d982c77a",
+  "pretrained": false
+}

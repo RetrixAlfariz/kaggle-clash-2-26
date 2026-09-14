@@ -1,0 +1,8 @@
+{
+  "examples_checked": 8,
+  "example_score_mismatches": 0,
+  "arithmetic_valid": true,
+  "persisted_holdout_id_count": 0,
+  "source_hashes_valid": true,
+  "code_hash_valid": true
+}

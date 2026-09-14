@@ -1,0 +1,7 @@
+{
+  "purpose": "in-sample diagnosis only, not generalization",
+  "documents": 256,
+  "gold": 3137,
+  "slot_accuracy": 0.8291361173095314,
+  "entity_f1": 0.9190309212623525
+}

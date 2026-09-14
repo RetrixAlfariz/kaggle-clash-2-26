@@ -1,0 +1,220 @@
+{
+  "epoch": 4,
+  "train_docs": 4000,
+  "train_unaligned_entities": 9,
+  "training": [
+    {
+      "epoch": 1,
+      "nll": 6.948523651123047,
+      "seconds": 6.68334099999629
+    },
+    {
+      "epoch": 2,
+      "nll": 6.718474609375,
+      "seconds": 7.104683199999272
+    },
+    {
+      "epoch": 3,
+      "nll": 6.69113314819336,
+      "seconds": 6.424455499989563
+    }
+  ],
+  "dev": {
+    "known_k": {
+      "counts": {
+        "documents": 6943,
+        "gold": 85336,
+        "predicted": 85336,
+        "entity_correct": 78516,
+        "boundary_correct": 78710,
+        "slot_correct": 68326,
+        "exact_documents": 3407,
+        "count_correct_documents": 6943,
+        "under_count_documents": 0,
+        "over_count_documents": 0,
+        "missing_count": 0,
+        "excess_count": 0
+      },
+      "slot_accuracy": 0.800670291553389,
+      "entity_micro": {
+        "precision": 0.9200806224805474,
+        "recall": 0.9200806224805474,
+        "f1": 0.9200806224805474
+      },
+      "boundary_micro": {
+        "precision": 0.9223539889378457,
+        "recall": 0.9223539889378457,
+        "f1": 0.9223539889378457
+      },
+      "exact_document_rate": 0.4907100676940804,
+      "count_correct_document_rate": 1.0,
+      "per_label": {
+        "NAME": {
+          "predicted": 25887,
+          "gold": 26009,
+          "correct": 23308,
+          "slot_correct": 20486,
+          "precision": 0.9003747054506123,
+          "recall": 0.8961513322311507,
+          "f1": 0.8982580545706799,
+          "slot_accuracy": 0.7876504286977585
+        },
+        "DATE": {
+          "predicted": 16349,
+          "gold": 16239,
+          "correct": 15329,
+          "slot_correct": 13285,
+          "precision": 0.9376108630497278,
+          "recall": 0.9439620666297186,
+          "f1": 0.940775745673254,
+          "slot_accuracy": 0.818092247059548
+        },
+        "EMAIL": {
+          "predicted": 9720,
+          "gold": 9723,
+          "correct": 9595,
+          "slot_correct": 8159,
+          "precision": 0.9871399176954733,
+          "recall": 0.9868353388871748,
+          "f1": 0.9869876047934989,
+          "slot_accuracy": 0.8391442970276664
+        },
+        "PHONE": {
+          "predicted": 9325,
+          "gold": 9300,
+          "correct": 9126,
+          "slot_correct": 7665,
+          "precision": 0.9786595174262734,
+          "recall": 0.9812903225806452,
+          "f1": 0.979973154362416,
+          "slot_accuracy": 0.8241935483870968
+        },
+        "ADDRESS": {
+          "predicted": 8210,
+          "gold": 8226,
+          "correct": 7404,
+          "slot_correct": 6342,
+          "precision": 0.9018270401948842,
+          "recall": 0.900072939460248,
+          "f1": 0.9009491360428328,
+          "slot_accuracy": 0.7709700948212983
+        },
+        "USERNAME": {
+          "predicted": 7707,
+          "gold": 7642,
+          "correct": 6431,
+          "slot_correct": 5584,
+          "precision": 0.834436226806799,
+          "recall": 0.8415336299398063,
+          "f1": 0.837969900319239,
+          "slot_accuracy": 0.730698769955509
+        },
+        "JOB_TITLE": {
+          "predicted": 8138,
+          "gold": 8197,
+          "correct": 7323,
+          "slot_correct": 6805,
+          "precision": 0.8998525436225117,
+          "recall": 0.8933756252287423,
+          "f1": 0.8966023875114785,
+          "slot_accuracy": 0.8301817738196902
+        }
+      },
+      "output_stage": {
+        "correct_slot": 68326,
+        "overlap_same_label": 3741,
+        "no_overlapping_prediction": 2579,
+        "exact_span_wrong_slot": 10190,
+        "same_boundary_wrong_label": 194,
+        "overlap_wrong_label": 306
+      },
+      "output_stage_by_label": {
+        "NAME": {
+          "correct_slot": 20486,
+          "no_overlapping_prediction": 593,
+          "exact_span_wrong_slot": 2822,
+          "overlap_same_label": 1914,
+          "overlap_wrong_label": 175,
+          "same_boundary_wrong_label": 19
+        },
+        "DATE": {
+          "correct_slot": 13285,
+          "exact_span_wrong_slot": 2044,
+          "overlap_same_label": 457,
+          "no_overlapping_prediction": 413,
+          "same_boundary_wrong_label": 31,
+          "overlap_wrong_label": 9
+        },
+        "PHONE": {
+          "correct_slot": 7665,
+          "exact_span_wrong_slot": 1461,
+          "no_overlapping_prediction": 57,
+          "overlap_same_label": 103,
+          "same_boundary_wrong_label": 7,
+          "overlap_wrong_label": 7
+        },
+        "EMAIL": {
+          "correct_slot": 8159,
+          "exact_span_wrong_slot": 1436,
+          "same_boundary_wrong_label": 26,
+          "overlap_same_label": 58,
+          "no_overlapping_prediction": 38,
+          "overlap_wrong_label": 6
+        },
+        "ADDRESS": {
+          "correct_slot": 6342,
+          "overlap_same_label": 667,
+          "exact_span_wrong_slot": 1062,
+          "no_overlapping_prediction": 122,
+          "overlap_wrong_label": 9,
+          "same_boundary_wrong_label": 24
+        },
+        "JOB_TITLE": {
+          "correct_slot": 6805,
+          "no_overlapping_prediction": 664,
+          "overlap_same_label": 170,
+          "exact_span_wrong_slot": 518,
+          "same_boundary_wrong_label": 11,
+          "overlap_wrong_label": 29
+        },
+        "USERNAME": {
+          "correct_slot": 5584,
+          "exact_span_wrong_slot": 847,
+          "no_overlapping_prediction": 692,
+          "overlap_same_label": 372,
+          "overlap_wrong_label": 71,
+          "same_boundary_wrong_label": 76
+        }
+      },
+      "exact_boundary_label_confusion": {
+        "NAME->NAME": 23308,
+        "DATE->DATE": 15329,
+        "PHONE->PHONE": 9126,
+        "EMAIL->EMAIL": 9595,
+        "ADDRESS->ADDRESS": 7404,
+        "JOB_TITLE->JOB_TITLE": 7323,
+        "USERNAME->USERNAME": 6431,
+        "EMAIL->USERNAME": 26,
+        "JOB_TITLE->NAME": 7,
+        "USERNAME->NAME": 62,
+        "DATE->USERNAME": 30,
+        "NAME->USERNAME": 19,
+        "PHONE->USERNAME": 7,
+        "ADDRESS->USERNAME": 8,
+        "USERNAME->JOB_TITLE": 1,
+        "USERNAME->PHONE": 6,
+        "JOB_TITLE->USERNAME": 3,
+        "ADDRESS->NAME": 14,
+        "USERNAME->DATE": 1,
+        "USERNAME->EMAIL": 6,
+        "ADDRESS->PHONE": 2,
+        "DATE->JOB_TITLE": 1,
+        "JOB_TITLE->ADDRESS": 1
+      }
+    }
+  },
+  "seconds": 91.60623099999793,
+  "transition_sha256": "f5f8a632ca20c73c579bf13ca5b4bc48a66fb14a4bdd150c393d260246057394",
+  "prediction_sha256": "6871356924cd31ee3b37a8bc1701121fd1f814785d7395999c0ac0940013646a",
+  "pretrained": false
+}

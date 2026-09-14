@@ -1,0 +1,78 @@
+{
+  "scope": {
+    "train_documents": 55582,
+    "name_honorific_observations": 135158,
+    "unclassified_name_spans": 73840
+  },
+  "method": {
+    "included": "NAME span starts with title plus optional period and whitespace",
+    "excluded": "immediately preceding text ends with title plus optional period and whitespace",
+    "titles": [
+      "Mr",
+      "Mrs",
+      "Ms",
+      "Miss",
+      "Dr",
+      "Prof",
+      "Mx"
+    ],
+    "document_consistency_denominator": "documents with at least 2 classified honorific observations",
+    "majority_policy_disagreement": "observations opposite per-document inclusion majority; ties resolve included"
+  },
+  "title_counts": {
+    "included": {
+      "Mr": 12883,
+      "Dr": 14156,
+      "Ms": 8060,
+      "Mrs": 182
+    },
+    "excluded": {
+      "Mr": 45651,
+      "Dr": 10455,
+      "Ms": 43532,
+      "Mrs": 238,
+      "Miss": 1
+    }
+  },
+  "document_consistency": {
+    "documents_ge2": 39334,
+    "all_included": 7448,
+    "all_excluded": 29873,
+    "mixed": 2013,
+    "majority_policy_disagreements": 2332
+  },
+  "per_title_document_consistency": {
+    "Mr": {
+      "documents_ge2": 14533,
+      "all_included": 3019,
+      "all_excluded": 11360,
+      "mixed": 154
+    },
+    "Mrs": {
+      "documents_ge2": 24,
+      "all_included": 16,
+      "all_excluded": 8,
+      "mixed": 0
+    },
+    "Ms": {
+      "documents_ge2": 12265,
+      "all_included": 1803,
+      "all_excluded": 10322,
+      "mixed": 140
+    },
+    "Miss": {},
+    "Dr": {
+      "documents_ge2": 6848,
+      "all_included": 3906,
+      "all_excluded": 2810,
+      "mixed": 132
+    },
+    "Prof": {},
+    "Mx": {}
+  },
+  "caveats": [
+    "Train-only descriptive audit; no dev/test/holdout access.",
+    "Excluded classification is conservative and does not infer an excluded title when intervening punctuation/text exists.",
+    "Mixed documents may reflect legitimate context or title ambiguity; this does not prove a global annotation policy."
+  ]
+}

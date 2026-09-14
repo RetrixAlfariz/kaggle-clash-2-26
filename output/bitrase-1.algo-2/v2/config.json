@@ -1,0 +1,37 @@
+{
+  "experiment": "bitrase-1.algo-2",
+  "run": "v2",
+  "pretrained": false,
+  "params": {
+    "n_estimators": 500,
+    "learning_rate": 0.06,
+    "num_leaves": 63,
+    "max_depth": -1,
+    "min_child_samples": 40,
+    "colsample_bytree": 0.9,
+    "reg_lambda": 2.0,
+    "cat_smooth": 10.0,
+    "max_cat_threshold": 32,
+    "random_state": 2026,
+    "n_jobs": 8,
+    "verbosity": -1
+  },
+  "negative_cap": 40,
+  "sampling": "all positives; deterministic negatives with inverse inclusion probability sample weights",
+  "sources": {
+    "src/train_m1.py": "07df4483d9de1a6e8479cec64c31f4533c8c78396a2232a3438e24a67092241b",
+    "src/train_m1.py.lock": "38fe13f787bf4c8bf896cc50916d7b07953164f729bf98bfee55a4c68065b467",
+    "src/run_m0.py": "235cb07a4fb47e6b49349fadac31a4f8fcb08d5af7cedca1e430e59d2b78f9c9",
+    "src/baseline_probe.py": "39c8a623501e3fb7449d2b6314e94363e6167b042275f93dd5c54b948a48b8f2",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "src/submit_m0.py": "884d6489947ba877f6868eee11e77402746aadb8d1384fc33fe17d63cad4b67a",
+    "output/m0/v1/dictionary.parquet": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+    "output/prepared/v1/train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+    "note/M1_PROTOCOL.md": "d3b9787527d86f7c9c97efb7eae860aeee602603c70ffcca6340d4b84a61e37b",
+    "src/run_boosted_v2.py": "789883259e57b1023a9fc621abf03350f30f33484edecb6cbbe4a25092a73394",
+    "src/slot_decoder.py": "6ba11174b5f12f5fc068038296655a0afb540675e02881ef8867ff23b8eeaef3",
+    "note/bitrase-1.algo-2/protocol_v2.md": "8e8725931d3ce8d6bb2a14165c13abc8c83711a31dc19a800498f782aa6c8cf5"
+  }
+}

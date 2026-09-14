@@ -1,0 +1,13 @@
+{
+  "experiment": "bitrase-1.algo-1",
+  "decoder": "slot_mbr",
+  "rows": 285318,
+  "documents": 23156,
+  "sha256": "702c009f73c2411c2c891cf3ce06380454ee1379bbee3d48cee357b16ee2bb3e",
+  "parent_model_sha256": "3b744c3c8bad6070f5831aa30f808891dbbf8c9f5a9f69200979feae39f09d61",
+  "test_sha256": "a7104443eb01e50ed01613f12668ad410e9c77e97a9e48e1ecda4e1e2744ee95",
+  "slots_sha256": "30054e78155381ce6ff3a42ea0ff203f0c4413eba9208e6e2f3fa882d982c77a",
+  "pretrained": false,
+  "uploaded": false,
+  "upload_owner": "Vian"
+}

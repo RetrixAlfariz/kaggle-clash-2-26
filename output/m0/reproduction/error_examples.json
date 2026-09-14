@@ -1,0 +1,1935 @@
+[
+  {
+    "document_id": "DOC_000003",
+    "gold_slot": 1,
+    "gold": [
+      66,
+      80,
+      "USERNAME"
+    ],
+    "candidate_category": "overlap_same_label",
+    "output_category": "overlap_same_label",
+    "gold_text": "rjohnson_prime",
+    "context_start": 0,
+    "context": "Subject: Important Update and Next Steps Regarding Your Account - rjohnson_prime\n\nDear Mr. Robert Johnson,\n\nI hope this email finds you well.\n\nThis correspondence is to provide an ",
+    "predicted_at_gold_slot": [
+      66,
+      74,
+      "USERNAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 66,
+        "end": 74,
+        "label": "USERNAME"
+      },
+      {
+        "start": 91,
+        "end": 105,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 66,
+        "end": 74,
+        "label": "USERNAME",
+        "score": 0.2730627306273063
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 87,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.20369104579630895
+      },
+      {
+        "start": 91,
+        "end": 97,
+        "label": "NAME",
+        "score": 0.0003864883667001623
+      },
+      {
+        "start": 91,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.8340994567488508
+      },
+      {
+        "start": 98,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.0042997542997543
+      },
+      {
+        "start": 120,
+        "end": 125,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000003",
+    "gold_slot": 2,
+    "gold": [
+      87,
+      105,
+      "NAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "overlap_same_label",
+    "gold_text": "Mr. Robert Johnson",
+    "context_start": 0,
+    "context": "Subject: Important Update and Next Steps Regarding Your Account - rjohnson_prime\n\nDear Mr. Robert Johnson,\n\nI hope this email finds you well.\n\nThis correspondence is to provide an important update concerni",
+    "predicted_at_gold_slot": [
+      91,
+      105,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 66,
+        "end": 74,
+        "label": "USERNAME"
+      },
+      {
+        "start": 91,
+        "end": 105,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 66,
+        "end": 74,
+        "label": "USERNAME",
+        "score": 0.2730627306273063
+      },
+      {
+        "start": 87,
+        "end": 90,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 87,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.20369104579630895
+      },
+      {
+        "start": 91,
+        "end": 97,
+        "label": "NAME",
+        "score": 0.0003864883667001623
+      },
+      {
+        "start": 91,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.8340994567488508
+      },
+      {
+        "start": 98,
+        "end": 105,
+        "label": "NAME",
+        "score": 0.0042997542997543
+      },
+      {
+        "start": 120,
+        "end": 125,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000003",
+    "gold_slot": 3,
+    "gold": [
+      223,
+      237,
+      "USERNAME"
+    ],
+    "candidate_category": "overlap_same_label",
+    "output_category": "overlap_same_label",
+    "gold_text": "rjohnson_prime",
+    "context_start": 123,
+    "context": "il finds you well.\n\nThis correspondence is to provide an important update concerning your account, `rjohnson_prime`, following our recent discussions and the submission of your updated documentation. We are pleased",
+    "predicted_at_gold_slot": [
+      223,
+      231,
+      "USERNAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 223,
+        "end": 231,
+        "label": "USERNAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 120,
+        "end": 125,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 208,
+        "end": 212,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 223,
+        "end": 231,
+        "label": "USERNAME",
+        "score": 0.2730627306273063
+      },
+      {
+        "start": 295,
+        "end": 299,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000038",
+    "gold_slot": 2,
+    "gold": [
+      192,
+      208,
+      "NAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "overlap_same_label",
+    "gold_text": "Mr. David Miller",
+    "context_start": 92,
+    "context": "this email finds you well.\n\nThis email serves as an urgent update regarding the ongoing project for Mr. David Miller, specifically Account #K12345. We've encountered a critical bottleneck with the recent data migrati",
+    "predicted_at_gold_slot": [
+      196,
+      208,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 196,
+        "end": 208,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 97,
+        "end": 102,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 125,
+        "end": 130,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 192,
+        "end": 195,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 192,
+        "end": 208,
+        "label": "NAME",
+        "score": 0.13916117628153624
+      },
+      {
+        "start": 196,
+        "end": 201,
+        "label": "NAME",
+        "score": 0.0002631578947368421
+      },
+      {
+        "start": 196,
+        "end": 208,
+        "label": "NAME",
+        "score": 0.8679910661807922
+      },
+      {
+        "start": 202,
+        "end": 208,
+        "label": "NAME",
+        "score": 0.0003337922977427296
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 4,
+    "gold": [
+      139,
+      147,
+      "NAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "no_overlapping_prediction",
+    "gold_text": "Mr. Chen",
+    "context_start": 39,
+    "context": "ple Lane\nSpringfield, IL 62704\n\nSubject: Urgent Notification Regarding Data Security Incident\n\nDear Mr. Chen,\n\nWe are writing to inform you of a recent data security incident that may have involved some of yo",
+    "predicted_at_gold_slot": [
+      275,
+      291,
+      "DATE"
+    ],
+    "local_predictions": [
+      {
+        "start": 48,
+        "end": 69,
+        "label": "ADDRESS"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 48,
+        "end": 59,
+        "label": "ADDRESS",
+        "score": 0.021333333333333333
+      },
+      {
+        "start": 48,
+        "end": 63,
+        "label": "ADDRESS",
+        "score": 0.0036515388628064684
+      },
+      {
+        "start": 48,
+        "end": 69,
+        "label": "ADDRESS",
+        "score": 0.10650887573964497
+      },
+      {
+        "start": 61,
+        "end": 63,
+        "label": "ADDRESS",
+        "score": 0.004616030214015947
+      },
+      {
+        "start": 61,
+        "end": 69,
+        "label": "ADDRESS",
+        "score": 0.017094017094017096
+      },
+      {
+        "start": 64,
+        "end": 69,
+        "label": "ADDRESS",
+        "score": 0.0046022353714661405
+      },
+      {
+        "start": 139,
+        "end": 142,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 139,
+        "end": 147,
+        "label": "NAME",
+        "score": 0.024935826916024934
+      },
+      {
+        "start": 143,
+        "end": 147,
+        "label": "NAME",
+        "score": 0.0003191437128688565
+      },
+      {
+        "start": 245,
+        "end": 249,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 5,
+    "gold": [
+      275,
+      291,
+      "DATE"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "exact_span_wrong_slot",
+    "gold_text": "October 20, 2023",
+    "context_start": 175,
+    "context": "you of a recent data security incident that may have involved some of your personal information. On October 20, 2023, SecureTech Solutions Inc. identified unauthorized access to a portion of our systems. Our investig",
+    "predicted_at_gold_slot": [
+      293,
+      318,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 275,
+        "end": 291,
+        "label": "DATE"
+      },
+      {
+        "start": 293,
+        "end": 318,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 245,
+        "end": 249,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 275,
+        "end": 282,
+        "label": "DATE",
+        "score": 0.00018056516897890397
+      },
+      {
+        "start": 275,
+        "end": 285,
+        "label": "DATE",
+        "score": 0.0013058239749281796
+      },
+      {
+        "start": 275,
+        "end": 291,
+        "label": "DATE",
+        "score": 0.8843519494204426
+      },
+      {
+        "start": 283,
+        "end": 291,
+        "label": "DATE",
+        "score": 0.0004046944556859571
+      },
+      {
+        "start": 287,
+        "end": 291,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 293,
+        "end": 318,
+        "label": "NAME",
+        "score": 0.2222222222222222
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 8,
+    "gold": [
+      574,
+      611,
+      "ADDRESS"
+    ],
+    "candidate_category": "overlap_same_label",
+    "output_category": "no_overlapping_prediction",
+    "gold_text": "789 Maple Lane, Springfield, IL 62704",
+    "context_start": 474,
+    "context": "ntially compromised information for certain accounts, including that belonging to Mr. David Chen at 789 Maple Lane, Springfield, IL 62704, may include his username, such as davidc_789, and associated email address. For example, records r",
+    "predicted_at_gold_slot": [
+      647,
+      653,
+      "USERNAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 560,
+        "end": 570,
+        "label": "NAME"
+      },
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 556,
+        "end": 559,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 556,
+        "end": 570,
+        "label": "NAME",
+        "score": 0.18694444444444444
+      },
+      {
+        "start": 560,
+        "end": 565,
+        "label": "NAME",
+        "score": 0.0002631578947368421
+      },
+      {
+        "start": 560,
+        "end": 570,
+        "label": "NAME",
+        "score": 0.8095848089819908
+      },
+      {
+        "start": 566,
+        "end": 570,
+        "label": "NAME",
+        "score": 0.0003191437128688565
+      },
+      {
+        "start": 574,
+        "end": 577,
+        "label": "PHONE",
+        "score": 0.013452914798206279
+      },
+      {
+        "start": 590,
+        "end": 601,
+        "label": "ADDRESS",
+        "score": 0.021333333333333333
+      },
+      {
+        "start": 590,
+        "end": 605,
+        "label": "ADDRESS",
+        "score": 0.0036515388628064684
+      },
+      {
+        "start": 590,
+        "end": 611,
+        "label": "ADDRESS",
+        "score": 0.10650887573964497
+      },
+      {
+        "start": 603,
+        "end": 605,
+        "label": "ADDRESS",
+        "score": 0.004616030214015947
+      },
+      {
+        "start": 603,
+        "end": 611,
+        "label": "ADDRESS",
+        "score": 0.017094017094017096
+      },
+      {
+        "start": 606,
+        "end": 611,
+        "label": "ADDRESS",
+        "score": 0.0046022353714661405
+      },
+      {
+        "start": 629,
+        "end": 637,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME",
+        "score": 0.6470588235294118
+      },
+      {
+        "start": 654,
+        "end": 657,
+        "label": "PHONE",
+        "score": 0.013452914798206279
+      },
+      {
+        "start": 674,
+        "end": 679,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 680,
+        "end": 687,
+        "label": "ADDRESS",
+        "score": 0.0001910858453160082
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 10,
+    "gold": [
+      721,
+      731,
+      "NAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "exact_span_wrong_slot",
+    "gold_text": "John Smith",
+    "context_start": 621,
+    "context": "ude his username, such as davidc_789, and associated email address. For example, records related to John Smith using the username jsmith22 were among those potentially accessed. We have taken immediate steps to",
+    "predicted_at_gold_slot": [
+      751,
+      759,
+      "USERNAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME"
+      },
+      {
+        "start": 721,
+        "end": 731,
+        "label": "NAME"
+      },
+      {
+        "start": 751,
+        "end": 759,
+        "label": "USERNAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 629,
+        "end": 637,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME",
+        "score": 0.6470588235294118
+      },
+      {
+        "start": 654,
+        "end": 657,
+        "label": "PHONE",
+        "score": 0.013452914798206279
+      },
+      {
+        "start": 674,
+        "end": 679,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 680,
+        "end": 687,
+        "label": "ADDRESS",
+        "score": 0.0001910858453160082
+      },
+      {
+        "start": 721,
+        "end": 725,
+        "label": "NAME",
+        "score": 0.000794912559618442
+      },
+      {
+        "start": 721,
+        "end": 731,
+        "label": "NAME",
+        "score": 0.9380064829821718
+      },
+      {
+        "start": 726,
+        "end": 731,
+        "label": "NAME",
+        "score": 0.00565078169146732
+      },
+      {
+        "start": 742,
+        "end": 750,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 751,
+        "end": 759,
+        "label": "USERNAME",
+        "score": 0.75
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 11,
+    "gold": [
+      751,
+      759,
+      "USERNAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "exact_span_wrong_slot",
+    "gold_text": "jsmith22",
+    "context_start": 651,
+    "context": "dc_789, and associated email address. For example, records related to John Smith using the username jsmith22 were among those potentially accessed. We have taken immediate steps to secure our systems and have",
+    "predicted_at_gold_slot": [
+      1381,
+      1402,
+      "JOB_TITLE"
+    ],
+    "local_predictions": [
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME"
+      },
+      {
+        "start": 721,
+        "end": 731,
+        "label": "NAME"
+      },
+      {
+        "start": 751,
+        "end": 759,
+        "label": "USERNAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 647,
+        "end": 653,
+        "label": "USERNAME",
+        "score": 0.6470588235294118
+      },
+      {
+        "start": 654,
+        "end": 657,
+        "label": "PHONE",
+        "score": 0.013452914798206279
+      },
+      {
+        "start": 674,
+        "end": 679,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 680,
+        "end": 687,
+        "label": "ADDRESS",
+        "score": 0.0001910858453160082
+      },
+      {
+        "start": 721,
+        "end": 725,
+        "label": "NAME",
+        "score": 0.000794912559618442
+      },
+      {
+        "start": 721,
+        "end": 731,
+        "label": "NAME",
+        "score": 0.9380064829821718
+      },
+      {
+        "start": 726,
+        "end": 731,
+        "label": "NAME",
+        "score": 0.00565078169146732
+      },
+      {
+        "start": 742,
+        "end": 750,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 751,
+        "end": 759,
+        "label": "USERNAME",
+        "score": 0.75
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000044",
+    "gold_slot": 12,
+    "gold": [
+      1381,
+      1402,
+      "JOB_TITLE"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "exact_span_wrong_slot",
+    "gold_text": "Chief Privacy Officer",
+    "context_start": 1281,
+    "context": "nformation are our utmost priorities.\n\nFor further inquiries, please do not hesitate to contact our Chief Privacy Officer, Ms. Emily White, directly at (555) 876-5432 or via email at privacy.officer@securetechsolutions.co",
+    "predicted_at_gold_slot": [
+      1408,
+      1419,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 1381,
+        "end": 1402,
+        "label": "JOB_TITLE"
+      },
+      {
+        "start": 1408,
+        "end": 1419,
+        "label": "NAME"
+      },
+      {
+        "start": 1433,
+        "end": 1447,
+        "label": "PHONE"
+      },
+      {
+        "start": 1464,
+        "end": 1503,
+        "label": "EMAIL"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 1381,
+        "end": 1402,
+        "label": "JOB_TITLE",
+        "score": 0.9072164948453608
+      },
+      {
+        "start": 1387,
+        "end": 1402,
+        "label": "JOB_TITLE",
+        "score": 0.03398058252427184
+      },
+      {
+        "start": 1404,
+        "end": 1407,
+        "label": "JOB_TITLE",
+        "score": 5.9669431350319234e-05
+      },
+      {
+        "start": 1404,
+        "end": 1419,
+        "label": "NAME",
+        "score": 0.39705882352941174
+      },
+      {
+        "start": 1408,
+        "end": 1419,
+        "label": "NAME",
+        "score": 0.6363636363636364
+      },
+      {
+        "start": 1433,
+        "end": 1438,
+        "label": "PHONE",
+        "score": 6.581112207963146e-05
+      },
+      {
+        "start": 1433,
+        "end": 1447,
+        "label": "PHONE",
+        "score": 0.9351389878831077
+      },
+      {
+        "start": 1434,
+        "end": 1437,
+        "label": "PHONE",
+        "score": 0.00015060240963855423
+      },
+      {
+        "start": 1434,
+        "end": 1447,
+        "label": "PHONE",
+        "score": 0.0021382751247327157
+      },
+      {
+        "start": 1439,
+        "end": 1442,
+        "label": "PHONE",
+        "score": 0.0013227513227513227
+      },
+      {
+        "start": 1443,
+        "end": 1447,
+        "label": "PHONE",
+        "score": 0.0013297872340425532
+      },
+      {
+        "start": 1455,
+        "end": 1460,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 1464,
+        "end": 1503,
+        "label": "EMAIL",
+        "score": 0.85
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000066",
+    "gold_slot": 5,
+    "gold": [
+      989,
+      1004,
+      "USERNAME"
+    ],
+    "candidate_category": "overlap_wrong_label",
+    "output_category": "no_overlapping_prediction",
+    "gold_text": "PROJ_ALPHA_2023",
+    "context_start": 889,
+    "context": " project remains on schedule for its target launch date. Our internal system ID for this project is PROJ_ALPHA_2023.\n\nPlease let me know your thoughts on this matter. I am available to discuss further at your conven",
+    "predicted_at_gold_slot": [
+      730,
+      744,
+      "PHONE"
+    ],
+    "local_predictions": [],
+    "local_candidates": [
+      {
+        "start": 1000,
+        "end": 1004,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 1026,
+        "end": 1030,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 1093,
+        "end": 1097,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000077",
+    "gold_slot": 4,
+    "gold": [
+      636,
+      645,
+      "USERNAME"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "no_overlapping_prediction",
+    "gold_text": "mthompson",
+    "context_start": 536,
+    "context": "ber 15, 2023.\n\nI've updated the project timeline on the shared drive, accessible under my username, mthompson. If you have any questions or require further clarification, please do not hesitate to contact me. ",
+    "predicted_at_gold_slot": [
+      531,
+      548,
+      "DATE"
+    ],
+    "local_predictions": [
+      {
+        "start": 531,
+        "end": 548,
+        "label": "DATE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 531,
+        "end": 539,
+        "label": "DATE",
+        "score": 0.0003271109560362875
+      },
+      {
+        "start": 531,
+        "end": 542,
+        "label": "DATE",
+        "score": 0.0003018230109863576
+      },
+      {
+        "start": 531,
+        "end": 548,
+        "label": "DATE",
+        "score": 0.9246373248094418
+      },
+      {
+        "start": 540,
+        "end": 542,
+        "label": "DATE",
+        "score": 6.0226451457480126e-05
+      },
+      {
+        "start": 540,
+        "end": 548,
+        "label": "DATE",
+        "score": 0.0007418721361553567
+      },
+      {
+        "start": 544,
+        "end": 548,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 626,
+        "end": 634,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 636,
+        "end": 645,
+        "label": "USERNAME",
+        "score": 0.5384615384615384
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000678",
+    "gold_slot": 11,
+    "gold": [
+      1130,
+      1181,
+      "ADDRESS"
+    ],
+    "candidate_category": "overlap_same_label",
+    "output_category": "overlap_wrong_label",
+    "gold_text": "456 Enterprise Way, Suite 200, Metro City, CA 90001",
+    "context_start": 1030,
+    "context": " at 555-987-6543 or email us directly at security@nexuscorp.com. Our corporate office is located at 456 Enterprise Way, Suite 200, Metro City, CA 90001. The deadline for mandatory password reset is November 10, 2023.\n\nWe sincerely apologize for any in",
+    "predicted_at_gold_slot": [
+      1130,
+      1133,
+      "PHONE"
+    ],
+    "local_predictions": [
+      {
+        "start": 1034,
+        "end": 1046,
+        "label": "PHONE"
+      },
+      {
+        "start": 1071,
+        "end": 1093,
+        "label": "EMAIL"
+      },
+      {
+        "start": 1130,
+        "end": 1133,
+        "label": "PHONE"
+      },
+      {
+        "start": 1228,
+        "end": 1245,
+        "label": "DATE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 1034,
+        "end": 1037,
+        "label": "PHONE",
+        "score": 0.00015060240963855423
+      },
+      {
+        "start": 1034,
+        "end": 1046,
+        "label": "PHONE",
+        "score": 0.9327157484154072
+      },
+      {
+        "start": 1038,
+        "end": 1041,
+        "label": "PHONE",
+        "score": 0.0004061326022946492
+      },
+      {
+        "start": 1038,
+        "end": 1046,
+        "label": "PHONE",
+        "score": 0.00041177681696520483
+      },
+      {
+        "start": 1050,
+        "end": 1055,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 1071,
+        "end": 1093,
+        "label": "EMAIL",
+        "score": 0.85
+      },
+      {
+        "start": 1130,
+        "end": 1133,
+        "label": "PHONE",
+        "score": 0.02182643617950061
+      },
+      {
+        "start": 1150,
+        "end": 1159,
+        "label": "ADDRESS",
+        "score": 0.0009970089730807576
+      },
+      {
+        "start": 1167,
+        "end": 1171,
+        "label": "ADDRESS",
+        "score": 0.0003734129947722181
+      },
+      {
+        "start": 1173,
+        "end": 1175,
+        "label": "ADDRESS",
+        "score": 0.0004895596092037207
+      },
+      {
+        "start": 1210,
+        "end": 1218,
+        "label": "USERNAME",
+        "score": 0.0008745080891998251
+      },
+      {
+        "start": 1228,
+        "end": 1236,
+        "label": "DATE",
+        "score": 0.0003271109560362875
+      },
+      {
+        "start": 1228,
+        "end": 1239,
+        "label": "DATE",
+        "score": 0.0001947230065232207
+      },
+      {
+        "start": 1228,
+        "end": 1245,
+        "label": "DATE",
+        "score": 0.9257881339338163
+      },
+      {
+        "start": 1237,
+        "end": 1239,
+        "label": "DATE",
+        "score": 0.0001091901728844404
+      },
+      {
+        "start": 1237,
+        "end": 1245,
+        "label": "DATE",
+        "score": 0.000254993625159371
+      },
+      {
+        "start": 1241,
+        "end": 1245,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_000678",
+    "gold_slot": 13,
+    "gold": [
+      1423,
+      1474,
+      "ADDRESS"
+    ],
+    "candidate_category": "overlap_same_label",
+    "output_category": "overlap_wrong_label",
+    "gold_text": "456 Enterprise Way, Suite 200, Metro City, CA 90001",
+    "context_start": 1323,
+    "context": "your prompt cooperation in securing your account.\n\nSincerely,\n\nData Security Department\nNexus Corp.\n456 Enterprise Way, Suite 200, Metro City, CA 90001",
+    "predicted_at_gold_slot": [
+      1423,
+      1426,
+      "PHONE"
+    ],
+    "local_predictions": [
+      {
+        "start": 1423,
+        "end": 1426,
+        "label": "PHONE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 1323,
+        "end": 1327,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 1359,
+        "end": 1363,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 1391,
+        "end": 1410,
+        "label": "JOB_TITLE",
+        "score": 0.009302325581395349
+      },
+      {
+        "start": 1423,
+        "end": 1426,
+        "label": "PHONE",
+        "score": 0.02182643617950061
+      },
+      {
+        "start": 1443,
+        "end": 1452,
+        "label": "ADDRESS",
+        "score": 0.0009970089730807576
+      },
+      {
+        "start": 1460,
+        "end": 1464,
+        "label": "ADDRESS",
+        "score": 0.0003734129947722181
+      },
+      {
+        "start": 1466,
+        "end": 1468,
+        "label": "ADDRESS",
+        "score": 0.0004895596092037207
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002012",
+    "gold_slot": 3,
+    "gold": [
+      333,
+      364,
+      "EMAIL"
+    ],
+    "candidate_category": "exact_candidate",
+    "output_category": "overlap_wrong_label",
+    "gold_text": "dmiller_legal@thompsonassoc.com",
+    "context_start": 233,
+    "context": "his matter. I am writing to confirm receipt of the documents you provided via email to my USERNAME: dmiller_legal@thompsonassoc.com on DATE: October 25, 2023. \n\nOur lead counsel, Ms. Sarah Chen, JOB_TITLE: Senior Partner, has revie",
+    "predicted_at_gold_slot": [
+      333,
+      346,
+      "USERNAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 333,
+        "end": 346,
+        "label": "USERNAME"
+      },
+      {
+        "start": 374,
+        "end": 390,
+        "label": "DATE"
+      },
+      {
+        "start": 416,
+        "end": 426,
+        "label": "NAME"
+      },
+      {
+        "start": 439,
+        "end": 453,
+        "label": "JOB_TITLE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 311,
+        "end": 316,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 323,
+        "end": 331,
+        "label": "USERNAME",
+        "score": 0.02463955239939746
+      },
+      {
+        "start": 333,
+        "end": 340,
+        "label": "USERNAME",
+        "score": 0.06256109481915934
+      },
+      {
+        "start": 333,
+        "end": 346,
+        "label": "USERNAME",
+        "score": 0.95
+      },
+      {
+        "start": 333,
+        "end": 364,
+        "label": "EMAIL",
+        "score": 0.85
+      },
+      {
+        "start": 341,
+        "end": 346,
+        "label": "USERNAME",
+        "score": 0.0001231678778174652
+      },
+      {
+        "start": 368,
+        "end": 372,
+        "label": "DATE",
+        "score": 0.03332129311901752
+      },
+      {
+        "start": 374,
+        "end": 381,
+        "label": "DATE",
+        "score": 0.00018056516897890397
+      },
+      {
+        "start": 374,
+        "end": 384,
+        "label": "DATE",
+        "score": 0.0011045655375552283
+      },
+      {
+        "start": 374,
+        "end": 390,
+        "label": "DATE",
+        "score": 0.8399098083427283
+      },
+      {
+        "start": 382,
+        "end": 390,
+        "label": "DATE",
+        "score": 0.0006533812479581836
+      },
+      {
+        "start": 386,
+        "end": 390,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 398,
+        "end": 410,
+        "label": "JOB_TITLE",
+        "score": 0.001422475106685633
+      },
+      {
+        "start": 403,
+        "end": 410,
+        "label": "JOB_TITLE",
+        "score": 0.00032242463324197966
+      },
+      {
+        "start": 412,
+        "end": 415,
+        "label": "JOB_TITLE",
+        "score": 5.9669431350319234e-05
+      },
+      {
+        "start": 412,
+        "end": 426,
+        "label": "NAME",
+        "score": 0.14193548387096774
+      },
+      {
+        "start": 416,
+        "end": 421,
+        "label": "NAME",
+        "score": 0.0005648847121655626
+      },
+      {
+        "start": 416,
+        "end": 426,
+        "label": "NAME",
+        "score": 0.8979763268423062
+      },
+      {
+        "start": 422,
+        "end": 426,
+        "label": "NAME",
+        "score": 0.0003191437128688565
+      },
+      {
+        "start": 428,
+        "end": 437,
+        "label": "JOB_TITLE",
+        "score": 0.049876730513938934
+      },
+      {
+        "start": 428,
+        "end": 453,
+        "label": "JOB_TITLE",
+        "score": 0.0071174377224199285
+      },
+      {
+        "start": 432,
+        "end": 437,
+        "label": "JOB_TITLE",
+        "score": 0.0003740415186085656
+      },
+      {
+        "start": 439,
+        "end": 453,
+        "label": "JOB_TITLE",
+        "score": 0.8396269335759782
+      },
+      {
+        "start": 446,
+        "end": 453,
+        "label": "JOB_TITLE",
+        "score": 0.0505998956703182
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002279",
+    "gold_slot": 11,
+    "gold": [
+      944,
+      952,
+      "USERNAME"
+    ],
+    "candidate_category": "overlap_wrong_label",
+    "output_category": "overlap_wrong_label",
+    "gold_text": "CEO_Chen",
+    "context_start": 844,
+    "context": "to contact me directly. I am also available via our internal messaging platform under the username 'CEO_Chen'.\n\nWe look forward to a productive collaboration.\n\nSincerely,\n\nRobert Davis\nChief Executive Officer",
+    "predicted_at_gold_slot": [
+      944,
+      947,
+      "JOB_TITLE"
+    ],
+    "local_predictions": [
+      {
+        "start": 944,
+        "end": 947,
+        "label": "JOB_TITLE"
+      },
+      {
+        "start": 1016,
+        "end": 1028,
+        "label": "NAME"
+      },
+      {
+        "start": 1029,
+        "end": 1052,
+        "label": "JOB_TITLE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 934,
+        "end": 942,
+        "label": "USERNAME",
+        "score": 0.0005835307040126317
+      },
+      {
+        "start": 944,
+        "end": 947,
+        "label": "JOB_TITLE",
+        "score": 0.49234923492349236
+      },
+      {
+        "start": 948,
+        "end": 952,
+        "label": "NAME",
+        "score": 0.0003191437128688565
+      },
+      {
+        "start": 1016,
+        "end": 1022,
+        "label": "NAME",
+        "score": 0.0003864883667001623
+      },
+      {
+        "start": 1016,
+        "end": 1028,
+        "label": "NAME",
+        "score": 0.8517948717948718
+      },
+      {
+        "start": 1023,
+        "end": 1028,
+        "label": "NAME",
+        "score": 0.0004472271914132379
+      },
+      {
+        "start": 1029,
+        "end": 1052,
+        "label": "JOB_TITLE",
+        "score": 0.8396946564885496
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002447",
+    "gold_slot": 5,
+    "gold": [
+      319,
+      340,
+      "USERNAME"
+    ],
+    "candidate_category": "same_boundary_wrong_label",
+    "output_category": "same_boundary_wrong_label",
+    "gold_text": "Sterling & Associates",
+    "context_start": 219,
+    "context": "ted our initial review of the provided documentation and wish to discuss the next steps.\n\nOur firm, Sterling & Associates, located at 123 Oak Street, Anytown, CA 90210, has been diligently working on this matter.  We are ",
+    "predicted_at_gold_slot": [
+      319,
+      340,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 319,
+        "end": 340,
+        "label": "NAME"
+      },
+      {
+        "start": 353,
+        "end": 386,
+        "label": "ADDRESS"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 319,
+        "end": 327,
+        "label": "NAME",
+        "score": 0.0010840716234907107
+      },
+      {
+        "start": 319,
+        "end": 340,
+        "label": "NAME",
+        "score": 0.033947273383893105
+      },
+      {
+        "start": 353,
+        "end": 356,
+        "label": "USERNAME",
+        "score": 5.513104649752462e-05
+      },
+      {
+        "start": 353,
+        "end": 367,
+        "label": "ADDRESS",
+        "score": 0.059800664451827246
+      },
+      {
+        "start": 353,
+        "end": 386,
+        "label": "ADDRESS",
+        "score": 0.9621909840038778
+      },
+      {
+        "start": 369,
+        "end": 376,
+        "label": "ADDRESS",
+        "score": 0.0020507084265473526
+      },
+      {
+        "start": 369,
+        "end": 380,
+        "label": "ADDRESS",
+        "score": 9.020386072523904e-05
+      },
+      {
+        "start": 369,
+        "end": 386,
+        "label": "ADDRESS",
+        "score": 0.0811642877134061
+      },
+      {
+        "start": 378,
+        "end": 380,
+        "label": "ADDRESS",
+        "score": 0.0004895596092037207
+      },
+      {
+        "start": 378,
+        "end": 386,
+        "label": "ADDRESS",
+        "score": 0.001571162435750679
+      },
+      {
+        "start": 381,
+        "end": 386,
+        "label": "ADDRESS",
+        "score": 0.0005820852083193409
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002447",
+    "gold_slot": 14,
+    "gold": [
+      1086,
+      1107,
+      "USERNAME"
+    ],
+    "candidate_category": "same_boundary_wrong_label",
+    "output_category": "same_boundary_wrong_label",
+    "gold_text": "Sterling & Associates",
+    "context_start": 986,
+    "context": "nt reference number for this case is EV-2023-001.\n\nSincerely,\n\nArthur Sterling, Esq.\nSenior Partner\nSterling & Associates",
+    "predicted_at_gold_slot": [
+      1086,
+      1107,
+      "NAME"
+    ],
+    "local_predictions": [
+      {
+        "start": 1023,
+        "end": 1034,
+        "label": "USERNAME"
+      },
+      {
+        "start": 1049,
+        "end": 1064,
+        "label": "NAME"
+      },
+      {
+        "start": 1071,
+        "end": 1085,
+        "label": "JOB_TITLE"
+      },
+      {
+        "start": 1086,
+        "end": 1107,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 982,
+        "end": 988,
+        "label": "JOB_TITLE",
+        "score": 0.00011647545279832275
+      },
+      {
+        "start": 1023,
+        "end": 1034,
+        "label": "USERNAME",
+        "score": 0.125
+      },
+      {
+        "start": 1026,
+        "end": 1030,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 1026,
+        "end": 1034,
+        "label": "USERNAME",
+        "score": 0.015625
+      },
+      {
+        "start": 1049,
+        "end": 1055,
+        "label": "NAME",
+        "score": 0.00028269883151149644
+      },
+      {
+        "start": 1049,
+        "end": 1064,
+        "label": "NAME",
+        "score": 0.7463942307692307
+      },
+      {
+        "start": 1049,
+        "end": 1070,
+        "label": "NAME",
+        "score": 0.36363636363636365
+      },
+      {
+        "start": 1056,
+        "end": 1064,
+        "label": "NAME",
+        "score": 0.0010840716234907107
+      },
+      {
+        "start": 1066,
+        "end": 1069,
+        "label": "JOB_TITLE",
+        "score": 0.0015186028853454822
+      },
+      {
+        "start": 1066,
+        "end": 1070,
+        "label": "JOB_TITLE",
+        "score": 0.015957446808510637
+      },
+      {
+        "start": 1071,
+        "end": 1085,
+        "label": "JOB_TITLE",
+        "score": 0.8396269335759782
+      },
+      {
+        "start": 1078,
+        "end": 1085,
+        "label": "JOB_TITLE",
+        "score": 0.0505998956703182
+      },
+      {
+        "start": 1086,
+        "end": 1094,
+        "label": "NAME",
+        "score": 0.0010840716234907107
+      },
+      {
+        "start": 1086,
+        "end": 1107,
+        "label": "NAME",
+        "score": 0.033947273383893105
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002616",
+    "gold_slot": 2,
+    "gold": [
+      57,
+      68,
+      "USERNAME"
+    ],
+    "candidate_category": "same_boundary_wrong_label",
+    "output_category": "same_boundary_wrong_label",
+    "gold_text": "2023-CV-045",
+    "context_start": 0,
+    "context": "Subject: Case File Update - Client: Eleanor Vance - Ref: 2023-CV-045\n\nDear Ms. Vance,\n\nThis email provides an update regarding your legal proceedings, case file referen",
+    "predicted_at_gold_slot": [
+      57,
+      68,
+      "DATE"
+    ],
+    "local_predictions": [
+      {
+        "start": 36,
+        "end": 49,
+        "label": "NAME"
+      },
+      {
+        "start": 57,
+        "end": 68,
+        "label": "DATE"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 28,
+        "end": 34,
+        "label": "JOB_TITLE",
+        "score": 0.001955671447196871
+      },
+      {
+        "start": 36,
+        "end": 43,
+        "label": "NAME",
+        "score": 0.00018792450804048431
+      },
+      {
+        "start": 36,
+        "end": 49,
+        "label": "NAME",
+        "score": 0.8349451442503047
+      },
+      {
+        "start": 44,
+        "end": 49,
+        "label": "NAME",
+        "score": 0.001187463500097333
+      },
+      {
+        "start": 57,
+        "end": 61,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 57,
+        "end": 68,
+        "label": "DATE",
+        "score": 0.2222222222222222
+      },
+      {
+        "start": 75,
+        "end": 78,
+        "label": "JOB_TITLE",
+        "score": 5.9669431350319234e-05
+      },
+      {
+        "start": 75,
+        "end": 84,
+        "label": "NAME",
+        "score": 0.013302034428794992
+      },
+      {
+        "start": 79,
+        "end": 84,
+        "label": "NAME",
+        "score": 0.001187463500097333
+      },
+      {
+        "start": 92,
+        "end": 97,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 127,
+        "end": 131,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 132,
+        "end": 137,
+        "label": "USERNAME",
+        "score": 0.0001231678778174652
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_002616",
+    "gold_slot": 3,
+    "gold": [
+      171,
+      182,
+      "USERNAME"
+    ],
+    "candidate_category": "same_boundary_wrong_label",
+    "output_category": "same_boundary_wrong_label",
+    "gold_text": "2023-CV-045",
+    "context_start": 71,
+    "context": "ear Ms. Vance,\n\nThis email provides an update regarding your legal proceedings, case file reference 2023-CV-045.\n\nOur firm, Sterling & Associates, PLLC, has received correspondence from opposing counsel, Mr. Ben",
+    "predicted_at_gold_slot": [
+      171,
+      182,
+      "DATE"
+    ],
+    "local_predictions": [
+      {
+        "start": 171,
+        "end": 182,
+        "label": "DATE"
+      },
+      {
+        "start": 279,
+        "end": 294,
+        "label": "NAME"
+      }
+    ],
+    "local_candidates": [
+      {
+        "start": 75,
+        "end": 78,
+        "label": "JOB_TITLE",
+        "score": 5.9669431350319234e-05
+      },
+      {
+        "start": 75,
+        "end": 84,
+        "label": "NAME",
+        "score": 0.013302034428794992
+      },
+      {
+        "start": 79,
+        "end": 84,
+        "label": "NAME",
+        "score": 0.001187463500097333
+      },
+      {
+        "start": 92,
+        "end": 97,
+        "label": "EMAIL",
+        "score": 5.6449336720293535e-05
+      },
+      {
+        "start": 127,
+        "end": 131,
+        "label": "USERNAME",
+        "score": 3.399414167625113e-05
+      },
+      {
+        "start": 132,
+        "end": 137,
+        "label": "USERNAME",
+        "score": 0.0001231678778174652
+      },
+      {
+        "start": 171,
+        "end": 175,
+        "label": "DATE",
+        "score": 0.00013233176351535437
+      },
+      {
+        "start": 171,
+        "end": 182,
+        "label": "DATE",
+        "score": 0.2222222222222222
+      },
+      {
+        "start": 195,
+        "end": 203,
+        "label": "NAME",
+        "score": 0.0010840716234907107
+      },
+      {
+        "start": 195,
+        "end": 216,
+        "label": "NAME",
+        "score": 0.033947273383893105
+      },
+      {
+        "start": 195,
+        "end": 222,
+        "label": "NAME",
+        "score": 0.14285714285714285
+      },
+      {
+        "start": 266,
+        "end": 273,
+        "label": "JOB_TITLE",
+        "score": 0.00032242463324197966
+      },
+      {
+        "start": 275,
+        "end": 278,
+        "label": "JOB_TITLE",
+        "score": 7.568017557800734e-05
+      },
+      {
+        "start": 275,
+        "end": 294,
+        "label": "NAME",
+        "score": 0.20912426224278194
+      },
+      {
+        "start": 279,
+        "end": 294,
+        "label": "NAME",
+        "score": 0.6578677074774034
+      }
+    ]
+  }
+]

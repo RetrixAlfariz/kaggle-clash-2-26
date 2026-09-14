@@ -1,0 +1,30 @@
+{
+  "experiment": "bitrase-1.algo-6",
+  "pretrained": false,
+  "seed": 2026,
+  "epochs": 8,
+  "batch_size": 32,
+  "optimizer": "AdamW",
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "gradient_clip": 1.0,
+  "evaluation_epochs": [
+    4,
+    8
+  ],
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "numpy": "2.5.3",
+  "pyarrow": "25.0.1",
+  "sources": {
+    "src/run_neural_sequence.py": "89b536c53fbcff3bdcceb900aff27124e377fc41952b60fc4e60528d78d8ff0c",
+    "src/neural_sequence.py": "20771e360cfac1dce05e39b18bda2e116c79dbe68cafb3f0b9fbcc26c0566671",
+    "src/sequence_crf.py": "5284a8a99850b1eaf0582668f81d14acc84200265398a76453a08fd586610013",
+    "src/prepared_loader.py": "46276f9dbdb2d47bb5c28bd3f14522c0dc0c372d3046b9abf85ba4e084b8d18a",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "note/bitrase-1.algo-6/protocol.md": "18fede0c889786048e618d73e51b7ade481efe9931446cf22c68a02aceda77c1",
+    "output/prepared/v1/train.parquet": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+    "output/prepared/v1/dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432"
+  }
+}

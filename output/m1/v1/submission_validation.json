@@ -1,0 +1,12 @@
+{
+  "submission": "E:\\Developen\\Github\\kaggle-clash-2-26\\output\\m1\\v1\\submission.csv",
+  "csv_sha256": "795acaf78cf60a2a91549afe5d10917c03a5c7dd436d1e7eeaa955b5fdb0b8e8",
+  "dictionary_sha256": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+  "sample_sha256": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584",
+  "rows": 285318,
+  "expected_rows": 285318,
+  "documents": 23156,
+  "expected_documents": 23156,
+  "errors": [],
+  "ready": true
+}

@@ -1,5 +1,7 @@
 # Audit ulang data preparation v1
 
+> Catatan historis sebelum perbaikan builder. Status terkini dan bukti perbaikannya ada di [PREPARATION_HARDENING.md](PREPARATION_HARDENING.md). Temuan di bawah menjelaskan kode pada saat audit, bukan seluruhnya masalah yang masih terbuka.
+
 Tanggal pemeriksaan: 14 September 2026 UTC / WIB.
 
 **Keputusan: artefak v1 lolos pemeriksaan integritas yang dilakukan; builder perlu diperkuat sebelum menjadi pipeline rutin.** Tidak ditemukan alasan berbasis hasil audit ini untuk membersihkan ulang teks, mengganti label, atau membuang split v1. Validitas evaluasi terhadap dokumen dengan template serupa masih belum dibuktikan.

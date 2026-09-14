@@ -1,0 +1,12 @@
+{
+  "submission": "E:\\Developen\\Github\\kaggle-clash-2-26\\output\\bitrase-1.algo-6\\ensemble_4_8\\submission.csv",
+  "csv_sha256": "5bd13ceb311db06cc779ce574c7be5b0bde99ff9b1e61c034df9e0430d5a6206",
+  "dictionary_sha256": "67f6d511d062669410e5a2890c17abce02c39292fad73853af2490bf9c3e8954",
+  "sample_sha256": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584",
+  "rows": 285318,
+  "expected_rows": 285318,
+  "documents": 23156,
+  "expected_documents": 23156,
+  "errors": [],
+  "ready": true
+}

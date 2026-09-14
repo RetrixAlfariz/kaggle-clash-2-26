@@ -1,5 +1,7 @@
 # Prepared data — v1
 
+> Update: v1 remains unchanged. The builder has since been hardened and now requires an explicit `--output`; use the pinned commands and guarded loader in [PREPARATION_HARDENING.md](PREPARATION_HARDENING.md). The original creation/validation history below describes v1's historical build.
+
 The document-level dataset is ready at [`output/prepared/v1`](../output/prepared/v1). Raw files under `Data/` are unchanged. Preparation preserves original text and annotations, including disputed labels and unusual boundaries. No model was trained during this step.
 
 ## Frozen supervised split

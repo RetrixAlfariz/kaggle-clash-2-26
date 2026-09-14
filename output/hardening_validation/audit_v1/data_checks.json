@@ -1,0 +1,354 @@
+{
+  "created_at": "2026-09-14T17:01:11.143661+00:00",
+  "audit_code_sha256": "823a551dbff2d6b0bc3689dac0590392b7d9ee1bbb86f1d08e9f38c6dfdf4429",
+  "build_manifest_sha256": "89b82c23b3053fc429b2cd6fd8a532c39fcc8758a88af0e4263ffc14b05e3848",
+  "checks": [
+    {
+      "name": "source_hashes_or_verified_historical_snapshot",
+      "failed_units": 0,
+      "scoped_units": 13
+    },
+    {
+      "name": "artifact_hashes",
+      "failed_units": 0,
+      "scoped_units": 8
+    },
+    {
+      "name": "unique_assignment_ids",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "train_raw_metadata_uniqueness",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "train_raw_segment_coverage",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "train_segment_indices",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "train_metadata_counts",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "test_raw_metadata_uniqueness",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "test_raw_segment_coverage",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "test_segment_indices",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "test_metadata_counts",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "raw_train_test_id_overlap",
+      "failed_units": 0,
+      "scoped_units": 92624
+    },
+    {
+      "name": "assignment_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "train_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 55582
+    },
+    {
+      "name": "train_text",
+      "failed_units": 0,
+      "scoped_units": 55582
+    },
+    {
+      "name": "train_entities",
+      "failed_units": 0,
+      "scoped_units": 55582
+    },
+    {
+      "name": "train_entity_counts",
+      "failed_units": 0,
+      "scoped_units": 55582
+    },
+    {
+      "name": "train_span_contract",
+      "failed_units": 0,
+      "scoped_units": 685026
+    },
+    {
+      "name": "dev_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "dev_text",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "dev_entities",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "dev_entity_counts",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "dev_span_contract",
+      "failed_units": 0,
+      "scoped_units": 85336
+    },
+    {
+      "name": "holdout_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "holdout_text",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "holdout_entities",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "holdout_entity_counts",
+      "failed_units": 0,
+      "scoped_units": 6943
+    },
+    {
+      "name": "holdout_span_contract",
+      "failed_units": 0,
+      "scoped_units": 85399
+    },
+    {
+      "name": "gold_global_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "normalized_group_isolation",
+      "failed_units": 0,
+      "scoped_units": 69467
+    },
+    {
+      "name": "normalized_train_test_overlap",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "assignment_content",
+      "failed_units": 0,
+      "scoped_units": 69468
+    },
+    {
+      "name": "historical_train_membership",
+      "failed_units": 0,
+      "scoped_units": 10000
+    },
+    {
+      "name": "historical_dev_membership",
+      "failed_units": 0,
+      "scoped_units": 2000
+    },
+    {
+      "name": "reviewed_holdout_exclusion",
+      "failed_units": 0,
+      "scoped_units": 80
+    },
+    {
+      "name": "reviewed_flags_against_saved_examples",
+      "failed_units": 0,
+      "scoped_units": 80
+    },
+    {
+      "name": "historical_train_flags_against_probe",
+      "failed_units": 0,
+      "scoped_units": 10000
+    },
+    {
+      "name": "historical_dev_flags_against_probe",
+      "failed_units": 0,
+      "scoped_units": 2000
+    },
+    {
+      "name": "slot_readback_exact_order",
+      "failed_units": 0,
+      "scoped_units": 285318
+    },
+    {
+      "name": "test_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "test_text_counts",
+      "failed_units": 0,
+      "scoped_units": 23156
+    },
+    {
+      "name": "metadata_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 92624
+    },
+    {
+      "name": "metadata_content",
+      "failed_units": 0,
+      "scoped_units": 92624
+    },
+    {
+      "name": "weak_id_coverage",
+      "failed_units": 0,
+      "scoped_units": 20000
+    },
+    {
+      "name": "weak_content_and_overlap_flags",
+      "failed_units": 0,
+      "scoped_units": 20000
+    },
+    {
+      "name": "model_facing_metadata_exclusion",
+      "failed_units": 0,
+      "scoped_units": 4
+    }
+  ],
+  "failed_checks": 0,
+  "distributions": {
+    "train": {
+      "documents": 55582,
+      "entities": 685026,
+      "labels": {
+        "NAME": 208998,
+        "DATE": 131459,
+        "JOB_TITLE": 66066,
+        "PHONE": 74341,
+        "EMAIL": 77212,
+        "ADDRESS": 65502,
+        "USERNAME": 61448
+      },
+      "channel_domain": {
+        "EMAIL / HEALTHCARE": 7347,
+        "EMAIL / HR": 3177,
+        "EMAIL / IT": 7539,
+        "EMAIL / GENERAL": 3869,
+        "EMAIL / FINANCE": 5244,
+        "EMAIL / LEGAL": 9154,
+        "LETTER / IT": 1003,
+        "LETTER / HR": 1163,
+        "LETTER / FINANCE": 3773,
+        "LETTER / GENERAL": 917,
+        "LETTER / HEALTHCARE": 5211,
+        "LETTER / LEGAL": 5662,
+        "MEMO / HEALTHCARE": 921,
+        "MEMO / LEGAL": 288,
+        "MEMO / GENERAL": 94,
+        "MEMO / IT": 145,
+        "MEMO / HR": 43,
+        "MEMO / FINANCE": 32
+      }
+    },
+    "dev": {
+      "documents": 6943,
+      "entities": 85336,
+      "labels": {
+        "NAME": 26009,
+        "DATE": 16239,
+        "PHONE": 9300,
+        "EMAIL": 9723,
+        "ADDRESS": 8226,
+        "JOB_TITLE": 8197,
+        "USERNAME": 7642
+      },
+      "channel_domain": {
+        "EMAIL / FINANCE": 655,
+        "EMAIL / IT": 942,
+        "LETTER / IT": 124,
+        "EMAIL / GENERAL": 484,
+        "LETTER / HEALTHCARE": 651,
+        "EMAIL / HEALTHCARE": 918,
+        "EMAIL / HR": 397,
+        "EMAIL / LEGAL": 1144,
+        "LETTER / FINANCE": 472,
+        "LETTER / LEGAL": 708,
+        "LETTER / HR": 145,
+        "MEMO / FINANCE": 5,
+        "LETTER / GENERAL": 115,
+        "MEMO / HEALTHCARE": 115,
+        "MEMO / LEGAL": 36,
+        "MEMO / GENERAL": 11,
+        "MEMO / HR": 4,
+        "MEMO / IT": 17
+      }
+    },
+    "holdout": {
+      "documents": 6943,
+      "entities": 85399,
+      "labels": {
+        "NAME": 25990,
+        "DATE": 16346,
+        "EMAIL": 9679,
+        "PHONE": 9237,
+        "USERNAME": 7712,
+        "JOB_TITLE": 8209,
+        "ADDRESS": 8226
+      },
+      "channel_domain": {
+        "EMAIL / IT": 942,
+        "EMAIL / GENERAL": 484,
+        "EMAIL / FINANCE": 655,
+        "EMAIL / HR": 397,
+        "LETTER / IT": 124,
+        "EMAIL / HEALTHCARE": 918,
+        "EMAIL / LEGAL": 1144,
+        "LETTER / HR": 145,
+        "LETTER / GENERAL": 115,
+        "MEMO / HEALTHCARE": 115,
+        "LETTER / LEGAL": 708,
+        "LETTER / HEALTHCARE": 651,
+        "LETTER / FINANCE": 472,
+        "MEMO / LEGAL": 36,
+        "MEMO / IT": 17,
+        "MEMO / GENERAL": 11,
+        "MEMO / FINANCE": 5,
+        "MEMO / HR": 4
+      }
+    }
+  },
+  "weak_overlap": {
+    "train": 1
+  },
+  "limits": [
+    "Saved reviewed IDs cannot reconstruct unrecorded prior human exposure.",
+    "No semantic near-duplicate detection, tokenizer validation, or predictive modelling."
+  ],
+  "historical_source_snapshots": [
+    {
+      "source": "src/prepare_data.py",
+      "verified_snapshot": "output\\preparation_audit\\source_snapshots\\prepare_data.py",
+      "current_source_changed": true
+    }
+  ],
+  "build": "output\\prepared\\v1"
+}
