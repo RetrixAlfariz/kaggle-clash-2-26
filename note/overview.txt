@@ -1,0 +1,12 @@
+IRIS 2026 Internal Competition: Kaggle Clash 2
+Welcome back to Kaggle Clash, the internal data science competition of IRIS 2026.
+
+After the medical image classification challenge of Kaggle Clash 1, this second round moves to a very different kind of problem. Here you will pull structured information out of unstructured text, and you will do it at the level of the individual character.
+
+You are given a corpus of business correspondence: letters, emails and internal memos drawn from legal, HR, finance, healthcare and IT contexts. Hidden inside that text is personal data such as names, addresses, phone numbers, email addresses, dates, account usernames and job titles. Your job is to find all of it, and to say exactly where it sits.
+
+Kaggle Clash 2 is deliberately not a single clean CSV. The data arrives the way it arrives in a real organisation: split across several files, in several formats, with part of it annotated by a machine rather than by a person. Putting it back together correctly is the first thing you have to get right, and it is where a good part of the leaderboard will be decided.
+
+Whether this is your first competition or you already have Kaggle experience, Kaggle Clash 2 is a chance to sharpen your analytical thinking, your data engineering, and your modelling, and to push your limits against your fellow IRIS 2026 participants.
+
+Goal: For every document in the test set, identify each piece of personally identifiable information it contains and predict three things about it: the category of the information, and the start and end character position of the span that holds it. Submissions are scored on Micro F1-Score, and a prediction counts only when the category and both offsets are exactly right.

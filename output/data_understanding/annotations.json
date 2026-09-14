@@ -1,0 +1,1559 @@
+{
+  "scope": "train gold corpus only; no weak labels; no model training",
+  "denominators": {
+    "documents": 69468,
+    "annotated_documents": 69468,
+    "annotations": 855761,
+    "labels": [
+      "ADDRESS",
+      "DATE",
+      "EMAIL",
+      "JOB_TITLE",
+      "NAME",
+      "PHONE",
+      "USERNAME"
+    ]
+  },
+  "definitions": {
+    "left/right_whitespace": "immediately adjacent character exists and str.isspace() is true",
+    "left/right_punctuation": "Adjacent character is neither a Unicode word character nor whitespace.",
+    "leading/trailing_whitespace": "first/last character inside the span is whitespace",
+    "leading/trailing_punctuation": "First/last character inside the span is neither a Unicode word character nor whitespace.",
+    "internal_newline": "annotation text contains newline; leading/trailing reported separately",
+    "honorific_included": "NAME begins with Mr/Mrs/Ms/Miss/Dr/Prof/Rev/Sir/Madam, optional period, case-insensitive",
+    "honorific_excluded": "A complete audited honorific ends the preceding 30-character window, followed only by whitespace before the NAME span; not a correctness claim.",
+    "numeric_or_reference_like": "USERNAME contains digit, #, @, slash, hyphen, or ref/id/user/acct/ticket/case token",
+    "regions": "deterministic header/opening/body/paragraph-boundary/signature_or_tail heuristic in source",
+    "unlabelled_repeat": "Raw case-sensitive substring occurrence of a value labeled elsewhere in the same document, at different bounds; overlaps and free occurrences are separate. No word-boundary filtering.",
+    "cross_label_minority_assignments": "For each exact value, total label assignments minus its largest label count, summed across values. Descriptive disagreement, not an annotation error rate."
+  },
+  "boundary_by_label": {
+    "NAME": {
+      "count": 260997,
+      "left_whitespace": 256778,
+      "right_whitespace": 106130,
+      "left_punctuation": 4193,
+      "right_punctuation": 153270,
+      "leading_whitespace": 8,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 1392,
+      "trailing_punctuation": 3717,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "EMAIL": {
+      "count": 96614,
+      "left_whitespace": 83497,
+      "right_whitespace": 37776,
+      "left_punctuation": 13112,
+      "right_punctuation": 54531,
+      "leading_whitespace": 1,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 798,
+      "trailing_punctuation": 794,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "PHONE": {
+      "count": 92878,
+      "left_whitespace": 89333,
+      "right_whitespace": 35158,
+      "left_punctuation": 3517,
+      "right_punctuation": 54318,
+      "leading_whitespace": 3,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 64548,
+      "trailing_punctuation": 631,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "USERNAME": {
+      "count": 76802,
+      "left_whitespace": 46398,
+      "right_whitespace": 9653,
+      "left_punctuation": 30368,
+      "right_punctuation": 63335,
+      "leading_whitespace": 2,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 1436,
+      "trailing_punctuation": 1480,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "ADDRESS": {
+      "count": 81954,
+      "left_whitespace": 79554,
+      "right_whitespace": 13329,
+      "left_punctuation": 2398,
+      "right_punctuation": 64672,
+      "leading_whitespace": 1,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 441,
+      "trailing_punctuation": 443,
+      "internal_newline": 1368,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "JOB_TITLE": {
+      "count": 82472,
+      "left_whitespace": 79606,
+      "right_whitespace": 52537,
+      "left_punctuation": 2846,
+      "right_punctuation": 23714,
+      "leading_whitespace": 0,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 381,
+      "trailing_punctuation": 584,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    },
+    "DATE": {
+      "count": 164044,
+      "left_whitespace": 158059,
+      "right_whitespace": 14887,
+      "left_punctuation": 5205,
+      "right_punctuation": 143513,
+      "leading_whitespace": 1,
+      "trailing_whitespace": 0,
+      "leading_punctuation": 787,
+      "trailing_punctuation": 796,
+      "internal_newline": 0,
+      "leading_newline": 0,
+      "trailing_newline": 0
+    }
+  },
+  "label_profile": {
+    "NAME": {
+      "count": 260997,
+      "chars": 3457254,
+      "honorific_included": 44120,
+      "honorific_excluded": 125056
+    },
+    "EMAIL": {
+      "count": 96614,
+      "chars": 2576493
+    },
+    "PHONE": {
+      "count": 92878,
+      "chars": 1225428
+    },
+    "USERNAME": {
+      "count": 76802,
+      "chars": 858550,
+      "numeric_or_reference_like": 34899
+    },
+    "ADDRESS": {
+      "count": 81954,
+      "chars": 3040259
+    },
+    "JOB_TITLE": {
+      "count": 82472,
+      "chars": 1587958
+    },
+    "DATE": {
+      "count": 164044,
+      "chars": 2625477
+    }
+  },
+  "label_by_channel_domain_region": {
+    "NAME:channel": {
+      "EMAIL": 168650,
+      "LETTER": 81796,
+      "MEMO": 10551
+    },
+    "NAME:domain": {
+      "FINANCE": 33544,
+      "HEALTHCARE": 73123,
+      "IT": 31905,
+      "LEGAL": 86955,
+      "HR": 16168,
+      "GENERAL": 19302
+    },
+    "NAME:region": {
+      "header": 26045,
+      "body": 102359,
+      "opening": 71788,
+      "signature_or_tail": 57257,
+      "paragraph_boundary": 3548
+    },
+    "EMAIL:channel": {
+      "EMAIL": 63550,
+      "LETTER": 30428,
+      "MEMO": 2636
+    },
+    "EMAIL:domain": {
+      "FINANCE": 16286,
+      "HEALTHCARE": 19748,
+      "IT": 14835,
+      "LEGAL": 28848,
+      "HR": 8165,
+      "GENERAL": 8732
+    },
+    "EMAIL:region": {
+      "body": 76118,
+      "header": 1082,
+      "signature_or_tail": 9568,
+      "paragraph_boundary": 9229,
+      "opening": 617
+    },
+    "PHONE:channel": {
+      "EMAIL": 60483,
+      "LETTER": 29911,
+      "MEMO": 2484
+    },
+    "PHONE:domain": {
+      "FINANCE": 16423,
+      "HEALTHCARE": 22327,
+      "IT": 13487,
+      "LEGAL": 25984,
+      "HR": 6712,
+      "GENERAL": 7945
+    },
+    "PHONE:region": {
+      "body": 76017,
+      "paragraph_boundary": 10994,
+      "signature_or_tail": 5741,
+      "opening": 103,
+      "header": 23
+    },
+    "USERNAME:channel": {
+      "EMAIL": 48671,
+      "LETTER": 25855,
+      "MEMO": 2276
+    },
+    "USERNAME:domain": {
+      "FINANCE": 15214,
+      "HEALTHCARE": 19638,
+      "LEGAL": 21930,
+      "IT": 10520,
+      "HR": 4658,
+      "GENERAL": 4842
+    },
+    "USERNAME:region": {
+      "body": 48055,
+      "opening": 5594,
+      "paragraph_boundary": 13448,
+      "signature_or_tail": 5326,
+      "header": 4379
+    },
+    "ADDRESS:channel": {
+      "EMAIL": 50282,
+      "LETTER": 29571,
+      "MEMO": 2101
+    },
+    "ADDRESS:domain": {
+      "FINANCE": 12701,
+      "HEALTHCARE": 22028,
+      "IT": 11136,
+      "LEGAL": 23949,
+      "HR": 5643,
+      "GENERAL": 6497
+    },
+    "ADDRESS:region": {
+      "body": 45088,
+      "paragraph_boundary": 17520,
+      "signature_or_tail": 9193,
+      "opening": 9883,
+      "header": 270
+    },
+    "JOB_TITLE:channel": {
+      "EMAIL": 58634,
+      "LETTER": 22139,
+      "MEMO": 1699
+    },
+    "JOB_TITLE:domain": {
+      "FINANCE": 10968,
+      "HEALTHCARE": 17480,
+      "IT": 16352,
+      "LEGAL": 20034,
+      "HR": 8927,
+      "GENERAL": 8711
+    },
+    "JOB_TITLE:region": {
+      "body": 24641,
+      "signature_or_tail": 48350,
+      "paragraph_boundary": 1973,
+      "opening": 4981,
+      "header": 2527
+    },
+    "DATE:channel": {
+      "EMAIL": 106028,
+      "LETTER": 51284,
+      "MEMO": 6732
+    },
+    "DATE:domain": {
+      "FINANCE": 25536,
+      "HEALTHCARE": 42764,
+      "IT": 22281,
+      "LEGAL": 48510,
+      "HR": 11718,
+      "GENERAL": 13235
+    },
+    "DATE:region": {
+      "signature_or_tail": 6733,
+      "body": 95196,
+      "header": 11843,
+      "opening": 34231,
+      "paragraph_boundary": 16041
+    }
+  },
+  "region_by_label": {
+    "NAME": {
+      "header": 26045,
+      "body": 102359,
+      "opening": 71788,
+      "signature_or_tail": 57257,
+      "paragraph_boundary": 3548
+    },
+    "EMAIL": {
+      "body": 76118,
+      "header": 1082,
+      "signature_or_tail": 9568,
+      "paragraph_boundary": 9229,
+      "opening": 617
+    },
+    "PHONE": {
+      "body": 76017,
+      "paragraph_boundary": 10994,
+      "signature_or_tail": 5741,
+      "opening": 103,
+      "header": 23
+    },
+    "USERNAME": {
+      "body": 48055,
+      "opening": 5594,
+      "paragraph_boundary": 13448,
+      "signature_or_tail": 5326,
+      "header": 4379
+    },
+    "ADDRESS": {
+      "body": 45088,
+      "paragraph_boundary": 17520,
+      "signature_or_tail": 9193,
+      "opening": 9883,
+      "header": 270
+    },
+    "JOB_TITLE": {
+      "body": 24641,
+      "signature_or_tail": 48350,
+      "paragraph_boundary": 1973,
+      "opening": 4981,
+      "header": 2527
+    },
+    "DATE": {
+      "signature_or_tail": 6733,
+      "body": 95196,
+      "header": 11843,
+      "opening": 34231,
+      "paragraph_boundary": 16041
+    }
+  },
+  "repetition": {
+    "annotated_repeated_values": 54990,
+    "unlabelled_exact_occurrences": 2231,
+    "overlapping_unlabelled_occurrences": 2231,
+    "free_unlabelled_occurrences": 0,
+    "documents_with_repeated_value": 32887,
+    "documents_with_unlabelled_repeat": 1990
+  },
+  "cross_label_distinct_values": 766,
+  "cross_label_values_top": [
+    {
+      "value": "Emily Carter",
+      "labels": {
+        "NAME": 4313,
+        "JOB_TITLE": 1
+      },
+      "total": 4314
+    },
+    {
+      "value": "Dr. Evelyn Reed",
+      "labels": {
+        "NAME": 2540,
+        "JOB_TITLE": 7
+      },
+      "total": 2547
+    },
+    {
+      "value": "Mr. David Chen",
+      "labels": {
+        "NAME": 2524,
+        "JOB_TITLE": 1
+      },
+      "total": 2525
+    },
+    {
+      "value": "Dr. Eleanor Vance",
+      "labels": {
+        "NAME": 2222,
+        "JOB_TITLE": 18
+      },
+      "total": 2240
+    },
+    {
+      "value": "Dr. Benjamin Carter",
+      "labels": {
+        "NAME": 1940,
+        "JOB_TITLE": 11
+      },
+      "total": 1951
+    },
+    {
+      "value": "Dr. Anya Sharma",
+      "labels": {
+        "NAME": 1722,
+        "JOB_TITLE": 15
+      },
+      "total": 1737
+    },
+    {
+      "value": "Mr. Benjamin Carter",
+      "labels": {
+        "NAME": 1665,
+        "JOB_TITLE": 1
+      },
+      "total": 1666
+    },
+    {
+      "value": "eleanor.vance@example.com",
+      "labels": {
+        "EMAIL": 1496,
+        "USERNAME": 5
+      },
+      "total": 1501
+    },
+    {
+      "value": "Sarah Lee",
+      "labels": {
+        "NAME": 1270,
+        "USERNAME": 1
+      },
+      "total": 1271
+    },
+    {
+      "value": "Smith v. Johnson",
+      "labels": {
+        "USERNAME": 445,
+        "NAME": 705
+      },
+      "total": 1150
+    },
+    {
+      "value": "789012",
+      "labels": {
+        "USERNAME": 1040,
+        "NAME": 3,
+        "JOB_TITLE": 1,
+        "PHONE": 1
+      },
+      "total": 1045
+    },
+    {
+      "value": "Smith v. Jones",
+      "labels": {
+        "NAME": 526,
+        "USERNAME": 425
+      },
+      "total": 951
+    },
+    {
+      "value": "eleanor.vance@examplecorp.com",
+      "labels": {
+        "EMAIL": 876,
+        "USERNAME": 1
+      },
+      "total": 877
+    },
+    {
+      "value": "Ms. Sarah Jenkins",
+      "labels": {
+        "NAME": 777,
+        "JOB_TITLE": 1
+      },
+      "total": 778
+    },
+    {
+      "value": "eleanor.vance@emailprovider.com",
+      "labels": {
+        "EMAIL": 688,
+        "USERNAME": 1
+      },
+      "total": 689
+    },
+    {
+      "value": "Ms. Sarah Chen",
+      "labels": {
+        "NAME": 669,
+        "JOB_TITLE": 1
+      },
+      "total": 670
+    },
+    {
+      "value": "Dr. Sarah Chen",
+      "labels": {
+        "NAME": 622,
+        "JOB_TITLE": 1
+      },
+      "total": 623
+    },
+    {
+      "value": "Dr. Emily Carter",
+      "labels": {
+        "NAME": 519,
+        "JOB_TITLE": 1
+      },
+      "total": 520
+    },
+    {
+      "value": "INV-7890",
+      "labels": {
+        "USERNAME": 493,
+        "EMAIL": 2,
+        "DATE": 1,
+        "ADDRESS": 3,
+        "JOB_TITLE": 1
+      },
+      "total": 500
+    },
+    {
+      "value": "Innovate Solutions Inc.",
+      "labels": {
+        "NAME": 307,
+        "USERNAME": 184,
+        "JOB_TITLE": 6
+      },
+      "total": 497
+    },
+    {
+      "value": "Mark Johnson",
+      "labels": {
+        "NAME": 462,
+        "JOB_TITLE": 1
+      },
+      "total": 463
+    },
+    {
+      "value": "DATE",
+      "labels": {
+        "DATE": 454,
+        "JOB_TITLE": 5
+      },
+      "total": 459
+    },
+    {
+      "value": "87654321",
+      "labels": {
+        "USERNAME": 385,
+        "PHONE": 2,
+        "ADDRESS": 7,
+        "NAME": 1
+      },
+      "total": 395
+    },
+    {
+      "value": "Dr. Alistair Finch",
+      "labels": {
+        "NAME": 387,
+        "JOB_TITLE": 7
+      },
+      "total": 394
+    },
+    {
+      "value": "789456",
+      "labels": {
+        "USERNAME": 359,
+        "JOB_TITLE": 1,
+        "NAME": 1,
+        "ADDRESS": 2
+      },
+      "total": 363
+    },
+    {
+      "value": "City General Hospital",
+      "labels": {
+        "USERNAME": 51,
+        "ADDRESS": 153,
+        "NAME": 147,
+        "JOB_TITLE": 5
+      },
+      "total": 356
+    },
+    {
+      "value": "7890123",
+      "labels": {
+        "USERNAME": 303,
+        "NAME": 2,
+        "ADDRESS": 4
+      },
+      "total": 309
+    },
+    {
+      "value": "789012345",
+      "labels": {
+        "USERNAME": 277,
+        "PHONE": 4,
+        "ADDRESS": 7
+      },
+      "total": 288
+    },
+    {
+      "value": "Sterling & Associates",
+      "labels": {
+        "NAME": 115,
+        "USERNAME": 116,
+        "JOB_TITLE": 9
+      },
+      "total": 240
+    },
+    {
+      "value": "Smith & Associates",
+      "labels": {
+        "USERNAME": 111,
+        "NAME": 87,
+        "JOB_TITLE": 25
+      },
+      "total": 223
+    },
+    {
+      "value": "789-ABC",
+      "labels": {
+        "USERNAME": 216,
+        "NAME": 1
+      },
+      "total": 217
+    },
+    {
+      "value": "12345",
+      "labels": {
+        "USERNAME": 202,
+        "NAME": 4,
+        "ADDRESS": 5
+      },
+      "total": 211
+    },
+    {
+      "value": "PHONE",
+      "labels": {
+        "PHONE": 190,
+        "JOB_TITLE": 10
+      },
+      "total": 200
+    },
+    {
+      "value": "Vance & Associates",
+      "labels": {
+        "NAME": 101,
+        "USERNAME": 86,
+        "JOB_TITLE": 9
+      },
+      "total": 196
+    },
+    {
+      "value": "Sterling Corp.",
+      "labels": {
+        "USERNAME": 68,
+        "NAME": 122,
+        "JOB_TITLE": 4
+      },
+      "total": 194
+    },
+    {
+      "value": "789-XYZ",
+      "labels": {
+        "USERNAME": 189,
+        "NAME": 1,
+        "JOB_TITLE": 2,
+        "ADDRESS": 1
+      },
+      "total": 193
+    },
+    {
+      "value": "EMAIL",
+      "labels": {
+        "EMAIL": 183,
+        "JOB_TITLE": 7
+      },
+      "total": 190
+    },
+    {
+      "value": "Acme Corporation",
+      "labels": {
+        "NAME": 150,
+        "ADDRESS": 2,
+        "USERNAME": 23,
+        "JOB_TITLE": 1
+      },
+      "total": 176
+    },
+    {
+      "value": "456789",
+      "labels": {
+        "USERNAME": 167,
+        "PHONE": 1,
+        "NAME": 4,
+        "ADDRESS": 2,
+        "JOB_TITLE": 1
+      },
+      "total": 175
+    },
+    {
+      "value": "789123",
+      "labels": {
+        "USERNAME": 171,
+        "JOB_TITLE": 2,
+        "ADDRESS": 2
+      },
+      "total": 175
+    },
+    {
+      "value": "456",
+      "labels": {
+        "PHONE": 158,
+        "USERNAME": 13
+      },
+      "total": 171
+    },
+    {
+      "value": "[NAME]",
+      "labels": {
+        "NAME": 164,
+        "JOB_TITLE": 6
+      },
+      "total": 170
+    },
+    {
+      "value": "Tech Solutions Inc.",
+      "labels": {
+        "USERNAME": 53,
+        "NAME": 105,
+        "JOB_TITLE": 6,
+        "ADDRESS": 1
+      },
+      "total": 165
+    },
+    {
+      "value": "Dr. Robert Sterling",
+      "labels": {
+        "NAME": 162,
+        "JOB_TITLE": 2
+      },
+      "total": 164
+    },
+    {
+      "value": "St. Jude's Hospital",
+      "labels": {
+        "NAME": 56,
+        "ADDRESS": 82,
+        "USERNAME": 19,
+        "JOB_TITLE": 1
+      },
+      "total": 158
+    },
+    {
+      "value": "205",
+      "labels": {
+        "PHONE": 103,
+        "USERNAME": 47,
+        "JOB_TITLE": 2
+      },
+      "total": 152
+    },
+    {
+      "value": "123456789",
+      "labels": {
+        "USERNAME": 147,
+        "PHONE": 2,
+        "NAME": 2
+      },
+      "total": 151
+    },
+    {
+      "value": "Ms. Vance",
+      "labels": {
+        "NAME": 149,
+        "JOB_TITLE": 1
+      },
+      "total": 150
+    },
+    {
+      "value": "b.carter@lawfirm.com",
+      "labels": {
+        "EMAIL": 146,
+        "USERNAME": 1
+      },
+      "total": 147
+    },
+    {
+      "value": "Sterling Corp",
+      "labels": {
+        "NAME": 74,
+        "USERNAME": 64,
+        "JOB_TITLE": 6
+      },
+      "total": 144
+    },
+    {
+      "value": "Dr. Marcus Bellweather",
+      "labels": {
+        "NAME": 139,
+        "JOB_TITLE": 4
+      },
+      "total": 143
+    },
+    {
+      "value": "555-1234",
+      "labels": {
+        "PHONE": 139,
+        "USERNAME": 1
+      },
+      "total": 140
+    },
+    {
+      "value": "987654321",
+      "labels": {
+        "USERNAME": 131,
+        "PHONE": 6,
+        "ADDRESS": 2,
+        "NAME": 1
+      },
+      "total": 140
+    },
+    {
+      "value": "Smith",
+      "labels": {
+        "NAME": 138,
+        "USERNAME": 1
+      },
+      "total": 139
+    },
+    {
+      "value": "Metropolitan General Hospital",
+      "labels": {
+        "NAME": 64,
+        "ADDRESS": 51,
+        "USERNAME": 12,
+        "JOB_TITLE": 4
+      },
+      "total": 131
+    },
+    {
+      "value": "b.carter@examplecorp.com",
+      "labels": {
+        "EMAIL": 129,
+        "USERNAME": 1
+      },
+      "total": 130
+    },
+    {
+      "value": "Dr. David Chen",
+      "labels": {
+        "NAME": 120,
+        "JOB_TITLE": 3
+      },
+      "total": 123
+    },
+    {
+      "value": "Dr. Benjamin Carter, MD",
+      "labels": {
+        "NAME": 119,
+        "JOB_TITLE": 2
+      },
+      "total": 121
+    },
+    {
+      "value": "Sterling Solutions Inc.",
+      "labels": {
+        "NAME": 86,
+        "USERNAME": 27,
+        "JOB_TITLE": 2
+      },
+      "total": 115
+    },
+    {
+      "value": "General Hospital",
+      "labels": {
+        "NAME": 76,
+        "ADDRESS": 26,
+        "JOB_TITLE": 1,
+        "USERNAME": 11
+      },
+      "total": 114
+    },
+    {
+      "value": "Dr. Alan Chen",
+      "labels": {
+        "NAME": 110,
+        "JOB_TITLE": 2
+      },
+      "total": 112
+    },
+    {
+      "value": "789",
+      "labels": {
+        "PHONE": 92,
+        "USERNAME": 18,
+        "JOB_TITLE": 1
+      },
+      "total": 111
+    },
+    {
+      "value": "7890-ABC",
+      "labels": {
+        "USERNAME": 109,
+        "ADDRESS": 1,
+        "JOB_TITLE": 1
+      },
+      "total": 111
+    },
+    {
+      "value": "St. Jude's Medical Center",
+      "labels": {
+        "NAME": 61,
+        "ADDRESS": 42,
+        "USERNAME": 8
+      },
+      "total": 111
+    },
+    {
+      "value": "Sterling Solutions",
+      "labels": {
+        "USERNAME": 53,
+        "NAME": 55,
+        "JOB_TITLE": 3
+      },
+      "total": 111
+    },
+    {
+      "value": "Vance Innovations",
+      "labels": {
+        "USERNAME": 57,
+        "NAME": 51
+      },
+      "total": 108
+    },
+    {
+      "value": "NAME",
+      "labels": {
+        "NAME": 97,
+        "JOB_TITLE": 9,
+        "USERNAME": 1
+      },
+      "total": 107
+    },
+    {
+      "value": "Dr. Marcus Bell",
+      "labels": {
+        "NAME": 105,
+        "JOB_TITLE": 1
+      },
+      "total": 106
+    },
+    {
+      "value": "eleanor.vance@email.com",
+      "labels": {
+        "EMAIL": 103,
+        "USERNAME": 1
+      },
+      "total": 104
+    },
+    {
+      "value": "Sterling Enterprises",
+      "labels": {
+        "NAME": 62,
+        "USERNAME": 34,
+        "JOB_TITLE": 2,
+        "ADDRESS": 4
+      },
+      "total": 102
+    },
+    {
+      "value": "789-B",
+      "labels": {
+        "USERNAME": 95,
+        "JOB_TITLE": 4
+      },
+      "total": 99
+    },
+    {
+      "value": "alex.chen@examplecorp.com",
+      "labels": {
+        "EMAIL": 98,
+        "USERNAME": 1
+      },
+      "total": 99
+    },
+    {
+      "value": "Innovate Solutions",
+      "labels": {
+        "NAME": 45,
+        "USERNAME": 51,
+        "JOB_TITLE": 2
+      },
+      "total": 98
+    },
+    {
+      "value": "Miller & Associates",
+      "labels": {
+        "USERNAME": 39,
+        "NAME": 55
+      },
+      "total": 94
+    },
+    {
+      "value": "789456123",
+      "labels": {
+        "USERNAME": 85,
+        "PHONE": 4,
+        "ADDRESS": 2
+      },
+      "total": 91
+    },
+    {
+      "value": "2023-CV-4567",
+      "labels": {
+        "DATE": 6,
+        "USERNAME": 78
+      },
+      "total": 84
+    },
+    {
+      "value": "INV-789012",
+      "labels": {
+        "USERNAME": 83,
+        "JOB_TITLE": 1
+      },
+      "total": 84
+    },
+    {
+      "value": "e.vance@emailprovider.com",
+      "labels": {
+        "EMAIL": 83,
+        "USERNAME": 1
+      },
+      "total": 84
+    },
+    {
+      "value": "Metropolis General Hospital",
+      "labels": {
+        "NAME": 38,
+        "ADDRESS": 38,
+        "USERNAME": 7
+      },
+      "total": 83
+    },
+    {
+      "value": "1234567890",
+      "labels": {
+        "USERNAME": 68,
+        "PHONE": 12,
+        "ADDRESS": 1
+      },
+      "total": 81
+    },
+    {
+      "value": "TechSolutions Inc.",
+      "labels": {
+        "NAME": 51,
+        "USERNAME": 28,
+        "ADDRESS": 1
+      },
+      "total": 80
+    },
+    {
+      "value": "Sterling & Finch LLP",
+      "labels": {
+        "NAME": 49,
+        "USERNAME": 27,
+        "JOB_TITLE": 2
+      },
+      "total": 78
+    },
+    {
+      "value": "2023-CV-1234",
+      "labels": {
+        "DATE": 19,
+        "USERNAME": 58
+      },
+      "total": 77
+    },
+    {
+      "value": "Smith & Associates LLP",
+      "labels": {
+        "NAME": 37,
+        "USERNAME": 37,
+        "JOB_TITLE": 3
+      },
+      "total": 77
+    },
+    {
+      "value": "2023-CV-12345",
+      "labels": {
+        "USERNAME": 62,
+        "DATE": 13
+      },
+      "total": 75
+    },
+    {
+      "value": "INV789012",
+      "labels": {
+        "USERNAME": 72,
+        "JOB_TITLE": 2
+      },
+      "total": 74
+    },
+    {
+      "value": "Sterling & Associates LLP",
+      "labels": {
+        "NAME": 43,
+        "JOB_TITLE": 8,
+        "USERNAME": 20
+      },
+      "total": 71
+    },
+    {
+      "value": "Apex Solutions Inc.",
+      "labels": {
+        "USERNAME": 29,
+        "NAME": 39
+      },
+      "total": 68
+    },
+    {
+      "value": "Mr. Sterling",
+      "labels": {
+        "NAME": 66,
+        "JOB_TITLE": 1
+      },
+      "total": 67
+    },
+    {
+      "value": "Sterling Innovations",
+      "labels": {
+        "JOB_TITLE": 4,
+        "USERNAME": 32,
+        "NAME": 31
+      },
+      "total": 67
+    },
+    {
+      "value": "Legal Solutions Inc.",
+      "labels": {
+        "USERNAME": 21,
+        "NAME": 38,
+        "JOB_TITLE": 7
+      },
+      "total": 66
+    },
+    {
+      "value": "INV-2023-0045",
+      "labels": {
+        "USERNAME": 63,
+        "DATE": 2
+      },
+      "total": 65
+    },
+    {
+      "value": "Tech Innovations Inc.",
+      "labels": {
+        "NAME": 37,
+        "USERNAME": 25,
+        "ADDRESS": 1,
+        "JOB_TITLE": 2
+      },
+      "total": 65
+    },
+    {
+      "value": "Sterling Legal Services",
+      "labels": {
+        "NAME": 36,
+        "USERNAME": 24,
+        "JOB_TITLE": 4
+      },
+      "total": 64
+    },
+    {
+      "value": "Innovatech Solutions",
+      "labels": {
+        "USERNAME": 37,
+        "NAME": 25
+      },
+      "total": 62
+    },
+    {
+      "value": "x456",
+      "labels": {
+        "PHONE": 50,
+        "USERNAME": 12
+      },
+      "total": 62
+    },
+    {
+      "value": "Smith v. Davis",
+      "labels": {
+        "NAME": 47,
+        "USERNAME": 14
+      },
+      "total": 61
+    },
+    {
+      "value": "j.sterling@example.com",
+      "labels": {
+        "EMAIL": 59,
+        "USERNAME": 2
+      },
+      "total": 61
+    },
+    {
+      "value": "105",
+      "labels": {
+        "USERNAME": 19,
+        "PHONE": 40
+      },
+      "total": 59
+    },
+    {
+      "value": "305",
+      "labels": {
+        "PHONE": 39,
+        "USERNAME": 15,
+        "ADDRESS": 4
+      },
+      "total": 58
+    }
+  ],
+  "top_context_fragments": {
+    "NAME:contexts": [
+      {
+        "context": "following:, This letter serves as ",
+        "count": 19000
+      },
+      {
+        "context": "following:, This email serves as a",
+        "count": 17348
+      },
+      {
+        "context": "preceding:Dear Ms.",
+        "count": 12908
+      },
+      {
+        "context": "preceding:Dear Mr.",
+        "count": 5614
+      },
+      {
+        "context": "following:, I hope this email find",
+        "count": 5264
+      },
+      {
+        "context": "preceding: this matter. Sincerely,",
+        "count": 3325
+      },
+      {
+        "context": "preceding:To:",
+        "count": 3299
+      },
+      {
+        "context": "following:Date: October 26, 2023 S",
+        "count": 2347
+      },
+      {
+        "context": "following:Senior Project Manager E",
+        "count": 1895
+      },
+      {
+        "context": "following:Senior Associate Attorne",
+        "count": 1736
+      },
+      {
+        "context": "following:",
+        "count": 1649
+      },
+      {
+        "context": "preceding:te: October 26, 2023 To:",
+        "count": 1455
+      },
+      {
+        "context": "preceding: appreciated. Sincerely,",
+        "count": 1267
+      },
+      {
+        "context": "preceding:istrative assistant, Mr.",
+        "count": 1257
+      },
+      {
+        "context": "following:, This email provides an",
+        "count": 1152
+      }
+    ],
+    "USERNAME:contexts": [
+      {
+        "context": "following:",
+        "count": 4164
+      },
+      {
+        "context": "preceding:ent portal username is '",
+        "count": 2992
+      },
+      {
+        "context": "following:Dear Ms. Eleanor Vance, ",
+        "count": 1411
+      },
+      {
+        "context": "preceding:tient portal username is",
+        "count": 1178
+      },
+      {
+        "context": "preceding:al using your username '",
+        "count": 739
+      },
+      {
+        "context": "preceding:identification number is",
+        "count": 637
+      },
+      {
+        "context": "preceding:r. David Chen (USERNAME:",
+        "count": 628
+      },
+      {
+        "context": "preceding:l using your username, '",
+        "count": 598
+      },
+      {
+        "context": "following:, dated October 26, 2023",
+        "count": 545
+      },
+      {
+        "context": "preceding:tal under the username '",
+        "count": 509
+      },
+      {
+        "context": "preceding:tient portal username, '",
+        "count": 500
+      },
+      {
+        "context": "following:. Our records indicate t",
+        "count": 490
+      },
+      {
+        "context": "following:. Thank you for your pro",
+        "count": 442
+      },
+      {
+        "context": "preceding:tal using your username:",
+        "count": 410
+      },
+      {
+        "context": "following:. Thank you for your con",
+        "count": 406
+      }
+    ],
+    "JOB_TITLE:contexts": [
+      {
+        "context": "following:",
+        "count": 6250
+      },
+      {
+        "context": "preceding:Sincerely, Sarah Jenkins",
+        "count": 3736
+      },
+      {
+        "context": "following:ExampleCorp",
+        "count": 2181
+      },
+      {
+        "context": "preceding: Sincerely, Sarah Miller",
+        "count": 1935
+      },
+      {
+        "context": "preceding:t regards, Sarah Jenkins",
+        "count": 1685
+      },
+      {
+        "context": "preceding: Sincerely, David Miller",
+        "count": 1153
+      },
+      {
+        "context": "preceding:ely, Mr. Benjamin Carter",
+        "count": 789
+      },
+      {
+        "context": "preceding:Best regards, Sarah Chen",
+        "count": 781
+      },
+      {
+        "context": "preceding:Sincerely, Eleanor Vance",
+        "count": 713
+      },
+      {
+        "context": "following:Date: October 26, 2023 S",
+        "count": 690
+      },
+      {
+        "context": "following:Tech Solutions Inc.",
+        "count": 686
+      },
+      {
+        "context": "preceding:ely, Dr. Benjamin Carter",
+        "count": 638
+      },
+      {
+        "context": "preceding:incerely, Mr. David Chen",
+        "count": 594
+      },
+      {
+        "context": "following:Example Corp.",
+        "count": 582
+      },
+      {
+        "context": "preceding: Sincerely, Michael Chen",
+        "count": 576
+      }
+    ]
+  },
+  "limitations": [
+    "Context fragments are descriptive, not causal evidence.",
+    "Repeated values are exact and case-sensitive.",
+    "Unlabelled repeats may reflect omission/context policy, not annotation error.",
+    "Regions are heuristics, not ground truth.",
+    "Metadata operational fields are not predictive evidence."
+  ],
+  "cross_label_minority_assignments": 4893,
+  "cross_label_examples_top3": {
+    "Emily Carter": [
+      {
+        "document_id": "DOC_010248",
+        "label": "NAME",
+        "before": "r service representative, Ms. ",
+        "span": "Emily Carter",
+        "after": " (emily.carter@insurancecompan",
+        "start": 522,
+        "end": 534
+      },
+      {
+        "document_id": "DOC_101591",
+        "label": "NAME",
+        "before": "nd submitted documents to Ms. ",
+        "span": "Emily Carter",
+        "after": ", our Senior Acquisitions Mana",
+        "start": 496,
+        "end": 508
+      },
+      {
+        "document_id": "DOC_019412",
+        "label": "NAME",
+        "before": "023 to our legal counsel, Ms. ",
+        "span": "Emily Carter",
+        "after": ". Her email address is emily.c",
+        "start": 575,
+        "end": 587
+      },
+      {
+        "document_id": "DOC_021865",
+        "label": "JOB_TITLE",
+        "before": "nience. Our case manager, Ms. ",
+        "span": "Emily Carter",
+        "after": " (JOB_TITLE), will be overseei",
+        "start": 1172,
+        "end": 1184
+      }
+    ],
+    "Dr. Evelyn Reed": [
+      {
+        "document_id": "DOC_037651",
+        "label": "NAME",
+        "before": "Regarding Case File #789123 - ",
+        "span": "Dr. Evelyn Reed",
+        "after": "\n\nDear Mr. Arthur Jenkins,\n\nTh",
+        "start": 57,
+        "end": 72
+      },
+      {
+        "document_id": "DOC_062854",
+        "label": "NAME",
+        "before": "steps. Attendees will include ",
+        "span": "Dr. Evelyn Reed",
+        "after": ", our lead consultant, and Mr.",
+        "start": 874,
+        "end": 889
+      },
+      {
+        "document_id": "DOC_092166",
+        "label": "NAME",
+        "before": " moving forward.\n\nSincerely,\n\n",
+        "span": "Dr. Evelyn Reed",
+        "after": "\nHead of Cybersecurity\nTechSec",
+        "start": 1416,
+        "end": 1431
+      },
+      {
+        "document_id": "DOC_011956",
+        "label": "JOB_TITLE",
+        "before": "ng Your Recent Consultation - ",
+        "span": "Dr. Evelyn Reed",
+        "after": "\n\nDear Ms. Sarah Johnson,\n\nThi",
+        "start": 56,
+        "end": 71
+      },
+      {
+        "document_id": "DOC_011956",
+        "label": "JOB_TITLE",
+        "before": "your recent consultation with ",
+        "span": "Dr. Evelyn Reed",
+        "after": " on October 26, 2023, at our c",
+        "start": 157,
+        "end": 172
+      },
+      {
+        "document_id": "DOC_077250",
+        "label": "JOB_TITLE",
+        "before": "MEMORANDUM\n\nTO: ",
+        "span": "Dr. Evelyn Reed",
+        "after": ", Chief Medical Officer\nFROM: ",
+        "start": 16,
+        "end": 31
+      }
+    ],
+    "Mr. David Chen": [
+      {
+        "document_id": "DOC_088926",
+        "label": "NAME",
+        "before": "\n\nDate: October 26, 2023\n\nTo: ",
+        "span": "Mr. David Chen",
+        "after": "\nLegal Firm: Chen & Associates",
+        "start": 107,
+        "end": 121
+      },
+      {
+        "document_id": "DOC_092166",
+        "label": "NAME",
+        "before": "t ID: ASEC-2023-10-020]\n\nDear ",
+        "span": "Mr. David Chen",
+        "after": ",\n\nThis email serves as an urg",
+        "start": 110,
+        "end": 124
+      },
+      {
+        "document_id": "DOC_090314",
+        "label": "NAME",
+        "before": "dings - Meeting Request\n\nDear ",
+        "span": "Mr. David Chen",
+        "after": ",\n\nThis email serves as a foll",
+        "start": 82,
+        "end": 96
+      },
+      {
+        "document_id": "DOC_101671",
+        "label": "JOB_TITLE",
+        "before": " Vance, Department Head\nFROM: ",
+        "span": "Mr. David Chen",
+        "after": ", Lead Researcher\nDATE: Octobe",
+        "start": 57,
+        "end": 71
+      }
+    ]
+  }
+}

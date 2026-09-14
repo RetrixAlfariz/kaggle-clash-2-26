@@ -1,0 +1,69 @@
+{
+  "created_at": "2026-09-14T16:05:30.910662+00:00",
+  "files": [
+    {
+      "path": "Data/extra/weak_labeled_documents.jsonl",
+      "sha256": "4f141f28d6744c30dddd108280704649f0d373115dcdf8e41ffaf6f5e440bcad"
+    },
+    {
+      "path": "Data/README.txt",
+      "sha256": "f62b0b1ecdf7a5e1f477717adde87707519cb24ed4f9d70d2d21e2734736e2ad"
+    },
+    {
+      "path": "Data/sample_submission.csv",
+      "sha256": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584"
+    },
+    {
+      "path": "Data/test/test_metadata.parquet",
+      "sha256": "4946e8bce5e78b4b635c1c3388e3a996998f7f97899708dcbf9b2b3a6d4b8f6e"
+    },
+    {
+      "path": "Data/test/test_segments.csv",
+      "sha256": "79fb5d5191e93773c857cc9ab09aff19e03e37edca069aed55343973aa0629e8"
+    },
+    {
+      "path": "Data/train/train_labels.csv",
+      "sha256": "b47954f8b82c3f2bb4a64a2f727559e9611792d49dcab31f8876b712b86363f5"
+    },
+    {
+      "path": "Data/train/train_metadata.parquet",
+      "sha256": "d8e4cf60dccbbe73dd2dc36e3b97ce65c137945158e193687a9a7f673caff137"
+    },
+    {
+      "path": "Data/train/train_segments.csv",
+      "sha256": "ef1bfb6cf149a93a3fb4804a5589cfaa3806754a4c2198787efeef02a4326cec"
+    },
+    {
+      "path": "src/audit_reconstruction.py",
+      "sha256": "66b59d1171f38326d8c91f8e9ff1eed9231421b855356406b510c71920387b35"
+    },
+    {
+      "path": "src/audit_annotations.py",
+      "sha256": "2c6b080b45f773a45da3f24939a58c4d13db2283510c2d6e7125c5fe117556fb"
+    },
+    {
+      "path": "src/audit_metadata.py",
+      "sha256": "8d5b20b437b8d72bcbdcc43a3e9b530b5eb56a9aa010b1de0a0c42501b7d8115"
+    },
+    {
+      "path": "src/baseline_probe.py",
+      "sha256": "39c8a623501e3fb7449d2b6314e94363e6167b042275f93dd5c54b948a48b8f2"
+    },
+    {
+      "path": "output/data_understanding/reconstruction.json",
+      "sha256": "922bddaa4f379407937b3e79c03ae543b7a12f072a6ab7b53631f881acf6155f"
+    },
+    {
+      "path": "output/data_understanding/annotations.json",
+      "sha256": "7415bf6a66e8677116bfb73748cb60c333bc9567d385444e90f7db51d6678a4e"
+    },
+    {
+      "path": "output/data_understanding/annotations_examples.json",
+      "sha256": "654fabc5511b945a0901efd54768b9da3c124ac88f43a924466b83e898738d1a"
+    },
+    {
+      "path": "output/data_understanding/metadata.json",
+      "sha256": "60407aaa8d212ff89c5b7f2a5c79cae38f74536834b253c81ab4fb509da435e3"
+    }
+  ]
+}

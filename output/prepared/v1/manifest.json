@@ -1,0 +1,524 @@
+{
+  "format_version": 1,
+  "created_at": "2026-09-14T16:17:37.177798+00:00",
+  "runtime": {
+    "python": "3.13.2",
+    "pyarrow": "25.0.1"
+  },
+  "config": {
+    "seed": 2026,
+    "split_fraction_target": {
+      "train": 0.8,
+      "dev": 0.1,
+      "holdout": 0.1
+    },
+    "stratification": [
+      "channel",
+      "domain",
+      "entity_count_band"
+    ],
+    "format_version": 1
+  },
+  "sources": {
+    "Data/train/train_segments.csv": "ef1bfb6cf149a93a3fb4804a5589cfaa3806754a4c2198787efeef02a4326cec",
+    "Data/train/train_metadata.parquet": "d8e4cf60dccbbe73dd2dc36e3b97ce65c137945158e193687a9a7f673caff137",
+    "Data/train/train_labels.csv": "b47954f8b82c3f2bb4a64a2f727559e9611792d49dcab31f8876b712b86363f5",
+    "Data/test/test_segments.csv": "79fb5d5191e93773c857cc9ab09aff19e03e37edca069aed55343973aa0629e8",
+    "Data/test/test_metadata.parquet": "4946e8bce5e78b4b635c1c3388e3a996998f7f97899708dcbf9b2b3a6d4b8f6e",
+    "Data/sample_submission.csv": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584",
+    "Data/extra/weak_labeled_documents.jsonl": "4f141f28d6744c30dddd108280704649f0d373115dcdf8e41ffaf6f5e440bcad",
+    "Data/README.txt": "f62b0b1ecdf7a5e1f477717adde87707519cb24ed4f9d70d2d21e2734736e2ad",
+    "output/baseline_probe/report.json": "ba10e3553de638cda5e4908c4d360ce427f7788d0f235f8188c60ea2841354db",
+    "output/data_understanding/annotations_examples.json": "654fabc5511b945a0901efd54768b9da3c124ac88f43a924466b83e898738d1a",
+    "output/data_understanding/annotations.json": "7415bf6a66e8677116bfb73748cb60c333bc9567d385444e90f7db51d6678a4e",
+    "src/prepare_data.py": "033536e13d2da05c70478e9543d818dc6c75e177266baa2d0a0a19d753898d09",
+    "src/audit_reconstruction.py": "66b59d1171f38326d8c91f8e9ff1eed9231421b855356406b510c71920387b35"
+  },
+  "gold_partitions": {
+    "train": {
+      "documents": 55582,
+      "entities": 685026,
+      "labels": {
+        "NAME": 208998,
+        "DATE": 131459,
+        "JOB_TITLE": 66066,
+        "PHONE": 74341,
+        "EMAIL": 77212,
+        "ADDRESS": 65502,
+        "USERNAME": 61448
+      }
+    },
+    "dev": {
+      "documents": 6943,
+      "entities": 85336,
+      "labels": {
+        "NAME": 26009,
+        "DATE": 16239,
+        "PHONE": 9300,
+        "EMAIL": 9723,
+        "ADDRESS": 8226,
+        "JOB_TITLE": 8197,
+        "USERNAME": 7642
+      }
+    },
+    "holdout": {
+      "documents": 6943,
+      "entities": 85399,
+      "labels": {
+        "NAME": 25990,
+        "DATE": 16346,
+        "EMAIL": 9679,
+        "PHONE": 9237,
+        "USERNAME": 7712,
+        "JOB_TITLE": 8209,
+        "ADDRESS": 8226
+      }
+    }
+  },
+  "test": {
+    "documents": 23156,
+    "slots": 285318
+  },
+  "weak": {
+    "documents": 20000,
+    "normalized_text_overlap_by_partition": {
+      "train": 1
+    },
+    "used_for_training": false
+  },
+  "historical_exposure": {
+    "prior_probe_train_preserved": 10000,
+    "prior_probe_dev_preserved": 2000,
+    "reviewed_document_ids_excluded_from_holdout": 80
+  },
+  "stratum_allocation": [
+    {
+      "stratum": "EMAIL|FINANCE|1-10",
+      "documents": 2196,
+      "target_dev_or_holdout": 220,
+      "actual_dev": 220,
+      "actual_holdout": 220
+    },
+    {
+      "stratum": "EMAIL|FINANCE|11-15",
+      "documents": 4014,
+      "target_dev_or_holdout": 401,
+      "actual_dev": 401,
+      "actual_holdout": 401
+    },
+    {
+      "stratum": "EMAIL|FINANCE|16+",
+      "documents": 344,
+      "target_dev_or_holdout": 34,
+      "actual_dev": 34,
+      "actual_holdout": 34
+    },
+    {
+      "stratum": "EMAIL|GENERAL|1-10",
+      "documents": 2262,
+      "target_dev_or_holdout": 226,
+      "actual_dev": 226,
+      "actual_holdout": 226
+    },
+    {
+      "stratum": "EMAIL|GENERAL|11-15",
+      "documents": 2357,
+      "target_dev_or_holdout": 236,
+      "actual_dev": 236,
+      "actual_holdout": 236
+    },
+    {
+      "stratum": "EMAIL|GENERAL|16+",
+      "documents": 218,
+      "target_dev_or_holdout": 22,
+      "actual_dev": 22,
+      "actual_holdout": 22
+    },
+    {
+      "stratum": "EMAIL|HEALTHCARE|1-10",
+      "documents": 1763,
+      "target_dev_or_holdout": 176,
+      "actual_dev": 176,
+      "actual_holdout": 176
+    },
+    {
+      "stratum": "EMAIL|HEALTHCARE|11-15",
+      "documents": 5452,
+      "target_dev_or_holdout": 545,
+      "actual_dev": 545,
+      "actual_holdout": 545
+    },
+    {
+      "stratum": "EMAIL|HEALTHCARE|16+",
+      "documents": 1968,
+      "target_dev_or_holdout": 197,
+      "actual_dev": 197,
+      "actual_holdout": 197
+    },
+    {
+      "stratum": "EMAIL|HR|1-10",
+      "documents": 1648,
+      "target_dev_or_holdout": 165,
+      "actual_dev": 165,
+      "actual_holdout": 165
+    },
+    {
+      "stratum": "EMAIL|HR|11-15",
+      "documents": 2221,
+      "target_dev_or_holdout": 222,
+      "actual_dev": 222,
+      "actual_holdout": 222
+    },
+    {
+      "stratum": "EMAIL|HR|16+",
+      "documents": 102,
+      "target_dev_or_holdout": 10,
+      "actual_dev": 10,
+      "actual_holdout": 10
+    },
+    {
+      "stratum": "EMAIL|IT|1-10",
+      "documents": 4634,
+      "target_dev_or_holdout": 463,
+      "actual_dev": 463,
+      "actual_holdout": 463
+    },
+    {
+      "stratum": "EMAIL|IT|11-15",
+      "documents": 4515,
+      "target_dev_or_holdout": 452,
+      "actual_dev": 452,
+      "actual_holdout": 452
+    },
+    {
+      "stratum": "EMAIL|IT|16+",
+      "documents": 274,
+      "target_dev_or_holdout": 27,
+      "actual_dev": 27,
+      "actual_holdout": 27
+    },
+    {
+      "stratum": "EMAIL|LEGAL|1-10",
+      "documents": 1202,
+      "target_dev_or_holdout": 120,
+      "actual_dev": 120,
+      "actual_holdout": 120
+    },
+    {
+      "stratum": "EMAIL|LEGAL|11-15",
+      "documents": 7246,
+      "target_dev_or_holdout": 725,
+      "actual_dev": 725,
+      "actual_holdout": 725
+    },
+    {
+      "stratum": "EMAIL|LEGAL|16+",
+      "documents": 2994,
+      "target_dev_or_holdout": 299,
+      "actual_dev": 299,
+      "actual_holdout": 299
+    },
+    {
+      "stratum": "LETTER|FINANCE|1-10",
+      "documents": 1698,
+      "target_dev_or_holdout": 170,
+      "actual_dev": 170,
+      "actual_holdout": 170
+    },
+    {
+      "stratum": "LETTER|FINANCE|11-15",
+      "documents": 2823,
+      "target_dev_or_holdout": 282,
+      "actual_dev": 282,
+      "actual_holdout": 282
+    },
+    {
+      "stratum": "LETTER|FINANCE|16+",
+      "documents": 196,
+      "target_dev_or_holdout": 20,
+      "actual_dev": 20,
+      "actual_holdout": 20
+    },
+    {
+      "stratum": "LETTER|GENERAL|1-10",
+      "documents": 307,
+      "target_dev_or_holdout": 31,
+      "actual_dev": 31,
+      "actual_holdout": 31
+    },
+    {
+      "stratum": "LETTER|GENERAL|11-15",
+      "documents": 734,
+      "target_dev_or_holdout": 73,
+      "actual_dev": 73,
+      "actual_holdout": 73
+    },
+    {
+      "stratum": "LETTER|GENERAL|16+",
+      "documents": 106,
+      "target_dev_or_holdout": 11,
+      "actual_dev": 11,
+      "actual_holdout": 11
+    },
+    {
+      "stratum": "LETTER|HEALTHCARE|1-10",
+      "documents": 2938,
+      "target_dev_or_holdout": 294,
+      "actual_dev": 294,
+      "actual_holdout": 294
+    },
+    {
+      "stratum": "LETTER|HEALTHCARE|11-15",
+      "documents": 2410,
+      "target_dev_or_holdout": 241,
+      "actual_dev": 241,
+      "actual_holdout": 241
+    },
+    {
+      "stratum": "LETTER|HEALTHCARE|16+",
+      "documents": 1165,
+      "target_dev_or_holdout": 116,
+      "actual_dev": 116,
+      "actual_holdout": 116
+    },
+    {
+      "stratum": "LETTER|HR|1-10",
+      "documents": 471,
+      "target_dev_or_holdout": 47,
+      "actual_dev": 47,
+      "actual_holdout": 47
+    },
+    {
+      "stratum": "LETTER|HR|11-15",
+      "documents": 893,
+      "target_dev_or_holdout": 89,
+      "actual_dev": 89,
+      "actual_holdout": 89
+    },
+    {
+      "stratum": "LETTER|HR|16+",
+      "documents": 89,
+      "target_dev_or_holdout": 9,
+      "actual_dev": 9,
+      "actual_holdout": 9
+    },
+    {
+      "stratum": "LETTER|IT|1-10",
+      "documents": 372,
+      "target_dev_or_holdout": 37,
+      "actual_dev": 37,
+      "actual_holdout": 37
+    },
+    {
+      "stratum": "LETTER|IT|11-15",
+      "documents": 745,
+      "target_dev_or_holdout": 74,
+      "actual_dev": 74,
+      "actual_holdout": 74
+    },
+    {
+      "stratum": "LETTER|IT|16+",
+      "documents": 134,
+      "target_dev_or_holdout": 13,
+      "actual_dev": 13,
+      "actual_holdout": 13
+    },
+    {
+      "stratum": "LETTER|LEGAL|1-10",
+      "documents": 915,
+      "target_dev_or_holdout": 92,
+      "actual_dev": 92,
+      "actual_holdout": 92
+    },
+    {
+      "stratum": "LETTER|LEGAL|11-15",
+      "documents": 5142,
+      "target_dev_or_holdout": 514,
+      "actual_dev": 514,
+      "actual_holdout": 514
+    },
+    {
+      "stratum": "LETTER|LEGAL|16+",
+      "documents": 1021,
+      "target_dev_or_holdout": 102,
+      "actual_dev": 102,
+      "actual_holdout": 102
+    },
+    {
+      "stratum": "MEMO|FINANCE|1-10",
+      "documents": 1,
+      "target_dev_or_holdout": 0,
+      "actual_dev": 0,
+      "actual_holdout": 0
+    },
+    {
+      "stratum": "MEMO|FINANCE|11-15",
+      "documents": 26,
+      "target_dev_or_holdout": 3,
+      "actual_dev": 3,
+      "actual_holdout": 3
+    },
+    {
+      "stratum": "MEMO|FINANCE|16+",
+      "documents": 15,
+      "target_dev_or_holdout": 2,
+      "actual_dev": 2,
+      "actual_holdout": 2
+    },
+    {
+      "stratum": "MEMO|GENERAL|1-10",
+      "documents": 3,
+      "target_dev_or_holdout": 0,
+      "actual_dev": 0,
+      "actual_holdout": 0
+    },
+    {
+      "stratum": "MEMO|GENERAL|11-15",
+      "documents": 89,
+      "target_dev_or_holdout": 9,
+      "actual_dev": 9,
+      "actual_holdout": 9
+    },
+    {
+      "stratum": "MEMO|GENERAL|16+",
+      "documents": 24,
+      "target_dev_or_holdout": 2,
+      "actual_dev": 2,
+      "actual_holdout": 2
+    },
+    {
+      "stratum": "MEMO|HEALTHCARE|1-10",
+      "documents": 20,
+      "target_dev_or_holdout": 2,
+      "actual_dev": 2,
+      "actual_holdout": 2
+    },
+    {
+      "stratum": "MEMO|HEALTHCARE|11-15",
+      "documents": 646,
+      "target_dev_or_holdout": 65,
+      "actual_dev": 65,
+      "actual_holdout": 65
+    },
+    {
+      "stratum": "MEMO|HEALTHCARE|16+",
+      "documents": 485,
+      "target_dev_or_holdout": 48,
+      "actual_dev": 48,
+      "actual_holdout": 48
+    },
+    {
+      "stratum": "MEMO|HR|1-10",
+      "documents": 9,
+      "target_dev_or_holdout": 0,
+      "actual_dev": 0,
+      "actual_holdout": 0
+    },
+    {
+      "stratum": "MEMO|HR|11-15",
+      "documents": 29,
+      "target_dev_or_holdout": 3,
+      "actual_dev": 3,
+      "actual_holdout": 3
+    },
+    {
+      "stratum": "MEMO|HR|16+",
+      "documents": 13,
+      "target_dev_or_holdout": 1,
+      "actual_dev": 1,
+      "actual_holdout": 1
+    },
+    {
+      "stratum": "MEMO|IT|1-10",
+      "documents": 14,
+      "target_dev_or_holdout": 1,
+      "actual_dev": 1,
+      "actual_holdout": 1
+    },
+    {
+      "stratum": "MEMO|IT|11-15",
+      "documents": 94,
+      "target_dev_or_holdout": 9,
+      "actual_dev": 9,
+      "actual_holdout": 9
+    },
+    {
+      "stratum": "MEMO|IT|16+",
+      "documents": 71,
+      "target_dev_or_holdout": 7,
+      "actual_dev": 7,
+      "actual_holdout": 7
+    },
+    {
+      "stratum": "MEMO|LEGAL|1-10",
+      "documents": 12,
+      "target_dev_or_holdout": 1,
+      "actual_dev": 1,
+      "actual_holdout": 1
+    },
+    {
+      "stratum": "MEMO|LEGAL|11-15",
+      "documents": 213,
+      "target_dev_or_holdout": 21,
+      "actual_dev": 21,
+      "actual_holdout": 21
+    },
+    {
+      "stratum": "MEMO|LEGAL|16+",
+      "documents": 135,
+      "target_dev_or_holdout": 14,
+      "actual_dev": 14,
+      "actual_holdout": 14
+    }
+  ],
+  "files": {
+    "dev.parquet": {
+      "sha256": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+      "rows": 6943,
+      "schema": "document_id: string\nfull_text: string\nentities: list<element: struct<label: string, start: int32, end: int32, text: string>>\n  child 0, element: struct<label: string, start: int32, end: int32, text: string>\n      child 0, label: string\n      child 1, start: int32\n      child 2, end: int32\n      child 3, text: string\nexpected_entity_count: int32"
+    },
+    "holdout.parquet": {
+      "sha256": "7675bedc3640ecbd5bb54e055f143d30a7283fc0e3650be816f94f53b6ae282a",
+      "rows": 6943,
+      "schema": "document_id: string\nfull_text: string\nentities: list<element: struct<label: string, start: int32, end: int32, text: string>>\n  child 0, element: struct<label: string, start: int32, end: int32, text: string>\n      child 0, label: string\n      child 1, start: int32\n      child 2, end: int32\n      child 3, text: string\nexpected_entity_count: int32"
+    },
+    "metadata_audit_only.parquet": {
+      "sha256": "ed3b781888f10755486104477f0a3d7ccc83b8cbf81bb934ca9e7365d26bc301",
+      "rows": 92624,
+      "schema": "document_id: string\nchannel: string\ndomain: string\nn_chars: int64\nn_segments: int64\nn_words: int64\nn_nonempty_segments: int64\nsource_system: string\ningested_at: string\npartition: string"
+    },
+    "split_assignments.parquet": {
+      "sha256": "a6d398e3845d096540b44d30909267fca45118515ac7afe923ee0f94332d08ee",
+      "rows": 69468,
+      "schema": "document_id: string\nduplicate_group: string\nchannel: string\ndomain: string\nentity_count: int64\nstratum: string\npartition: string\nprior_probe_role: string\nreviewed_example: bool"
+    },
+    "test.parquet": {
+      "sha256": "a7104443eb01e50ed01613f12668ad410e9c77e97a9e48e1ecda4e1e2744ee95",
+      "rows": 23156,
+      "schema": "document_id: string\nfull_text: string\nexpected_entity_count: int32"
+    },
+    "test_slots.parquet": {
+      "sha256": "30054e78155381ce6ff3a42ea0ff203f0c4413eba9208e6e2f3fa882d982c77a",
+      "rows": 285318,
+      "schema": "row_order: int64\nrow_id: string\ndocument_id: string\nslot: int64"
+    },
+    "train.parquet": {
+      "sha256": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+      "rows": 55582,
+      "schema": "document_id: string\nfull_text: string\nentities: list<element: struct<label: string, start: int32, end: int32, text: string>>\n  child 0, element: struct<label: string, start: int32, end: int32, text: string>\n      child 0, label: string\n      child 1, start: int32\n      child 2, end: int32\n      child 3, text: string\nexpected_entity_count: int32"
+    },
+    "weak_pool_not_for_supervised_training.parquet": {
+      "sha256": "a19b4c2295440e9c546a5e64fac0483a3a63199572772c2332bbfeebbb9364ba",
+      "rows": 20000,
+      "schema": "document_id: string\nfull_text: string\nweak_entities: list<element: struct<label: string, start: int32, end: int32, text: string>>\n  child 0, element: struct<label: string, start: int32, end: int32, text: string>\n      child 0, label: string\n      child 1, start: int32\n      child 2, end: int32\n      child 3, text: string\nannotation_source: string\noverlap_partitions: list<element: string>\n  child 0, element: string"
+    }
+  },
+  "limitations": [
+    "The entire corpus was profiled earlier: reserved holdout is not fully blind.",
+    "Only exact/whitespace-normalized duplicates are grouped; semantic near duplicates remain unaudited.",
+    "Split proportions are approximate because historical membership and whole groups take priority.",
+    "Gold labels are preserved, including suspected inconsistencies. No tokenization, truncation, BIO conversion or relabeling.",
+    "Expected entity counts mirror exposed competition slots; this is not a general-purpose unknown-count NER protocol.",
+    "Metadata is audit-only; weak labels are a separate unused pool, and absent weak labels are not negatives."
+  ]
+}

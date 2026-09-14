@@ -1,0 +1,1743 @@
+{
+  "honorific_included": [
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "before": "nt: Data Breach Notification - Account of ",
+      "span": "Mr. Arthur P. Henderson",
+      "after": "\n\nDear Mr. Henderson,\n\nThis letter is to i",
+      "start": 55,
+      "end": 78
+    },
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "before": "ing to your account, including your name, ",
+      "span": "Mr. Arthur P. Henderson",
+      "after": ", your primary contact email address, a.he",
+      "start": 454,
+      "end": 477
+    },
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "before": "0-555-0101 or our Chief Security Officer, ",
+      "span": "Ms. Brenda Sterling",
+      "after": ", at b.sterling.cso@example.com, with any ",
+      "start": 1210,
+      "end": 1229
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "before": "To: Jane Smith\nFrom: ",
+      "span": "Dr. Alan Peterson",
+      "after": "\nDate: October 26, 2023\nSubject: Follow-up",
+      "start": 21,
+      "end": 38
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "before": "sultation on October 24, 2023, concerning ",
+      "span": "Mr. Robert Johnson",
+      "after": ". As per our discussion, Mr. Johnson's med",
+      "start": 232,
+      "end": 250
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "before": "imaging results with your office manager, ",
+      "span": "Mrs. Carol White",
+      "after": ". Please ensure these documents are integr",
+      "start": 592,
+      "end": 608
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "before": "clinic.com. Our administrative assistant, ",
+      "span": "Mr. David Lee",
+      "after": " (USERNAME: dlee_admin), can also assist w",
+      "start": 868,
+      "end": 881
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "before": "ent under your supervision. \n\nSincerely,\n\n",
+      "span": "Dr. Alan Peterson",
+      "after": "\nLead Physician\nGeneral Medicine Departmen",
+      "start": 1221,
+      "end": 1238
+    }
+  ],
+  "NAME:contexts": [
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "FINANCE"
+      },
+      "before": "a Breach Notification - Account of ",
+      "span": "Mr. Arthur P. Henderson",
+      "after": "\n\nDear Mr. Henderson,\n\nThis letter ",
+      "start": 55,
+      "end": 78
+    },
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "FINANCE"
+      },
+      "before": "your account, including your name, ",
+      "span": "Mr. Arthur P. Henderson",
+      "after": ", your primary contact email addres",
+      "start": 454,
+      "end": 477
+    },
+    {
+      "document_id": "DOC_072743",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "FINANCE"
+      },
+      "before": "101 or our Chief Security Officer, ",
+      "span": "Ms. Brenda Sterling",
+      "after": ", at b.sterling.cso@example.com, wi",
+      "start": 1210,
+      "end": 1229
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "NAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "Dear Ms. ",
+      "span": "Eleanor Vance",
+      "after": ",\n\nThis letter serves as formal not",
+      "start": 9,
+      "end": 22
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "NAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "id further action.\n\nSincerely,\nMr. ",
+      "span": "David Chen",
+      "after": "\nAccounts Receivable Manager\nSecure",
+      "start": 1028,
+      "end": 1038
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "To: ",
+      "span": "Jane Smith",
+      "after": "\nFrom: Dr. Alan Peterson\nDate: Octo",
+      "start": 4,
+      "end": 14
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "To: Jane Smith\nFrom: ",
+      "span": "Dr. Alan Peterson",
+      "after": "\nDate: October 26, 2023\nSubject: Fo",
+      "start": 21,
+      "end": 38
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "on on October 24, 2023, concerning ",
+      "span": "Mr. Robert Johnson",
+      "after": ". As per our discussion, Mr. Johnso",
+      "start": 232,
+      "end": 250
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": " results with your office manager, ",
+      "span": "Mrs. Carol White",
+      "after": ". Please ensure these documents are",
+      "start": 592,
+      "end": 608
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "com. Our administrative assistant, ",
+      "span": "Mr. David Lee",
+      "after": " (USERNAME: dlee_admin), can also a",
+      "start": 868,
+      "end": 881
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "er your supervision. \n\nSincerely,\n\n",
+      "span": "Dr. Alan Peterson",
+      "after": "\nLead Physician\nGeneral Medicine De",
+      "start": 1221,
+      "end": 1238
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "Date: October 26, 2023\nTo: ",
+      "span": "Robert Johnson",
+      "after": " <robert.johnson@examplecorp.com>\nF",
+      "start": 27,
+      "end": 41
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "ert.johnson@examplecorp.com>\nFrom: ",
+      "span": "Jane Smith",
+      "after": " <jane.smith@examplecorp.com>\nSubje",
+      "start": 81,
+      "end": 91
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "Benefits and Employee Portal\n\nDear ",
+      "span": "Robert Johnson",
+      "after": ",\n\nThis email serves as an importan",
+      "start": 210,
+      "end": 224
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "es, spearheaded by our HR Manager, ",
+      "span": "Jane Smith",
+      "after": ", are designed to enhance your well",
+      "start": 445,
+      "end": 455
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "ut to the HR team.\n\nBest regards,\n\n",
+      "span": "Jane Smith",
+      "after": "\nHR Manager\nExampleCorp\njane.smith@",
+      "start": 1559,
+      "end": 1569
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "NAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "Dear Ms. ",
+      "span": "Eleanor Vance",
+      "after": ",\n\nThis email serves as a formal fo",
+      "start": 9,
+      "end": 22
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "NAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": " this matter swiftly.\n\nSincerely,\n\n",
+      "span": "James Smith",
+      "after": "\nSenior Accounts Manager\nGlobal Ent",
+      "start": 1116,
+      "end": 1127
+    },
+    {
+      "document_id": "DOC_066717",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": " Data Privacy Policy Changes\n\nDear ",
+      "span": "Alice Wonderland",
+      "after": ",\n\nThis email is to inform you abou",
+      "start": 61,
+      "end": 77
+    },
+    {
+      "document_id": "DOC_066717",
+      "label": "NAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "te to contact our Privacy Officer, ",
+      "span": "Dr. Robert Smith",
+      "after": ", directly.\n\nYou can reach Dr. Smit",
+      "start": 882,
+      "end": 898
+    }
+  ],
+  "USERNAME:contexts": [
+    {
+      "document_id": "DOC_072743",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "FINANCE"
+      },
+      "before": "ndicate your last login username, '",
+      "span": "ArthursAdmin",
+      "after": "', and your primary billing address",
+      "start": 679,
+      "end": 691
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "ce on your account, Account Number ",
+      "span": "789456123",
+      "after": ". Our records indicate that payment",
+      "start": 133,
+      "end": 142
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "l using your registered username, '",
+      "span": "EVance23",
+      "after": "'. Should you have any questions or",
+      "start": 740,
+      "end": 748
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "ssistant, Mr. David Lee (USERNAME: ",
+      "span": "dlee_admin",
+      "after": "), can also assist with scheduling ",
+      "start": 893,
+      "end": 903
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "For your reference, my username is ",
+      "span": "j.smith",
+      "after": ", and my JOB_TITLE is Senior Accoun",
+      "start": 969,
+      "end": 976
+    },
+    {
+      "document_id": "DOC_066717",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "tted through your employee portal (",
+      "span": "awonderland",
+      "after": "), is collected, used, and stored. ",
+      "start": 491,
+      "end": 502
+    },
+    {
+      "document_id": "DOC_071680",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "MEMO",
+        "domain": "HEALTHCARE"
+      },
+      "before": " portal username for follow-up is '",
+      "span": "APendelton1958",
+      "after": "'. Please file this report accordin",
+      "start": 952,
+      "end": 966
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "LEGAL"
+      },
+      "before": "com), who also holds the USERNAME '",
+      "span": "dlee_legal",
+      "after": "', will be coordinating the next st",
+      "start": 963,
+      "end": 973
+    },
+    {
+      "document_id": "DOC_037090",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "me associated with your account is ",
+      "span": "JSTERLING78",
+      "after": ".\n\nWe value your business and look ",
+      "start": 831,
+      "end": 842
+    },
+    {
+      "document_id": "DOC_045330",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": " portal credentials are: Username: ",
+      "span": "MedRecordPortal2023",
+      "after": ". If you require any further inform",
+      "start": 808,
+      "end": 827
+    },
+    {
+      "document_id": "DOC_047367",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "HEALTHCARE"
+      },
+      "before": "  Your patient portal username is '",
+      "span": "E Vance Migraine",
+      "after": "'.\n\nDr. Carter has prescribed a new",
+      "start": 322,
+      "end": 338
+    },
+    {
+      "document_id": "DOC_047367",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "HEALTHCARE"
+      },
+      "before": "ownmedical.com. Your patient ID is ",
+      "span": "789012",
+      "after": ".\n\nWe appreciate your continued tru",
+      "start": 782,
+      "end": 788
+    },
+    {
+      "document_id": "DOC_051673",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "made online through your USERNAME: ",
+      "span": "evance_user",
+      "after": " portal, or by mailing a check to o",
+      "start": 469,
+      "end": 480
+    },
+    {
+      "document_id": "DOC_054078",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "LEGAL"
+      },
+      "before": "lobal Mediation Services\nUSERNAME: ",
+      "span": "res.team.gms",
+      "after": "",
+      "start": 1014,
+      "end": 1026
+    },
+    {
+      "document_id": "DOC_088793",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "ible via our internal portal using ",
+      "span": "ereed_admin",
+      "after": ", indicates promising results regar",
+      "start": 381,
+      "end": 392
+    },
+    {
+      "document_id": "DOC_117352",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "Our records indicate that invoice #",
+      "span": "INV-2023-10-157",
+      "after": ", totaling $4,875.00, remains unpai",
+      "start": 208,
+      "end": 223
+    },
+    {
+      "document_id": "DOC_117352",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "rtal using your account username, '",
+      "span": "evance_sterling",
+      "after": "'. Should you have any questions or",
+      "start": 652,
+      "end": 667
+    },
+    {
+      "document_id": "DOC_008156",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "nistrator, Mark Johnson (username: ",
+      "span": "mjohnson88",
+      "after": "), has been notified and is current",
+      "start": 938,
+      "end": 948
+    },
+    {
+      "document_id": "DOC_023939",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "0**. Your prescription number is **",
+      "span": "RX789012",
+      "after": "**. \n\nTo schedule your follow-up ap",
+      "start": 476,
+      "end": 484
+    },
+    {
+      "document_id": "DOC_023939",
+      "label": "USERNAME",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "r next visit. Your patient ID is **",
+      "span": "PJ456789",
+      "after": "**. \n\nSincerely,\n\nThe Healthcare Cl",
+      "start": 877,
+      "end": 885
+    }
+  ],
+  "JOB_TITLE:contexts": [
+    {
+      "document_id": "DOC_072743",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "FINANCE"
+      },
+      "before": "port line at 1-800-555-0101 or our ",
+      "span": "Chief Security Officer",
+      "after": ", Ms. Brenda Sterling, at b.sterlin",
+      "start": 1186,
+      "end": 1208
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "action.\n\nSincerely,\nMr. David Chen\n",
+      "span": "Accounts Receivable Manager",
+      "after": "\nSecure Solutions Inc.",
+      "start": 1039,
+      "end": 1066
+    },
+    {
+      "document_id": "DOC_104770",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "n. \n\nSincerely,\n\nDr. Alan Peterson\n",
+      "span": "Lead Physician",
+      "after": "\nGeneral Medicine Department\nMedica",
+      "start": 1239,
+      "end": 1253
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": " These changes, spearheaded by our ",
+      "span": "HR Manager",
+      "after": ", Jane Smith, are designed to enhan",
+      "start": 433,
+      "end": 443
+    },
+    {
+      "document_id": "DOC_042490",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "R team.\n\nBest regards,\n\nJane Smith\n",
+      "span": "HR Manager",
+      "after": "\nExampleCorp\njane.smith@examplecorp",
+      "start": 1570,
+      "end": 1580
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "me is j.smith, and my JOB_TITLE is ",
+      "span": "Senior Accounts Manager",
+      "after": ".\n\nWe appreciate your business and ",
+      "start": 998,
+      "end": 1021
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": " swiftly.\n\nSincerely,\n\nJames Smith\n",
+      "span": "Senior Accounts Manager",
+      "after": "\nGlobal Enterprises Inc.\nNovember 2",
+      "start": 1128,
+      "end": 1151
+    },
+    {
+      "document_id": "DOC_066717",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "this important matter. As a valued ",
+      "span": "Senior Marketing Manager",
+      "after": ", your understanding and adherence ",
+      "start": 1215,
+      "end": 1239
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "LEGAL"
+      },
+      "before": "10-27, I, Mr. Benjamin Carter, the ",
+      "span": "Senior Legal Counsel",
+      "after": " for Sterling Corp., communicated o",
+      "start": 208,
+      "end": 228
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "LEGAL"
+      },
+      "before": "8.\n\nSincerely,\nMr. Benjamin Carter\n",
+      "span": "Senior Legal Counsel",
+      "after": "\nSterling Corp.",
+      "start": 1313,
+      "end": 1333
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "LEGAL"
+      },
+      "before": "n.\n\nSincerely,\n\nMs. Victoria Adams\n",
+      "span": "Senior Partner",
+      "after": "\nSterling Legal Associates\n456 Pine",
+      "start": 1148,
+      "end": 1162
+    },
+    {
+      "document_id": "DOC_037090",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "is letter.\n\nSincerely,\n\nDavid Chen\n",
+      "span": "Accounts Receivable Specialist",
+      "after": "\nExample Corp.",
+      "start": 1025,
+      "end": 1055
+    },
+    {
+      "document_id": "DOC_045330",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "iated.\n\nSincerely,\n\nMr. David Chen\n",
+      "span": "Chief Legal Officer",
+      "after": "\nMediTrans Solutions",
+      "start": 1400,
+      "end": 1419
+    },
+    {
+      "document_id": "DOC_047367",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "HEALTHCARE"
+      },
+      "before": "ntment.\n\nSincerely,\n\nSarah Jenkins\n",
+      "span": "Office Manager",
+      "after": "\nAnytown Medical Group\nOctober 27, ",
+      "start": 935,
+      "end": 949
+    },
+    {
+      "document_id": "DOC_054078",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "LEGAL"
+      },
+      "before": "r this matter is Ms. Emily Carter, ",
+      "span": "Senior Mediator",
+      "after": ", whose direct line is (555) 987-65",
+      "start": 695,
+      "end": 710
+    },
+    {
+      "document_id": "DOC_011574",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "LEGAL"
+      },
+      "before": "esponse.\n\nSincerely,\n\nSarah Miller\n",
+      "span": "Paralegal",
+      "after": "\nSterling & Blackwood",
+      "start": 1206,
+      "end": 1215
+    },
+    {
+      "document_id": "DOC_088793",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HEALTHCARE"
+      },
+      "before": "oject.\n\nSincerely,\n\nLiam O'Connell\n",
+      "span": "Senior Project Manager",
+      "after": "\nliam.oconnell@example.com",
+      "start": 1178,
+      "end": 1200
+    },
+    {
+      "document_id": "DOC_117352",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "LETTER",
+        "domain": "FINANCE"
+      },
+      "before": "28, 2023.\n\nSincerely,\nSarah Miller\n",
+      "span": "Senior Account Manager",
+      "after": "\nSterling Solutions\nsarah.miller@st",
+      "start": 1123,
+      "end": 1145
+    },
+    {
+      "document_id": "DOC_008156",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "IT"
+      },
+      "before": "ghly valued.\n\nSincerely,\n\nJane Doe\n",
+      "span": "Project Manager",
+      "after": "",
+      "start": 1248,
+      "end": 1263
+    },
+    {
+      "document_id": "DOC_011103",
+      "label": "JOB_TITLE",
+      "metadata": {
+        "channel": "EMAIL",
+        "domain": "HR"
+      },
+      "before": " client's side was Mr. David Chen, ",
+      "span": "Senior Project Manager",
+      "after": ", located at 123 Main Street, Anyto",
+      "start": 586,
+      "end": 608
+    }
+  ],
+  "honorific_excluded": [
+    {
+      "document_id": "DOC_123788",
+      "label": "NAME",
+      "before": "Dear Ms. ",
+      "span": "Eleanor Vance",
+      "after": ",\n\nThis letter serves as formal notificati",
+      "start": 9,
+      "end": 22
+    },
+    {
+      "document_id": "DOC_123788",
+      "label": "NAME",
+      "before": " to avoid further action.\n\nSincerely,\nMr. ",
+      "span": "David Chen",
+      "after": "\nAccounts Receivable Manager\nSecure Soluti",
+      "start": 1028,
+      "end": 1038
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "NAME",
+      "before": "Dear Ms. ",
+      "span": "Eleanor Vance",
+      "after": ",\n\nThis email serves as a formal follow-up",
+      "start": 9,
+      "end": 22
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": "Dear Ms. ",
+      "span": "Eleanor Vance",
+      "after": ",\n\nThis email serves as a follow-up to our",
+      "start": 9,
+      "end": 22
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": "terling Corp. On DATE: 2023-10-27, I, Mr. ",
+      "span": "Benjamin Carter",
+      "after": ", the Senior Legal Counsel for Sterling Co",
+      "start": 187,
+      "end": 202
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": "0-25.\n\nOur due diligence team, led by Ms. ",
+      "span": "Anya Sharma",
+      "after": " (anysharma@sterlingcorp.com), has identif",
+      "start": 411,
+      "end": 422
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": " patent filing by your lead engineer, Dr. ",
+      "span": "Marcus Bellweather",
+      "after": " (mbrllw@vanceinnovations.net). Could you ",
+      "start": 626,
+      "end": 644
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": "y contact for this matter will remain Ms. ",
+      "span": "Sarah Lee",
+      "after": " (slee@sterlingcorp.com), Senior Investmen",
+      "start": 1029,
+      "end": 1038
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "NAME",
+      "before": "at PHONE: (212) 555-0188.\n\nSincerely,\nMr. ",
+      "span": "Benjamin Carter",
+      "after": "\nSenior Legal Counsel\nSterling Corp.",
+      "start": 1297,
+      "end": 1312
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "NAME",
+      "before": " of Case File: Smith v. Johnson\n\nDear Ms. ",
+      "span": "Emily Carter",
+      "after": ",\n\nThis letter serves as a formal follow-u",
+      "start": 66,
+      "end": 78
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "NAME",
+      "before": "ncerning the property dispute between Mr. ",
+      "span": "Robert Smith",
+      "after": " and Ms. Sarah Johnson. Our firm, Sterling",
+      "start": 199,
+      "end": 211
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "NAME",
+      "before": " dispute between Mr. Robert Smith and Ms. ",
+      "span": "Sarah Johnson",
+      "after": ". Our firm, Sterling Legal Associates, rep",
+      "start": 220,
+      "end": 233
+    }
+  ],
+  "edge_spans": [
+    {
+      "document_id": "DOC_042490",
+      "label": "PHONE",
+      "before": "ase contact the HR department directly at ",
+      "span": "(555) 123-4567",
+      "after": " during business hours.\n\nWe encourage all ",
+      "start": 989,
+      "end": 1003
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "PHONE",
+      "before": "e have attempted to reach you by phone at ",
+      "span": "(555) 123-4567",
+      "after": " on multiple occasions and sent a previous",
+      "start": 298,
+      "end": 312
+    },
+    {
+      "document_id": "DOC_109734",
+      "label": "PHONE",
+      "before": "do not hesitate to contact me directly at ",
+      "span": "(555) 987-6543",
+      "after": " or reply to this email. For your referenc",
+      "start": 895,
+      "end": 909
+    },
+    {
+      "document_id": "DOC_066717",
+      "label": "PHONE",
+      "before": "bert.smith@examplecorp.com or by phone at ",
+      "span": "+1 (555) 123-4567",
+      "after": ". Alternatively, you may send corresponden",
+      "start": 992,
+      "end": 1009
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "PHONE",
+      "before": "TE: 2023-11-03? His direct line is PHONE: ",
+      "span": "(555) 123-4567",
+      "after": ".\n\nAdditionally, please provide an updated",
+      "start": 813,
+      "end": 827
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "PHONE",
+      "before": "ment Analyst, whose direct line is PHONE: ",
+      "span": "(555) 987-6543",
+      "after": ".\n\nWe look forward to your prompt response",
+      "start": 1119,
+      "end": 1133
+    },
+    {
+      "document_id": "DOC_049745",
+      "label": "PHONE",
+      "before": "ny questions to me via email or at PHONE: ",
+      "span": "(212) 555-0188",
+      "after": ".\n\nSincerely,\nMr. Benjamin Carter\nSenior L",
+      "start": 1265,
+      "end": 1279
+    },
+    {
+      "document_id": "DOC_071680",
+      "label": "PHONE",
+      "before": " (email: emily.carter@example.com, phone: ",
+      "span": "(555) 123-4567",
+      "after": "). Mr. Pendelton resides at 14 Maple Stree",
+      "start": 828,
+      "end": 842
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "PHONE",
+      "before": "ert.smith@examplelegal.com or by phone at ",
+      "span": "(555) 123-4567",
+      "after": ". This evidence directly relates to the bo",
+      "start": 538,
+      "end": 552
+    },
+    {
+      "document_id": "DOC_129451",
+      "label": "PHONE",
+      "before": "sage or by calling our office directly at ",
+      "span": "(555) 987-6543",
+      "after": ". Our associate attorney, Mr. David Lee (d",
+      "start": 855,
+      "end": 869
+    },
+    {
+      "document_id": "DOC_037090",
+      "label": "PHONE",
+      "before": "accounting@examplecorp.com or by phone at ",
+      "span": "(555) 876-5432",
+      "after": ". Our accounts manager, Ms. Eleanor Vance,",
+      "start": 493,
+      "end": 507
+    },
+    {
+      "document_id": "DOC_037090",
+      "label": "PHONE",
+      "before": "Vance, can be reached at her direct line, ",
+      "span": "(555) 123-4567",
+      "after": ", should you require a personalized discus",
+      "start": 585,
+      "end": 599
+    }
+  ],
+  "multiline_spans": [
+    {
+      "document_id": "DOC_129451",
+      "label": "ADDRESS",
+      "before": "\nSenior Partner\nSterling Legal Associates\n",
+      "span": "456 Pine Street\nMetropolis, NY 10001",
+      "after": "",
+      "start": 1189,
+      "end": 1225
+    },
+    {
+      "document_id": "DOC_063402",
+      "label": "ADDRESS",
+      "before": "nior Project Manager\nInnovatech Solutions\n",
+      "span": "123 Tech Drive, Suite 400\nSilicon Valley, CA 94035",
+      "after": "",
+      "start": 1262,
+      "end": 1312
+    },
+    {
+      "document_id": "DOC_043090",
+      "label": "ADDRESS",
+      "before": "\n\nSarah Chen\nIT Director\nExampleCorp Inc.\n",
+      "span": "123 Tech Way, Suite 400\nInnovation City, CA 90210",
+      "after": "",
+      "start": 1141,
+      "end": 1190
+    },
+    {
+      "document_id": "DOC_068010",
+      "label": "ADDRESS",
+      "before": "ior Project Manager\nExampleCorp Solutions\n",
+      "span": "123 Tech Avenue, Suite 400\nInnovation City, CA 90210",
+      "after": "",
+      "start": 1305,
+      "end": 1357
+    },
+    {
+      "document_id": "DOC_091134",
+      "label": "ADDRESS",
+      "before": " Smith\nSenior Project Manager\nExampleCorp\n",
+      "span": "456 Corporate Drive, Suite 200\nTechville, NY 10001",
+      "after": "",
+      "start": 1154,
+      "end": 1204
+    },
+    {
+      "document_id": "DOC_115754",
+      "label": "ADDRESS",
+      "before": "Sarah Chen\nProject Manager\nAcme Solutions\n",
+      "span": "123 Tech Avenue, Suite 100\nInnovation City, CA 90210",
+      "after": "",
+      "start": 1148,
+      "end": 1200
+    },
+    {
+      "document_id": "DOC_032717",
+      "label": "ADDRESS",
+      "before": "\nChief Medical Officer\nMedCorp Healthcare\n",
+      "span": "123 Healthway St, Suite 400\nAnytown, CA 90210",
+      "after": "\n(555) 123-4567\nemily.roberts@medcorp.com",
+      "start": 1128,
+      "end": 1173
+    },
+    {
+      "document_id": "DOC_029734",
+      "label": "ADDRESS",
+      "before": " regards,\n\nHR Department\nExampleCorp Inc.\n",
+      "span": "123 Corporate Drive, Suite 400\nAustin, TX 78701",
+      "after": "\n(512) 555-0123\ncontact.hr@examplecorp.com",
+      "start": 998,
+      "end": 1045
+    },
+    {
+      "document_id": "DOC_062422",
+      "label": "ADDRESS",
+      "before": "rds,\n\nDavid Miller\nSenior Project Manager\n",
+      "span": "123 Tech Drive, Suite 100\nInnovation City, CA 90210",
+      "after": "",
+      "start": 1238,
+      "end": 1289
+    },
+    {
+      "document_id": "DOC_099295",
+      "label": "ADDRESS",
+      "before": "e Attorney\nSterling & Associates Law Firm\n",
+      "span": "123 Main Street, Suite 400\nMetropolis, NY 10001",
+      "after": "\nUsername: jlee_sterlinglaw",
+      "start": 1257,
+      "end": 1304
+    },
+    {
+      "document_id": "DOC_067927",
+      "label": "ADDRESS",
+      "before": "\nHuman Resources Department\nPhoenix Corp.\n",
+      "span": "123 Corporate Way, Suite 400\nTech City, CA 90210",
+      "after": "",
+      "start": 1249,
+      "end": 1297
+    },
+    {
+      "document_id": "DOC_126187",
+      "label": "ADDRESS",
+      "before": "nce\nSenior Paralegal\nLegal Solutions Inc.\n",
+      "span": "456 Oak Avenue, Suite 200\nMetropolis, IL 60601",
+      "after": "",
+      "start": 1000,
+      "end": 1046
+    }
+  ],
+  "target_values:10:00 AM": [
+    {
+      "document_id": "DOC_011574",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": " deposition on November 15, 2023, between ",
+      "span": "10:00 AM",
+      "after": " and 12:00 PM PST. You can reach our paral",
+      "start": 809,
+      "end": 817
+    },
+    {
+      "document_id": "DOC_053251",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": "heduled for Tuesday, October 24, 2023, at ",
+      "span": "10:00 AM",
+      "after": ". The deposition will take place at our of",
+      "start": 277,
+      "end": 285
+    },
+    {
+      "document_id": "DOC_080439",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": " our consultation on October 24, 2023, at ",
+      "span": "10:00 AM",
+      "after": " regarding your recent cardiac assessment.",
+      "start": 326,
+      "end": 334
+    },
+    {
+      "document_id": "DOC_023334",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": "ltation on Thursday, October 26, 2023, at ",
+      "span": "10:00 AM",
+      "after": ". We will be meeting at our offices locate",
+      "start": 202,
+      "end": 210
+    },
+    {
+      "document_id": "DOC_016864",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": "heduled for Tuesday, October 26, 2023, at ",
+      "span": "10:00 AM",
+      "after": ". The address for our clinic is 123 Main S",
+      "start": 197,
+      "end": 205
+    },
+    {
+      "document_id": "DOC_010314",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": "ollow-up meeting on November 20, 2023, at ",
+      "span": "10:00 AM",
+      "after": " to review the discovery materials. Please",
+      "start": 856,
+      "end": 864
+    },
+    {
+      "document_id": "DOC_126430",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": "heduled for Tuesday, October 26, 2023, at ",
+      "span": "10:00 AM",
+      "after": ". Your appointment is with Dr. Marcus Bell",
+      "start": 155,
+      "end": 163
+    },
+    {
+      "document_id": "DOC_101308",
+      "label": "DATE",
+      "value": "10:00 AM",
+      "before": ". Vance presented on October 24, 2023, at ",
+      "span": "10:00 AM",
+      "after": ", complaining of persistent fatigue. Her p",
+      "start": 311,
+      "end": 319
+    }
+  ],
+  "unlabelled_repeats": [
+    {
+      "document_id": "DOC_078436",
+      "value": "October 26, 2023",
+      "labelled": [
+        {
+          "start": 869,
+          "end": 885,
+          "label": "DATE"
+        }
+      ],
+      "unlabelled_offsets": [
+        212
+      ],
+      "text": "Dear Ms. Eleanor Vance,\n\nThis letter is to formally confirm your appointment for a comprehensive dental examination and cleaning with Dr. Benjamin Carter at our clinic. Your appointment is scheduled for Tuesday, October 26, 2023, at 10:30 AM.\n\nPlease arrive 15 minutes prior to your scheduled time to complete any necessary new patient paperwork. Our office is located at 123 Maple Street, Anytown, CA 90210. Should you need to reschedule or have any questions regarding your appointment, please do not hesitate to contact our front desk at (555) 123-4567. Our receptionist, Sarah Chen, will be happy to assist you. You can also reach us via email at info@anytown-dental.com. For your convenience, you can access our patient portal using your username 'evance26' to review your medical history and treatment plans prior to your visit.\n\nWe look forward to seeing you on October 26, 2023.\n\nSincerely,\nThe Anytown Dental Team"
+    },
+    {
+      "document_id": "DOC_107488",
+      "value": "Arthur Jenkins",
+      "labelled": [
+        {
+          "start": 1162,
+          "end": 1176,
+          "label": "NAME"
+        },
+        {
+          "start": 1193,
+          "end": 1207,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        32
+      ],
+      "text": "To: Dr. Eleanor Vance\nFrom: Mr. Arthur Jenkins\nDate: October 26, 2023\nSubject: Follow-up Regarding Patient Case - ID: 78910-B\n\nDear Dr. Vance,\n\nI am writing to follow up on the recent consultation regarding Mr. Benjamin Carter (DOB: 01/15/1975), whose patient ID is 78910-B. Mr. Carter presented on October 20, 2023, at 10:00 AM with persistent abdominal pain. Following our initial discussion, I have completed a comprehensive review of his medical history and preliminary diagnostic reports.\n\nHis primary care physician, Dr. Sarah Miller (SPECIALIST_TITLE: Gastroenterologist), has provided all relevant records. Mr. Carter's contact information is: 123 Maple Street, Anytown, USA 12345; Phone: (555) 123-4567; Email: b.carter@emailprovider.com. His insurance policy number is INS987654321.\n\nI would appreciate your expert opinion on the next steps for Mr. Carter's treatment plan. Please let me know if you require any further information. I can be reached at my office at (212) 555-9876 or via email at a.jenkins@medicalgroup.org. My username for the patient portal is ajenkins_physician.\n\nThank you for your time and dedication to patient care.\n\nSincerely,\nArthur Jenkins\nPHYSICIAN_NAME: Arthur Jenkins\nJOB_TITLE: Senior Physician"
+    },
+    {
+      "document_id": "DOC_037921",
+      "value": "Eleanor Vance",
+      "labelled": [
+        {
+          "start": 749,
+          "end": 762,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        32
+      ],
+      "text": "Date: October 26, 2023\n\nTo: Ms. Eleanor Vance\n123 Maple Street\nAnytown, CA 90210\n\nFrom: Dr. Alan Peterson, MD\nChief of Cardiology\nCity General Hospital\n456 Oak Avenue\nAnytown, CA 90211\n\nSubject: Follow-up Consultation Regarding Cardiac Health\n\nDear Ms. Vance,\n\nThis letter serves as a follow-up to your consultation on October 19, 2023, regarding your ongoing cardiac health. During our meeting, we discussed the results of your recent echocardiogram and reviewed your prescription for Lisinopril. As previously advised, please continue to take this medication as prescribed by your primary care physician, Dr. Sarah Chen. Your next appointment is scheduled for November 15, 2023, at 10:00 AM. Please check in with the reception desk under the name Eleanor Vance upon arrival.\n\nWe encourage you to maintain your current exercise regimen and healthy diet. Should you experience any new or worsening symptoms, please do not hesitate to contact our office at 555-123-4567. You may also reach my assistant, Mr. David Lee, at extension 201. For non-urgent inquiries, you can use the patient portal with your username 'evance_cardio' or email our department directly at cardiology.cg@citygeneral.org. We look forward to seeing you again soon.\n\nSincerely,\n\nDr. Alan Peterson, MD\nChief of Cardiology"
+    },
+    {
+      "document_id": "DOC_003794",
+      "value": "David Chen",
+      "labelled": [
+        {
+          "start": 1162,
+          "end": 1172,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        360
+      ],
+      "text": "October 26, 2023\n\nMs. Eleanor Vance\n123 Maple Street\nAnytown, CA 90210\n\nSubject: Regarding Your Recent Inquiry - Case ID: 789-ABC\n\nDear Ms. Vance,\n\nThis correspondence follows up on your recent inquiry dated October 20, 2023, concerning the ongoing legal matter referenced by Case ID: 789-ABC. Our firm, Smith & Associates LLP, represented by lead counsel Mr. David Chen (NAME), is diligently working on your case. \n\nWe have reviewed the documents you provided, and they are currently under analysis by our paralegal team. Ms. Jessica Miller (NAME) will be your primary point of contact for any immediate questions. You may reach her directly at jessica.miller@smithassociates.law (EMAIL) or by phone at (555) 123-4567 ext. 205 (PHONE).\n\nPlease be advised that our office is located at 456 Oak Avenue, Suite 300, Anytown, CA 90211 (ADDRESS). Our standard business hours are Monday through Friday, 9:00 AM to 5:00 PM PST. Should you need to log into our secure client portal, your USERNAME is 'EVance2023'. \n\nWe anticipate providing you with a more detailed update by November 10, 2023 (DATE). Thank you for your continued patience and cooperation. \n\nSincerely,\n\nDavid Chen\nSenior Partner\nSmith & Associates LLP"
+    },
+    {
+      "document_id": "DOC_026371",
+      "value": "Vance",
+      "labelled": [
+        {
+          "start": 456,
+          "end": 461,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        17
+      ],
+      "text": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of the services provided by our firm, Sterling Legal Solutions, to your company, Apex Innovations, on October 26, 2023. The agreement, initiated on September 15, 2023, covered intellectual property consultation regarding your new software, 'Quantum Leap.' Our lead counsel, Mr. Arthur Jenkins, along with paralegal Ms. Sarah Chen, handled all aspects of this engagement. \n\nWe understand that Ms. Vance, Senior Legal Counsel at Apex Innovations, required our expertise to review patent filings and draft licensing agreements. We are pleased to report that all deliverables were completed on schedule. For any further inquiries, please feel free to contact us at our primary office number, (555) 876-5432, or reach out to Mr. Jenkins directly via email at a.jenkins@sterlinglegalsolutions.com. Our firm's address is 123 Main Street, Suite 400, Anytown, CA 90210.\n\nWe value your continued partnership and look forward to assisting Apex Innovations with future legal needs. Please note that your client portal username remains 'ApexUser123' for accessing any shared documents.\n\nSincerely,\nThe Sterling Legal Solutions Team"
+    },
+    {
+      "document_id": "DOC_035504",
+      "value": "October 26, 2023",
+      "labelled": [
+        {
+          "start": 1014,
+          "end": 1030,
+          "label": "DATE"
+        }
+      ],
+      "unlabelled_offsets": [
+        180
+      ],
+      "text": "Dear Mr. Samuel Jenkins,\n\nThis letter serves as formal confirmation of your upcoming appointment with Dr. Eleanor Vance at our clinic. Your appointment is scheduled for **Tuesday, October 26, 2023**, at **10:30 AM**. Please ensure you arrive 15 minutes prior to your scheduled time to complete any necessary check-in procedures.\n\nOur clinic is located at **123 Health Street, Suite 4B, Anytown, CA 90210**. For any urgent inquiries or to reschedule, please contact our reception desk at **(555) 123-4567**. Your patient portal username is **sjenkins87**, and you can access your medical records and communicate with our staff through this secure platform.\n\nDr. Vance, our lead cardiologist, will be reviewing your recent test results and discussing your treatment plan. Please bring a list of all current medications and any relevant medical history to your appointment. If you have any questions prior to your visit, feel free to email our office at **info@healthclinic.com**.\n\nWe look forward to seeing you on **October 26, 2023**.\n\nSincerely,\n\nThe Anytown Medical Clinic Administration\n**Administrator Name:** Maria Garcia\n**Administrator Email:** m.garcia@healthclinic.com"
+    },
+    {
+      "document_id": "DOC_113465",
+      "value": "Thomas Griffiths",
+      "labelled": [
+        {
+          "start": 935,
+          "end": 951,
+          "label": "NAME"
+        },
+        {
+          "start": 1121,
+          "end": 1137,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        32
+      ],
+      "text": "To: Dr. Eleanor Vance\nFrom: Mr. Thomas Griffiths\nDate: October 26, 2023\nSubject: Follow-up Regarding Patient Record - Ms. Sarah Chen\n\nDear Dr. Vance,\n\nThis correspondence is to follow up on our previous discussion concerning the patient record of Ms. Sarah Chen. We are continuing to compile all necessary documentation for her upcoming appointment scheduled for November 15, 2023. \n\nAs per your request, I have attached the latest diagnostic report from Dr. Anya Sharma, dated October 20, 2023. Furthermore, we have secured the preliminary treatment plan initiated by Dr. Ben Carter on October 18, 2023. \n\nMs. Chen can be reached directly at 555-0187 or via email at sarah.chen@examplemail.com should you require any further immediate clarification from her perspective. Her registered address remains 123 Maple Street, Anytown, CA 90210.\n\nI trust this information is sufficient for your review. Please do not hesitate to contact me, Thomas Griffiths, at 555-0123 or my professional email, t.griffiths@healthsystems.org, if any additional details are needed. My USERNAME for the EMR system is TGriffiths23.\n\nSincerely,\n\nThomas Griffiths\nSenior Medical Records Coordinator\nHealth Systems Inc."
+    },
+    {
+      "document_id": "DOC_059665",
+      "value": "555",
+      "labelled": [
+        {
+          "start": 943,
+          "end": 946,
+          "label": "PHONE"
+        }
+      ],
+      "unlabelled_offsets": [
+        591
+      ],
+      "text": "MEMORANDUM\n\nTO: Dr. Eleanor Vance, Chief of Staff\nFROM: Dr. Marcus Chen, Senior Neurologist\nDATE: October 26, 2023\nSUBJECT: Patient Case Review - Mr. Arthur Pendelton\n\nThis memorandum concerns the ongoing care of Mr. Arthur Pendelton, a patient admitted on October 19, 2023. Mr. Pendelton, identified by his patient ID 789012, presents with symptoms consistent with a complex neurological disorder. His primary contact information is his home ADDRESS: 123 Elm Street, Anytown, CA 90210, and his emergency contact, Ms. Guinevere Smith, can be reached at EMAIL: g.smith@example.com or PHONE: (555) 123-4567. Mr. Pendelton's attending physician is Dr. Lancelot Dubois. We are awaiting the results of his latest MRI, scheduled for November 1, 2023. His current USERNAME for the patient portal is APendelton01. We will provide a comprehensive update following the diagnostic imaging. Please direct any immediate inquiries to my office at extension 555. Thank you for your attention to this critical matter. Dr. Chen's JOB_TITLE is Senior Neurologist."
+    },
+    {
+      "document_id": "DOC_048321",
+      "value": "Eleanor Vance",
+      "labelled": [
+        {
+          "start": 48,
+          "end": 61,
+          "label": "NAME"
+        },
+        {
+          "start": 184,
+          "end": 197,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        1231
+      ],
+      "text": "Subject: Legal Consultation Request - Estate of Eleanor Vance\n\nDear Mr. David Miller,\n\nThis correspondence is to formally request a legal consultation regarding the estate of the late Eleanor Vance, who passed away on October 15, 2023. Our firm, Sterling & Associates, has been retained by the executor of Ms. Vance's estate, Mr. Robert Chen.\n\nWe require your expertise in navigating the complexities of probate law, specifically concerning the distribution of assets outlined in Ms. Vance's will. The primary contact for this matter will be Ms. Sarah Jenkins, our senior paralegal, whose email address is s.jenkins@sterlinglegal.com and phone number is (555) 123-4567. Ms. Jenkins's username on our internal system is 'sjenkins_sa'.\n\nWe understand that your firm, Miller & Associates, is located at 123 Main Street, Anytown, CA 90210. We are available for an initial meeting at your earliest convenience. Please propose several dates and times that work for your schedule, preferably within the next two weeks. We are also open to conducting this consultation remotely via video conference if that is more suitable. Please confirm receipt of this email and indicate your availability.\n\nSincerely,\n\nRobert Chen\nExecutor, Estate of Eleanor Vance"
+    },
+    {
+      "document_id": "DOC_108175",
+      "value": "David Sterling",
+      "labelled": [
+        {
+          "start": 1328,
+          "end": 1342,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        33
+      ],
+      "text": "To: Ms. Eleanor Vance\n\nFrom: Mr. David Sterling, Senior Analyst\n\nDate: October 26, 2023\n\nSubject: Follow-up Regarding Project Phoenix Implementation - Contract ID: PHOENIX789\n\nDear Ms. Vance,\n\nThis email serves as a follow-up to our meeting on October 19, 2023, concerning the ongoing implementation of Project Phoenix. As discussed, we are nearing the final deployment phase and require confirmation on a few key details.\n\nFirstly, could you please confirm the final approved budget for the project? Our records indicate a preliminary figure of $150,000, but we need the definitive amount to finalize resource allocation. Secondly, please provide the designated point of contact within your IT department for system integration. Our technical lead, Mr. Robert Chen (username: rchen_phoenix), will be reaching out to them shortly. Their primary contact number is (123) 456-7890.\n\nWe also need to schedule a final walkthrough at your office located at 123 Main Street, Anytown, CA 90210. Please let us know your availability on November 6th or November 7th. Our project manager, Ms. Sarah Miller, will coordinate the specific time. You can reach her directly at sarah.miller@examplecorp.com or her direct line, 555-0199.\n\nWe appreciate your continued cooperation and look forward to a successful project completion.\n\nSincerely,\n\nDavid Sterling\nSenior Analyst\nExample Corp."
+    },
+    {
+      "document_id": "DOC_111023",
+      "value": "October 27, 2023",
+      "labelled": [
+        {
+          "start": 768,
+          "end": 784,
+          "label": "DATE"
+        }
+      ],
+      "unlabelled_offsets": [
+        218
+      ],
+      "text": "Subject: URGENT: Appointment Confirmation - Dr. Evelyn Reed\n\nDear Mr. David Miller,\n\nThis email serves to confirm your upcoming appointment with Dr. Evelyn Reed at our clinic. The appointment is scheduled for Tuesday, October 27, 2023, at 10:00 AM. Please arrive 15 minutes prior to your scheduled time to complete any necessary paperwork.\n\nOur clinic is located at 123 Health Avenue, Suite 4B, Anytown, CA 90210. You can reach our reception desk at (555) 123-4567 should you need to reschedule or have any questions. Your patient portal username is DMiller87, and you can access it at our secure patient portal website. Your referring physician, Dr. Sarah Jenkins, has been provided with preliminary information regarding your case.\n\nWe look forward to seeing you on October 27, 2023. Please do not hesitate to contact us if you require any further assistance.\n\nSincerely,\n\nThe Office of Dr. Evelyn Reed\n(Practice Manager: Ms. Anya Sharma)\n\nContact Email: info@drreedclinic.com"
+    },
+    {
+      "document_id": "DOC_102577",
+      "value": "Arthur Pendleton",
+      "labelled": [
+        {
+          "start": 1174,
+          "end": 1190,
+          "label": "NAME"
+        }
+      ],
+      "unlabelled_offsets": [
+        30
+      ],
+      "text": "To: Dr. Evelyn Reed\nFrom: Mr. Arthur Pendleton\nDate: October 26, 2023\nSubject: Follow-up Regarding Patient Case: Isabella Garcia\n\nDear Dr. Reed,\n\nI hope this email finds you well. I am writing to follow up on the recent consultation concerning Isabella Garcia, DOB: July 15, 1998. As per our discussion on October 20, 2023, I have reviewed the preliminary diagnostic reports and wish to provide an update. Isabella's primary physician, Dr. Samuel Chen (USERNAME: schen_md), has been cc'd on this correspondence.\n\nHer current address is 123 Maple Street, Anytown, CA 90210. We are awaiting further clarification on the treatment plan outlined in the referral letter dated October 18, 2023. My direct line for any urgent queries is 555-123-4567, and my professional email is arthur.pendleton@medicalassociates.com. I will be reaching out to Isabella's designated contact, Ms. Brenda Smith, at brenda.smith.patient@emailprovider.com, later today to confirm her availability for the next scheduled appointment on November 3, 2023.\n\nThank you for your continued dedication to Isabella's care. Please do not hesitate to contact me if further information is required. \n\nSincerely,\nArthur Pendleton\nSenior Medical Coordinator"
+    }
+  ],
+  "target_values:Robert Davis": [
+    {
+      "document_id": "DOC_010314",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "mber 15, 2023. Our lead investigator, Mr. ",
+      "span": "Robert Davis",
+      "after": ", can be reached at 555-0123 should you re",
+      "start": 684,
+      "end": 696
+    },
+    {
+      "document_id": "DOC_017059",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "5-0100. Our dedicated representative, Mr. ",
+      "span": "Robert Davis",
+      "after": ", will be happy to assist you. \n\nWe value ",
+      "start": 742,
+      "end": 754
+    },
+    {
+      "document_id": "DOC_029393",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "and Project Handoff - Sarah Jenkins\n\nDear ",
+      "span": "Robert Davis",
+      "after": ",\n\nThis email serves as a reminder and con",
+      "start": 66,
+      "end": 78
+    },
+    {
+      "document_id": "DOC_126604",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "ell-received by the opposing counsel, Mr. ",
+      "span": "Robert Davis",
+      "after": ", who serves as Lead Counsel for the defen",
+      "start": 467,
+      "end": 479
+    },
+    {
+      "document_id": "DOC_020784",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": " opposing party's insurance adjuster, Mr. ",
+      "span": "Robert Davis",
+      "after": ", can be reached at (555) 234-5678. Please",
+      "start": 486,
+      "end": 498
+    },
+    {
+      "document_id": "DOC_030584",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "obert.davis@examplecorp.com.\n\nSincerely,\n\n",
+      "span": "Robert Davis",
+      "after": "\nHR Manager\nExampleCorp HR Department",
+      "start": 1030,
+      "end": 1042
+    },
+    {
+      "document_id": "DOC_012170",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "ranscripts from the opposing counsel, Mr. ",
+      "span": "Robert Davis",
+      "after": " (EMAIL: r.davis@opposingfirm.net, PHONE: ",
+      "start": 421,
+      "end": 433
+    },
+    {
+      "document_id": "DOC_015380",
+      "label": "NAME",
+      "value": "Robert Davis",
+      "before": "vided references, Ms. Jessica Lee and Mr. ",
+      "span": "Robert Davis",
+      "after": ", have also been contacted. We anticipate ",
+      "start": 752,
+      "end": 764
+    }
+  ],
+  "target_values:Attorney Robert Davis": [
+    {
+      "document_id": "DOC_041205",
+      "label": "NAME",
+      "value": "Attorney Robert Davis",
+      "before": " your continued cooperation.\n\nSincerely,\n\n",
+      "span": "Attorney Robert Davis",
+      "after": "\nSenior Partner\nDavis & Associates Law Fir",
+      "start": 1005,
+      "end": 1026
+    }
+  ],
+  "target_values:Medical Clinic of Anytown": [
+    {
+      "document_id": "DOC_110801",
+      "label": "USERNAME",
+      "value": "Medical Clinic of Anytown",
+      "before": "\n\nSincerely,\nDr. Alan Reed\nChief of Staff\n",
+      "span": "Medical Clinic of Anytown",
+      "after": "",
+      "start": 1106,
+      "end": 1131
+    },
+    {
+      "document_id": "DOC_076812",
+      "label": "ADDRESS",
+      "value": "Medical Clinic of Anytown",
+      "before": "Sincerely,\n\nDr. Amelia Smith\nCardiologist\n",
+      "span": "Medical Clinic of Anytown",
+      "after": "",
+      "start": 1080,
+      "end": 1105
+    },
+    {
+      "document_id": "DOC_070407",
+      "label": "USERNAME",
+      "value": "Medical Clinic of Anytown",
+      "before": "el Peterson\nClinical Research Coordinator\n",
+      "span": "Medical Clinic of Anytown",
+      "after": "",
+      "start": 1172,
+      "end": 1197
+    }
+  ],
+  "whitespace_edge_spans": [
+    {
+      "document_id": "DOC_080074",
+      "label": "NAME",
+      "before": "Account Discrepancy - [USERNAME]\n\nDear Ms.",
+      "span": " Eleanor Vance",
+      "after": ",\n\nThis email serves as a formal notificat",
+      "start": 75,
+      "end": 89
+    },
+    {
+      "document_id": "DOC_080074",
+      "label": "NAME",
+      "before": " your convenience. \n\nOur Lead Analyst, Mr.",
+      "span": " David Chen",
+      "after": ", currently assigned as your account MANAG",
+      "start": 670,
+      "end": 681
+    },
+    {
+      "document_id": "DOC_013497",
+      "label": "NAME",
+      "before": "ing Account Inquiry - [USERNAME]\n\nDear Ms.",
+      "span": " Eleanor Vance",
+      "after": ",\n\nThis email confirms receipt of your inq",
+      "start": 57,
+      "end": 71
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "USERNAME",
+      "before": "Subject: Regarding Account Closure -",
+      "span": " [USERNAME]",
+      "after": "\n\nDear Ms. Eleanor Vance,\n\nThis email is t",
+      "start": 36,
+      "end": 47
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "NAME",
+      "before": "ing Account Closure - [USERNAME]\n\nDear Ms.",
+      "span": " Eleanor Vance",
+      "after": ",\n\nThis email is to formally notify you of",
+      "start": 57,
+      "end": 71
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "USERNAME",
+      "before": "u of the upcoming closure of your account,",
+      "span": " [USERNAME]",
+      "after": ", effective [DATE]. This decision has been",
+      "start": 151,
+      "end": 162
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "DATE",
+      "before": "ure of your account, [USERNAME], effective",
+      "span": " [DATE]",
+      "after": ". This decision has been made due to inact",
+      "start": 173,
+      "end": 180
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "EMAIL",
+      "before": "tion on file, including your email address",
+      "span": " [EMAIL]",
+      "after": " and phone number [PHONE], has been utiliz",
+      "start": 327,
+      "end": 335
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "PHONE",
+      "before": "our email address [EMAIL] and phone number",
+      "span": " [PHONE]",
+      "after": ", has been utilized for this notification.",
+      "start": 352,
+      "end": 360
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "PHONE",
+      "before": "tomer support team. They can be reached at",
+      "span": " [PHONE]",
+      "after": " or via email at support@examplecompany.co",
+      "start": 672,
+      "end": 680
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "NAME",
+      "before": "out to our Head of Customer Relations, Mr.",
+      "span": " David Lee",
+      "after": ", at his direct line [PHONE]. Your associa",
+      "start": 904,
+      "end": 914
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "PHONE",
+      "before": "lations, Mr. David Lee, at his direct line",
+      "span": " [PHONE]",
+      "after": ". Your associated address on file is [ADDR",
+      "start": 934,
+      "end": 942
+    },
+    {
+      "document_id": "DOC_078140",
+      "label": "ADDRESS",
+      "before": "PHONE]. Your associated address on file is",
+      "span": " [ADDRESS]",
+      "after": ". Thank you for your past business with Ex",
+      "start": 978,
+      "end": 988
+    },
+    {
+      "document_id": "DOC_070473",
+      "label": "NAME",
+      "before": "ing Account Inquiry - [USERNAME]\n\nDear Ms.",
+      "span": " Eleanor Vance",
+      "after": ",\n\nThis email serves as a follow-up to you",
+      "start": 57,
+      "end": 71
+    },
+    {
+      "document_id": "DOC_053695",
+      "label": "NAME",
+      "before": "unt Security Review - [USERNAME]\n\nDear Ms.",
+      "span": " Eleanor Vance",
+      "after": ",\n\nThis email is to formally notify you re",
+      "start": 63,
+      "end": 77
+    },
+    {
+      "document_id": "DOC_053695",
+      "label": "NAME",
+      "before": "formation, including your registered name,",
+      "span": " Eleanor Vance",
+      "after": ", your contact email, e.vance@examplecompa",
+      "start": 395,
+      "end": 409
+    }
+  ]
+}

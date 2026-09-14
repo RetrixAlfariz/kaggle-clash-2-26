@@ -1,0 +1,3930 @@
+{
+  "scope": {
+    "train_documents": 69468,
+    "test_documents": 23156,
+    "train_labels": 855761,
+    "train_metadata_ids_unique": true,
+    "test_metadata_ids_unique": true
+  },
+  "schema": {
+    "train_columns": {
+      "document_id": "str",
+      "channel": "str",
+      "domain": "str",
+      "n_chars": "int",
+      "n_segments": "int",
+      "n_words": "int",
+      "n_nonempty_segments": "int",
+      "source_system": "str",
+      "ingested_at": "str"
+    },
+    "test_columns": [
+      "document_id",
+      "channel",
+      "domain",
+      "n_chars",
+      "n_segments",
+      "n_words",
+      "n_nonempty_segments",
+      "source_system",
+      "ingested_at"
+    ],
+    "cardinality": {
+      "train": {
+        "document_id": 69468,
+        "channel": 3,
+        "domain": 6,
+        "n_chars": 1156,
+        "n_segments": 38,
+        "n_words": 201,
+        "n_nonempty_segments": 29,
+        "source_system": 6,
+        "ingested_at": 69193
+      },
+      "test": {
+        "document_id": 23156,
+        "channel": 3,
+        "domain": 6,
+        "n_chars": 1013,
+        "n_segments": 32,
+        "n_words": 183,
+        "n_nonempty_segments": 23,
+        "source_system": 6,
+        "ingested_at": 23118
+      }
+    },
+    "missing": {
+      "train": {
+        "document_id": 0,
+        "channel": 0,
+        "domain": 0,
+        "n_chars": 0,
+        "n_segments": 0,
+        "n_words": 0,
+        "n_nonempty_segments": 0,
+        "source_system": 0,
+        "ingested_at": 0
+      },
+      "test": {
+        "document_id": 0,
+        "channel": 0,
+        "domain": 0,
+        "n_chars": 0,
+        "n_segments": 0,
+        "n_words": 0,
+        "n_nonempty_segments": 0,
+        "source_system": 0,
+        "ingested_at": 0
+      }
+    },
+    "label_like_metadata_columns": [],
+    "parquet_types": {
+      "train": {
+        "document_id": "large_string",
+        "channel": "large_string",
+        "domain": "large_string",
+        "n_chars": "int64",
+        "n_segments": "int64",
+        "n_words": "int64",
+        "n_nonempty_segments": "int64",
+        "source_system": "large_string",
+        "ingested_at": "large_string"
+      },
+      "test": {
+        "document_id": "large_string",
+        "channel": "large_string",
+        "domain": "large_string",
+        "n_chars": "int64",
+        "n_segments": "int64",
+        "n_words": "int64",
+        "n_nonempty_segments": "int64",
+        "source_system": "large_string",
+        "ingested_at": "large_string"
+      }
+    }
+  },
+  "numeric_comparison": {
+    "n_chars": {
+      "train": {
+        "quantiles": {
+          "0": 526.0,
+          "0.01": 840.0,
+          "0.25": 1086.0,
+          "0.5": 1188.0,
+          "0.75": 1297.0,
+          "0.99": 1614.3300000000017,
+          "1": 2206.0
+        },
+        "mean": 1195.5106667818277,
+        "std": 162.37175587593657
+      },
+      "test": {
+        "quantiles": {
+          "0": 589.0,
+          "0.01": 846.0,
+          "0.25": 1085.0,
+          "0.5": 1186.0,
+          "0.75": 1297.0,
+          "0.99": 1626.0,
+          "1": 2274.0
+        },
+        "mean": 1195.2239160476765,
+        "std": 163.13570844857358
+      },
+      "mean_difference_test_minus_train": -0.2867507341511555,
+      "standardized_mean_difference": -0.001761864017509501,
+      "ks_statistic": 0.00529740312086141,
+      "ks_p_value": 0.7122797219352743
+    },
+    "n_segments": {
+      "train": {
+        "quantiles": {
+          "0": 1.0,
+          "0.01": 7.0,
+          "0.25": 13.0,
+          "0.5": 16.0,
+          "0.75": 18.0,
+          "0.99": 26.0,
+          "1": 47.0
+        },
+        "mean": 15.75177059941268,
+        "std": 3.9157056573298137
+      },
+      "test": {
+        "quantiles": {
+          "0": 3.0,
+          "0.01": 7.0,
+          "0.25": 13.0,
+          "0.5": 16.0,
+          "0.75": 18.0,
+          "0.99": 26.0,
+          "1": 35.0
+        },
+        "mean": 15.75595957851097,
+        "std": 3.903138907499808
+      },
+      "mean_difference_test_minus_train": 0.004188979098289636,
+      "standardized_mean_difference": 0.0010715070885596416,
+      "ks_statistic": 0.0025191455058444223,
+      "ks_p_value": 0.9998874327713064
+    },
+    "n_words": {
+      "train": {
+        "quantiles": {
+          "0": 85.0,
+          "0.01": 128.0,
+          "0.25": 164.0,
+          "0.5": 179.0,
+          "0.75": 196.0,
+          "0.99": 242.0,
+          "1": 330.0
+        },
+        "mean": 180.07912995911786,
+        "std": 24.122134704819025
+      },
+      "test": {
+        "quantiles": {
+          "0": 96.0,
+          "0.01": 128.0,
+          "0.25": 163.0,
+          "0.5": 179.0,
+          "0.75": 195.0,
+          "0.99": 242.0,
+          "1": 334.0
+        },
+        "mean": 180.04197616168597,
+        "std": 24.205352392285885
+      },
+      "mean_difference_test_minus_train": -0.03715379743189828,
+      "standardized_mean_difference": -0.0015375822158747586,
+      "ks_statistic": 0.004577647262048734,
+      "ks_p_value": 0.8582431266655326
+    },
+    "n_nonempty_segments": {
+      "train": {
+        "quantiles": {
+          "0": 1.0,
+          "0.01": 4.0,
+          "0.25": 8.0,
+          "0.5": 10.0,
+          "0.75": 11.0,
+          "0.99": 17.0,
+          "1": 33.0
+        },
+        "mean": 9.716401796510624,
+        "std": 2.516038928263911
+      },
+      "test": {
+        "quantiles": {
+          "0": 2.0,
+          "0.01": 4.0,
+          "0.25": 8.0,
+          "0.5": 10.0,
+          "0.75": 11.0,
+          "0.99": 17.0,
+          "1": 24.0
+        },
+        "mean": 9.723700120918984,
+        "std": 2.5152174050117395
+      },
+      "mean_difference_test_minus_train": 0.007298324408360202,
+      "standardized_mean_difference": 0.002901193589679782,
+      "ks_statistic": 0.0036131744112396502,
+      "ks_p_value": 0.9765864245994682
+    }
+  },
+  "categorical_comparison": {
+    "channel": {
+      "train": {
+        "EMAIL": {
+          "count": 45410,
+          "proportion": 0.6536822709736857
+        },
+        "LETTER": {
+          "count": 22159,
+          "proportion": 0.31898140150860826
+        },
+        "MEMO": {
+          "count": 1899,
+          "proportion": 0.027336327517705993
+        }
+      },
+      "test": {
+        "EMAIL": {
+          "count": 14998,
+          "proportion": 0.6476939022283641
+        },
+        "LETTER": {
+          "count": 7527,
+          "proportion": 0.32505614095698737
+        },
+        "MEMO": {
+          "count": 631,
+          "proportion": 0.027249956814648472
+        }
+      },
+      "total_variation_distance": 0.006074739448379116
+    },
+    "domain": {
+      "train": {
+        "LEGAL": {
+          "count": 18880,
+          "proportion": 0.271779812287672
+        },
+        "HEALTHCARE": {
+          "count": 16847,
+          "proportion": 0.24251453906834802
+        },
+        "FINANCE": {
+          "count": 11313,
+          "proportion": 0.1628519606149594
+        },
+        "IT": {
+          "count": 10853,
+          "proportion": 0.15623020671388266
+        },
+        "GENERAL": {
+          "count": 6100,
+          "proportion": 0.08781021477514828
+        },
+        "HR": {
+          "count": 5475,
+          "proportion": 0.07881326653998963
+        }
+      },
+      "test": {
+        "LEGAL": {
+          "count": 6399,
+          "proportion": 0.27634306443254447
+        },
+        "HEALTHCARE": {
+          "count": 5528,
+          "proportion": 0.23872862325099325
+        },
+        "FINANCE": {
+          "count": 3699,
+          "proportion": 0.1597426153048886
+        },
+        "IT": {
+          "count": 3596,
+          "proportion": 0.15529452409742614
+        },
+        "GENERAL": {
+          "count": 2070,
+          "proportion": 0.0893936776645362
+        },
+        "HR": {
+          "count": 1864,
+          "proportion": 0.08049749524961133
+        }
+      },
+      "total_variation_distance": 0.007830943743882095
+    },
+    "source_system": {
+      "train": {
+        "scan-intake": {
+          "count": 11667,
+          "proportion": 0.16794783209535324
+        },
+        "mailgate-02": {
+          "count": 11652,
+          "proportion": 0.16773190533770946
+        },
+        "docstore-us": {
+          "count": 11581,
+          "proportion": 0.16670985201819544
+        },
+        "mailgate-01": {
+          "count": 11527,
+          "proportion": 0.1659325156906777
+        },
+        "crm-export": {
+          "count": 11526,
+          "proportion": 0.16591812057350147
+        },
+        "docstore-eu": {
+          "count": 11515,
+          "proportion": 0.16575977428456268
+        }
+      },
+      "test": {
+        "scan-intake": {
+          "count": 3945,
+          "proportion": 0.1703662117809639
+        },
+        "mailgate-01": {
+          "count": 3884,
+          "proportion": 0.16773190533770946
+        },
+        "docstore-eu": {
+          "count": 3865,
+          "proportion": 0.16691138365866298
+        },
+        "docstore-us": {
+          "count": 3841,
+          "proportion": 0.16587493522197272
+        },
+        "mailgate-02": {
+          "count": 3831,
+          "proportion": 0.1654430817066851
+        },
+        "crm-export": {
+          "count": 3790,
+          "proportion": 0.16367248229400588
+        }
+      },
+      "total_variation_distance": 0.005369378706742686
+    }
+  },
+  "metadata_redundancy": {
+    "numeric_pearson": {
+      "n_chars": {
+        "n_chars": 0.9999999999999998,
+        "n_segments": 0.4985450840924989,
+        "n_words": 0.9679659878423659,
+        "n_nonempty_segments": 0.4376475178734079
+      },
+      "n_segments": {
+        "n_chars": 0.4985450840924989,
+        "n_segments": 1.0,
+        "n_words": 0.5031661910044413,
+        "n_nonempty_segments": 0.9592830546373932
+      },
+      "n_words": {
+        "n_chars": 0.9679659878423659,
+        "n_segments": 0.5031661910044413,
+        "n_words": 1.0,
+        "n_nonempty_segments": 0.4319910906506997
+      },
+      "n_nonempty_segments": {
+        "n_chars": 0.437647517873408,
+        "n_segments": 0.9592830546373933,
+        "n_words": 0.4319910906506997,
+        "n_nonempty_segments": 0.9999999999999998
+      }
+    },
+    "violations": {
+      "nonempty_segments_gt_segments": 0,
+      "words_negative": 0,
+      "chars_negative": 0
+    }
+  },
+  "train_label_counts": {
+    "ADDRESS": 81954,
+    "USERNAME": 76802,
+    "NAME": 260997,
+    "DATE": 164044,
+    "PHONE": 92878,
+    "JOB_TITLE": 82472,
+    "EMAIL": 96614
+  },
+  "test_submission_slots": {
+    "rows": 285318,
+    "documents": 23156,
+    "unknown_document_rows": 0,
+    "count_quantiles": {
+      "0": 1.0,
+      "0.01": 8.0,
+      "0.25": 10.0,
+      "0.5": 12.0,
+      "0.75": 14.0,
+      "0.99": 21.0,
+      "1": 31.0
+    },
+    "max_count": 31,
+    "metadata_docs_without_slots": 0,
+    "slot_docs_without_metadata": 0
+  },
+  "operational_associations_train": {
+    "source_system": {
+      "scan-intake": {
+        "documents": 11667,
+        "gold_count_mean": 12.339847432930489,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 11663,
+          "DATE": 11658,
+          "PHONE": 11620,
+          "ADDRESS": 11516,
+          "USERNAME": 9941,
+          "JOB_TITLE": 9714,
+          "EMAIL": 11488
+        },
+        "gold_span_counts": {
+          "NAME": 43824,
+          "DATE": 27597,
+          "PHONE": 15703,
+          "ADDRESS": 13785,
+          "USERNAME": 12989,
+          "JOB_TITLE": 13846,
+          "EMAIL": 16225
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3043988636442567,
+          "DATE": 0.19168709930610062,
+          "PHONE": 0.10907209190867478,
+          "ADDRESS": 0.0957497794664129,
+          "USERNAME": 0.0902208114246817,
+          "JOB_TITLE": 0.09617348179121894,
+          "EMAIL": 0.1126978724586543
+        }
+      },
+      "mailgate-02": {
+        "documents": 11652,
+        "gold_count_mean": 12.311277033985581,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 11646,
+          "JOB_TITLE": 9802,
+          "PHONE": 11598,
+          "EMAIL": 11488,
+          "ADDRESS": 11421,
+          "USERNAME": 9810,
+          "DATE": 11642
+        },
+        "gold_span_counts": {
+          "NAME": 43551,
+          "JOB_TITLE": 14011,
+          "PHONE": 15515,
+          "EMAIL": 16252,
+          "ADDRESS": 13713,
+          "USERNAME": 12828,
+          "DATE": 27581
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3035949557688688,
+          "JOB_TITLE": 0.09767098172895275,
+          "PHONE": 0.10815539801047047,
+          "EMAIL": 0.11329304082927272,
+          "ADDRESS": 0.09559361733274777,
+          "USERNAME": 0.08942426333730681,
+          "DATE": 0.19226774299238067
+        }
+      },
+      "crm-export": {
+        "documents": 11526,
+        "gold_count_mean": 12.35519694603505,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 11524,
+          "ADDRESS": 11335,
+          "PHONE": 11462,
+          "EMAIL": 11349,
+          "JOB_TITLE": 9644,
+          "USERNAME": 9770,
+          "DATE": 11517
+        },
+        "gold_span_counts": {
+          "NAME": 43604,
+          "ADDRESS": 13615,
+          "PHONE": 15427,
+          "EMAIL": 16064,
+          "JOB_TITLE": 13653,
+          "USERNAME": 12693,
+          "DATE": 27350
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30619496369534993,
+          "ADDRESS": 0.09560692667443788,
+          "PHONE": 0.10833110964425656,
+          "EMAIL": 0.11280423577658245,
+          "JOB_TITLE": 0.09587376936365041,
+          "USERNAME": 0.08913248037301799,
+          "DATE": 0.1920565144727048
+        }
+      },
+      "docstore-us": {
+        "documents": 11581,
+        "gold_count_mean": 12.325619549261722,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 11405,
+          "NAME": 11579,
+          "EMAIL": 11402,
+          "DATE": 11571,
+          "USERNAME": 9848,
+          "JOB_TITLE": 9678,
+          "PHONE": 11532
+        },
+        "gold_span_counts": {
+          "ADDRESS": 13750,
+          "NAME": 43563,
+          "EMAIL": 16041,
+          "DATE": 27375,
+          "USERNAME": 12853,
+          "JOB_TITLE": 13695,
+          "PHONE": 15466
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09632696524523093,
+          "NAME": 0.30518484268930873,
+          "EMAIL": 0.11237678905445452,
+          "DATE": 0.19177823080641432,
+          "USERNAME": 0.09004294431250569,
+          "JOB_TITLE": 0.09594165738425002,
+          "PHONE": 0.10834857050783576
+        }
+      },
+      "docstore-eu": {
+        "documents": 11515,
+        "gold_count_mean": 12.301867129830656,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 11514,
+          "USERNAME": 9781,
+          "PHONE": 11462,
+          "DATE": 11500,
+          "EMAIL": 11347,
+          "ADDRESS": 11310,
+          "JOB_TITLE": 9611
+        },
+        "gold_span_counts": {
+          "NAME": 43143,
+          "USERNAME": 12719,
+          "PHONE": 15468,
+          "DATE": 27050,
+          "EMAIL": 16065,
+          "ADDRESS": 13593,
+          "JOB_TITLE": 13618
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30456175523804146,
+          "USERNAME": 0.08978793697407805,
+          "PHONE": 0.10919410402665612,
+          "DATE": 0.1909555543005591,
+          "EMAIL": 0.11340853899587734,
+          "ADDRESS": 0.09595781329417745,
+          "JOB_TITLE": 0.09613429717061049
+        }
+      },
+      "mailgate-01": {
+        "documents": 11527,
+        "gold_count_mean": 12.27865012579162,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 11357,
+          "USERNAME": 9774,
+          "PHONE": 11467,
+          "NAME": 11522,
+          "DATE": 11510,
+          "ADDRESS": 11345,
+          "JOB_TITLE": 9659
+        },
+        "gold_span_counts": {
+          "EMAIL": 15967,
+          "USERNAME": 12720,
+          "PHONE": 15299,
+          "NAME": 43312,
+          "DATE": 27091,
+          "ADDRESS": 13498,
+          "JOB_TITLE": 13649
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.112812288039792,
+          "USERNAME": 0.0898711281935338,
+          "PHONE": 0.10809264074157811,
+          "NAME": 0.3060140176350893,
+          "DATE": 0.19140713316753336,
+          "ADDRESS": 0.09536796292109428,
+          "JOB_TITLE": 0.09643482930137916
+        }
+      }
+    },
+    "channel": {
+      "EMAIL": {
+        "documents": 45410,
+        "gold_count_mean": 12.250561550319313,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 45391,
+          "DATE": 45346,
+          "PHONE": 45241,
+          "ADDRESS": 44604,
+          "USERNAME": 37628,
+          "JOB_TITLE": 40683,
+          "EMAIL": 45050
+        },
+        "gold_span_counts": {
+          "NAME": 168650,
+          "DATE": 106028,
+          "PHONE": 60483,
+          "ADDRESS": 50282,
+          "USERNAME": 48671,
+          "JOB_TITLE": 58634,
+          "EMAIL": 63550
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3031648504938001,
+          "DATE": 0.19059568792266016,
+          "PHONE": 0.1087241011112749,
+          "ADDRESS": 0.09038680707103028,
+          "USERNAME": 0.08749087719172098,
+          "JOB_TITLE": 0.10540034298163933,
+          "EMAIL": 0.11423733322787427
+        }
+      },
+      "LETTER": {
+        "documents": 22159,
+        "gold_count_mean": 12.229071709012139,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 22037,
+          "EMAIL": 21609,
+          "NAME": 22158,
+          "DATE": 22154,
+          "USERNAME": 19509,
+          "ADDRESS": 21951,
+          "JOB_TITLE": 16489
+        },
+        "gold_span_counts": {
+          "PHONE": 29911,
+          "EMAIL": 30428,
+          "NAME": 81796,
+          "DATE": 51284,
+          "USERNAME": 25855,
+          "ADDRESS": 29571,
+          "JOB_TITLE": 22139
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.1103792105806985,
+          "EMAIL": 0.11228707229947156,
+          "NAME": 0.30184807959141496,
+          "DATE": 0.1892510258908275,
+          "USERNAME": 0.09541153721252915,
+          "ADDRESS": 0.109124523957134,
+          "JOB_TITLE": 0.0816985504679243
+        }
+      },
+      "MEMO": {
+        "documents": 1899,
+        "gold_count_mean": 14.996840442338073,
+        "gold_count_median": 15.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 1899,
+          "USERNAME": 1787,
+          "DATE": 1898,
+          "EMAIL": 1772,
+          "ADDRESS": 1777,
+          "PHONE": 1863,
+          "JOB_TITLE": 936
+        },
+        "gold_span_counts": {
+          "NAME": 10551,
+          "USERNAME": 2276,
+          "DATE": 6732,
+          "EMAIL": 2636,
+          "ADDRESS": 2101,
+          "PHONE": 2484,
+          "JOB_TITLE": 1699
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3704835141683346,
+          "USERNAME": 0.07991853646546578,
+          "DATE": 0.23638470451911936,
+          "EMAIL": 0.09255942975525826,
+          "ADDRESS": 0.07377365778292777,
+          "PHONE": 0.0872221636995681,
+          "JOB_TITLE": 0.05965799360932617
+        }
+      }
+    },
+    "domain": {
+      "IT": {
+        "documents": 10853,
+        "gold_count_mean": 11.10439509812955,
+        "gold_count_median": 11.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 10852,
+          "DATE": 10845,
+          "PHONE": 10826,
+          "ADDRESS": 10520,
+          "USERNAME": 9700,
+          "JOB_TITLE": 10451,
+          "EMAIL": 10822
+        },
+        "gold_span_counts": {
+          "NAME": 31905,
+          "DATE": 22281,
+          "PHONE": 13487,
+          "ADDRESS": 11136,
+          "USERNAME": 10520,
+          "JOB_TITLE": 16352,
+          "EMAIL": 14835
+        },
+        "gold_span_proportions": {
+          "NAME": 0.2647366324803346,
+          "DATE": 0.18488001593149458,
+          "PHONE": 0.11191045172425239,
+          "ADDRESS": 0.09240266852534103,
+          "USERNAME": 0.08729131401639616,
+          "JOB_TITLE": 0.1356832287829002,
+          "EMAIL": 0.12309568853928109
+        }
+      },
+      "HEALTHCARE": {
+        "documents": 16847,
+        "gold_count_mean": 12.887042203359648,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 16776,
+          "EMAIL": 16043,
+          "NAME": 16846,
+          "DATE": 16842,
+          "USERNAME": 14965,
+          "ADDRESS": 16627,
+          "JOB_TITLE": 12206
+        },
+        "gold_span_counts": {
+          "PHONE": 22327,
+          "EMAIL": 19748,
+          "NAME": 73123,
+          "DATE": 42764,
+          "USERNAME": 19638,
+          "ADDRESS": 22028,
+          "JOB_TITLE": 17480
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10283821876669676,
+          "EMAIL": 0.0909593382095547,
+          "NAME": 0.3368047239162076,
+          "DATE": 0.1969710927280432,
+          "USERNAME": 0.09045267792987821,
+          "ADDRESS": 0.10146102400648525,
+          "JOB_TITLE": 0.08051292444313429
+        }
+      },
+      "GENERAL": {
+        "documents": 6100,
+        "gold_count_mean": 11.354754098360656,
+        "gold_count_median": 11.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 6098,
+          "JOB_TITLE": 5642,
+          "PHONE": 6076,
+          "EMAIL": 6081,
+          "ADDRESS": 5959,
+          "USERNAME": 4079,
+          "DATE": 6090
+        },
+        "gold_span_counts": {
+          "NAME": 19302,
+          "JOB_TITLE": 8711,
+          "PHONE": 7945,
+          "EMAIL": 8732,
+          "ADDRESS": 6497,
+          "USERNAME": 4842,
+          "DATE": 13235
+        },
+        "gold_span_proportions": {
+          "NAME": 0.27867290367290365,
+          "JOB_TITLE": 0.12576518826518826,
+          "PHONE": 0.1147060522060522,
+          "EMAIL": 0.12606837606837606,
+          "ADDRESS": 0.0938005313005313,
+          "USERNAME": 0.0699064449064449,
+          "DATE": 0.19108050358050357
+        }
+      },
+      "FINANCE": {
+        "documents": 11313,
+        "gold_count_mean": 11.550605498099532,
+        "gold_count_median": 11.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 11245,
+          "NAME": 11301,
+          "DATE": 11281,
+          "ADDRESS": 11205,
+          "JOB_TITLE": 9010,
+          "PHONE": 11264,
+          "USERNAME": 10104
+        },
+        "gold_span_counts": {
+          "EMAIL": 16286,
+          "NAME": 33544,
+          "DATE": 25536,
+          "ADDRESS": 12701,
+          "JOB_TITLE": 10968,
+          "PHONE": 16423,
+          "USERNAME": 15214
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.12463266805436513,
+          "NAME": 0.25670380800783643,
+          "DATE": 0.19542059507775192,
+          "ADDRESS": 0.09719756336476063,
+          "JOB_TITLE": 0.08393534957756826,
+          "PHONE": 0.125681094649198,
+          "USERNAME": 0.11642892126851966
+        }
+      },
+      "LEGAL": {
+        "documents": 18880,
+        "gold_count_mean": 13.570444915254237,
+        "gold_count_median": 13.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 18740,
+          "DATE": 18867,
+          "EMAIL": 18779,
+          "JOB_TITLE": 15547,
+          "NAME": 18878,
+          "PHONE": 18747,
+          "USERNAME": 15839
+        },
+        "gold_span_counts": {
+          "ADDRESS": 23949,
+          "DATE": 48510,
+          "EMAIL": 28848,
+          "JOB_TITLE": 20034,
+          "NAME": 86955,
+          "PHONE": 25984,
+          "USERNAME": 21930
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09347410327465751,
+          "DATE": 0.18933687209710784,
+          "EMAIL": 0.11259513680184224,
+          "JOB_TITLE": 0.0781936692556887,
+          "NAME": 0.3393895632488974,
+          "PHONE": 0.10141680652589673,
+          "USERNAME": 0.0855938487959096
+        }
+      },
+      "HR": {
+        "documents": 5475,
+        "gold_count_mean": 11.322557077625572,
+        "gold_count_median": 11.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 5473,
+          "PHONE": 5452,
+          "DATE": 5473,
+          "JOB_TITLE": 5252,
+          "ADDRESS": 5281,
+          "EMAIL": 5461,
+          "USERNAME": 4237
+        },
+        "gold_span_counts": {
+          "NAME": 16168,
+          "PHONE": 6712,
+          "DATE": 11718,
+          "JOB_TITLE": 8927,
+          "ADDRESS": 5643,
+          "EMAIL": 8165,
+          "USERNAME": 4658
+        },
+        "gold_span_proportions": {
+          "NAME": 0.2608120533625849,
+          "PHONE": 0.10827378167798551,
+          "DATE": 0.18902743946701941,
+          "JOB_TITLE": 0.1440047748866771,
+          "ADDRESS": 0.09102934296914068,
+          "EMAIL": 0.13171266796793082,
+          "USERNAME": 0.07513993966866157
+        }
+      }
+    },
+    "ingested_at_date": {
+      "2026-01-14": {
+        "documents": 865,
+        "gold_count_mean": 12.435838150289017,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 865,
+          "DATE": 864,
+          "PHONE": 864,
+          "ADDRESS": 850,
+          "USERNAME": 738,
+          "JOB_TITLE": 728,
+          "EMAIL": 853
+        },
+        "gold_span_counts": {
+          "NAME": 3268,
+          "DATE": 2074,
+          "PHONE": 1156,
+          "ADDRESS": 1026,
+          "USERNAME": 975,
+          "JOB_TITLE": 1034,
+          "EMAIL": 1224
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3038021753276936,
+          "DATE": 0.1928046853211862,
+          "PHONE": 0.10746490657246444,
+          "ADDRESS": 0.09537975271915962,
+          "USERNAME": 0.09063865389978619,
+          "JOB_TITLE": 0.0961234544947476,
+          "EMAIL": 0.11378637166496235
+        }
+      },
+      "2026-03-20": {
+        "documents": 831,
+        "gold_count_mean": 12.452466907340554,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 831,
+          "JOB_TITLE": 684,
+          "PHONE": 825,
+          "EMAIL": 824,
+          "ADDRESS": 819,
+          "USERNAME": 710,
+          "DATE": 830
+        },
+        "gold_span_counts": {
+          "NAME": 3194,
+          "JOB_TITLE": 989,
+          "PHONE": 1121,
+          "EMAIL": 1153,
+          "ADDRESS": 985,
+          "USERNAME": 939,
+          "DATE": 1967
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3086586780054117,
+          "JOB_TITLE": 0.09557402396598376,
+          "PHONE": 0.10833011209895632,
+          "EMAIL": 0.11142249710088906,
+          "ADDRESS": 0.09518747584074218,
+          "USERNAME": 0.09074217240046385,
+          "DATE": 0.19008504058755316
+        }
+      },
+      "2026-03-02": {
+        "documents": 774,
+        "gold_count_mean": 12.34108527131783,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 774,
+          "ADDRESS": 764,
+          "PHONE": 769,
+          "EMAIL": 763,
+          "JOB_TITLE": 656,
+          "USERNAME": 650,
+          "DATE": 774
+        },
+        "gold_span_counts": {
+          "NAME": 2922,
+          "ADDRESS": 933,
+          "PHONE": 1017,
+          "EMAIL": 1067,
+          "JOB_TITLE": 934,
+          "USERNAME": 861,
+          "DATE": 1818
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30590452261306533,
+          "ADDRESS": 0.09767587939698492,
+          "PHONE": 0.10646984924623115,
+          "EMAIL": 0.11170435510887772,
+          "JOB_TITLE": 0.09778056951423786,
+          "USERNAME": 0.09013819095477386,
+          "DATE": 0.19032663316582915
+        }
+      },
+      "2026-02-01": {
+        "documents": 852,
+        "gold_count_mean": 12.19718309859155,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 851,
+          "JOB_TITLE": 704,
+          "DATE": 851,
+          "EMAIL": 839,
+          "ADDRESS": 834,
+          "PHONE": 849,
+          "USERNAME": 736
+        },
+        "gold_span_counts": {
+          "NAME": 3156,
+          "JOB_TITLE": 995,
+          "DATE": 2010,
+          "EMAIL": 1164,
+          "ADDRESS": 973,
+          "PHONE": 1145,
+          "USERNAME": 949
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30369515011547343,
+          "JOB_TITLE": 0.09574672825250193,
+          "DATE": 0.19341801385681293,
+          "EMAIL": 0.11200923787528869,
+          "ADDRESS": 0.09362971516551193,
+          "PHONE": 0.11018090839107006,
+          "USERNAME": 0.09132024634334103
+        }
+      },
+      "2026-01-01": {
+        "documents": 866,
+        "gold_count_mean": 12.21824480369515,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 854,
+          "NAME": 866,
+          "DATE": 866,
+          "ADDRESS": 850,
+          "JOB_TITLE": 743,
+          "PHONE": 861,
+          "USERNAME": 729
+        },
+        "gold_span_counts": {
+          "EMAIL": 1191,
+          "NAME": 3201,
+          "DATE": 1998,
+          "ADDRESS": 1023,
+          "JOB_TITLE": 1065,
+          "PHONE": 1148,
+          "USERNAME": 955
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.11256024950382762,
+          "NAME": 0.30252339098383896,
+          "DATE": 0.188829033172668,
+          "ADDRESS": 0.09668273320102069,
+          "JOB_TITLE": 0.10065211227672242,
+          "PHONE": 0.10849636140251394,
+          "USERNAME": 0.09025611945940837
+        }
+      },
+      "2026-02-15": {
+        "documents": 846,
+        "gold_count_mean": 12.32387706855792,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 829,
+          "NAME": 846,
+          "EMAIL": 832,
+          "DATE": 845,
+          "USERNAME": 724,
+          "PHONE": 843,
+          "JOB_TITLE": 725
+        },
+        "gold_span_counts": {
+          "ADDRESS": 993,
+          "NAME": 3187,
+          "EMAIL": 1168,
+          "DATE": 1970,
+          "USERNAME": 936,
+          "PHONE": 1128,
+          "JOB_TITLE": 1044
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09524266257433339,
+          "NAME": 0.3056781124112795,
+          "EMAIL": 0.11202762324956839,
+          "DATE": 0.18895070017264531,
+          "USERNAME": 0.08977556109725686,
+          "PHONE": 0.10819106080951467,
+          "JOB_TITLE": 0.10013427968540188
+        }
+      },
+      "2026-01-24": {
+        "documents": 813,
+        "gold_count_mean": 12.274292742927429,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 813,
+          "USERNAME": 685,
+          "PHONE": 810,
+          "DATE": 812,
+          "EMAIL": 804,
+          "ADDRESS": 804,
+          "JOB_TITLE": 702
+        },
+        "gold_span_counts": {
+          "NAME": 2999,
+          "USERNAME": 893,
+          "PHONE": 1069,
+          "DATE": 1909,
+          "EMAIL": 1130,
+          "ADDRESS": 976,
+          "JOB_TITLE": 1003
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30053111534221866,
+          "USERNAME": 0.08948792464174767,
+          "PHONE": 0.10712496242108428,
+          "DATE": 0.19130173364064534,
+          "EMAIL": 0.11323779937869526,
+          "ADDRESS": 0.09780539132177572,
+          "JOB_TITLE": 0.10051107325383304
+        }
+      },
+      "2026-01-23": {
+        "documents": 863,
+        "gold_count_mean": 12.363847045191193,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 853,
+          "DATE": 863,
+          "EMAIL": 854,
+          "JOB_TITLE": 726,
+          "NAME": 863,
+          "PHONE": 860,
+          "USERNAME": 738
+        },
+        "gold_span_counts": {
+          "ADDRESS": 1027,
+          "DATE": 2014,
+          "EMAIL": 1196,
+          "JOB_TITLE": 1032,
+          "NAME": 3262,
+          "PHONE": 1165,
+          "USERNAME": 974
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09625117150890347,
+          "DATE": 0.1887535145267104,
+          "EMAIL": 0.11208997188378632,
+          "JOB_TITLE": 0.09671977507029053,
+          "NAME": 0.3057169634489222,
+          "PHONE": 0.10918462980318651,
+          "USERNAME": 0.09128397375820056
+        }
+      },
+      "2026-03-03": {
+        "documents": 805,
+        "gold_count_mean": 12.455900621118012,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 795,
+          "USERNAME": 695,
+          "PHONE": 802,
+          "NAME": 805,
+          "DATE": 805,
+          "ADDRESS": 795,
+          "JOB_TITLE": 678
+        },
+        "gold_span_counts": {
+          "EMAIL": 1118,
+          "USERNAME": 919,
+          "PHONE": 1089,
+          "NAME": 3070,
+          "DATE": 1905,
+          "ADDRESS": 974,
+          "JOB_TITLE": 952
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.1114989528273661,
+          "USERNAME": 0.0916525381470031,
+          "PHONE": 0.1086067617432931,
+          "NAME": 0.3061733320035903,
+          "DATE": 0.1899870350054852,
+          "ADDRESS": 0.09713772813403809,
+          "JOB_TITLE": 0.0949436521392241
+        }
+      },
+      "2026-01-25": {
+        "documents": 834,
+        "gold_count_mean": 12.526378896882495,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 823,
+          "NAME": 834,
+          "DATE": 834,
+          "JOB_TITLE": 698,
+          "PHONE": 830,
+          "ADDRESS": 819,
+          "USERNAME": 697
+        },
+        "gold_span_counts": {
+          "EMAIL": 1187,
+          "NAME": 3208,
+          "DATE": 2024,
+          "JOB_TITLE": 988,
+          "PHONE": 1124,
+          "ADDRESS": 996,
+          "USERNAME": 920
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.11362113525413994,
+          "NAME": 0.30707380109122234,
+          "DATE": 0.19373982961615774,
+          "JOB_TITLE": 0.09457260457547621,
+          "PHONE": 0.10759069589355796,
+          "ADDRESS": 0.09533837465301043,
+          "USERNAME": 0.08806355891643534
+        }
+      },
+      "2026-02-11": {
+        "documents": 798,
+        "gold_count_mean": 12.24436090225564,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 798,
+          "PHONE": 795,
+          "DATE": 798,
+          "JOB_TITLE": 652,
+          "USERNAME": 651,
+          "ADDRESS": 780,
+          "EMAIL": 785
+        },
+        "gold_span_counts": {
+          "NAME": 3064,
+          "PHONE": 1076,
+          "DATE": 1835,
+          "JOB_TITLE": 946,
+          "USERNAME": 832,
+          "ADDRESS": 917,
+          "EMAIL": 1101
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3135810050148398,
+          "PHONE": 0.11012178896735236,
+          "DATE": 0.18780063453075427,
+          "JOB_TITLE": 0.09681711186163136,
+          "USERNAME": 0.08514993347661447,
+          "ADDRESS": 0.09384914543035514,
+          "EMAIL": 0.11268038071845256
+        }
+      },
+      "2026-02-27": {
+        "documents": 774,
+        "gold_count_mean": 12.343669250645995,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 670,
+          "DATE": 773,
+          "ADDRESS": 762,
+          "NAME": 774,
+          "PHONE": 770,
+          "EMAIL": 764,
+          "USERNAME": 645
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 961,
+          "DATE": 1820,
+          "ADDRESS": 913,
+          "NAME": 2927,
+          "PHONE": 1023,
+          "EMAIL": 1075,
+          "USERNAME": 835
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.10058614193008164,
+          "DATE": 0.1904961272765334,
+          "ADDRESS": 0.09556206824366757,
+          "NAME": 0.30636382666945783,
+          "PHONE": 0.10707557044169981,
+          "EMAIL": 0.11251831693531505,
+          "USERNAME": 0.08739794850324471
+        }
+      },
+      "2026-03-07": {
+        "documents": 838,
+        "gold_count_mean": 12.236276849642005,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 838,
+          "PHONE": 831,
+          "DATE": 838,
+          "JOB_TITLE": 690,
+          "ADDRESS": 825,
+          "EMAIL": 831,
+          "USERNAME": 706
+        },
+        "gold_span_counts": {
+          "NAME": 3150,
+          "PHONE": 1101,
+          "DATE": 1959,
+          "JOB_TITLE": 964,
+          "ADDRESS": 988,
+          "EMAIL": 1174,
+          "USERNAME": 918
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30719719133996487,
+          "PHONE": 0.10737273259215915,
+          "DATE": 0.19104739613809246,
+          "JOB_TITLE": 0.09401209284181783,
+          "ADDRESS": 0.0963526428710747,
+          "EMAIL": 0.11449190559781548,
+          "USERNAME": 0.08952603861907549
+        }
+      },
+      "2026-01-04": {
+        "documents": 836,
+        "gold_count_mean": 12.23444976076555,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 724,
+          "PHONE": 829,
+          "NAME": 835,
+          "ADDRESS": 820,
+          "EMAIL": 826,
+          "DATE": 835,
+          "JOB_TITLE": 683
+        },
+        "gold_span_counts": {
+          "USERNAME": 922,
+          "PHONE": 1074,
+          "NAME": 3093,
+          "ADDRESS": 999,
+          "EMAIL": 1184,
+          "DATE": 1990,
+          "JOB_TITLE": 966
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.09014470082127493,
+          "PHONE": 0.10500586624951115,
+          "NAME": 0.3024051622995698,
+          "ADDRESS": 0.0976730543605788,
+          "EMAIL": 0.11576065701994524,
+          "DATE": 0.19456394211967148,
+          "JOB_TITLE": 0.09444661712944857
+        }
+      },
+      "2026-03-19": {
+        "documents": 842,
+        "gold_count_mean": 12.18289786223278,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 842,
+          "DATE": 842,
+          "PHONE": 837,
+          "JOB_TITLE": 708,
+          "EMAIL": 826,
+          "ADDRESS": 830,
+          "USERNAME": 725
+        },
+        "gold_span_counts": {
+          "NAME": 3096,
+          "DATE": 2004,
+          "PHONE": 1093,
+          "JOB_TITLE": 985,
+          "EMAIL": 1160,
+          "ADDRESS": 1004,
+          "USERNAME": 916
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3018132189510626,
+          "DATE": 0.19535971924351725,
+          "PHONE": 0.1065509845973874,
+          "JOB_TITLE": 0.09602261649444337,
+          "EMAIL": 0.1130824722168064,
+          "ADDRESS": 0.09787482940144278,
+          "USERNAME": 0.08929615909534022
+        }
+      },
+      "2026-03-13": {
+        "documents": 873,
+        "gold_count_mean": 12.221076746849942,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 873,
+          "EMAIL": 859,
+          "DATE": 870,
+          "USERNAME": 748,
+          "PHONE": 868,
+          "JOB_TITLE": 708,
+          "ADDRESS": 856
+        },
+        "gold_span_counts": {
+          "NAME": 3260,
+          "EMAIL": 1209,
+          "DATE": 2054,
+          "USERNAME": 965,
+          "PHONE": 1171,
+          "JOB_TITLE": 1004,
+          "ADDRESS": 1006
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30555815915268536,
+          "EMAIL": 0.11331896147717686,
+          "DATE": 0.1925203861655263,
+          "USERNAME": 0.09044896428906177,
+          "PHONE": 0.10975724060361795,
+          "JOB_TITLE": 0.09410441465929328,
+          "ADDRESS": 0.09429187365263848
+        }
+      },
+      "2026-02-28": {
+        "documents": 821,
+        "gold_count_mean": 12.444579780755177,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 821,
+          "EMAIL": 814,
+          "USERNAME": 692,
+          "DATE": 821,
+          "JOB_TITLE": 671,
+          "PHONE": 817,
+          "ADDRESS": 814
+        },
+        "gold_span_counts": {
+          "NAME": 3116,
+          "EMAIL": 1141,
+          "USERNAME": 914,
+          "DATE": 1999,
+          "JOB_TITLE": 968,
+          "PHONE": 1095,
+          "ADDRESS": 984
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30498189292355876,
+          "EMAIL": 0.1116766174023686,
+          "USERNAME": 0.08945874522854066,
+          "DATE": 0.1956543016541059,
+          "JOB_TITLE": 0.09474405402760105,
+          "PHONE": 0.10717431731428012,
+          "ADDRESS": 0.09631007144954487
+        }
+      },
+      "2026-02-08": {
+        "documents": 861,
+        "gold_count_mean": 12.387921022067363,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 856,
+          "USERNAME": 727,
+          "ADDRESS": 838,
+          "DATE": 859,
+          "EMAIL": 849,
+          "JOB_TITLE": 710,
+          "NAME": 861
+        },
+        "gold_span_counts": {
+          "PHONE": 1153,
+          "USERNAME": 940,
+          "ADDRESS": 1014,
+          "DATE": 2041,
+          "EMAIL": 1215,
+          "JOB_TITLE": 1057,
+          "NAME": 3246
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.1081005062816426,
+          "USERNAME": 0.0881305081567598,
+          "ADDRESS": 0.0950684417776111,
+          "DATE": 0.19135570973185825,
+          "EMAIL": 0.1139133695855991,
+          "JOB_TITLE": 0.09909994374648416,
+          "NAME": 0.304331520720045
+        }
+      },
+      "2026-03-22": {
+        "documents": 846,
+        "gold_count_mean": 12.3628841607565,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 845,
+          "USERNAME": 706,
+          "NAME": 845,
+          "EMAIL": 835,
+          "DATE": 846,
+          "ADDRESS": 833,
+          "JOB_TITLE": 717
+        },
+        "gold_span_counts": {
+          "PHONE": 1145,
+          "USERNAME": 931,
+          "NAME": 3181,
+          "EMAIL": 1165,
+          "DATE": 2024,
+          "ADDRESS": 983,
+          "JOB_TITLE": 1030
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10947509322114925,
+          "USERNAME": 0.08901424610383402,
+          "NAME": 0.30413997514102686,
+          "EMAIL": 0.11138732192370207,
+          "DATE": 0.19351754469834592,
+          "ADDRESS": 0.09398604073047137,
+          "JOB_TITLE": 0.09847977818147051
+        }
+      },
+      "2026-01-17": {
+        "documents": 799,
+        "gold_count_mean": 12.332916145181477,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 795,
+          "DATE": 795,
+          "ADDRESS": 786,
+          "NAME": 799,
+          "JOB_TITLE": 656,
+          "EMAIL": 784,
+          "USERNAME": 671
+        },
+        "gold_span_counts": {
+          "PHONE": 1066,
+          "DATE": 1898,
+          "ADDRESS": 937,
+          "NAME": 3030,
+          "JOB_TITLE": 929,
+          "EMAIL": 1101,
+          "USERNAME": 893
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10817941952506596,
+          "DATE": 0.19261213720316622,
+          "ADDRESS": 0.09508828901968744,
+          "NAME": 0.30748934442865844,
+          "JOB_TITLE": 0.09427643596509032,
+          "EMAIL": 0.11173127663892836,
+          "USERNAME": 0.09062309721940329
+        }
+      },
+      "2026-03-23": {
+        "documents": 816,
+        "gold_count_mean": 12.3125,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 797,
+          "PHONE": 811,
+          "EMAIL": 803,
+          "NAME": 815,
+          "DATE": 815,
+          "USERNAME": 681,
+          "JOB_TITLE": 675
+        },
+        "gold_span_counts": {
+          "ADDRESS": 954,
+          "PHONE": 1095,
+          "EMAIL": 1141,
+          "NAME": 3065,
+          "DATE": 1945,
+          "USERNAME": 889,
+          "JOB_TITLE": 958
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09495371752762019,
+          "PHONE": 0.10898775753956405,
+          "EMAIL": 0.1135662386782124,
+          "NAME": 0.30506618891211307,
+          "DATE": 0.1935901264058923,
+          "USERNAME": 0.08848412461431274,
+          "JOB_TITLE": 0.09535184632228526
+        }
+      },
+      "2026-02-20": {
+        "documents": 825,
+        "gold_count_mean": 12.306666666666667,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 821,
+          "DATE": 824,
+          "ADDRESS": 808,
+          "NAME": 824,
+          "USERNAME": 715,
+          "EMAIL": 815,
+          "JOB_TITLE": 682
+        },
+        "gold_span_counts": {
+          "PHONE": 1126,
+          "DATE": 1957,
+          "ADDRESS": 969,
+          "NAME": 3081,
+          "USERNAME": 907,
+          "EMAIL": 1132,
+          "JOB_TITLE": 981
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.11090318132571654,
+          "DATE": 0.19275091106077022,
+          "ADDRESS": 0.09543977149610952,
+          "NAME": 0.3034571062740077,
+          "USERNAME": 0.08933320200925834,
+          "EMAIL": 0.11149413966315375,
+          "JOB_TITLE": 0.09662168817098395
+        }
+      },
+      "2026-03-26": {
+        "documents": 801,
+        "gold_count_mean": 12.450686641697878,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 801,
+          "ADDRESS": 779,
+          "JOB_TITLE": 678,
+          "USERNAME": 665,
+          "EMAIL": 790,
+          "DATE": 800,
+          "PHONE": 795
+        },
+        "gold_span_counts": {
+          "NAME": 3069,
+          "ADDRESS": 962,
+          "JOB_TITLE": 985,
+          "USERNAME": 828,
+          "EMAIL": 1136,
+          "DATE": 1919,
+          "PHONE": 1074
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30773087335806676,
+          "ADDRESS": 0.0964604431966309,
+          "JOB_TITLE": 0.09876667000902437,
+          "USERNAME": 0.08302416524616464,
+          "EMAIL": 0.11390755038604232,
+          "DATE": 0.19241953273839366,
+          "PHONE": 0.10769076506567733
+        }
+      },
+      "2026-01-09": {
+        "documents": 836,
+        "gold_count_mean": 12.454545454545455,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 835,
+          "DATE": 835,
+          "JOB_TITLE": 704,
+          "EMAIL": 824,
+          "ADDRESS": 814,
+          "PHONE": 834,
+          "USERNAME": 724
+        },
+        "gold_span_counts": {
+          "NAME": 3225,
+          "DATE": 1950,
+          "JOB_TITLE": 971,
+          "EMAIL": 1172,
+          "ADDRESS": 987,
+          "PHONE": 1142,
+          "USERNAME": 965
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30973876296580866,
+          "DATE": 0.1872839031886285,
+          "JOB_TITLE": 0.09325777948520937,
+          "EMAIL": 0.11256242796772954,
+          "ADDRESS": 0.09479446792162889,
+          "PHONE": 0.10968113714944296,
+          "USERNAME": 0.09268152132155205
+        }
+      },
+      "2026-02-06": {
+        "documents": 834,
+        "gold_count_mean": 12.350119904076738,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 834,
+          "EMAIL": 820,
+          "NAME": 834,
+          "ADDRESS": 817,
+          "JOB_TITLE": 697,
+          "PHONE": 829,
+          "USERNAME": 726
+        },
+        "gold_span_counts": {
+          "DATE": 1978,
+          "EMAIL": 1205,
+          "NAME": 3095,
+          "ADDRESS": 986,
+          "JOB_TITLE": 968,
+          "PHONE": 1137,
+          "USERNAME": 931
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19203883495145632,
+          "EMAIL": 0.11699029126213592,
+          "NAME": 0.3004854368932039,
+          "ADDRESS": 0.09572815533980583,
+          "JOB_TITLE": 0.09398058252427184,
+          "PHONE": 0.11038834951456311,
+          "USERNAME": 0.09038834951456311
+        }
+      },
+      "2026-02-03": {
+        "documents": 813,
+        "gold_count_mean": 12.328413284132841,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 708,
+          "EMAIL": 792,
+          "ADDRESS": 802,
+          "NAME": 812,
+          "JOB_TITLE": 651,
+          "DATE": 811,
+          "PHONE": 808
+        },
+        "gold_span_counts": {
+          "USERNAME": 950,
+          "EMAIL": 1101,
+          "ADDRESS": 983,
+          "NAME": 3048,
+          "JOB_TITLE": 920,
+          "DATE": 1922,
+          "PHONE": 1099
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.09478200139678739,
+          "EMAIL": 0.10984735109248728,
+          "ADDRESS": 0.09807442881372842,
+          "NAME": 0.30410056869200836,
+          "JOB_TITLE": 0.09178888556320462,
+          "DATE": 0.19175895440486881,
+          "PHONE": 0.1096478100369151
+        }
+      },
+      "2026-02-26": {
+        "documents": 844,
+        "gold_count_mean": 12.492890995260664,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 841,
+          "NAME": 844,
+          "JOB_TITLE": 704,
+          "USERNAME": 729,
+          "EMAIL": 824,
+          "DATE": 844,
+          "ADDRESS": 836
+        },
+        "gold_span_counts": {
+          "PHONE": 1145,
+          "NAME": 3252,
+          "JOB_TITLE": 993,
+          "USERNAME": 961,
+          "EMAIL": 1153,
+          "DATE": 2003,
+          "ADDRESS": 1037
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10859256449165403,
+          "NAME": 0.30842185128983307,
+          "JOB_TITLE": 0.09417678300455236,
+          "USERNAME": 0.09114188163884673,
+          "EMAIL": 0.10935128983308043,
+          "DATE": 0.1899658573596358,
+          "ADDRESS": 0.09834977238239757
+        }
+      },
+      "2026-02-09": {
+        "documents": 846,
+        "gold_count_mean": 12.28014184397163,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 838,
+          "DATE": 844,
+          "ADDRESS": 821,
+          "USERNAME": 702,
+          "NAME": 846,
+          "EMAIL": 835,
+          "JOB_TITLE": 722
+        },
+        "gold_span_counts": {
+          "PHONE": 1124,
+          "DATE": 2007,
+          "ADDRESS": 986,
+          "USERNAME": 888,
+          "NAME": 3176,
+          "EMAIL": 1178,
+          "JOB_TITLE": 1030
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10819135624217922,
+          "DATE": 0.19318509962460295,
+          "ADDRESS": 0.09490807584945615,
+          "USERNAME": 0.08547502165752238,
+          "NAME": 0.3057079603426701,
+          "EMAIL": 0.11338916161324478,
+          "JOB_TITLE": 0.09914332467032438
+        }
+      },
+      "2026-03-15": {
+        "documents": 839,
+        "gold_count_mean": 12.393325387365913,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 838,
+          "DATE": 838,
+          "USERNAME": 719,
+          "JOB_TITLE": 702,
+          "ADDRESS": 823,
+          "PHONE": 832,
+          "EMAIL": 821
+        },
+        "gold_span_counts": {
+          "NAME": 3164,
+          "DATE": 2049,
+          "USERNAME": 944,
+          "JOB_TITLE": 1006,
+          "ADDRESS": 995,
+          "PHONE": 1088,
+          "EMAIL": 1152
+        },
+        "gold_span_proportions": {
+          "NAME": 0.304289286401231,
+          "DATE": 0.19705712637045586,
+          "USERNAME": 0.09078668974802846,
+          "JOB_TITLE": 0.09674937487978458,
+          "ADDRESS": 0.09569147913060204,
+          "PHONE": 0.1046355068282362,
+          "EMAIL": 0.11079053664166186
+        }
+      },
+      "2026-02-24": {
+        "documents": 817,
+        "gold_count_mean": 12.418604651162791,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 817,
+          "PHONE": 815,
+          "DATE": 816,
+          "ADDRESS": 805,
+          "EMAIL": 805,
+          "USERNAME": 683,
+          "JOB_TITLE": 710
+        },
+        "gold_span_counts": {
+          "NAME": 3135,
+          "PHONE": 1093,
+          "DATE": 1898,
+          "ADDRESS": 987,
+          "EMAIL": 1147,
+          "USERNAME": 872,
+          "JOB_TITLE": 1014
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3089887640449438,
+          "PHONE": 0.10772718312635521,
+          "DATE": 0.1870687955844668,
+          "ADDRESS": 0.09727971614429332,
+          "EMAIL": 0.1130494776266509,
+          "USERNAME": 0.0859452000788488,
+          "JOB_TITLE": 0.09994086339444117
+        }
+      },
+      "2026-01-20": {
+        "documents": 847,
+        "gold_count_mean": 12.332939787485243,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 840,
+          "NAME": 847,
+          "ADDRESS": 830,
+          "EMAIL": 835,
+          "JOB_TITLE": 711,
+          "DATE": 846,
+          "USERNAME": 722
+        },
+        "gold_span_counts": {
+          "PHONE": 1136,
+          "NAME": 3176,
+          "ADDRESS": 987,
+          "EMAIL": 1212,
+          "JOB_TITLE": 991,
+          "DATE": 2026,
+          "USERNAME": 918
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10874976067394218,
+          "NAME": 0.30403982385602146,
+          "ADDRESS": 0.09448592762780011,
+          "EMAIL": 0.11602527283170591,
+          "JOB_TITLE": 0.094868849320314,
+          "DATE": 0.1939498372582807,
+          "USERNAME": 0.08788052843193567
+        }
+      },
+      "2026-02-21": {
+        "documents": 787,
+        "gold_count_mean": 12.489199491740788,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 786,
+          "DATE": 787,
+          "EMAIL": 776,
+          "PHONE": 784,
+          "USERNAME": 682,
+          "ADDRESS": 776,
+          "JOB_TITLE": 665
+        },
+        "gold_span_counts": {
+          "NAME": 3026,
+          "DATE": 1875,
+          "EMAIL": 1091,
+          "PHONE": 1064,
+          "USERNAME": 903,
+          "ADDRESS": 945,
+          "JOB_TITLE": 925
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3078644826533727,
+          "DATE": 0.1907620307254044,
+          "EMAIL": 0.11099806694475532,
+          "PHONE": 0.1082510937023095,
+          "USERNAME": 0.09187099399735477,
+          "ADDRESS": 0.09614406348560382,
+          "JOB_TITLE": 0.09410926849119951
+        }
+      },
+      "2026-02-02": {
+        "documents": 808,
+        "gold_count_mean": 12.455445544554456,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 808,
+          "ADDRESS": 794,
+          "USERNAME": 692,
+          "EMAIL": 798,
+          "JOB_TITLE": 693,
+          "DATE": 808,
+          "PHONE": 803
+        },
+        "gold_span_counts": {
+          "NAME": 3009,
+          "ADDRESS": 960,
+          "USERNAME": 906,
+          "EMAIL": 1148,
+          "JOB_TITLE": 998,
+          "DATE": 1939,
+          "PHONE": 1104
+        },
+        "gold_span_proportions": {
+          "NAME": 0.2989864864864865,
+          "ADDRESS": 0.09538950715421304,
+          "USERNAME": 0.09002384737678855,
+          "EMAIL": 0.11406995230524643,
+          "JOB_TITLE": 0.09916534181240064,
+          "DATE": 0.19266693163751988,
+          "PHONE": 0.10969793322734499
+        }
+      },
+      "2026-02-22": {
+        "documents": 867,
+        "gold_count_mean": 12.267589388696654,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 737,
+          "NAME": 867,
+          "ADDRESS": 847,
+          "PHONE": 863,
+          "DATE": 866,
+          "EMAIL": 851,
+          "JOB_TITLE": 727
+        },
+        "gold_span_counts": {
+          "USERNAME": 950,
+          "NAME": 3301,
+          "ADDRESS": 1030,
+          "PHONE": 1147,
+          "DATE": 2047,
+          "EMAIL": 1180,
+          "JOB_TITLE": 981
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.08931929296728093,
+          "NAME": 0.3103610379842046,
+          "ADDRESS": 0.09684091763820986,
+          "PHONE": 0.1078412937194434,
+          "DATE": 0.19245957126739377,
+          "EMAIL": 0.11094396389620158,
+          "JOB_TITLE": 0.0922339225272659
+        }
+      },
+      "2026-02-25": {
+        "documents": 877,
+        "gold_count_mean": 12.372862029646523,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 862,
+          "NAME": 877,
+          "DATE": 877,
+          "PHONE": 874,
+          "JOB_TITLE": 755,
+          "EMAIL": 864,
+          "USERNAME": 740
+        },
+        "gold_span_counts": {
+          "ADDRESS": 1030,
+          "NAME": 3317,
+          "DATE": 2071,
+          "PHONE": 1171,
+          "JOB_TITLE": 1073,
+          "EMAIL": 1223,
+          "USERNAME": 966
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09492212699290388,
+          "NAME": 0.3056861118790895,
+          "DATE": 0.19085798543913005,
+          "PHONE": 0.1079163210763985,
+          "JOB_TITLE": 0.0988848954013455,
+          "EMAIL": 0.11270850612846742,
+          "USERNAME": 0.08902405308266519
+        }
+      },
+      "2026-02-23": {
+        "documents": 820,
+        "gold_count_mean": 12.347560975609756,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 820,
+          "DATE": 819,
+          "EMAIL": 804,
+          "USERNAME": 712,
+          "JOB_TITLE": 672,
+          "PHONE": 817,
+          "ADDRESS": 805
+        },
+        "gold_span_counts": {
+          "NAME": 3016,
+          "DATE": 1982,
+          "EMAIL": 1162,
+          "USERNAME": 953,
+          "JOB_TITLE": 957,
+          "PHONE": 1110,
+          "ADDRESS": 945
+        },
+        "gold_span_proportions": {
+          "NAME": 0.29787654320987655,
+          "DATE": 0.1957530864197531,
+          "EMAIL": 0.11476543209876543,
+          "USERNAME": 0.09412345679012346,
+          "JOB_TITLE": 0.09451851851851852,
+          "PHONE": 0.10962962962962963,
+          "ADDRESS": 0.09333333333333334
+        }
+      },
+      "2026-01-13": {
+        "documents": 789,
+        "gold_count_mean": 12.23447401774398,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 672,
+          "EMAIL": 776,
+          "NAME": 789,
+          "DATE": 788,
+          "PHONE": 785,
+          "ADDRESS": 778,
+          "JOB_TITLE": 636
+        },
+        "gold_span_counts": {
+          "USERNAME": 872,
+          "EMAIL": 1071,
+          "NAME": 2974,
+          "DATE": 1864,
+          "PHONE": 1056,
+          "ADDRESS": 934,
+          "JOB_TITLE": 882
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.09033461100176111,
+          "EMAIL": 0.11094996374184192,
+          "NAME": 0.3080907489899513,
+          "DATE": 0.1931005904900031,
+          "PHONE": 0.1093960426810318,
+          "ADDRESS": 0.09675748471977623,
+          "JOB_TITLE": 0.09137055837563451
+        }
+      },
+      "2026-03-06": {
+        "documents": 807,
+        "gold_count_mean": 12.400247831474598,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 806,
+          "NAME": 807,
+          "USERNAME": 688,
+          "JOB_TITLE": 673,
+          "DATE": 807,
+          "EMAIL": 793,
+          "ADDRESS": 791
+        },
+        "gold_span_counts": {
+          "PHONE": 1055,
+          "NAME": 3079,
+          "USERNAME": 922,
+          "JOB_TITLE": 951,
+          "DATE": 1937,
+          "EMAIL": 1113,
+          "ADDRESS": 950
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10542620165883881,
+          "NAME": 0.30768462076546416,
+          "USERNAME": 0.09213550514639753,
+          "JOB_TITLE": 0.09503347656640351,
+          "DATE": 0.19356450484660737,
+          "EMAIL": 0.1112221444988508,
+          "ADDRESS": 0.0949335465174378
+        }
+      },
+      "2026-02-18": {
+        "documents": 853,
+        "gold_count_mean": 12.118405627198124,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 853,
+          "DATE": 853,
+          "PHONE": 851,
+          "EMAIL": 842,
+          "USERNAME": 713,
+          "JOB_TITLE": 697,
+          "ADDRESS": 847
+        },
+        "gold_span_counts": {
+          "NAME": 3155,
+          "DATE": 1964,
+          "PHONE": 1149,
+          "EMAIL": 1198,
+          "USERNAME": 926,
+          "JOB_TITLE": 968,
+          "ADDRESS": 977
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30521427880429525,
+          "DATE": 0.18999709780400503,
+          "PHONE": 0.11115410660733288,
+          "EMAIL": 0.1158943600657831,
+          "USERNAME": 0.08958111637805939,
+          "JOB_TITLE": 0.09364419077101674,
+          "ADDRESS": 0.09451484956950759
+        }
+      },
+      "2026-01-08": {
+        "documents": 801,
+        "gold_count_mean": 12.158551810237203,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 789,
+          "PHONE": 800,
+          "NAME": 801,
+          "JOB_TITLE": 654,
+          "DATE": 801,
+          "EMAIL": 778,
+          "USERNAME": 687
+        },
+        "gold_span_counts": {
+          "ADDRESS": 960,
+          "PHONE": 1077,
+          "NAME": 2906,
+          "JOB_TITLE": 919,
+          "DATE": 1872,
+          "EMAIL": 1112,
+          "USERNAME": 893
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09857274874217066,
+          "PHONE": 0.1105863024951227,
+          "NAME": 0.2983879248382791,
+          "JOB_TITLE": 0.09436287093130712,
+          "DATE": 0.19221686004723276,
+          "EMAIL": 0.11418010062634767,
+          "USERNAME": 0.09169319231954
+        }
+      },
+      "2026-03-17": {
+        "documents": 863,
+        "gold_count_mean": 12.309385863267671,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 863,
+          "EMAIL": 846,
+          "JOB_TITLE": 701,
+          "ADDRESS": 845,
+          "USERNAME": 739,
+          "DATE": 861,
+          "PHONE": 860
+        },
+        "gold_span_counts": {
+          "NAME": 3287,
+          "EMAIL": 1201,
+          "JOB_TITLE": 1017,
+          "ADDRESS": 1005,
+          "USERNAME": 961,
+          "DATE": 1984,
+          "PHONE": 1168
+        },
+        "gold_span_proportions": {
+          "NAME": 0.309422950202391,
+          "EMAIL": 0.11305657535536101,
+          "JOB_TITLE": 0.09573566789042644,
+          "ADDRESS": 0.0946060434905394,
+          "USERNAME": 0.09046408735762025,
+          "DATE": 0.18676456744799022,
+          "PHONE": 0.10995010825567166
+        }
+      },
+      "2026-01-22": {
+        "documents": 798,
+        "gold_count_mean": 12.200501253132833,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 797,
+          "JOB_TITLE": 671,
+          "PHONE": 795,
+          "DATE": 797,
+          "ADDRESS": 783,
+          "EMAIL": 792,
+          "USERNAME": 683
+        },
+        "gold_span_counts": {
+          "NAME": 2927,
+          "JOB_TITLE": 938,
+          "PHONE": 1074,
+          "DATE": 1876,
+          "ADDRESS": 928,
+          "EMAIL": 1125,
+          "USERNAME": 868
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3006368118323747,
+          "JOB_TITLE": 0.09634346754313887,
+          "PHONE": 0.11031224322103533,
+          "DATE": 0.19268693508627774,
+          "ADDRESS": 0.09531635168447,
+          "EMAIL": 0.1155505341002465,
+          "USERNAME": 0.08915365653245687
+        }
+      },
+      "2026-02-14": {
+        "documents": 812,
+        "gold_count_mean": 12.251231527093596,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 693,
+          "PHONE": 810,
+          "NAME": 812,
+          "DATE": 812,
+          "EMAIL": 806,
+          "ADDRESS": 806,
+          "JOB_TITLE": 681
+        },
+        "gold_span_counts": {
+          "USERNAME": 931,
+          "PHONE": 1098,
+          "NAME": 2980,
+          "DATE": 1885,
+          "EMAIL": 1151,
+          "ADDRESS": 946,
+          "JOB_TITLE": 957
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.09358665058303177,
+          "PHONE": 0.11037394451145958,
+          "NAME": 0.2995577000402091,
+          "DATE": 0.18948532368315238,
+          "EMAIL": 0.1157016485725774,
+          "ADDRESS": 0.09509449135504625,
+          "JOB_TITLE": 0.09620024125452352
+        }
+      },
+      "2026-02-17": {
+        "documents": 864,
+        "gold_count_mean": 12.17013888888889,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 847,
+          "DATE": 864,
+          "JOB_TITLE": 733,
+          "PHONE": 860,
+          "ADDRESS": 847,
+          "USERNAME": 731,
+          "NAME": 864
+        },
+        "gold_span_counts": {
+          "EMAIL": 1169,
+          "DATE": 2017,
+          "JOB_TITLE": 1048,
+          "PHONE": 1135,
+          "ADDRESS": 1001,
+          "USERNAME": 951,
+          "NAME": 3194
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.11117451260104612,
+          "DATE": 0.19182120779838327,
+          "JOB_TITLE": 0.09966714217784117,
+          "PHONE": 0.10794103661436044,
+          "ADDRESS": 0.09519733713742273,
+          "USERNAME": 0.09044222539229672,
+          "NAME": 0.30375653827864957
+        }
+      },
+      "2026-01-16": {
+        "documents": 802,
+        "gold_count_mean": 12.140897755610972,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 797,
+          "EMAIL": 777,
+          "JOB_TITLE": 670,
+          "NAME": 801,
+          "ADDRESS": 796,
+          "DATE": 801,
+          "USERNAME": 668
+        },
+        "gold_span_counts": {
+          "PHONE": 1070,
+          "EMAIL": 1097,
+          "JOB_TITLE": 953,
+          "NAME": 2979,
+          "ADDRESS": 948,
+          "DATE": 1855,
+          "USERNAME": 835
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10989010989010989,
+          "EMAIL": 0.11266303789668276,
+          "JOB_TITLE": 0.09787408852829414,
+          "NAME": 0.3059463900585396,
+          "ADDRESS": 0.09736058334189175,
+          "DATE": 0.19051042415528396,
+          "USERNAME": 0.0857553661291979
+        }
+      },
+      "2026-01-12": {
+        "documents": 819,
+        "gold_count_mean": 12.361416361416362,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 672,
+          "ADDRESS": 806,
+          "NAME": 819,
+          "DATE": 818,
+          "EMAIL": 811,
+          "USERNAME": 663,
+          "PHONE": 814
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 959,
+          "ADDRESS": 972,
+          "NAME": 3086,
+          "DATE": 1954,
+          "EMAIL": 1167,
+          "USERNAME": 904,
+          "PHONE": 1082
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09472540497826946,
+          "ADDRESS": 0.0960094824180166,
+          "NAME": 0.3048202291584354,
+          "DATE": 0.19300671671276176,
+          "EMAIL": 0.11527064401422363,
+          "USERNAME": 0.08929276965626234,
+          "PHONE": 0.10687475306203081
+        }
+      },
+      "2026-03-05": {
+        "documents": 785,
+        "gold_count_mean": 12.356687898089172,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 784,
+          "ADDRESS": 776,
+          "NAME": 785,
+          "USERNAME": 681,
+          "JOB_TITLE": 656,
+          "EMAIL": 775,
+          "PHONE": 781
+        },
+        "gold_span_counts": {
+          "DATE": 1861,
+          "ADDRESS": 911,
+          "NAME": 2985,
+          "USERNAME": 890,
+          "JOB_TITLE": 930,
+          "EMAIL": 1080,
+          "PHONE": 1043
+        },
+        "gold_span_proportions": {
+          "DATE": 0.1918556701030928,
+          "ADDRESS": 0.09391752577319587,
+          "NAME": 0.3077319587628866,
+          "USERNAME": 0.09175257731958762,
+          "JOB_TITLE": 0.09587628865979382,
+          "EMAIL": 0.11134020618556702,
+          "PHONE": 0.10752577319587629
+        }
+      },
+      "2026-02-10": {
+        "documents": 826,
+        "gold_count_mean": 12.141646489104117,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 826,
+          "JOB_TITLE": 690,
+          "DATE": 826,
+          "EMAIL": 817,
+          "ADDRESS": 815,
+          "PHONE": 823,
+          "USERNAME": 710
+        },
+        "gold_span_counts": {
+          "NAME": 3010,
+          "JOB_TITLE": 999,
+          "DATE": 1897,
+          "EMAIL": 1146,
+          "ADDRESS": 943,
+          "PHONE": 1100,
+          "USERNAME": 934
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3001296240901386,
+          "JOB_TITLE": 0.0996111277295842,
+          "DATE": 0.18915146076378503,
+          "EMAIL": 0.11426862099910261,
+          "ADDRESS": 0.09402732076976768,
+          "PHONE": 0.10968192242496759,
+          "USERNAME": 0.0931299232226543
+        }
+      },
+      "2026-01-15": {
+        "documents": 843,
+        "gold_count_mean": 12.333333333333334,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 843,
+          "USERNAME": 717,
+          "PHONE": 840,
+          "DATE": 843,
+          "ADDRESS": 831,
+          "EMAIL": 832,
+          "JOB_TITLE": 716
+        },
+        "gold_span_counts": {
+          "NAME": 3168,
+          "USERNAME": 957,
+          "PHONE": 1107,
+          "DATE": 1986,
+          "ADDRESS": 997,
+          "EMAIL": 1150,
+          "JOB_TITLE": 1032
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30470327979224776,
+          "USERNAME": 0.09204578243724151,
+          "PHONE": 0.1064730210637684,
+          "DATE": 0.19101663941521593,
+          "ADDRESS": 0.09589304607098201,
+          "EMAIL": 0.11060882947003943,
+          "JOB_TITLE": 0.09925940175050495
+        }
+      },
+      "2026-03-04": {
+        "documents": 825,
+        "gold_count_mean": 12.30060606060606,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 823,
+          "EMAIL": 813,
+          "NAME": 825,
+          "JOB_TITLE": 678,
+          "ADDRESS": 814,
+          "PHONE": 818,
+          "USERNAME": 704
+        },
+        "gold_span_counts": {
+          "DATE": 1967,
+          "EMAIL": 1123,
+          "NAME": 3085,
+          "JOB_TITLE": 959,
+          "ADDRESS": 974,
+          "PHONE": 1100,
+          "USERNAME": 940
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19383129680725267,
+          "EMAIL": 0.11066219944816713,
+          "NAME": 0.3040007883326764,
+          "JOB_TITLE": 0.09450137958218369,
+          "ADDRESS": 0.09597950335041387,
+          "PHONE": 0.1083957430035475,
+          "USERNAME": 0.09262908947575876
+        }
+      },
+      "2026-03-10": {
+        "documents": 822,
+        "gold_count_mean": 12.344282238442823,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 820,
+          "NAME": 822,
+          "JOB_TITLE": 705,
+          "EMAIL": 812,
+          "USERNAME": 699,
+          "PHONE": 817,
+          "ADDRESS": 806
+        },
+        "gold_span_counts": {
+          "DATE": 1926,
+          "NAME": 3104,
+          "JOB_TITLE": 994,
+          "EMAIL": 1156,
+          "USERNAME": 916,
+          "PHONE": 1090,
+          "ADDRESS": 961
+        },
+        "gold_span_proportions": {
+          "DATE": 0.1898097959988174,
+          "NAME": 0.30590322262737757,
+          "JOB_TITLE": 0.09795998817384449,
+          "EMAIL": 0.11392529811767024,
+          "USERNAME": 0.09027298708978022,
+          "PHONE": 0.10742091258500049,
+          "ADDRESS": 0.0947077954075096
+        }
+      },
+      "2026-03-11": {
+        "documents": 803,
+        "gold_count_mean": 12.11706102117061,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 803,
+          "NAME": 803,
+          "PHONE": 801,
+          "ADDRESS": 793,
+          "USERNAME": 668,
+          "EMAIL": 786,
+          "JOB_TITLE": 670
+        },
+        "gold_span_counts": {
+          "DATE": 1849,
+          "NAME": 2958,
+          "PHONE": 1049,
+          "ADDRESS": 954,
+          "USERNAME": 862,
+          "EMAIL": 1133,
+          "JOB_TITLE": 925
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19003083247687563,
+          "NAME": 0.3040082219938335,
+          "PHONE": 0.1078108941418294,
+          "ADDRESS": 0.09804727646454266,
+          "USERNAME": 0.08859198355601233,
+          "EMAIL": 0.11644398766700925,
+          "JOB_TITLE": 0.09506680369989723
+        }
+      },
+      "2026-03-24": {
+        "documents": 806,
+        "gold_count_mean": 12.291563275434243,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 670,
+          "DATE": 806,
+          "EMAIL": 797,
+          "NAME": 806,
+          "PHONE": 804,
+          "ADDRESS": 798,
+          "USERNAME": 694
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 939,
+          "DATE": 1891,
+          "EMAIL": 1123,
+          "NAME": 3025,
+          "PHONE": 1075,
+          "ADDRESS": 931,
+          "USERNAME": 923
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09478146764913697,
+          "DATE": 0.19087513879075402,
+          "EMAIL": 0.11335419400423943,
+          "NAME": 0.30533965882709196,
+          "PHONE": 0.10850913495508227,
+          "ADDRESS": 0.09397395780761078,
+          "USERNAME": 0.09316644796608459
+        }
+      },
+      "2026-01-06": {
+        "documents": 819,
+        "gold_count_mean": 12.402930402930403,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 819,
+          "DATE": 818,
+          "EMAIL": 805,
+          "PHONE": 815,
+          "USERNAME": 691,
+          "ADDRESS": 808,
+          "JOB_TITLE": 696
+        },
+        "gold_span_counts": {
+          "NAME": 3070,
+          "DATE": 1988,
+          "EMAIL": 1143,
+          "PHONE": 1089,
+          "USERNAME": 910,
+          "ADDRESS": 969,
+          "JOB_TITLE": 989
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30222484741090766,
+          "DATE": 0.19570781649931088,
+          "EMAIL": 0.11252215002953338,
+          "PHONE": 0.10720614294152392,
+          "USERNAME": 0.08958456389052963,
+          "ADDRESS": 0.09539279385705847,
+          "JOB_TITLE": 0.09736168537113606
+        }
+      },
+      "2026-01-28": {
+        "documents": 784,
+        "gold_count_mean": 12.311224489795919,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 784,
+          "JOB_TITLE": 643,
+          "PHONE": 781,
+          "EMAIL": 778,
+          "ADDRESS": 771,
+          "DATE": 784,
+          "USERNAME": 667
+        },
+        "gold_span_counts": {
+          "NAME": 2943,
+          "JOB_TITLE": 917,
+          "PHONE": 1060,
+          "EMAIL": 1088,
+          "ADDRESS": 898,
+          "DATE": 1867,
+          "USERNAME": 879
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3049108992954828,
+          "JOB_TITLE": 0.09500621632822213,
+          "PHONE": 0.10982179859096561,
+          "EMAIL": 0.112722751761293,
+          "ADDRESS": 0.09303771239121425,
+          "DATE": 0.19343141317861584,
+          "USERNAME": 0.09106920845420638
+        }
+      },
+      "2026-03-14": {
+        "documents": 803,
+        "gold_count_mean": 12.464508094645081,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 803,
+          "PHONE": 799,
+          "ADDRESS": 786,
+          "EMAIL": 791,
+          "JOB_TITLE": 688,
+          "DATE": 803,
+          "USERNAME": 661
+        },
+        "gold_span_counts": {
+          "NAME": 3019,
+          "PHONE": 1079,
+          "ADDRESS": 970,
+          "EMAIL": 1137,
+          "JOB_TITLE": 994,
+          "DATE": 1937,
+          "USERNAME": 873
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3016285343191128,
+          "PHONE": 0.10780297732041164,
+          "ADDRESS": 0.09691277849935058,
+          "EMAIL": 0.11359776201418723,
+          "JOB_TITLE": 0.09931062044160256,
+          "DATE": 0.19352582675591967,
+          "USERNAME": 0.08722150064941553
+        }
+      },
+      "2026-03-27": {
+        "documents": 851,
+        "gold_count_mean": 12.26556991774383,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 707,
+          "DATE": 849,
+          "USERNAME": 728,
+          "NAME": 851,
+          "ADDRESS": 838,
+          "PHONE": 849,
+          "EMAIL": 837
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 994,
+          "DATE": 2007,
+          "USERNAME": 921,
+          "NAME": 3221,
+          "ADDRESS": 986,
+          "PHONE": 1136,
+          "EMAIL": 1173
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09522897106725427,
+          "DATE": 0.192278214217283,
+          "USERNAME": 0.08823529411764706,
+          "NAME": 0.3085840199271891,
+          "ADDRESS": 0.09446254071661238,
+          "PHONE": 0.10883310979114773,
+          "EMAIL": 0.11237785016286644
+        }
+      },
+      "2026-03-01": {
+        "documents": 850,
+        "gold_count_mean": 12.384705882352941,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 849,
+          "ADDRESS": 838,
+          "PHONE": 842,
+          "EMAIL": 836,
+          "NAME": 850,
+          "USERNAME": 732,
+          "JOB_TITLE": 718
+        },
+        "gold_span_counts": {
+          "DATE": 2013,
+          "ADDRESS": 980,
+          "PHONE": 1140,
+          "EMAIL": 1189,
+          "NAME": 3236,
+          "USERNAME": 960,
+          "JOB_TITLE": 1009
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19122257053291536,
+          "ADDRESS": 0.09309394889332194,
+          "PHONE": 0.10829296095753776,
+          "EMAIL": 0.11294765840220386,
+          "NAME": 0.30740001899876507,
+          "USERNAME": 0.09119407238529495,
+          "JOB_TITLE": 0.09584876982996106
+        }
+      },
+      "2026-03-09": {
+        "documents": 831,
+        "gold_count_mean": 12.235860409145607,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 827,
+          "EMAIL": 814,
+          "USERNAME": 698,
+          "DATE": 831,
+          "NAME": 831,
+          "ADDRESS": 817,
+          "JOB_TITLE": 692
+        },
+        "gold_span_counts": {
+          "PHONE": 1112,
+          "EMAIL": 1131,
+          "USERNAME": 933,
+          "DATE": 1949,
+          "NAME": 3101,
+          "ADDRESS": 982,
+          "JOB_TITLE": 960
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.1093627065302911,
+          "EMAIL": 0.11123131392604249,
+          "USERNAME": 0.09175845790715971,
+          "DATE": 0.19167977970102282,
+          "NAME": 0.30497639653815894,
+          "ADDRESS": 0.09657749803304484,
+          "JOB_TITLE": 0.0944138473642801
+        }
+      },
+      "2026-01-07": {
+        "documents": 834,
+        "gold_count_mean": 12.309352517985612,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 834,
+          "ADDRESS": 820,
+          "PHONE": 830,
+          "JOB_TITLE": 666,
+          "NAME": 834,
+          "EMAIL": 823,
+          "USERNAME": 721
+        },
+        "gold_span_counts": {
+          "DATE": 1961,
+          "ADDRESS": 982,
+          "PHONE": 1129,
+          "JOB_TITLE": 925,
+          "NAME": 3180,
+          "EMAIL": 1156,
+          "USERNAME": 933
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19101889733099553,
+          "ADDRESS": 0.09565556204948374,
+          "PHONE": 0.1099746736801091,
+          "JOB_TITLE": 0.09010325345801676,
+          "NAME": 0.309760374050263,
+          "EMAIL": 0.11260471459185661,
+          "USERNAME": 0.09088252483927528
+        }
+      },
+      "2026-03-08": {
+        "documents": 839,
+        "gold_count_mean": 12.159713945172825,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 837,
+          "USERNAME": 713,
+          "EMAIL": 826,
+          "ADDRESS": 823,
+          "PHONE": 836,
+          "JOB_TITLE": 706,
+          "NAME": 838
+        },
+        "gold_span_counts": {
+          "DATE": 1960,
+          "USERNAME": 936,
+          "EMAIL": 1139,
+          "ADDRESS": 953,
+          "PHONE": 1114,
+          "JOB_TITLE": 995,
+          "NAME": 3105
+        },
+        "gold_span_proportions": {
+          "DATE": 0.1921191923152323,
+          "USERNAME": 0.09174671633013134,
+          "EMAIL": 0.11164477553420898,
+          "ADDRESS": 0.09341305626347775,
+          "PHONE": 0.10919427563222897,
+          "JOB_TITLE": 0.09752989609880415,
+          "NAME": 0.3043520878259165
+        }
+      },
+      "2026-01-05": {
+        "documents": 808,
+        "gold_count_mean": 12.240099009900991,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 808,
+          "EMAIL": 798,
+          "DATE": 807,
+          "ADDRESS": 791,
+          "JOB_TITLE": 695,
+          "PHONE": 807,
+          "USERNAME": 687
+        },
+        "gold_span_counts": {
+          "NAME": 3021,
+          "EMAIL": 1111,
+          "DATE": 1877,
+          "ADDRESS": 918,
+          "JOB_TITLE": 995,
+          "PHONE": 1074,
+          "USERNAME": 894
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30546006066734077,
+          "EMAIL": 0.11233569261880688,
+          "DATE": 0.1897876643073812,
+          "ADDRESS": 0.09282103134479272,
+          "JOB_TITLE": 0.1006066734074823,
+          "PHONE": 0.10859453993933266,
+          "USERNAME": 0.09039433771486349
+        }
+      },
+      "2026-02-12": {
+        "documents": 840,
+        "gold_count_mean": 12.198809523809524,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 840,
+          "EMAIL": 831,
+          "USERNAME": 719,
+          "PHONE": 838,
+          "ADDRESS": 825,
+          "JOB_TITLE": 722,
+          "DATE": 838
+        },
+        "gold_span_counts": {
+          "NAME": 3079,
+          "EMAIL": 1168,
+          "USERNAME": 924,
+          "PHONE": 1121,
+          "ADDRESS": 968,
+          "JOB_TITLE": 1052,
+          "DATE": 1935
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3004781887381673,
+          "EMAIL": 0.11398458085293256,
+          "USERNAME": 0.09017273348297063,
+          "PHONE": 0.10939787254806285,
+          "ADDRESS": 0.09446667317263589,
+          "JOB_TITLE": 0.1026641943983605,
+          "DATE": 0.18883575680687031
+        }
+      },
+      "2026-01-21": {
+        "documents": 862,
+        "gold_count_mean": 12.392111368909513,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 862,
+          "JOB_TITLE": 717,
+          "EMAIL": 852,
+          "PHONE": 855,
+          "ADDRESS": 854,
+          "DATE": 862,
+          "USERNAME": 723
+        },
+        "gold_span_counts": {
+          "NAME": 3207,
+          "JOB_TITLE": 1034,
+          "EMAIL": 1201,
+          "PHONE": 1142,
+          "ADDRESS": 1048,
+          "DATE": 2094,
+          "USERNAME": 956
+        },
+        "gold_span_proportions": {
+          "NAME": 0.300224677026774,
+          "JOB_TITLE": 0.09679835236847033,
+          "EMAIL": 0.11243212881482868,
+          "PHONE": 0.10690881857330088,
+          "ADDRESS": 0.0981089683579854,
+          "DATE": 0.19603070586032578,
+          "USERNAME": 0.08949634899831492
+        }
+      },
+      "2026-02-19": {
+        "documents": 873,
+        "gold_count_mean": 12.25085910652921,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "USERNAME": 748,
+          "NAME": 872,
+          "JOB_TITLE": 728,
+          "EMAIL": 864,
+          "ADDRESS": 859,
+          "DATE": 873,
+          "PHONE": 866
+        },
+        "gold_span_counts": {
+          "USERNAME": 971,
+          "NAME": 3263,
+          "JOB_TITLE": 1064,
+          "EMAIL": 1213,
+          "ADDRESS": 1012,
+          "DATE": 2037,
+          "PHONE": 1135
+        },
+        "gold_span_proportions": {
+          "USERNAME": 0.09079008882655447,
+          "NAME": 0.3050958391771856,
+          "JOB_TITLE": 0.0994857410004675,
+          "EMAIL": 0.1134174848059841,
+          "ADDRESS": 0.09462365591397849,
+          "DATE": 0.19046283309957923,
+          "PHONE": 0.10612435717625059
+        }
+      },
+      "2026-02-05": {
+        "documents": 811,
+        "gold_count_mean": 12.180024660912453,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 811,
+          "USERNAME": 697,
+          "JOB_TITLE": 676,
+          "ADDRESS": 806,
+          "EMAIL": 800,
+          "PHONE": 802,
+          "DATE": 811
+        },
+        "gold_span_counts": {
+          "NAME": 3025,
+          "USERNAME": 897,
+          "JOB_TITLE": 957,
+          "ADDRESS": 957,
+          "EMAIL": 1118,
+          "PHONE": 1071,
+          "DATE": 1853
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3062360801781737,
+          "USERNAME": 0.09080785584126341,
+          "JOB_TITLE": 0.09688195991091314,
+          "ADDRESS": 0.09688195991091314,
+          "EMAIL": 0.1131808058311399,
+          "PHONE": 0.10842275764324762,
+          "DATE": 0.18758858068434905
+        }
+      },
+      "2026-01-02": {
+        "documents": 776,
+        "gold_count_mean": 12.445876288659793,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 776,
+          "ADDRESS": 766,
+          "PHONE": 774,
+          "EMAIL": 767,
+          "DATE": 775,
+          "USERNAME": 658,
+          "JOB_TITLE": 660
+        },
+        "gold_span_counts": {
+          "NAME": 2975,
+          "ADDRESS": 931,
+          "PHONE": 1021,
+          "EMAIL": 1065,
+          "DATE": 1891,
+          "USERNAME": 855,
+          "JOB_TITLE": 920
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3080347898115552,
+          "ADDRESS": 0.09639676951749844,
+          "PHONE": 0.10571546904120936,
+          "EMAIL": 0.1102712776972458,
+          "DATE": 0.1957962311037482,
+          "USERNAME": 0.08852764547525367,
+          "JOB_TITLE": 0.09525781735348933
+        }
+      },
+      "2026-03-25": {
+        "documents": 828,
+        "gold_count_mean": 12.23792270531401,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 827,
+          "JOB_TITLE": 695,
+          "NAME": 828,
+          "USERNAME": 698,
+          "EMAIL": 822,
+          "ADDRESS": 813,
+          "PHONE": 823
+        },
+        "gold_span_counts": {
+          "DATE": 1941,
+          "JOB_TITLE": 986,
+          "NAME": 3074,
+          "USERNAME": 888,
+          "EMAIL": 1169,
+          "ADDRESS": 961,
+          "PHONE": 1114
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19155235369584525,
+          "JOB_TITLE": 0.09730583242869831,
+          "NAME": 0.3033652422777065,
+          "USERNAME": 0.08763446165992303,
+          "EMAIL": 0.1153656370275338,
+          "ADDRESS": 0.09483864600809237,
+          "PHONE": 0.10993782690220073
+        }
+      },
+      "2026-03-12": {
+        "documents": 824,
+        "gold_count_mean": 12.400485436893204,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 824,
+          "EMAIL": 813,
+          "JOB_TITLE": 700,
+          "ADDRESS": 809,
+          "NAME": 824,
+          "PHONE": 820,
+          "USERNAME": 696
+        },
+        "gold_span_counts": {
+          "DATE": 1944,
+          "EMAIL": 1151,
+          "JOB_TITLE": 988,
+          "ADDRESS": 1009,
+          "NAME": 3109,
+          "PHONE": 1111,
+          "USERNAME": 906
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19025249559600704,
+          "EMAIL": 0.11264435310236837,
+          "JOB_TITLE": 0.09669211195928754,
+          "ADDRESS": 0.0987473086709728,
+          "NAME": 0.3042669798394989,
+          "PHONE": 0.10872969269915835,
+          "USERNAME": 0.08866705813270699
+        }
+      },
+      "2026-03-16": {
+        "documents": 798,
+        "gold_count_mean": 12.43859649122807,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 787,
+          "NAME": 798,
+          "JOB_TITLE": 678,
+          "ADDRESS": 777,
+          "DATE": 798,
+          "USERNAME": 673,
+          "PHONE": 795
+        },
+        "gold_span_counts": {
+          "EMAIL": 1124,
+          "NAME": 3038,
+          "JOB_TITLE": 953,
+          "ADDRESS": 936,
+          "DATE": 1934,
+          "USERNAME": 880,
+          "PHONE": 1061
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.11323796091073947,
+          "NAME": 0.306064880112835,
+          "JOB_TITLE": 0.09601047753374975,
+          "ADDRESS": 0.09429780374773322,
+          "DATE": 0.19484182953858553,
+          "USERNAME": 0.08865605480556116,
+          "PHONE": 0.1068909933507959
+        }
+      },
+      "2026-02-13": {
+        "documents": 828,
+        "gold_count_mean": 12.483091787439614,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 679,
+          "EMAIL": 811,
+          "DATE": 827,
+          "NAME": 828,
+          "PHONE": 827,
+          "ADDRESS": 812,
+          "USERNAME": 693
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 972,
+          "EMAIL": 1174,
+          "DATE": 1991,
+          "NAME": 3156,
+          "PHONE": 1134,
+          "ADDRESS": 993,
+          "USERNAME": 916
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09404024767801858,
+          "EMAIL": 0.11358359133126934,
+          "DATE": 0.19262770897832818,
+          "NAME": 0.30534055727554177,
+          "PHONE": 0.10971362229102168,
+          "ADDRESS": 0.0960719814241486,
+          "USERNAME": 0.08862229102167182
+        }
+      },
+      "2026-01-18": {
+        "documents": 784,
+        "gold_count_mean": 12.248724489795919,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 653,
+          "DATE": 783,
+          "EMAIL": 771,
+          "PHONE": 780,
+          "USERNAME": 661,
+          "ADDRESS": 776,
+          "NAME": 784
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 929,
+          "DATE": 1854,
+          "EMAIL": 1093,
+          "PHONE": 1032,
+          "USERNAME": 853,
+          "ADDRESS": 935,
+          "NAME": 2907
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09674060189524107,
+          "DATE": 0.19306466729147143,
+          "EMAIL": 0.11381859835468083,
+          "PHONE": 0.10746641674476726,
+          "USERNAME": 0.08882640841403729,
+          "ADDRESS": 0.09736540664375716,
+          "NAME": 0.302717900656045
+        }
+      },
+      "2026-02-16": {
+        "documents": 806,
+        "gold_count_mean": 12.424317617866006,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 806,
+          "DATE": 806,
+          "PHONE": 806,
+          "EMAIL": 803,
+          "USERNAME": 687,
+          "ADDRESS": 795,
+          "JOB_TITLE": 688
+        },
+        "gold_span_counts": {
+          "NAME": 3016,
+          "DATE": 1927,
+          "PHONE": 1099,
+          "EMAIL": 1127,
+          "USERNAME": 905,
+          "ADDRESS": 956,
+          "JOB_TITLE": 984
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30117835030956663,
+          "DATE": 0.19243059716397043,
+          "PHONE": 0.109746355102856,
+          "EMAIL": 0.11254244058318354,
+          "USERNAME": 0.09037347713201518,
+          "ADDRESS": 0.09546634711404034,
+          "JOB_TITLE": 0.09826243259436789
+        }
+      },
+      "2026-03-21": {
+        "documents": 854,
+        "gold_count_mean": 12.288056206088992,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 830,
+          "NAME": 854,
+          "ADDRESS": 839,
+          "PHONE": 848,
+          "DATE": 851,
+          "JOB_TITLE": 713,
+          "USERNAME": 729
+        },
+        "gold_span_counts": {
+          "EMAIL": 1161,
+          "NAME": 3201,
+          "ADDRESS": 1033,
+          "PHONE": 1131,
+          "DATE": 2009,
+          "JOB_TITLE": 1014,
+          "USERNAME": 945
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.11063464837049743,
+          "NAME": 0.3050314465408805,
+          "ADDRESS": 0.09843720221078711,
+          "PHONE": 0.10777587192681533,
+          "DATE": 0.19144272917857824,
+          "JOB_TITLE": 0.09662664379645512,
+          "USERNAME": 0.09005145797598628
+        }
+      },
+      "2026-01-27": {
+        "documents": 853,
+        "gold_count_mean": 12.329425556858148,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 852,
+          "EMAIL": 840,
+          "DATE": 853,
+          "JOB_TITLE": 734,
+          "ADDRESS": 836,
+          "PHONE": 850,
+          "USERNAME": 726
+        },
+        "gold_span_counts": {
+          "NAME": 3201,
+          "EMAIL": 1201,
+          "DATE": 1999,
+          "JOB_TITLE": 1013,
+          "ADDRESS": 1038,
+          "PHONE": 1143,
+          "USERNAME": 922
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3043643624607778,
+          "EMAIL": 0.11419606351621185,
+          "DATE": 0.19007321479509365,
+          "JOB_TITLE": 0.09632024341542265,
+          "ADDRESS": 0.09869734715222972,
+          "PHONE": 0.10868118284681944,
+          "USERNAME": 0.0876675858134449
+        }
+      },
+      "2026-01-11": {
+        "documents": 829,
+        "gold_count_mean": 12.440289505428227,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "EMAIL": 813,
+          "DATE": 829,
+          "NAME": 829,
+          "ADDRESS": 817,
+          "JOB_TITLE": 695,
+          "PHONE": 827,
+          "USERNAME": 697
+        },
+        "gold_span_counts": {
+          "EMAIL": 1153,
+          "DATE": 1983,
+          "NAME": 3127,
+          "ADDRESS": 1018,
+          "JOB_TITLE": 984,
+          "PHONE": 1148,
+          "USERNAME": 900
+        },
+        "gold_span_proportions": {
+          "EMAIL": 0.1118006399689712,
+          "DATE": 0.19228158634732861,
+          "NAME": 0.30320954135557066,
+          "ADDRESS": 0.09871036555803354,
+          "JOB_TITLE": 0.09541355570639,
+          "PHONE": 0.11131581499078833,
+          "USERNAME": 0.08726849607291767
+        }
+      },
+      "2026-01-03": {
+        "documents": 832,
+        "gold_count_mean": 12.40625,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 832,
+          "USERNAME": 681,
+          "ADDRESS": 816,
+          "DATE": 831,
+          "PHONE": 829,
+          "EMAIL": 820,
+          "JOB_TITLE": 698
+        },
+        "gold_span_counts": {
+          "NAME": 3194,
+          "USERNAME": 886,
+          "ADDRESS": 993,
+          "DATE": 1960,
+          "PHONE": 1131,
+          "EMAIL": 1162,
+          "JOB_TITLE": 996
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3094361557837628,
+          "USERNAME": 0.08583607827940322,
+          "ADDRESS": 0.0962022863786088,
+          "DATE": 0.18988568106956016,
+          "PHONE": 0.10957178841309824,
+          "EMAIL": 0.1125750823483821,
+          "JOB_TITLE": 0.09649292772718465
+        }
+      },
+      "2026-03-18": {
+        "documents": 841,
+        "gold_count_mean": 12.260404280618312,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "ADDRESS": 833,
+          "DATE": 839,
+          "NAME": 840,
+          "PHONE": 835,
+          "EMAIL": 825,
+          "USERNAME": 711,
+          "JOB_TITLE": 704
+        },
+        "gold_span_counts": {
+          "ADDRESS": 991,
+          "DATE": 1968,
+          "NAME": 3170,
+          "PHONE": 1127,
+          "EMAIL": 1149,
+          "USERNAME": 910,
+          "JOB_TITLE": 996
+        },
+        "gold_span_proportions": {
+          "ADDRESS": 0.09611094947143826,
+          "DATE": 0.1908641256910096,
+          "NAME": 0.30743865774415674,
+          "PHONE": 0.10930074677528853,
+          "EMAIL": 0.11143439045679372,
+          "USERNAME": 0.08825526137135098,
+          "JOB_TITLE": 0.09659586848996217
+        }
+      },
+      "2026-01-26": {
+        "documents": 797,
+        "gold_count_mean": 12.189460476787955,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 796,
+          "USERNAME": 670,
+          "NAME": 796,
+          "PHONE": 794,
+          "ADDRESS": 786,
+          "EMAIL": 784,
+          "JOB_TITLE": 661
+        },
+        "gold_span_counts": {
+          "DATE": 1848,
+          "USERNAME": 876,
+          "NAME": 2936,
+          "PHONE": 1058,
+          "ADDRESS": 941,
+          "EMAIL": 1125,
+          "JOB_TITLE": 931
+        },
+        "gold_span_proportions": {
+          "DATE": 0.19022130725681935,
+          "USERNAME": 0.09016984045290788,
+          "NAME": 0.3022130725681935,
+          "PHONE": 0.10890375707668554,
+          "ADDRESS": 0.0968605249613999,
+          "EMAIL": 0.11580030880082347,
+          "JOB_TITLE": 0.09583118888317035
+        }
+      },
+      "2026-02-04": {
+        "documents": 865,
+        "gold_count_mean": 12.23815028901734,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "JOB_TITLE": 714,
+          "DATE": 864,
+          "NAME": 864,
+          "EMAIL": 857,
+          "PHONE": 863,
+          "USERNAME": 713,
+          "ADDRESS": 855
+        },
+        "gold_span_counts": {
+          "JOB_TITLE": 1021,
+          "DATE": 2029,
+          "NAME": 3216,
+          "EMAIL": 1219,
+          "PHONE": 1163,
+          "USERNAME": 946,
+          "ADDRESS": 992
+        },
+        "gold_span_proportions": {
+          "JOB_TITLE": 0.09644813905157755,
+          "DATE": 0.19166824107311545,
+          "NAME": 0.3037974683544304,
+          "EMAIL": 0.11515208766295107,
+          "PHONE": 0.10986208199508785,
+          "USERNAME": 0.08936331003211789,
+          "ADDRESS": 0.09370867183071982
+        }
+      },
+      "2026-01-19": {
+        "documents": 819,
+        "gold_count_mean": 12.528693528693529,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "DATE": 816,
+          "JOB_TITLE": 699,
+          "NAME": 819,
+          "ADDRESS": 807,
+          "USERNAME": 685,
+          "EMAIL": 807,
+          "PHONE": 815
+        },
+        "gold_span_counts": {
+          "DATE": 1904,
+          "JOB_TITLE": 1011,
+          "NAME": 3200,
+          "ADDRESS": 967,
+          "USERNAME": 918,
+          "EMAIL": 1149,
+          "PHONE": 1112
+        },
+        "gold_span_proportions": {
+          "DATE": 0.18555696325894164,
+          "JOB_TITLE": 0.09852840853717962,
+          "NAME": 0.31186044245200273,
+          "ADDRESS": 0.09424032745346457,
+          "USERNAME": 0.08946496442841828,
+          "EMAIL": 0.11197739011792222,
+          "PHONE": 0.10837150375207096
+        }
+      },
+      "2026-03-28": {
+        "documents": 840,
+        "gold_count_mean": 12.325,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 839,
+          "JOB_TITLE": 676,
+          "USERNAME": 707,
+          "ADDRESS": 827,
+          "DATE": 839,
+          "EMAIL": 827,
+          "PHONE": 834
+        },
+        "gold_span_counts": {
+          "NAME": 3176,
+          "JOB_TITLE": 976,
+          "USERNAME": 934,
+          "ADDRESS": 996,
+          "DATE": 1971,
+          "EMAIL": 1175,
+          "PHONE": 1125
+        },
+        "gold_span_proportions": {
+          "NAME": 0.30677098425577126,
+          "JOB_TITLE": 0.0942721916352748,
+          "USERNAME": 0.09021539650342895,
+          "ADDRESS": 0.09620399884091568,
+          "DATE": 0.19037960011590843,
+          "EMAIL": 0.11349367333140152,
+          "PHONE": 0.10866415531729934
+        }
+      },
+      "2026-01-10": {
+        "documents": 854,
+        "gold_count_mean": 12.259953161592506,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "PHONE": 851,
+          "ADDRESS": 839,
+          "JOB_TITLE": 702,
+          "EMAIL": 838,
+          "DATE": 853,
+          "NAME": 853,
+          "USERNAME": 734
+        },
+        "gold_span_counts": {
+          "PHONE": 1146,
+          "ADDRESS": 990,
+          "JOB_TITLE": 983,
+          "EMAIL": 1164,
+          "DATE": 2056,
+          "NAME": 3200,
+          "USERNAME": 931
+        },
+        "gold_span_proportions": {
+          "PHONE": 0.10945558739255014,
+          "ADDRESS": 0.09455587392550144,
+          "JOB_TITLE": 0.0938872970391595,
+          "EMAIL": 0.11117478510028653,
+          "DATE": 0.19637058261700097,
+          "NAME": 0.30563514804202485,
+          "USERNAME": 0.0889207258834766
+        }
+      },
+      "2026-02-07": {
+        "documents": 803,
+        "gold_count_mean": 12.20049813200498,
+        "gold_count_median": 12.0,
+        "gold_count_nonzero_rate": 1.0,
+        "label_document_presence_counts": {
+          "NAME": 802,
+          "DATE": 799,
+          "EMAIL": 790,
+          "ADDRESS": 795,
+          "USERNAME": 676,
+          "PHONE": 800,
+          "JOB_TITLE": 675
+        },
+        "gold_span_counts": {
+          "NAME": 2944,
+          "DATE": 1891,
+          "EMAIL": 1115,
+          "ADDRESS": 965,
+          "USERNAME": 841,
+          "PHONE": 1078,
+          "JOB_TITLE": 963
+        },
+        "gold_span_proportions": {
+          "NAME": 0.3005001531080943,
+          "DATE": 0.19301827089925488,
+          "EMAIL": 0.11381035010717566,
+          "ADDRESS": 0.09849954067571706,
+          "USERNAME": 0.0858426048790446,
+          "PHONE": 0.11003368378074921,
+          "JOB_TITLE": 0.09829539654996428
+        }
+      }
+    }
+  },
+  "operational_signal_summary": {
+    "ingested_at_train": {
+      "min": "2026-01-01",
+      "max": "2026-03-28",
+      "unique_dates": 84,
+      "daily_top": [
+        [
+          "2026-02-25",
+          877
+        ],
+        [
+          "2026-03-13",
+          873
+        ],
+        [
+          "2026-02-19",
+          873
+        ],
+        [
+          "2026-02-22",
+          867
+        ],
+        [
+          "2026-01-01",
+          866
+        ]
+      ]
+    },
+    "ingested_at_test": {
+      "min": "2026-01-01",
+      "max": "2026-03-28",
+      "unique_dates": 84,
+      "daily_top": [
+        [
+          "2026-03-20",
+          317
+        ],
+        [
+          "2026-03-23",
+          311
+        ],
+        [
+          "2026-02-17",
+          311
+        ],
+        [
+          "2026-01-08",
+          310
+        ],
+        [
+          "2026-01-16",
+          306
+        ]
+      ]
+    },
+    "categorical_entity_count_association": {
+      "source_system": {
+        "entity_count_bin_cramers_v_bias_corrected": 0.0,
+        "entity_count_bins": [
+          "0-10",
+          "11-15",
+          "16+"
+        ]
+      },
+      "channel": {
+        "entity_count_bin_cramers_v_bias_corrected": 0.10105533846179049,
+        "entity_count_bins": [
+          "0-10",
+          "11-15",
+          "16+"
+        ]
+      },
+      "domain": {
+        "entity_count_bin_cramers_v_bias_corrected": 0.2416054070676289,
+        "entity_count_bins": [
+          "0-10",
+          "11-15",
+          "16+"
+        ]
+      },
+      "ingested_at_date_vs_domain": {
+        "cramers_v_bias_corrected": 0.007785439718712617,
+        "date_buckets": 84,
+        "groups": [
+          "FINANCE",
+          "GENERAL",
+          "HEALTHCARE",
+          "HR",
+          "IT",
+          "LEGAL"
+        ]
+      },
+      "ingested_at_date_vs_channel": {
+        "cramers_v_bias_corrected": 0.0,
+        "date_buckets": 84,
+        "groups": [
+          "EMAIL",
+          "LETTER",
+          "MEMO"
+        ]
+      },
+      "ingested_at_date_vs_entity_count_bin": {
+        "cramers_v_bias_corrected": 0.005162432333467726,
+        "date_buckets": 84,
+        "groups": [
+          "0-10",
+          "11-15",
+          "16+"
+        ]
+      },
+      "source_system_vs_channel": {
+        "cramers_v_bias_corrected": 0.003646526171280555,
+        "source_systems": [
+          "crm-export",
+          "docstore-eu",
+          "docstore-us",
+          "mailgate-01",
+          "mailgate-02",
+          "scan-intake"
+        ],
+        "categories": [
+          "EMAIL",
+          "LETTER",
+          "MEMO"
+        ]
+      },
+      "source_system_vs_domain": {
+        "cramers_v_bias_corrected": 0.004596613024698109,
+        "source_systems": [
+          "crm-export",
+          "docstore-eu",
+          "docstore-us",
+          "mailgate-01",
+          "mailgate-02",
+          "scan-intake"
+        ],
+        "categories": [
+          "FINANCE",
+          "GENERAL",
+          "HEALTHCARE",
+          "HR",
+          "IT",
+          "LEGAL"
+        ]
+      }
+    },
+    "exact_timestamps": {
+      "train": {
+        "min": "2026-01-01T00:02:21Z",
+        "max": "2026-03-28T23:59:42Z",
+        "unique": 69193
+      },
+      "test": {
+        "min": "2026-01-01T00:00:11Z",
+        "max": "2026-03-28T23:57:40Z",
+        "unique": 23118
+      }
+    }
+  },
+  "entity_count_comparison": {
+    "train_gold": {
+      "quantiles": {
+        "0": 1.0,
+        "0.01": 8.0,
+        "0.25": 10.0,
+        "0.5": 12.0,
+        "0.75": 14.0,
+        "0.99": 20.0,
+        "1": 31.0
+      },
+      "mean": 12.318779869868141,
+      "median": 12.0
+    },
+    "test_submission_slots": {
+      "quantiles": {
+        "0": 1.0,
+        "0.01": 8.0,
+        "0.25": 10.0,
+        "0.5": 12.0,
+        "0.75": 14.0,
+        "0.99": 21.0,
+        "1": 31.0
+      },
+      "mean": 12.321558127483158,
+      "median": 12.0
+    }
+  },
+  "formatting": {
+    "train": {
+      "mean_newlines_per_document": 14.75177059941268,
+      "mean_empty_segments_per_document": 6.035368802902056,
+      "digit_doc_rate": 0.9977399666033282,
+      "email_doc_rate": 0.9769822076351702
+    },
+    "test": {
+      "mean_newlines_per_document": 14.75595957851097,
+      "mean_empty_segments_per_document": 6.032259457591985,
+      "digit_doc_rate": 0.9977543617205044,
+      "email_doc_rate": 0.9776299879081015
+    }
+  },
+  "text_overlap": {
+    "exact_document_hash_overlap": 0,
+    "whitespace_normalized_overlap": 0,
+    "case_sensitive_whitespace_token_vocab_overlap": 35894,
+    "test_token_occurrence_oov_rate_vs_train": 0.007445577555760878,
+    "train_vocab_unique_tokens": 135686,
+    "test_vocab_unique_tokens": 65450
+  },
+  "limitations": [
+    "Metadata length fields are derived from text and are not independent predictive signals.",
+    "ingested_at is synthetic/operational and associations do not establish causality or predictive validity.",
+    "Test label composition is unavailable; submission slots provide only total entity counts.",
+    "Distribution comparisons are descriptive and require held-out evaluation before feature use."
+  ]
+}

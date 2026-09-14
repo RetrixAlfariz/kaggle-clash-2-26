@@ -1,0 +1,27 @@
+{
+  "raw_input_files_hash_unchanged": 8,
+  "audit_checks_passed": 30,
+  "notebook_code_cells_executed": 7,
+  "notebook_errors": 0,
+  "saved_annotated_contexts_verified_against_raw_and_gold": 154,
+  "label_region_totals_reconciled": 7,
+  "syntax_checked_scripts": [
+    "audit_reconstruction.py",
+    "audit_annotations.py",
+    "audit_metadata.py",
+    "build_understanding_report.py",
+    "build_understanding_notebook.py"
+  ],
+  "visual_inspection": [
+    "HTML notebook opening section in browser",
+    "label_counts.png",
+    "label_regions.png",
+    "train_test_comparison.png"
+  ],
+  "limits": [
+    "No exhaustive near-duplicate search",
+    "No human adjudication of suspected label noise",
+    "No hidden test label validation",
+    "No metadata feature ablation"
+  ]
+}

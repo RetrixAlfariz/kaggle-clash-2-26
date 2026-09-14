@@ -1,0 +1,26 @@
+Submissions are evaluated using the Micro F1-Score.
+
+Micro F1 aggregates correct and incorrect predictions across the entire test set rather than computing a score per class and averaging. Every individual prediction therefore carries exactly the same weight, regardless of which category it belongs to.
+
+A prediction is counted as correct only if all of the following are true:
+
+the Document ID is correct,
+the predicted Label is correct,
+the Offsets, meaning the start and end character positions of the span, are both exactly correct.
+Partial overlaps earn nothing. A span that is off by a single character scores the same as a span that was never found.
+
+Precision
+Precision measures the proportion of predictions that are correct, out of all predictions made.
+
+
+Recall
+Recall measures the proportion of true entities that were successfully found, out of all entities that actually exist.
+
+
+Micro F1-Score
+The Micro F1-Score is the harmonic mean of the two.
+
+
+Your submission contains exactly one prediction for every entity in the test set, so the number of false positives is always equal to the number of false negatives. In that situation precision and recall are equal, and the Micro F1-Score reduces to the proportion of your predictions that are exactly correct.
+
+A higher score is better. A perfect submission scores 1.0.

@@ -1,0 +1,69 @@
+The dataset contains 69,468 labelled training documents and 23,156 test documents of synthetic business correspondence, plus 20,000 extra documents carrying automatic, lower-quality annotations.
+
+Read this page before you start. No file here contains a whole document, and if you rebuild the text incorrectly every offset you predict will be wrong.
+
+How to rebuild a document
+The text of each document is stored one line per row in the segments files, and the rows are shuffled. To rebuild the exact text of a document:
+
+take every row with that document_id,
+sort those rows by segment_index ascending,
+join the text values with a single newline character "\n".
+full_text = "\n".join(group.sort_values("segment_index")["text"])
+Two things will break this if you are not careful:
+
+Blank lines are real rows with an empty text value. They are part of the document and must be kept. If a blank line goes missing during reconstruction, every character offset after that point in the document is wrong.
+The row order in the file is meaningless. It is shuffled deliberately. Always sort by segment_index.
+Check your work: the n_chars column in the metadata file is the true length of the rebuilt document. If len(full_text) != n_chars, your reconstruction is wrong. Fix it before doing anything else.
+
+Every character offset in this competition refers to that rebuilt string, both in train_labels.csv and in your submission. Offsets are counted in Python characters starting from 0, with the end exclusive, so that full_text[start_offset:end_offset] is exactly the entity text.
+
+Files
+train/train_segments.csv - the training text, one line per row, shuffled (1,094,244 rows)
+train/train_labels.csv - the ground-truth entity spans, shuffled; join to the text on document_id (855,761 rows)
+train/train_metadata.parquet - one row per training document, in Apache Parquet format (69,468 rows)
+test/test_segments.csv - the test text, same schema as the training segments (364,845 rows)
+test/test_metadata.parquet - one row per test document, same schema as the training metadata (23,156 rows)
+extra/weak_labeled_documents.jsonl - 20,000 extra documents with automatic, noisy annotations
+sample_submission.csv - a sample submission file in the correct format (285,318 rows)
+README.txt - the data dictionary and the reconstruction rule, shipped inside the dataset
+Columns
+train_segments.csv / test_segments.csv
+document_id - the document this line belongs to
+segment_index - the 0-based position of this line inside the document
+text - the line itself; may be an empty string for blank lines
+train_labels.csv
+document_id - the document the entity was found in
+label - the entity category: NAME, DATE, EMAIL, PHONE, ADDRESS, USERNAME or JOB_TITLE
+start_offset - the 0-based character position where the entity starts
+end_offset - the character position just after the entity ends (exclusive)
+train_metadata.parquet / test_metadata.parquet
+document_id - the document
+channel - EMAIL, MEMO or LETTER; derived from the document itself
+domain - LEGAL, HEALTHCARE, FINANCE, HR, IT or GENERAL; derived from the document itself
+n_chars - the length of the rebuilt document, in characters. Use this to verify your reconstruction.
+n_segments - the number of lines in the document, blank lines included
+n_words - the whitespace-delimited word count
+n_nonempty_segments - the number of lines containing non-whitespace content
+source_system - synthetic operational field describing which system the document came from
+ingested_at - synthetic timestamp describing when the document was ingested
+Note that source_system and ingested_at are synthetic operational fields. They are the kind of thing a real ingestion pipeline records, and they are included for realism. Assessing whether they carry any signal is left to you.
+
+extra/weak_labeled_documents.jsonl
+One JSON object per line, with full_text included directly. These documents are not split into segments.
+
+document_id - the document
+full_text - the complete document text
+weak_entities - a list of {text, label, start, end} objects
+annotation_source - always regex_auto
+These annotations were produced by an automatic regex system, not by a human. They are noisy and incomplete by design, and they do not cover all seven categories equally. Measuring their quality for yourself is part of the work. Using this file is optional.
+
+sample_submission.csv
+row_id - the entity slot, formed as <document_id>_<NN> with NN starting at 01
+Predicted - your predicted span, formatted as <LABEL>:<start_offset>:<end_offset>
+The number of slots for a document is the number of entities that document actually contains. Slot NN holds the NN-th entity ordered by start_offset ascending, ties broken by end_offset ascending. See the Evaluation page for full details.
+
+What am I predicting?
+For every slot in sample_submission.csv, the category and the exact character boundaries of one personally identifiable entity in the corresponding test document.
+
+A note on the data
+The corpus is fully synthetic. No real personal information appears in any document, and none of the names, addresses, phone numbers or email addresses refer to real people or organisations.

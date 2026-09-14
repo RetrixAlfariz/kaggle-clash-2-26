@@ -1,0 +1,19 @@
+Organisations sit on enormous archives of letters, emails and internal memos, and those archives are full of personal data. Before any of that text can be shared with an analytics team, moved to another jurisdiction, or used to train a model, the personal data inside it has to be found. Detecting that a document contains personal data is not enough. It has to be located precisely, so that it can be masked or redacted without destroying the surrounding text.
+
+That is the task in this competition. You are given a corpus of synthetic business correspondence spanning legal, HR, finance, healthcare and IT contexts, and you must identify every sensitive span across seven categories.
+
+The categories
+Label	What it covers
+NAME	Names of people
+DATE	Calendar dates in any written form
+EMAIL	Email addresses
+PHONE	Telephone numbers
+ADDRESS	Physical and mailing addresses
+USERNAME	Account handles, portal logins, case and reference identifiers
+JOB_TITLE	Job titles and roles
+You are free to use any method, tool, library or framework you consider appropriate: rules and regular expressions, classical sequence models, fine-tuned transformers, large language models, or any combination of them.
+
+What makes this hard
+The documents are not handed to you whole. No file in this competition contains a complete document. The text is split across several files in several formats, the labels live apart from the text, and putting it all back together correctly is a prerequisite rather than a detail. Every offset you predict is measured against the document you reconstruct, so a reconstruction that is subtly wrong will quietly cost you the entire leaderboard. The Data page tells you exactly how the files fit together, and gives you a way to verify your own work before you go any further.
+
+Being approximately right is worth nothing. A prediction counts only if the label and both character offsets are exactly correct. Predicting Mr. Benjamin Carter where the ground truth is Benjamin Carter scores exactly the same as finding nothing at all. Boundary handling is not a detail here. Titles, honorifics, trailing punctuation, and knowing where an address stops make up most of the problem.

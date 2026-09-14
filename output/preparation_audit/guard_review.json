@@ -1,0 +1,9 @@
+{
+  "scope": "Extracted actual readback block, synthetic in-memory parquet reader; no actual artifact mutated.",
+  "assert_count_in_builder": 12,
+  "assert_count_compiled_optimized": "Python compile(optimize=1) removes assert statements",
+  "missing_all_gold_rows_normal_mode": "accepted",
+  "wrong_gold_text_normal_mode": "rejected",
+  "wrong_gold_text_optimized_mode": "accepted",
+  "interpretation": "Missing rows pass normal readback because no loaded ID-set/count equality is checked. Wrong text is rejected normally but accepted under optimization. These are guard defects, not observed v1 corruption."
+}

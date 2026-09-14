@@ -1,0 +1,338 @@
+{
+  "scope": "read-only audit; prepared/v1 unchanged",
+  "source_files": [
+    "output/prepared/v1/split_assignments.parquet",
+    "output/baseline_probe/report.json",
+    "Data/train/train_labels.csv"
+  ],
+  "partition_counts": {
+    "dev": 6943,
+    "holdout": 6943,
+    "train": 55582
+  },
+  "assignment_roles": {
+    "prior_probe_role_by_partition": {
+      "dev": {
+        "none": 4943,
+        "dev": 2000
+      },
+      "holdout": {
+        "none": 6943
+      },
+      "train": {
+        "none": 45582,
+        "train": 10000
+      }
+    },
+    "reviewed_examples_total": 80
+  },
+  "baseline_overlap": {
+    "baseline_train_count": 10000,
+    "baseline_validation_count": 2000,
+    "baseline_train_by_prepared_partition": {
+      "train": 10000
+    },
+    "baseline_validation_by_prepared_partition": {
+      "dev": 2000
+    },
+    "baseline_train_all_present": true,
+    "baseline_validation_all_present": true
+  },
+  "distributions": {
+    "dev": {
+      "documents": 6943,
+      "document_share_pct": 9.9945,
+      "channel": {
+        "EMAIL": {
+          "count": 4540,
+          "pct": 65.3896
+        },
+        "LETTER": {
+          "count": 2215,
+          "pct": 31.9026
+        },
+        "MEMO": {
+          "count": 188,
+          "pct": 2.7078
+        }
+      },
+      "domain": {
+        "FINANCE": {
+          "count": 1132,
+          "pct": 16.3042
+        },
+        "GENERAL": {
+          "count": 610,
+          "pct": 8.7858
+        },
+        "HEALTHCARE": {
+          "count": 1684,
+          "pct": 24.2546
+        },
+        "HR": {
+          "count": 546,
+          "pct": 7.864
+        },
+        "IT": {
+          "count": 1083,
+          "pct": 15.5984
+        },
+        "LEGAL": {
+          "count": 1888,
+          "pct": 27.1929
+        }
+      },
+      "entity_count": {
+        "total": 85336,
+        "mean": 12.2909,
+        "zero_docs": 0
+      },
+      "labels": {
+        "ADDRESS": {
+          "count": 8226,
+          "pct": 9.6395
+        },
+        "DATE": {
+          "count": 16239,
+          "pct": 19.0295
+        },
+        "EMAIL": {
+          "count": 9723,
+          "pct": 11.3938
+        },
+        "JOB_TITLE": {
+          "count": 8197,
+          "pct": 9.6056
+        },
+        "NAME": {
+          "count": 26009,
+          "pct": 30.4783
+        },
+        "PHONE": {
+          "count": 9300,
+          "pct": 10.8981
+        },
+        "USERNAME": {
+          "count": 7642,
+          "pct": 8.9552
+        }
+      }
+    },
+    "holdout": {
+      "documents": 6943,
+      "document_share_pct": 9.9945,
+      "channel": {
+        "EMAIL": {
+          "count": 4540,
+          "pct": 65.3896
+        },
+        "LETTER": {
+          "count": 2215,
+          "pct": 31.9026
+        },
+        "MEMO": {
+          "count": 188,
+          "pct": 2.7078
+        }
+      },
+      "domain": {
+        "FINANCE": {
+          "count": 1132,
+          "pct": 16.3042
+        },
+        "GENERAL": {
+          "count": 610,
+          "pct": 8.7858
+        },
+        "HEALTHCARE": {
+          "count": 1684,
+          "pct": 24.2546
+        },
+        "HR": {
+          "count": 546,
+          "pct": 7.864
+        },
+        "IT": {
+          "count": 1083,
+          "pct": 15.5984
+        },
+        "LEGAL": {
+          "count": 1888,
+          "pct": 27.1929
+        }
+      },
+      "entity_count": {
+        "total": 85399,
+        "mean": 12.3,
+        "zero_docs": 0
+      },
+      "labels": {
+        "ADDRESS": {
+          "count": 8226,
+          "pct": 9.6324
+        },
+        "DATE": {
+          "count": 16346,
+          "pct": 19.1407
+        },
+        "EMAIL": {
+          "count": 9679,
+          "pct": 11.3339
+        },
+        "JOB_TITLE": {
+          "count": 8209,
+          "pct": 9.6125
+        },
+        "NAME": {
+          "count": 25990,
+          "pct": 30.4336
+        },
+        "PHONE": {
+          "count": 9237,
+          "pct": 10.8163
+        },
+        "USERNAME": {
+          "count": 7712,
+          "pct": 9.0306
+        }
+      }
+    },
+    "train": {
+      "documents": 55582,
+      "document_share_pct": 80.0109,
+      "channel": {
+        "EMAIL": {
+          "count": 36330,
+          "pct": 65.3629
+        },
+        "LETTER": {
+          "count": 17729,
+          "pct": 31.897
+        },
+        "MEMO": {
+          "count": 1523,
+          "pct": 2.7401
+        }
+      },
+      "domain": {
+        "FINANCE": {
+          "count": 9049,
+          "pct": 16.2805
+        },
+        "GENERAL": {
+          "count": 4880,
+          "pct": 8.7798
+        },
+        "HEALTHCARE": {
+          "count": 13479,
+          "pct": 24.2507
+        },
+        "HR": {
+          "count": 4383,
+          "pct": 7.8856
+        },
+        "IT": {
+          "count": 8687,
+          "pct": 15.6292
+        },
+        "LEGAL": {
+          "count": 15104,
+          "pct": 27.1743
+        }
+      },
+      "entity_count": {
+        "total": 685026,
+        "mean": 12.3246,
+        "zero_docs": 0
+      },
+      "labels": {
+        "ADDRESS": {
+          "count": 65502,
+          "pct": 9.562
+        },
+        "DATE": {
+          "count": 131459,
+          "pct": 19.1904
+        },
+        "EMAIL": {
+          "count": 77212,
+          "pct": 11.2714
+        },
+        "JOB_TITLE": {
+          "count": 66066,
+          "pct": 9.6443
+        },
+        "NAME": {
+          "count": 208998,
+          "pct": 30.5095
+        },
+        "PHONE": {
+          "count": 74341,
+          "pct": 10.8523
+        },
+        "USERNAME": {
+          "count": 61448,
+          "pct": 8.9702
+        }
+      }
+    }
+  },
+  "differences": {
+    "label_pct_point_vs_train": {
+      "dev": {
+        "PHONE": 0.0458,
+        "USERNAME": -0.015,
+        "DATE": -0.1609,
+        "EMAIL": 0.1224,
+        "ADDRESS": 0.0775,
+        "NAME": -0.0312,
+        "JOB_TITLE": -0.0387
+      },
+      "holdout": {
+        "PHONE": -0.036,
+        "USERNAME": 0.0604,
+        "DATE": -0.0497,
+        "EMAIL": 0.0625,
+        "ADDRESS": 0.0704,
+        "NAME": -0.0759,
+        "JOB_TITLE": -0.0318
+      }
+    },
+    "channel_pct_point_vs_train": {
+      "dev": {
+        "LETTER": 0.0056,
+        "MEMO": -0.0323,
+        "EMAIL": 0.0267
+      },
+      "holdout": {
+        "LETTER": 0.0056,
+        "MEMO": -0.0323,
+        "EMAIL": 0.0267
+      }
+    },
+    "domain_pct_point_vs_train": {
+      "dev": {
+        "LEGAL": 0.0186,
+        "HR": -0.0216,
+        "FINANCE": 0.0237,
+        "IT": -0.0308,
+        "HEALTHCARE": 0.0039,
+        "GENERAL": 0.006
+      },
+      "holdout": {
+        "LEGAL": 0.0186,
+        "HR": -0.0216,
+        "FINANCE": 0.0237,
+        "IT": -0.0308,
+        "HEALTHCARE": 0.0039,
+        "GENERAL": 0.006
+      }
+    }
+  },
+  "caveats": [
+    "Label percentages use annotation counts, while channel/domain percentages use document counts.",
+    "Baseline validation is prior 2,000-document probe validation; prepared dev and holdout are separate current partitions.",
+    "No near-duplicate or semantic leakage audit was performed here.",
+    "Counts are descriptive and do not establish predictive validity."
+  ]
+}

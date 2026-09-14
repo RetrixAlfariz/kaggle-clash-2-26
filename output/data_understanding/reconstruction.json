@@ -1,0 +1,334 @@
+{
+  "executed_at": "2026-09-14T15:54:10.969903+00:00",
+  "python": "3.13.2",
+  "pyarrow": "25.0.1",
+  "method": "Full local-file scan; CSV empty strings preserved, numeric indices sorted, one LF between rows, Python Unicode code-point offsets.",
+  "checks": [
+    {
+      "name": "train: unique metadata document IDs",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: metadata/segments document join",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: unique segment indices",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: contiguous zero-based segment indices",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: n_chars",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: n_segments",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: n_words",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "train: n_nonempty_segments",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 69468,
+      "examples": []
+    },
+    {
+      "name": "test: unique metadata document IDs",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: metadata/segments document join",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: unique segment indices",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: contiguous zero-based segment indices",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: n_chars",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: n_segments",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: n_words",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test: n_nonempty_segments",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "train/test document IDs disjoint",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 92624,
+      "examples": []
+    },
+    {
+      "name": "label document joins",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "label offset bounds",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "label enum",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "nonempty entity text",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "duplicate gold span rows",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "gold spans with shared bounds",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "gold span overlaps (running maximum end)",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 855761,
+      "examples": []
+    },
+    {
+      "name": "unique submission row IDs",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 285318,
+      "examples": []
+    },
+    {
+      "name": "submission slot suffix format",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 285318,
+      "examples": []
+    },
+    {
+      "name": "submission contiguous slots starting at 01",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "test/slot document coverage",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 23156,
+      "examples": []
+    },
+    {
+      "name": "weak document ID uniqueness",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 20000,
+      "examples": []
+    },
+    {
+      "name": "weak entity bounds/text/label structural validity",
+      "status": "pass",
+      "failures": 0,
+      "denominator": 172686,
+      "examples": []
+    }
+  ],
+  "splits": {
+    "train": {
+      "documents": 69468,
+      "segments": 1094244,
+      "empty_segments": 419265,
+      "whitespace_only_nonempty_segments": 0,
+      "documents_with_non_ascii": 1954,
+      "documents_with_cr": 0,
+      "documents_with_embedded_segment_newline": 0,
+      "exact_duplicate_groups": [
+        [
+          "DOC_121192",
+          "DOC_108124"
+        ]
+      ],
+      "exact_duplicate_excess_documents": 1,
+      "whitespace_normalized_duplicate_excess_documents": 1
+    },
+    "test": {
+      "documents": 23156,
+      "segments": 364845,
+      "empty_segments": 139683,
+      "whitespace_only_nonempty_segments": 0,
+      "documents_with_non_ascii": 673,
+      "documents_with_cr": 0,
+      "documents_with_embedded_segment_newline": 0,
+      "exact_duplicate_groups": [],
+      "exact_duplicate_excess_documents": 0,
+      "whitespace_normalized_duplicate_excess_documents": 0
+    }
+  },
+  "sources": [
+    {
+      "path": "Data/extra/weak_labeled_documents.jsonl",
+      "bytes": 38714366,
+      "sha256": "4f141f28d6744c30dddd108280704649f0d373115dcdf8e41ffaf6f5e440bcad"
+    },
+    {
+      "path": "Data/README.txt",
+      "bytes": 4370,
+      "sha256": "f62b0b1ecdf7a5e1f477717adde87707519cb24ed4f9d70d2d21e2734736e2ad"
+    },
+    {
+      "path": "Data/sample_submission.csv",
+      "bytes": 6562331,
+      "sha256": "d33f9ee4f235f209009e804e4fefb6a72e8293859e2d19bfe84271f75f229584"
+    },
+    {
+      "path": "Data/test/test_metadata.parquet",
+      "bytes": 543306,
+      "sha256": "4946e8bce5e78b4b635c1c3388e3a996998f7f97899708dcbf9b2b3a6d4b8f6e"
+    },
+    {
+      "path": "Data/test/test_segments.csv",
+      "bytes": 32838408,
+      "sha256": "79fb5d5191e93773c857cc9ab09aff19e03e37edca069aed55343973aa0629e8"
+    },
+    {
+      "path": "Data/train/train_labels.csv",
+      "bytes": 21869170,
+      "sha256": "b47954f8b82c3f2bb4a64a2f727559e9611792d49dcab31f8876b712b86363f5"
+    },
+    {
+      "path": "Data/train/train_metadata.parquet",
+      "bytes": 1584556,
+      "sha256": "d8e4cf60dccbbe73dd2dc36e3b97ce65c137945158e193687a9a7f673caff137"
+    },
+    {
+      "path": "Data/train/train_segments.csv",
+      "bytes": 98528367,
+      "sha256": "ef1bfb6cf149a93a3fb4804a5589cfaa3806754a4c2198787efeef02a4326cec"
+    }
+  ],
+  "train_test_exact_overlap": {
+    "shared_text_groups": 0,
+    "test_documents": 0
+  },
+  "train_test_whitespace_normalized_overlap": {
+    "shared_text_groups": 0,
+    "test_documents": 0
+  },
+  "training_labels": {
+    "rows": 855761,
+    "documents_without_labels": []
+  },
+  "duplicate_text_annotation_conflicts": [],
+  "submission": {
+    "rows": 285318,
+    "documents": 23156,
+    "min_slots": 1,
+    "max_slots": 31,
+    "placeholder_values": [
+      [
+        "NAME:0:0",
+        285318
+      ]
+    ],
+    "interpretation": "Slot count is exposed test entity cardinality, not hidden labels. Preserve source row order when writing submissions."
+  },
+  "weak_structural_audit": {
+    "documents": 20000,
+    "label_counts": {
+      "NAME": 67770,
+      "DATE": 45894,
+      "EMAIL": 27596,
+      "PHONE": 23102,
+      "USERNAME": 8324
+    },
+    "gold_or_test_id_overlap": 0,
+    "limitation": "Structural validity does not establish semantic annotation correctness or completeness. Weak data is not used as gold."
+  },
+  "summary": {
+    "checks": 30,
+    "passed": 30,
+    "review": 0
+  }
+}

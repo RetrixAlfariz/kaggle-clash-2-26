@@ -1,0 +1,1826 @@
+[
+  {
+    "document_id": "DOC_074037",
+    "text": "Subject: Urgent: Follow-up Regarding Patient Case - Mr. Arthur Pendelton\n\nDear Dr. Eleanor Vance,\n\nThis email serves as a follow-up to our discussion on October 26, 2023, concerning the ongoing treatment of Mr. Arthur Pendelton, DOB: 03/15/1975. As the primary physician for Mr. Pendelton, I am requesting your specialist opinion on the recent lab results. His patient ID is AP789012. \n\nWe discussed the elevated levels of creatinine and the persistent proteinuria, which began to be noted on September 20, 2023. I have attached the complete report for your review. Mr. Pendelton's current address is 123 Maple Street, Anytown, CA 90210. His emergency contact is his daughter, Ms. Guinevere Pendelton, who can be reached at 555-0123. \n\nI would appreciate it if you could review this case at your earliest convenience. Please feel free to contact me directly at john.doe@medicalclinic.com or via phone at 555-0199 to discuss any urgent concerns. My Username for the EMR system is j.doe_physician.\n\nThank you for your prompt attention to this matter.\n\nSincerely,\n\nDr. John Doe\nCardiologist\nMedical Clinic of Anytown",
+    "gold": [
+      {
+        "start": 56,
+        "end": 72,
+        "label": "NAME",
+        "text": "Arthur Pendelton"
+      },
+      {
+        "start": 83,
+        "end": 96,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 153,
+        "end": 169,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 211,
+        "end": 227,
+        "label": "NAME",
+        "text": "Arthur Pendelton"
+      },
+      {
+        "start": 234,
+        "end": 244,
+        "label": "DATE",
+        "text": "03/15/1975"
+      },
+      {
+        "start": 375,
+        "end": 383,
+        "label": "USERNAME",
+        "text": "AP789012"
+      },
+      {
+        "start": 493,
+        "end": 511,
+        "label": "DATE",
+        "text": "September 20, 2023"
+      },
+      {
+        "start": 601,
+        "end": 636,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 681,
+        "end": 700,
+        "label": "NAME",
+        "text": "Guinevere Pendelton"
+      },
+      {
+        "start": 724,
+        "end": 732,
+        "label": "PHONE",
+        "text": "555-0123"
+      },
+      {
+        "start": 861,
+        "end": 887,
+        "label": "EMAIL",
+        "text": "john.doe@medicalclinic.com"
+      },
+      {
+        "start": 904,
+        "end": 912,
+        "label": "PHONE",
+        "text": "555-0199"
+      },
+      {
+        "start": 979,
+        "end": 994,
+        "label": "USERNAME",
+        "text": "j.doe_physician"
+      },
+      {
+        "start": 1066,
+        "end": 1074,
+        "label": "NAME",
+        "text": "John Doe"
+      },
+      {
+        "start": 1075,
+        "end": 1087,
+        "label": "JOB_TITLE",
+        "text": "Cardiologist"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 56,
+        "end": 72,
+        "label": "NAME",
+        "text": "Arthur Pendelton"
+      },
+      {
+        "start": 83,
+        "end": 96,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 153,
+        "end": 169,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 211,
+        "end": 227,
+        "label": "NAME",
+        "text": "Arthur Pendelton"
+      },
+      {
+        "start": 234,
+        "end": 244,
+        "label": "DATE",
+        "text": "03/15/1975"
+      },
+      {
+        "start": 375,
+        "end": 383,
+        "label": "USERNAME",
+        "text": "AP789012"
+      },
+      {
+        "start": 493,
+        "end": 511,
+        "label": "DATE",
+        "text": "September 20, 2023"
+      },
+      {
+        "start": 601,
+        "end": 636,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 681,
+        "end": 700,
+        "label": "NAME",
+        "text": "Guinevere Pendelton"
+      },
+      {
+        "start": 724,
+        "end": 732,
+        "label": "PHONE",
+        "text": "555-0123"
+      },
+      {
+        "start": 861,
+        "end": 887,
+        "label": "EMAIL",
+        "text": "john.doe@medicalclinic.com"
+      },
+      {
+        "start": 904,
+        "end": 912,
+        "label": "PHONE",
+        "text": "555-0199"
+      },
+      {
+        "start": 1066,
+        "end": 1074,
+        "label": "NAME",
+        "text": "John Doe"
+      },
+      {
+        "start": 1075,
+        "end": 1087,
+        "label": "JOB_TITLE",
+        "text": "Cardiologist"
+      },
+      {
+        "start": 1088,
+        "end": 1113,
+        "label": "USERNAME",
+        "text": "Medical Clinic of Anytown"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_022047",
+    "text": "Subject: Follow-up Regarding Estate of Eleanor Vance\n\nDear Mr. Jonathan Sterling,\n\nThis letter serves as a formal follow-up to our meeting on October 26, 2023, concerning the estate of the late Eleanor Vance. As discussed, we require several documents to proceed with the probate process. Specifically, we need a copy of Ms. Vance's will, any codicils, and a comprehensive list of her assets. Please ensure these are provided to our office at your earliest convenience, preferably by November 10, 2023.\n\nOur firm, Sterling & Finch Legal Services, located at 123 Main Street, Anytown, CA 90210, has been appointed as legal counsel for the executor. You can reach our case manager, Ms. Sarah Chen, directly at sarah.chen@sterlingfinch.legal or by phone at (555) 123-4567, extension 789. Please refer to case number EST-2023-0054 when contacting us.\n\nWe understand this can be a difficult time, and we appreciate your cooperation. We look forward to receiving the necessary documentation to expedite the estate settlement. If you have any questions, do not hesitate to reach out to me at robert.finch@sterlingfinch.legal.\n\nSincerely,\n\nRobert Finch\nManaging Partner\nSterling & Finch Legal Services",
+    "gold": [
+      {
+        "start": 63,
+        "end": 80,
+        "label": "NAME",
+        "text": "Jonathan Sterling"
+      },
+      {
+        "start": 142,
+        "end": 158,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 484,
+        "end": 501,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 558,
+        "end": 592,
+        "label": "ADDRESS",
+        "text": "123 Main Street, Anytown, CA 90210"
+      },
+      {
+        "start": 684,
+        "end": 694,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 708,
+        "end": 738,
+        "label": "EMAIL",
+        "text": "sarah.chen@sterlingfinch.legal"
+      },
+      {
+        "start": 754,
+        "end": 768,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 780,
+        "end": 783,
+        "label": "USERNAME",
+        "text": "789"
+      },
+      {
+        "start": 813,
+        "end": 826,
+        "label": "USERNAME",
+        "text": "EST-2023-0054"
+      },
+      {
+        "start": 1085,
+        "end": 1117,
+        "label": "EMAIL",
+        "text": "robert.finch@sterlingfinch.legal"
+      },
+      {
+        "start": 1132,
+        "end": 1144,
+        "label": "NAME",
+        "text": "Robert Finch"
+      },
+      {
+        "start": 1145,
+        "end": 1161,
+        "label": "JOB_TITLE",
+        "text": "Managing Partner"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 39,
+        "end": 52,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 63,
+        "end": 80,
+        "label": "NAME",
+        "text": "Jonathan Sterling"
+      },
+      {
+        "start": 142,
+        "end": 158,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 194,
+        "end": 207,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 484,
+        "end": 501,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 558,
+        "end": 592,
+        "label": "ADDRESS",
+        "text": "123 Main Street, Anytown, CA 90210"
+      },
+      {
+        "start": 684,
+        "end": 694,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 708,
+        "end": 738,
+        "label": "EMAIL",
+        "text": "sarah.chen@sterlingfinch.legal"
+      },
+      {
+        "start": 754,
+        "end": 768,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 1085,
+        "end": 1117,
+        "label": "EMAIL",
+        "text": "robert.finch@sterlingfinch.legal"
+      },
+      {
+        "start": 1132,
+        "end": 1144,
+        "label": "NAME",
+        "text": "Robert Finch"
+      },
+      {
+        "start": 1145,
+        "end": 1161,
+        "label": "JOB_TITLE",
+        "text": "Managing Partner"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_041205",
+    "text": "October 26, 2023\n\nJessica Miller\n456 Elm Street, Apt 12B\nAnytown, ST 12345\nEmail: jessica.miller@clientmail.com\n\nSubject: Case Update - Miller v. Acme Corp. (Case #2023-CV-8899)\n\nDear Ms. Miller,\n\nThis letter serves to provide an important update regarding your ongoing case, Miller v. Acme Corp. We have successfully filed the necessary motion with the court, and we anticipate a positive response.\n\nA preliminary hearing has been scheduled for November 15, 2023, at 10:00 AM at the County Courthouse. Please mark this date on your calendar. We will be in touch shortly to prepare you for this appearance.\n\nShould you have any questions or require further clarification before then, please do not hesitate to contact our office. You can reach us directly at (555) 234-5678 during business hours or reply to this email at robert.davis@legalco.com. We understand the importance of this matter and are committed to ensuring the best possible outcome.\n\nWe appreciate your continued cooperation.\n\nSincerely,\n\nAttorney Robert Davis\nSenior Partner\nDavis & Associates Law Firm\nrobert.davis@legalco.com\nPhone: +1 (555) 234-5678",
+    "gold": [
+      {
+        "start": 0,
+        "end": 16,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 18,
+        "end": 32,
+        "label": "NAME",
+        "text": "Jessica Miller"
+      },
+      {
+        "start": 33,
+        "end": 74,
+        "label": "ADDRESS",
+        "text": "456 Elm Street, Apt 12B\nAnytown, ST 12345"
+      },
+      {
+        "start": 82,
+        "end": 111,
+        "label": "EMAIL",
+        "text": "jessica.miller@clientmail.com"
+      },
+      {
+        "start": 446,
+        "end": 463,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 759,
+        "end": 773,
+        "label": "PHONE",
+        "text": "(555) 234-5678"
+      },
+      {
+        "start": 822,
+        "end": 846,
+        "label": "EMAIL",
+        "text": "robert.davis@legalco.com"
+      },
+      {
+        "start": 1005,
+        "end": 1026,
+        "label": "NAME",
+        "text": "Attorney Robert Davis"
+      },
+      {
+        "start": 1027,
+        "end": 1041,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      },
+      {
+        "start": 1070,
+        "end": 1094,
+        "label": "EMAIL",
+        "text": "robert.davis@legalco.com"
+      },
+      {
+        "start": 1102,
+        "end": 1119,
+        "label": "PHONE",
+        "text": "+1 (555) 234-5678"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 0,
+        "end": 16,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 18,
+        "end": 32,
+        "label": "NAME",
+        "text": "Jessica Miller"
+      },
+      {
+        "start": 82,
+        "end": 111,
+        "label": "EMAIL",
+        "text": "jessica.miller@clientmail.com"
+      },
+      {
+        "start": 446,
+        "end": 463,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 468,
+        "end": 476,
+        "label": "DATE",
+        "text": "10:00 AM"
+      },
+      {
+        "start": 759,
+        "end": 773,
+        "label": "PHONE",
+        "text": "(555) 234-5678"
+      },
+      {
+        "start": 822,
+        "end": 846,
+        "label": "EMAIL",
+        "text": "robert.davis@legalco.com"
+      },
+      {
+        "start": 1014,
+        "end": 1026,
+        "label": "NAME",
+        "text": "Robert Davis"
+      },
+      {
+        "start": 1027,
+        "end": 1041,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      },
+      {
+        "start": 1070,
+        "end": 1094,
+        "label": "EMAIL",
+        "text": "robert.davis@legalco.com"
+      },
+      {
+        "start": 1102,
+        "end": 1119,
+        "label": "PHONE",
+        "text": "+1 (555) 234-5678"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_130406",
+    "text": "Subject: Follow-up Regarding Case File: Smith v. Johnson\n\nDear Ms. Eleanor Vance,\n\nThis email serves as a follow-up to our discussion on October 26, 2023, concerning the ongoing legal matter of Smith v. Johnson. As per our conversation, I am writing to formally request the following documentation from your client, Mr. Benjamin Carter, by November 10, 2023:\n\n1. All financial statements from January 1, 2022, to the present date.\n2. Copies of any correspondence exchanged with the opposing party or their legal counsel.\n3. A detailed breakdown of expenses incurred related to the property at 123 Maple Street, Anytown, CA 90210.\n\nWe require this information to prepare for our next deposition, scheduled for November 17, 2023, at 9:00 AM PST. Please direct the documents to my attention at my office, located at 456 Oak Avenue, Suite 200, Metropolis, IL 60606. Alternatively, scanned copies can be sent to my professional email address: a. davis@legaladvocates.com.\n\nShould you have any questions or require clarification on this request, please do not hesitate to contact me at (555) 123-4567. My username for the secure portal is adavis_la. We appreciate your prompt attention to this matter.\n\nSincerely,\n\nArthur Davis\nSenior Partner\nLegal Advocates LLP",
+    "gold": [
+      {
+        "start": 67,
+        "end": 80,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 137,
+        "end": 153,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 320,
+        "end": 335,
+        "label": "NAME",
+        "text": "Benjamin Carter"
+      },
+      {
+        "start": 340,
+        "end": 357,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 393,
+        "end": 408,
+        "label": "DATE",
+        "text": "January 1, 2022"
+      },
+      {
+        "start": 593,
+        "end": 628,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 709,
+        "end": 726,
+        "label": "DATE",
+        "text": "November 17, 2023"
+      },
+      {
+        "start": 731,
+        "end": 742,
+        "label": "DATE",
+        "text": "9:00 AM PST"
+      },
+      {
+        "start": 813,
+        "end": 860,
+        "label": "ADDRESS",
+        "text": "456 Oak Avenue, Suite 200, Metropolis, IL 60606"
+      },
+      {
+        "start": 938,
+        "end": 965,
+        "label": "EMAIL",
+        "text": "a. davis@legaladvocates.com"
+      },
+      {
+        "start": 1080,
+        "end": 1094,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 1133,
+        "end": 1142,
+        "label": "USERNAME",
+        "text": "adavis_la"
+      },
+      {
+        "start": 1209,
+        "end": 1221,
+        "label": "NAME",
+        "text": "Arthur Davis"
+      },
+      {
+        "start": 1222,
+        "end": 1236,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 40,
+        "end": 56,
+        "label": "NAME",
+        "text": "Smith v. Johnson"
+      },
+      {
+        "start": 67,
+        "end": 80,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 137,
+        "end": 153,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 320,
+        "end": 335,
+        "label": "NAME",
+        "text": "Benjamin Carter"
+      },
+      {
+        "start": 340,
+        "end": 357,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 393,
+        "end": 408,
+        "label": "DATE",
+        "text": "January 1, 2022"
+      },
+      {
+        "start": 593,
+        "end": 628,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 709,
+        "end": 726,
+        "label": "DATE",
+        "text": "November 17, 2023"
+      },
+      {
+        "start": 731,
+        "end": 742,
+        "label": "DATE",
+        "text": "9:00 AM PST"
+      },
+      {
+        "start": 813,
+        "end": 827,
+        "label": "ADDRESS",
+        "text": "456 Oak Avenue"
+      },
+      {
+        "start": 840,
+        "end": 860,
+        "label": "ADDRESS",
+        "text": "Metropolis, IL 60606"
+      },
+      {
+        "start": 941,
+        "end": 965,
+        "label": "EMAIL",
+        "text": "davis@legaladvocates.com"
+      },
+      {
+        "start": 1080,
+        "end": 1094,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 1222,
+        "end": 1236,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_004978",
+    "text": "Dear Ms. Eleanor Vance,\n\nThis letter serves as confirmation of your recent medical consultation with Dr. Alistair Finch at our clinic, Sterling Medical Associates, located at 123 Maple Street, Anytown, CA 90210. Your appointment was scheduled for October 26, 2023.\n\nDuring your visit, Dr. Finch reviewed your medical history, including your ongoing treatment for hypertension. He noted your current prescription for Lisinopril and discussed your reported side effects. For follow-up, Dr. Finch has prescribed a new medication, Ramipril, and recommended a dosage of 5mg daily. A prescription has been sent electronically to your preferred pharmacy, 'CVS Pharmacy' at 456 Oak Avenue, Anytown, CA 90210.\n\nWe also request that you schedule a follow-up appointment in approximately four weeks. You can reach our scheduling department at (555) 867-5309. Please have your patient ID, E87654, available when you call. Our online portal, accessible via your username 'eleanor.vance23', is also available for appointment requests and prescription refills.\n\nWe appreciate your continued trust in Sterling Medical Associates and Dr. Finch. Please do not hesitate to contact us if you have any further questions or concerns.\n\nSincerely,\nSterling Medical Associates\nPatient Services",
+    "gold": [
+      {
+        "start": 9,
+        "end": 22,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 105,
+        "end": 119,
+        "label": "NAME",
+        "text": "Alistair Finch"
+      },
+      {
+        "start": 175,
+        "end": 210,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 247,
+        "end": 263,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 649,
+        "end": 661,
+        "label": "NAME",
+        "text": "CVS Pharmacy"
+      },
+      {
+        "start": 666,
+        "end": 699,
+        "label": "ADDRESS",
+        "text": "456 Oak Avenue, Anytown, CA 90210"
+      },
+      {
+        "start": 877,
+        "end": 883,
+        "label": "USERNAME",
+        "text": "E87654"
+      },
+      {
+        "start": 959,
+        "end": 974,
+        "label": "USERNAME",
+        "text": "eleanor.vance23"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 9,
+        "end": 22,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 105,
+        "end": 119,
+        "label": "NAME",
+        "text": "Alistair Finch"
+      },
+      {
+        "start": 175,
+        "end": 210,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 247,
+        "end": 263,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 649,
+        "end": 661,
+        "label": "NAME",
+        "text": "CVS Pharmacy"
+      },
+      {
+        "start": 666,
+        "end": 699,
+        "label": "ADDRESS",
+        "text": "456 Oak Avenue, Anytown, CA 90210"
+      },
+      {
+        "start": 832,
+        "end": 846,
+        "label": "PHONE",
+        "text": "(555) 867-5309"
+      },
+      {
+        "start": 959,
+        "end": 974,
+        "label": "USERNAME",
+        "text": "eleanor.vance23"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_088868",
+    "text": "Subject: Welcome to Synergy Tech Solutions, Alex Johnson!\n\nDear Alex Johnson,\n\nOn behalf of the entire team at Synergy Tech Solutions, I extend a warm welcome to you! We are thrilled to have you join us as our new Senior Data Analyst. Your first day will be October 28, 2024, and we anticipate your arrival at our main office located at 456 Innovation Way, Suite 700, Metro City, TX 75001 by 9:00 AM.\n\nUpon your arrival, please report to the main reception, where you will be greeted by our HR assistant. Your orientation schedule for the first week has been sent to your personal email address, alex.johnson@personalmail.com. You can access our employee portal for benefits enrollment and company policies using the temporary username \"ajohnson_temp\" and a password reset link provided in that same email. This portal also contains essential information regarding company benefits and employee guidelines.\n\nFor any immediate IT setup assistance, please contact our IT Support Lead, David Lee, at 555-234-5678 or email it.support@synergytech.com. My direct line is 555-876-5432, and you can reach me at hr.manager@synergytech.com for any HR-related queries. We encourage you to familiarize yourself with our internal communication platforms ahead of time.\n\nWe are all looking forward to your contributions and working alongside you to achieve great things. Welcome aboard!\n\nSincerely,\n\nMaria Garcia\nHR Manager\nSynergy Tech Solutions\nOctober 21, 2024",
+    "gold": [
+      {
+        "start": 44,
+        "end": 56,
+        "label": "NAME",
+        "text": "Alex Johnson"
+      },
+      {
+        "start": 64,
+        "end": 76,
+        "label": "NAME",
+        "text": "Alex Johnson"
+      },
+      {
+        "start": 214,
+        "end": 233,
+        "label": "JOB_TITLE",
+        "text": "Senior Data Analyst"
+      },
+      {
+        "start": 258,
+        "end": 274,
+        "label": "DATE",
+        "text": "October 28, 2024"
+      },
+      {
+        "start": 337,
+        "end": 388,
+        "label": "ADDRESS",
+        "text": "456 Innovation Way, Suite 700, Metro City, TX 75001"
+      },
+      {
+        "start": 596,
+        "end": 625,
+        "label": "EMAIL",
+        "text": "alex.johnson@personalmail.com"
+      },
+      {
+        "start": 737,
+        "end": 750,
+        "label": "USERNAME",
+        "text": "ajohnson_temp"
+      },
+      {
+        "start": 983,
+        "end": 992,
+        "label": "NAME",
+        "text": "David Lee"
+      },
+      {
+        "start": 997,
+        "end": 1009,
+        "label": "PHONE",
+        "text": "555-234-5678"
+      },
+      {
+        "start": 1019,
+        "end": 1045,
+        "label": "EMAIL",
+        "text": "it.support@synergytech.com"
+      },
+      {
+        "start": 1065,
+        "end": 1077,
+        "label": "PHONE",
+        "text": "555-876-5432"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 44,
+        "end": 56,
+        "label": "NAME",
+        "text": "Alex Johnson"
+      },
+      {
+        "start": 64,
+        "end": 76,
+        "label": "NAME",
+        "text": "Alex Johnson"
+      },
+      {
+        "start": 258,
+        "end": 274,
+        "label": "DATE",
+        "text": "October 28, 2024"
+      },
+      {
+        "start": 596,
+        "end": 625,
+        "label": "EMAIL",
+        "text": "alex.johnson@personalmail.com"
+      },
+      {
+        "start": 737,
+        "end": 750,
+        "label": "USERNAME",
+        "text": "ajohnson_temp"
+      },
+      {
+        "start": 983,
+        "end": 992,
+        "label": "NAME",
+        "text": "David Lee"
+      },
+      {
+        "start": 997,
+        "end": 1009,
+        "label": "PHONE",
+        "text": "555-234-5678"
+      },
+      {
+        "start": 1019,
+        "end": 1045,
+        "label": "EMAIL",
+        "text": "it.support@synergytech.com"
+      },
+      {
+        "start": 1103,
+        "end": 1129,
+        "label": "EMAIL",
+        "text": "hr.manager@synergytech.com"
+      },
+      {
+        "start": 1386,
+        "end": 1398,
+        "label": "NAME",
+        "text": "Maria Garcia"
+      },
+      {
+        "start": 1399,
+        "end": 1409,
+        "label": "JOB_TITLE",
+        "text": "HR Manager"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_109765",
+    "text": "Dear Mr. Robert Johnson,\n\nThis letter serves as a formal notification regarding your overdue account balance for services rendered on DATE: October 26, 2023. Our records indicate an outstanding amount of $1,250.00. We understand that oversights can occur, and we are providing this notice as a final attempt to resolve this matter amicably before further action is required.\n\nPlease remit payment at your earliest convenience. You can make a payment via our online portal using your USERNAME: rjohnson78 or by contacting our billing department directly at PHONE: 555-123-4567. For any inquiries or to discuss a potential payment plan, please reach out to our Accounts Receivable Manager, Ms. Sarah Williams, at EMAIL: sarah.williams@examplelegal.com. Ms. Williams's JOB_TITLE is Senior Billing Specialist, and she is available to assist you between 9:00 AM and 5:00 PM EST, Monday through Friday.\n\nOur corporate ADDRESS is 123 Legal Plaza, Suite 400, Anytown, CA 90210. We trust that you will give this matter your immediate attention to avoid any potential complications. \n\nSincerely,\n\nThe Legal Team\nExample Legal Services\nNAME: John Smith\nPHONE: 555-987-6543",
+    "gold": [
+      {
+        "start": 9,
+        "end": 23,
+        "label": "NAME",
+        "text": "Robert Johnson"
+      },
+      {
+        "start": 140,
+        "end": 156,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 493,
+        "end": 503,
+        "label": "USERNAME",
+        "text": "rjohnson78"
+      },
+      {
+        "start": 563,
+        "end": 575,
+        "label": "PHONE",
+        "text": "555-123-4567"
+      },
+      {
+        "start": 692,
+        "end": 706,
+        "label": "NAME",
+        "text": "Sarah Williams"
+      },
+      {
+        "start": 718,
+        "end": 749,
+        "label": "EMAIL",
+        "text": "sarah.williams@examplelegal.com"
+      },
+      {
+        "start": 779,
+        "end": 804,
+        "label": "JOB_TITLE",
+        "text": "Senior Billing Specialist"
+      },
+      {
+        "start": 923,
+        "end": 968,
+        "label": "ADDRESS",
+        "text": "123 Legal Plaza, Suite 400, Anytown, CA 90210"
+      },
+      {
+        "start": 1131,
+        "end": 1141,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 1149,
+        "end": 1161,
+        "label": "PHONE",
+        "text": "555-987-6543"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 9,
+        "end": 23,
+        "label": "NAME",
+        "text": "Robert Johnson"
+      },
+      {
+        "start": 140,
+        "end": 156,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 563,
+        "end": 575,
+        "label": "PHONE",
+        "text": "555-123-4567"
+      },
+      {
+        "start": 659,
+        "end": 686,
+        "label": "JOB_TITLE",
+        "text": "Accounts Receivable Manager"
+      },
+      {
+        "start": 692,
+        "end": 706,
+        "label": "NAME",
+        "text": "Sarah Williams"
+      },
+      {
+        "start": 718,
+        "end": 749,
+        "label": "EMAIL",
+        "text": "sarah.williams@examplelegal.com"
+      },
+      {
+        "start": 779,
+        "end": 804,
+        "label": "JOB_TITLE",
+        "text": "Senior Billing Specialist"
+      },
+      {
+        "start": 923,
+        "end": 968,
+        "label": "ADDRESS",
+        "text": "123 Legal Plaza, Suite 400, Anytown, CA 90210"
+      },
+      {
+        "start": 1131,
+        "end": 1141,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 1149,
+        "end": 1161,
+        "label": "PHONE",
+        "text": "555-987-6543"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_066511",
+    "text": "Subject: Follow-up: Q4 Project Alpha Development Update - Meeting Notes & Next Steps\n\nDear Michael Davis,\n\nFollowing our productive meeting earlier today, October 26, 2023, I wanted to consolidate the key discussion points and outline the immediate next steps for Project Alpha. Your insights as Senior Director of Operations were invaluable in refining our approach to the final deployment phase.\n\nWe confirmed that the core development team, led by Mark Johnson, is on track to deliver the preliminary beta release by November 15, 2023. We discussed the critical need for comprehensive user acceptance testing (UAT) and agreed to schedule the UAT kickoff for the week of November 6th. Please ensure your team members, especially those with system access username `m_davis_ops`, are prepared for this.\n\nThe updated project documentation will be uploaded to the shared drive by end of day tomorrow. Remember, our primary goal remains a seamless launch without compromising the quality standards our clients expect. We also touched upon the upcoming stakeholder presentation scheduled for early December; I'll send out a calendar invite with the specifics shortly.\n\nThank you again for your time and continued support. Please let me know if you have any questions or require further clarification.\n\nBest regards,\n\nSarah Chen\nProject Manager\nGlobal Solutions Department\nEmail: sarah.chen@examplecorp.com\nPhone: +1 (555) 123-4567\nAddress: 123 Tech Lane, Suite 400, Innovation City, CA 90210",
+    "gold": [
+      {
+        "start": 91,
+        "end": 104,
+        "label": "NAME",
+        "text": "Michael Davis"
+      },
+      {
+        "start": 155,
+        "end": 171,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 296,
+        "end": 325,
+        "label": "JOB_TITLE",
+        "text": "Senior Director of Operations"
+      },
+      {
+        "start": 520,
+        "end": 537,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 673,
+        "end": 685,
+        "label": "DATE",
+        "text": "November 6th"
+      },
+      {
+        "start": 766,
+        "end": 777,
+        "label": "USERNAME",
+        "text": "m_davis_ops"
+      },
+      {
+        "start": 1313,
+        "end": 1323,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 1324,
+        "end": 1339,
+        "label": "JOB_TITLE",
+        "text": "Project Manager"
+      },
+      {
+        "start": 1375,
+        "end": 1401,
+        "label": "EMAIL",
+        "text": "sarah.chen@examplecorp.com"
+      },
+      {
+        "start": 1409,
+        "end": 1426,
+        "label": "PHONE",
+        "text": "+1 (555) 123-4567"
+      },
+      {
+        "start": 1436,
+        "end": 1487,
+        "label": "ADDRESS",
+        "text": "123 Tech Lane, Suite 400, Innovation City, CA 90210"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 91,
+        "end": 104,
+        "label": "NAME",
+        "text": "Michael Davis"
+      },
+      {
+        "start": 155,
+        "end": 171,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 296,
+        "end": 325,
+        "label": "JOB_TITLE",
+        "text": "Senior Director of Operations"
+      },
+      {
+        "start": 451,
+        "end": 463,
+        "label": "NAME",
+        "text": "Mark Johnson"
+      },
+      {
+        "start": 520,
+        "end": 537,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 673,
+        "end": 685,
+        "label": "DATE",
+        "text": "November 6th"
+      },
+      {
+        "start": 1313,
+        "end": 1323,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 1324,
+        "end": 1339,
+        "label": "JOB_TITLE",
+        "text": "Project Manager"
+      },
+      {
+        "start": 1375,
+        "end": 1401,
+        "label": "EMAIL",
+        "text": "sarah.chen@examplecorp.com"
+      },
+      {
+        "start": 1409,
+        "end": 1426,
+        "label": "PHONE",
+        "text": "+1 (555) 123-4567"
+      },
+      {
+        "start": 1436,
+        "end": 1487,
+        "label": "ADDRESS",
+        "text": "123 Tech Lane, Suite 400, Innovation City, CA 90210"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_127333",
+    "text": "Subject: Update on Case File #12345 - Attorney Representation\n\nDear Ms. Eleanor Vance,\n\nThis correspondence serves as a formal update regarding your legal representation in the matter of Smith v. Johnson. Our firm, Vance & Associates LLP, has been diligently working on your case since its inception on January 15, 2023.\n\nWe have successfully filed all necessary discovery requests and are awaiting responses from the opposing counsel, Mr. David Miller, whose office is located at 456 Oak Street, Anytown, CA 90210. We anticipate receiving their disclosures by February 28, 2024. Your primary point of contact within our firm remains Ms. Sarah Chen, Senior Associate, who can be reached directly at schen@vanceassociates.com or by phone at (555) 123-4567. Please do not hesitate to reach out to her with any questions or concerns.\n\nWe appreciate your continued patience and trust in our services. Our client portal username is 'evance_client_123', where you can access recent filings and case updates.\n\nSincerely,\n\nVance & Associates LLP\n(555) 987-6543",
+    "gold": [
+      {
+        "start": 72,
+        "end": 85,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 187,
+        "end": 203,
+        "label": "USERNAME",
+        "text": "Smith v. Johnson"
+      },
+      {
+        "start": 303,
+        "end": 319,
+        "label": "DATE",
+        "text": "January 15, 2023"
+      },
+      {
+        "start": 440,
+        "end": 452,
+        "label": "NAME",
+        "text": "David Miller"
+      },
+      {
+        "start": 481,
+        "end": 514,
+        "label": "ADDRESS",
+        "text": "456 Oak Street, Anytown, CA 90210"
+      },
+      {
+        "start": 561,
+        "end": 578,
+        "label": "DATE",
+        "text": "February 28, 2024"
+      },
+      {
+        "start": 638,
+        "end": 648,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 699,
+        "end": 724,
+        "label": "EMAIL",
+        "text": "schen@vanceassociates.com"
+      },
+      {
+        "start": 740,
+        "end": 754,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 928,
+        "end": 945,
+        "label": "USERNAME",
+        "text": "evance_client_123"
+      },
+      {
+        "start": 1038,
+        "end": 1052,
+        "label": "PHONE",
+        "text": "(555) 987-6543"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 72,
+        "end": 85,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 215,
+        "end": 237,
+        "label": "NAME",
+        "text": "Vance & Associates LLP"
+      },
+      {
+        "start": 303,
+        "end": 319,
+        "label": "DATE",
+        "text": "January 15, 2023"
+      },
+      {
+        "start": 440,
+        "end": 452,
+        "label": "NAME",
+        "text": "David Miller"
+      },
+      {
+        "start": 481,
+        "end": 514,
+        "label": "ADDRESS",
+        "text": "456 Oak Street, Anytown, CA 90210"
+      },
+      {
+        "start": 561,
+        "end": 578,
+        "label": "DATE",
+        "text": "February 28, 2024"
+      },
+      {
+        "start": 638,
+        "end": 648,
+        "label": "NAME",
+        "text": "Sarah Chen"
+      },
+      {
+        "start": 699,
+        "end": 724,
+        "label": "EMAIL",
+        "text": "schen@vanceassociates.com"
+      },
+      {
+        "start": 740,
+        "end": 754,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 928,
+        "end": 941,
+        "label": "USERNAME",
+        "text": "evance_client"
+      },
+      {
+        "start": 1038,
+        "end": 1052,
+        "label": "PHONE",
+        "text": "(555) 987-6543"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_076299",
+    "text": "Subject: Confidential Medical Record Update - Patient John Smith\n\nDear Dr. Anya Sharma,\n\nThis email serves to provide a confidential update regarding the ongoing care of our mutual patient, John Smith. Mr. Smith, identified by Patient ID 456789, was seen in our clinic on October 26, 2023, by Nurse Practitioner Emily Carter (NP ID 9876). His primary concern during this visit was a persistent cough. We reviewed his medical history, which includes a diagnosis of Asthma since January 15, 2015, and noted his current prescription for Albuterol. \n\nDuring the examination, Mr. Smith reported feeling fatigued. His vital signs were stable. We have scheduled a follow-up appointment for him on November 9, 2023, at 10:00 AM. His primary care physician, Dr. Robert Davis, has been copied on this communication. Mr. Smith's emergency contact is listed as Sarah Smith, reachable at (555) 123-4567. His patient portal username is 'jsmith_patient'. We will provide Mr. Smith with a copy of his updated medical summary via mail to his registered address at 123 Main Street, Anytown, CA 90210.\n\nThank you for your continued collaboration in Mr. Smith's care. \n\nSincerely,\n\nDr. Eleanor Vance\nPulmonologist\nCity General Hospital\n[email protected]\n(555) 987-6543",
+    "gold": [
+      {
+        "start": 54,
+        "end": 64,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 190,
+        "end": 200,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 238,
+        "end": 244,
+        "label": "USERNAME",
+        "text": "456789"
+      },
+      {
+        "start": 272,
+        "end": 288,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 312,
+        "end": 324,
+        "label": "NAME",
+        "text": "Emily Carter"
+      },
+      {
+        "start": 332,
+        "end": 336,
+        "label": "USERNAME",
+        "text": "9876"
+      },
+      {
+        "start": 477,
+        "end": 493,
+        "label": "DATE",
+        "text": "January 15, 2015"
+      },
+      {
+        "start": 690,
+        "end": 706,
+        "label": "DATE",
+        "text": "November 9, 2023"
+      },
+      {
+        "start": 711,
+        "end": 719,
+        "label": "DATE",
+        "text": "10:00 AM"
+      },
+      {
+        "start": 753,
+        "end": 765,
+        "label": "NAME",
+        "text": "Robert Davis"
+      },
+      {
+        "start": 849,
+        "end": 860,
+        "label": "NAME",
+        "text": "Sarah Smith"
+      },
+      {
+        "start": 875,
+        "end": 889,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 923,
+        "end": 937,
+        "label": "USERNAME",
+        "text": "jsmith_patient"
+      },
+      {
+        "start": 1047,
+        "end": 1081,
+        "label": "ADDRESS",
+        "text": "123 Main Street, Anytown, CA 90210"
+      },
+      {
+        "start": 1162,
+        "end": 1179,
+        "label": "NAME",
+        "text": "Dr. Eleanor Vance"
+      },
+      {
+        "start": 1180,
+        "end": 1193,
+        "label": "JOB_TITLE",
+        "text": "Pulmonologist"
+      },
+      {
+        "start": 1216,
+        "end": 1233,
+        "label": "EMAIL",
+        "text": "[email protected]"
+      },
+      {
+        "start": 1234,
+        "end": 1248,
+        "label": "PHONE",
+        "text": "(555) 987-6543"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 54,
+        "end": 64,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 75,
+        "end": 86,
+        "label": "NAME",
+        "text": "Anya Sharma"
+      },
+      {
+        "start": 190,
+        "end": 200,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 238,
+        "end": 244,
+        "label": "USERNAME",
+        "text": "456789"
+      },
+      {
+        "start": 272,
+        "end": 288,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 312,
+        "end": 324,
+        "label": "NAME",
+        "text": "Emily Carter"
+      },
+      {
+        "start": 326,
+        "end": 328,
+        "label": "JOB_TITLE",
+        "text": "NP"
+      },
+      {
+        "start": 477,
+        "end": 493,
+        "label": "DATE",
+        "text": "January 15, 2015"
+      },
+      {
+        "start": 690,
+        "end": 706,
+        "label": "DATE",
+        "text": "November 9, 2023"
+      },
+      {
+        "start": 753,
+        "end": 765,
+        "label": "NAME",
+        "text": "Robert Davis"
+      },
+      {
+        "start": 849,
+        "end": 860,
+        "label": "NAME",
+        "text": "Sarah Smith"
+      },
+      {
+        "start": 875,
+        "end": 889,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 923,
+        "end": 937,
+        "label": "USERNAME",
+        "text": "jsmith_patient"
+      },
+      {
+        "start": 1047,
+        "end": 1081,
+        "label": "ADDRESS",
+        "text": "123 Main Street, Anytown, CA 90210"
+      },
+      {
+        "start": 1166,
+        "end": 1179,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 1180,
+        "end": 1193,
+        "label": "JOB_TITLE",
+        "text": "Pulmonologist"
+      },
+      {
+        "start": 1216,
+        "end": 1233,
+        "label": "EMAIL",
+        "text": "[email protected]"
+      },
+      {
+        "start": 1234,
+        "end": 1248,
+        "label": "PHONE",
+        "text": "(555) 987-6543"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_073017",
+    "text": "Dear Ms. Eleanor Vance,\n\nThis email serves as a formal follow-up to our meeting on October 26, 2023, regarding the ongoing legal proceedings for the Estate of Mr. Arthur Jenkins. As discussed, we require the following documents from your client, Mr. David Miller, a beneficiary of the estate. Please ensure these are provided by November 10, 2023, to avoid any further delays in the probate process.\n\nSpecifically, we need a signed affidavit from Mr. Miller, confirming his current residential address at 123 Maple Street, Anytown, CA 90210. Additionally, we require a copy of his driver's license for identity verification and a recent utility bill for proof of residency. Please have Mr. Miller transmit these documents electronically to my email address, alice.chen@legalfirm.com, or via secure upload to our client portal using the username 'avance_client'. If Mr. Miller has any questions or requires assistance, he may reach our paralegal, Sarah Lee, at (555) 123-4567 during business hours.\n\nThank you for your prompt attention to this matter. We look forward to your cooperation.\n\nSincerely,\nAlice Chen\nSenior Partner\nChen & Associates Law Firm",
+    "gold": [
+      {
+        "start": 9,
+        "end": 22,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 83,
+        "end": 99,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 163,
+        "end": 177,
+        "label": "NAME",
+        "text": "Arthur Jenkins"
+      },
+      {
+        "start": 250,
+        "end": 262,
+        "label": "NAME",
+        "text": "David Miller"
+      },
+      {
+        "start": 329,
+        "end": 346,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 505,
+        "end": 540,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 758,
+        "end": 782,
+        "label": "EMAIL",
+        "text": "alice.chen@legalfirm.com"
+      },
+      {
+        "start": 846,
+        "end": 859,
+        "label": "USERNAME",
+        "text": "avance_client"
+      },
+      {
+        "start": 946,
+        "end": 955,
+        "label": "NAME",
+        "text": "Sarah Lee"
+      },
+      {
+        "start": 960,
+        "end": 974,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 1100,
+        "end": 1110,
+        "label": "NAME",
+        "text": "Alice Chen"
+      },
+      {
+        "start": 1111,
+        "end": 1125,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 9,
+        "end": 22,
+        "label": "NAME",
+        "text": "Eleanor Vance"
+      },
+      {
+        "start": 83,
+        "end": 99,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 163,
+        "end": 177,
+        "label": "NAME",
+        "text": "Arthur Jenkins"
+      },
+      {
+        "start": 250,
+        "end": 262,
+        "label": "NAME",
+        "text": "David Miller"
+      },
+      {
+        "start": 329,
+        "end": 346,
+        "label": "DATE",
+        "text": "November 10, 2023"
+      },
+      {
+        "start": 505,
+        "end": 540,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 758,
+        "end": 782,
+        "label": "EMAIL",
+        "text": "alice.chen@legalfirm.com"
+      },
+      {
+        "start": 946,
+        "end": 955,
+        "label": "NAME",
+        "text": "Sarah Lee"
+      },
+      {
+        "start": 960,
+        "end": 974,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 1100,
+        "end": 1110,
+        "label": "NAME",
+        "text": "Alice Chen"
+      },
+      {
+        "start": 1111,
+        "end": 1125,
+        "label": "JOB_TITLE",
+        "text": "Senior Partner"
+      },
+      {
+        "start": 1126,
+        "end": 1143,
+        "label": "NAME",
+        "text": "Chen & Associates"
+      }
+    ]
+  },
+  {
+    "document_id": "DOC_005545",
+    "text": "Dear Mr. John Smith,\n\nThis letter serves as an update regarding your ongoing legal consultation with our firm. We have reviewed the documents you provided on October 26, 2023, concerning the property dispute at 123 Maple Street, Anytown, CA 90210. Our lead counsel, Ms. Emily Carter (emily.carter@lawfirm.com), has scheduled a follow-up meeting for you on November 15, 2023, at 10:00 AM PST. Please be prepared to discuss the deposition of Mr. David Lee, whose contact information was included in your initial submission.\n\nKindly confirm your attendance by replying to this email or by calling our office at (555) 123-4567. If you have any urgent questions before then, please do not hesitate to reach out to your assigned paralegal, Ms. Sarah Johnson, at sarah.johnson@lawfirm.com. We look forward to assisting you further in resolving this matter. Our firm's case management system assigns you the username 'jsmith_1122'.\n\nSincerely,\nThe Legal Team at Smith & Associates",
+    "gold": [
+      {
+        "start": 9,
+        "end": 19,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 158,
+        "end": 174,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 211,
+        "end": 246,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 270,
+        "end": 282,
+        "label": "NAME",
+        "text": "Emily Carter"
+      },
+      {
+        "start": 284,
+        "end": 308,
+        "label": "EMAIL",
+        "text": "emily.carter@lawfirm.com"
+      },
+      {
+        "start": 356,
+        "end": 373,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 444,
+        "end": 453,
+        "label": "NAME",
+        "text": "David Lee"
+      },
+      {
+        "start": 608,
+        "end": 622,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 738,
+        "end": 751,
+        "label": "NAME",
+        "text": "Sarah Johnson"
+      },
+      {
+        "start": 756,
+        "end": 781,
+        "label": "EMAIL",
+        "text": "sarah.johnson@lawfirm.com"
+      },
+      {
+        "start": 910,
+        "end": 921,
+        "label": "USERNAME",
+        "text": "jsmith_1122"
+      }
+    ],
+    "predicted": [
+      {
+        "start": 9,
+        "end": 19,
+        "label": "NAME",
+        "text": "John Smith"
+      },
+      {
+        "start": 158,
+        "end": 174,
+        "label": "DATE",
+        "text": "October 26, 2023"
+      },
+      {
+        "start": 211,
+        "end": 246,
+        "label": "ADDRESS",
+        "text": "123 Maple Street, Anytown, CA 90210"
+      },
+      {
+        "start": 270,
+        "end": 282,
+        "label": "NAME",
+        "text": "Emily Carter"
+      },
+      {
+        "start": 284,
+        "end": 308,
+        "label": "EMAIL",
+        "text": "emily.carter@lawfirm.com"
+      },
+      {
+        "start": 356,
+        "end": 373,
+        "label": "DATE",
+        "text": "November 15, 2023"
+      },
+      {
+        "start": 444,
+        "end": 453,
+        "label": "NAME",
+        "text": "David Lee"
+      },
+      {
+        "start": 608,
+        "end": 622,
+        "label": "PHONE",
+        "text": "(555) 123-4567"
+      },
+      {
+        "start": 738,
+        "end": 751,
+        "label": "NAME",
+        "text": "Sarah Johnson"
+      },
+      {
+        "start": 756,
+        "end": 781,
+        "label": "EMAIL",
+        "text": "sarah.johnson@lawfirm.com"
+      },
+      {
+        "start": 910,
+        "end": 916,
+        "label": "USERNAME",
+        "text": "jsmith"
+      }
+    ]
+  }
+]

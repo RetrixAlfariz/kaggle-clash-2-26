@@ -1,0 +1,13 @@
+{
+  "build_manifest": "v1/manifest.json",
+  "gold_documents": 69468,
+  "gold_spans": 855761,
+  "test_documents": 23156,
+  "test_slots": 285318,
+  "weak_documents_separate": 20000,
+  "contract_tests_passed": 7,
+  "metadata_rows_independently_reconciled": 92624,
+  "domain_channel_combinations_present_in_all_gold_partitions": 18,
+  "repeat_build_result": "Identical source/configuration and artifact hashes verified; no files changed",
+  "agent_review": "Read-only review found no actionable correctness defects; audit metadata must not be loaded indiscriminately as model features."
+}
