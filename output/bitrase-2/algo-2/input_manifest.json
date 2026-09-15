@@ -1,0 +1,21 @@
+{
+  "output\\bitrase-2\\algo-1\\frozen\\manifest.json": "db29be65e3a2b52f7b402badf75f293ac399afc5940f0f5a23a1a0d68d9dc246",
+  "output\\bitrase-2\\algo-1\\map_predictions.parquet": "a1e3382156ecadac3da50b056c060037f162ec9204a42c2546d77892aba81aed",
+  "src\\run_posterior_audit.py": "ee53482a408b3885daab8f1198cdf4ed38db516fad6d4ee3a9771cee601fe8e5",
+  "src\\posterior_math.py": "cda0fe9485c4e76614eb92551e859d3aaeb9eb467fbcc50cce00d9f6a236520c",
+  "tests\\test_posterior_math.py": "b71bdc03b520ba26d95269aafaf338820f1e0cce2f8109a3af33558fad9131e0",
+  "note\\bitrase-2\\algo-2\\protocol.md": "a9ea3eec73962923f103d2f6bb3ad8c3b5f7fff668d73a78ba2623817921dafe",
+  "output\\prepared\\v1\\dev.parquet": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+  "output\\bitrase-2\\algo-1\\tau0.5\\predictions.parquet": "771b4567137ae07bb904f58781dcc15aa5117f789f0bd321f52bce0de7717537",
+  "output\\bitrase-2\\algo-1\\tau0.5\\decoder_diagnostics.json": "59ecdde64bfb0d9d2bb8908c788ffc7276598f82719abc069ce10ae4caff729c",
+  "output\\bitrase-2\\algo-1\\tau0.5\\mechanism.json": "a9c28082d71da3c12b0e4fb90abb5fa0e4a86456b89ff9fee11a2b5922f751b4",
+  "output\\bitrase-2\\algo-1\\tau0.5\\mechanism_documents.json": "91153f07472e374c0103fa55929898427959577add57547817b4716f4d2d367b",
+  "output\\bitrase-2\\algo-1\\tau1\\predictions.parquet": "157c8f049b03b8a23940726a9c6c3cc0a9d2ff045b013e77fafb7f154e7b8c76",
+  "output\\bitrase-2\\algo-1\\tau1\\decoder_diagnostics.json": "4a3e9168ed112f1b13a35c46285bb55fb83af68b55b918014675ad4499968da8",
+  "output\\bitrase-2\\algo-1\\tau1\\mechanism.json": "317f48592b3fb2556b905336caf9d5a9a73f15f449f4c67405c9d681070831be",
+  "output\\bitrase-2\\algo-1\\tau1\\mechanism_documents.json": "66664dfaa065f23248710acf4d2a84df2540aac8b27d983742606961094a3764",
+  "output\\bitrase-2\\algo-1\\tau2\\predictions.parquet": "c2ba29d6f40181a2791a36d24a75247332ac2004e1d52021def80b1015dc78df",
+  "output\\bitrase-2\\algo-1\\tau2\\decoder_diagnostics.json": "5e6dede494b9e7abeaf7c26c1a31714f092884273f3fa9c5bffd7a33eb23c419",
+  "output\\bitrase-2\\algo-1\\tau2\\mechanism.json": "aafd241dcc63d4e5fbbd50397db6f0d077ee646773f27b074f5388d835ffb80a",
+  "output\\bitrase-2\\algo-1\\tau2\\mechanism_documents.json": "1c2f6b5742044411745be71d39713a67bbb6d4365ac7ea27b284cf1026f225f6"
+}

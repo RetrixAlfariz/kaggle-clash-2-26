@@ -1,0 +1,71 @@
+{
+  "complete": true,
+  "sources": {
+    "src/run_slot_mbr.py": "d26e71156946a58fb7058ea0c1fb59192f9fcdb02416466f1b8697be896757c5",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "src/slot_diagnostics.py": "364d375de98dfcf833523c6cfb1c0e93391d74d153b54a9754d4e418e699c975",
+    "src/span_probe.py": "9e8e868ca7b2b5f0f6ab5a743fa072a5e61ad70d7dd5cd6d7b7416b34d7bd907",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "note/bitrase-2/algo-1/protocol.md": "d4df5b77db44ebffb9e4e1eb80539a2be5a3222e77ff8a1f51cff6d391c1d031"
+  },
+  "files": {
+    "boundaries.npy": {
+      "sha256": "5d763a61c2795c98addf33d4af488ce0d1598dd420c6816c37b6119973840c01",
+      "bytes": 13090480
+    },
+    "logits.npy": {
+      "sha256": "62d0f8371ab56d27097d7e5cb64d47205703e5308d191dadc8e9580ba2ae2814",
+      "bytes": 811121536
+    },
+    "metadata.json": {
+      "sha256": "43a55b260d24cc546f0a9e42af48557c62d92e163c74164749fa3eb3d30528df",
+      "bytes": 630881
+    },
+    "pairs.npy": {
+      "sha256": "8c2f6c8e155bb3bc3fb6bfaef817b1ad3e3f0658ae7860cad1562f6164d2a4cb",
+      "bytes": 202780480
+    },
+    "span_offsets.npy": {
+      "sha256": "edebcbbe988585406d401b67b36379c0b72871dcc0204fd54c87025d27081196",
+      "bytes": 55680
+    },
+    "token_offsets.npy": {
+      "sha256": "f620fcf1cadd186a3cef04a5f10100013d6202b9be50d1aa39f8703216af8c8e",
+      "bytes": 55680
+    }
+  },
+  "documents": 6943,
+  "candidates": 25347544,
+  "labels": [
+    "NONE",
+    "NAME",
+    "DATE",
+    "EMAIL",
+    "PHONE",
+    "ADDRESS",
+    "USERNAME",
+    "JOB_TITLE"
+  ],
+  "head_sha256": "520646a7295797707e11fa24a8f06a5670c9d3f3201e81cf911ff11ec15b3e06",
+  "p0_predictions_sha256": "c2b4313fa0a186398e8d152b1256a4cc765f1153a6c2e36ecc18fd1a81f6fcd9",
+  "cache_manifest_sha256": "fc9471070bd0d88c6d48bf0e29ce60a49bdfe32e41496596c5c70158ae99c75a",
+  "dev_sha256": "3834f73a9ae964a489278df7c637cb7f8f39fddfe52040118233bf9f1a1a4432",
+  "bootstrap_seed": 20260915,
+  "primary_tau": 1.0,
+  "diagnostic_taus": [
+    0.5,
+    2.0
+  ],
+  "batch_documents": 32,
+  "chunk_spans": 32768,
+  "raw_dtype": "float32 (native FP16 logits losslessly promoted)",
+  "energy_arithmetic": "subtract raw logits in float64; MAP replay uses original P0 float32 subtraction",
+  "seconds": 11.638186700001825,
+  "torch": "2.8.0+cu128",
+  "numpy": "2.5.3",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "peak_cuda_allocated_bytes": 504531456,
+  "process_peak_working_set_bytes": 2961174528,
+  "max_tokens": 449,
+  "max_K": 30
+}

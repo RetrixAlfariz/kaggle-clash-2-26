@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "documents": 6943,
+  "slots": 85336,
+  "correct_slots": 69322,
+  "exact_entities": 79462,
+  "exact_documents": 3703,
+  "documents_improved": 224,
+  "documents_worsened": 157,
+  "documents_same_slot_count": 6562,
+  "documents_changed_prediction": 447,
+  "max_partition_residual": 2.2737367544323206e-13,
+  "max_slot_norm_residual": 2.2537527399890678e-13,
+  "max_decoder_array_workspace_bytes": 12149696,
+  "max_worker_peak_working_set_bytes": 340615168,
+  "prediction_sha256": "771b4567137ae07bb904f58781dcc15aa5117f789f0bd321f52bce0de7717537",
+  "all_labels_valid": true,
+  "independent_grouped_MAP_matches_P0_all_documents": true
+}

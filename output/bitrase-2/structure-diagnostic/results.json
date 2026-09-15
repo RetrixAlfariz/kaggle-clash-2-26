@@ -1,0 +1,472 @@
+{
+  "results": {
+    "pooled": {
+      "supported": true,
+      "candidates": 397157,
+      "positive": 74305,
+      "negative": 322852,
+      "families": 6000,
+      "pairs": 273347,
+      "control": {
+        "auc": 0.997547890735308,
+        "logloss": 0.04566273082376934,
+        "pair_accuracy": 0.9759133994519786
+      },
+      "structural": {
+        "auc": 0.9975651819957002,
+        "logloss": 0.0455119404990566,
+        "pair_accuracy": 0.975909741098311
+      },
+      "improvement": {
+        "auc": 1.729126039218265e-05,
+        "logloss": 0.00015079032471274068,
+        "relative_logloss": 0.003302262523340984,
+        "pair_accuracy": -3.6583536676682016e-06
+      },
+      "ci95": {
+        "auc": [
+          6.629986233311347e-06,
+          2.7698262563982666e-05
+        ],
+        "logloss": [
+          9.458804370998299e-05,
+          0.00020367548778781695
+        ],
+        "relative_logloss": [
+          0.0020782287178449216,
+          0.004458371496522193
+        ],
+        "pair_accuracy": [
+          -0.00012063627273930234,
+          0.00012079142596336245
+        ]
+      }
+    },
+    "NAME": {
+      "supported": true,
+      "candidates": 93630,
+      "positive": 22581,
+      "negative": 71049,
+      "families": 6000,
+      "pairs": 90316,
+      "control": {
+        "auc": 0.9933643385556489,
+        "logloss": 0.08635792520907633,
+        "pair_accuracy": 0.9440519952167944
+      },
+      "structural": {
+        "auc": 0.9933710228515163,
+        "logloss": 0.08626214301786435,
+        "pair_accuracy": 0.943930200628903
+      },
+      "improvement": {
+        "auc": 6.684295867476209e-06,
+        "logloss": 9.57821912119794e-05,
+        "relative_logloss": 0.0011091302967282564,
+        "pair_accuracy": -0.00012179458789141062
+      },
+      "ci95": {
+        "auc": [
+          -7.747163393539979e-06,
+          2.032888374427777e-05
+        ],
+        "logloss": [
+          2.746515803041215e-05,
+          0.000164432019362358
+        ],
+        "relative_logloss": [
+          0.000318645244539818,
+          0.001909537592001961
+        ],
+        "pair_accuracy": [
+          -0.00042122656866240007,
+          0.00015522062428086623
+        ]
+      }
+    },
+    "DATE": {
+      "supported": true,
+      "candidates": 57947,
+      "positive": 14225,
+      "negative": 43722,
+      "families": 5997,
+      "pairs": 56261,
+      "control": {
+        "auc": 0.9970164296563307,
+        "logloss": 0.050994824682729076,
+        "pair_accuracy": 0.9909528803256252
+      },
+      "structural": {
+        "auc": 0.9970702189396192,
+        "logloss": 0.05065661087968091,
+        "pair_accuracy": 0.9911483976466824
+      },
+      "improvement": {
+        "auc": 5.378928328847454e-05,
+        "logloss": 0.00033821380304816656,
+        "relative_logloss": 0.006632316223311045,
+        "pair_accuracy": 0.00019551732105715924
+      },
+      "ci95": {
+        "auc": [
+          2.1127442589485846e-05,
+          8.772148977102544e-05
+        ],
+        "logloss": [
+          0.00014714584302264865,
+          0.0005128968612920327
+        ],
+        "relative_logloss": [
+          0.002911013696209186,
+          0.010010584243707037
+        ],
+        "pair_accuracy": [
+          -3.551869521389028e-05,
+          0.0004859107837227342
+        ]
+      }
+    },
+    "EMAIL": {
+      "supported": true,
+      "candidates": 39017,
+      "positive": 8350,
+      "negative": 30667,
+      "families": 5983,
+      "pairs": 27633,
+      "control": {
+        "auc": 0.999415424214017,
+        "logloss": 0.015581571472825295,
+        "pair_accuracy": 0.9982991350921
+      },
+      "structural": {
+        "auc": 0.9994149829274831,
+        "logloss": 0.015582798967103649,
+        "pair_accuracy": 0.9982267578619767
+      },
+      "improvement": {
+        "auc": -4.4128653386987793e-07,
+        "logloss": -1.2274942783538356e-06,
+        "relative_logloss": -7.877859306390377e-05,
+        "pair_accuracy": -7.237723012332165e-05
+      },
+      "ci95": {
+        "auc": [
+          -2.4429250613802744e-05,
+          2.6841229330121217e-05
+        ],
+        "logloss": [
+          -0.00012529183277556433,
+          0.00011968066062477065
+        ],
+        "relative_logloss": [
+          -0.007887600969642193,
+          0.007709609988263456
+        ],
+        "pair_accuracy": [
+          -0.0002173444615748643,
+          7.135656349508412e-05
+        ]
+      }
+    },
+    "PHONE": {
+      "supported": true,
+      "candidates": 33062,
+      "positive": 8102,
+      "negative": 24960,
+      "families": 5992,
+      "pairs": 27357,
+      "control": {
+        "auc": 0.9991291966924912,
+        "logloss": 0.021329229773712512,
+        "pair_accuracy": 0.9962715210001096
+      },
+      "structural": {
+        "auc": 0.999111943711271,
+        "logloss": 0.02127605939521552,
+        "pair_accuracy": 0.9961984135687393
+      },
+      "improvement": {
+        "auc": -1.7252981220239327e-05,
+        "logloss": 5.317037849699238e-05,
+        "relative_logloss": 0.0024928410008749078,
+        "pair_accuracy": -7.310743137034503e-05
+      },
+      "ci95": {
+        "auc": [
+          -4.810183872326623e-05,
+          8.651529299807945e-06
+        ],
+        "logloss": [
+          -7.928468952100795e-05,
+          0.0001743018386543062
+        ],
+        "relative_logloss": [
+          -0.0036539068994939877,
+          0.008262762793755742
+        ],
+        "pair_accuracy": [
+          -0.00022088220398797654,
+          7.232633078059214e-05
+        ]
+      }
+    },
+    "ADDRESS": {
+      "supported": true,
+      "candidates": 30403,
+      "positive": 7143,
+      "negative": 23260,
+      "families": 5959,
+      "pairs": 21328,
+      "control": {
+        "auc": 0.9966703236872494,
+        "logloss": 0.052539929944546156,
+        "pair_accuracy": 0.9778694673668417
+      },
+      "structural": {
+        "auc": 0.9966836854148557,
+        "logloss": 0.05226371663245902,
+        "pair_accuracy": 0.9781976744186046
+      },
+      "improvement": {
+        "auc": 1.3361727606353568e-05,
+        "logloss": 0.00027621331208713823,
+        "relative_logloss": 0.005257207468275474,
+        "pair_accuracy": 0.00032820705176295206
+      },
+      "ci95": {
+        "auc": [
+          -3.6750755225856135e-05,
+          6.212167908910549e-05
+        ],
+        "logloss": [
+          6.857709832524365e-05,
+          0.000476322833172579
+        ],
+        "relative_logloss": [
+          0.0013570152090197876,
+          0.0092246961171626
+        ],
+        "pair_accuracy": [
+          -9.495645243140783e-05,
+          0.0007987351877803999
+        ]
+      }
+    },
+    "USERNAME": {
+      "supported": true,
+      "candidates": 101351,
+      "positive": 6705,
+      "negative": 94646,
+      "families": 6000,
+      "pairs": 26820,
+      "control": {
+        "auc": 0.9984860261030297,
+        "logloss": 0.021789960821065366,
+        "pair_accuracy": 0.9917971662938105
+      },
+      "structural": {
+        "auc": 0.998515194017133,
+        "logloss": 0.021743823106293407,
+        "pair_accuracy": 0.9916107382550335
+      },
+      "improvement": {
+        "auc": 2.916791410323416e-05,
+        "logloss": 4.613771477195855e-05,
+        "relative_logloss": 0.002117384016925587,
+        "pair_accuracy": -0.00018642803877699787
+      },
+      "ci95": {
+        "auc": [
+          -1.453151525817875e-05,
+          7.817831532110076e-05
+        ],
+        "logloss": [
+          -5.957013931264313e-05,
+          0.00014515590230787965
+        ],
+        "relative_logloss": [
+          -0.00273822226781708,
+          0.0065635336990915
+        ],
+        "pair_accuracy": [
+          -0.000488437195583627,
+          7.411827056403031e-05
+        ]
+      }
+    },
+    "JOB_TITLE": {
+      "supported": true,
+      "candidates": 41747,
+      "positive": 7199,
+      "negative": 34548,
+      "families": 5982,
+      "pairs": 23632,
+      "control": {
+        "auc": 0.9961912589232264,
+        "logloss": 0.04732422843189462,
+        "pair_accuracy": 0.9923408937034529
+      },
+      "structural": {
+        "auc": 0.9962593861731565,
+        "logloss": 0.04692810347880381,
+        "pair_accuracy": 0.9923832092078537
+      },
+      "improvement": {
+        "auc": 6.812724993010555e-05,
+        "logloss": 0.0003961249530908123,
+        "relative_logloss": 0.008370447151840727,
+        "pair_accuracy": 4.2315504400813886e-05
+      },
+      "ci95": {
+        "auc": [
+          5.472530100775197e-06,
+          0.00013433810893526962
+        ],
+        "logloss": [
+          0.00015573285021597464,
+          0.0006440071811764711
+        ],
+        "relative_logloss": [
+          0.003251077618898355,
+          0.01362759650800989
+        ],
+        "pair_accuracy": [
+          -0.0003354336388155382,
+          0.00038786198412918074
+        ]
+      }
+    }
+  },
+  "folds": {
+    "0": {
+      "supported": true,
+      "candidates": 131638,
+      "positive": 24579,
+      "negative": 107059,
+      "families": 2000,
+      "pairs": 90214,
+      "control": {
+        "auc": 0.997448412276951,
+        "logloss": 0.046133448330313395,
+        "pair_accuracy": 0.977298423747977
+      },
+      "structural": {
+        "auc": 0.9974701546693171,
+        "logloss": 0.045940399936360864,
+        "pair_accuracy": 0.9773649322721529
+      },
+      "improvement": {
+        "auc": 2.1742392366075336e-05,
+        "logloss": 0.00019304839395253154,
+        "relative_logloss": 0.00418456458251969,
+        "pair_accuracy": 6.650852417589004e-05
+      }
+    },
+    "1": {
+      "supported": true,
+      "candidates": 132315,
+      "positive": 24779,
+      "negative": 107536,
+      "families": 2000,
+      "pairs": 91187,
+      "control": {
+        "auc": 0.9976148023696866,
+        "logloss": 0.04490215672916614,
+        "pair_accuracy": 0.9760272845910053
+      },
+      "structural": {
+        "auc": 0.9976261108622781,
+        "logloss": 0.044759391235379434,
+        "pair_accuracy": 0.9758847204097075
+      },
+      "improvement": {
+        "auc": 1.13084925915663e-05,
+        "logloss": 0.000142765493786709,
+        "relative_logloss": 0.0031794796550156765,
+        "pair_accuracy": -0.00014256418129776627
+      }
+    },
+    "2": {
+      "supported": true,
+      "candidates": 133204,
+      "positive": 24947,
+      "negative": 108257,
+      "families": 2000,
+      "pairs": 91946,
+      "control": {
+        "auc": 0.9975829097989056,
+        "logloss": 0.045953045305323785,
+        "pair_accuracy": 0.974441520022622
+      },
+      "structural": {
+        "auc": 0.9976008881848446,
+        "logloss": 0.04583604497351372,
+        "pair_accuracy": 0.9745067757161813
+      },
+      "improvement": {
+        "auc": 1.797838593897705e-05,
+        "logloss": 0.00011700033181006458,
+        "relative_logloss": 0.002546084400558972,
+        "pair_accuracy": 6.525569355930738e-05
+      }
+    }
+  },
+  "source_counts_overlapping": {
+    "gold_boundary": {
+      "candidates": 74305,
+      "positive": 74305,
+      "negative": 0
+    },
+    "boundary_alternative": {
+      "candidates": 148606,
+      "positive": 0,
+      "negative": 148606
+    },
+    "old_model": {
+      "candidates": 74338,
+      "positive": 68634,
+      "negative": 5704
+    },
+    "alternative_label": {
+      "candidates": 74305,
+      "positive": 0,
+      "negative": 74305
+    },
+    "random": {
+      "candidates": 96000,
+      "positive": 305,
+      "negative": 95695
+    }
+  },
+  "gate": {
+    "auc_minimum": false,
+    "logloss_minimum": false,
+    "pair_minimum": false,
+    "positive_intervals": false,
+    "all_folds_positive": false,
+    "five_labels_positive": false
+  },
+  "advance": false,
+  "supported_labels": [
+    "NAME",
+    "DATE",
+    "EMAIL",
+    "PHONE",
+    "ADDRESS",
+    "USERNAME",
+    "JOB_TITLE"
+  ],
+  "bootstrap": {
+    "replicates": 1000,
+    "seed": 20260916,
+    "unit": "approximate train family",
+    "refit": false
+  },
+  "seconds": 31.722176800001762,
+  "train_only": true,
+  "P0_train_exposure": true,
+  "dev_accessed": false,
+  "production_change": false,
+  "frozen_sha256": "19aa1942f172d2d5862ae0321f42f78a764c9b52821093ab783458700af7fea4",
+  "oof_sha256": "9a397a11c0d78eecf013a5669b6329ce0cc7224bd2a037bb095825d43a8a9241"
+}

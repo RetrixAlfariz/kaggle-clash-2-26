@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "documents": 6943,
+  "temperatures": [
+    0.5,
+    1,
+    2
+  ],
+  "invariants": "all partitions, utilities, normalization, entropy bounds/monotonicity, input hashes passed",
+  "outputs": {
+    "documents.parquet": "7d2cf9a65a376cf6e7c01d1bbd8109d67588678439cd2fed722f021757539570",
+    "input_manifest.json": "fbef706925531f7aa0cbc3e28e7cc1ec86ece703c42021895c547ffa121d50f9",
+    "slots.parquet": "2a696af3eb2edd97b0508e487227142fcb3caf29a4bdd612643c90f735f0f27f",
+    "summary.json": "02cad7b9785ed2adf341306a53e62db8f7f2aea6f0e359a19cb7418bacc32764"
+  }
+}

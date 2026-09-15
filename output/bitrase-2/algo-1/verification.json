@@ -1,0 +1,26 @@
+{
+  "passed": true,
+  "files": {
+    "src/run_slot_mbr.py": "d26e71156946a58fb7058ea0c1fb59192f9fcdb02416466f1b8697be896757c5",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "src/slot_diagnostics.py": "364d375de98dfcf833523c6cfb1c0e93391d74d153b54a9754d4e418e699c975",
+    "src/span_probe.py": "9e8e868ca7b2b5f0f6ab5a743fa072a5e61ad70d7dd5cd6d7b7416b34d7bd907",
+    "src/ner_evaluation.py": "ad09d13509e50b335aa99ddc64c6fdd88591ff00d4b9143c4a3fcbdaffdcb3d3",
+    "note/bitrase-2/algo-1/protocol.md": "d4df5b77db44ebffb9e4e1eb80539a2be5a3222e77ff8a1f51cff6d391c1d031",
+    "tests/test_slot_mbr.py": "41d45f21a3f97cac006dd959c657aa6794c0a8efdacbedf05ba5a59bde22bd76",
+    "tests/test_slot_diagnostics.py": "76a7e61189175b95e7fc19cb9b878a3529c41985273f0ff3c7a1c96c42c9f9cc",
+    "tests/test_slot_mbr_runner.py": "f71053c37c954e2886145b774800ae4cc75b1c7163d0b004888d52f439a12930"
+  },
+  "log_sha256": "9049a042fa60dd32e647739e4998135b3a3f97969736007b5279717f2b94f412",
+  "command": [
+    "E:\\Developen\\Github\\kaggle-clash-2-26\\.venv-neural\\Scripts\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "tests.test_slot_mbr",
+    "tests.test_slot_diagnostics",
+    "tests.test_slot_mbr_runner",
+    "-v"
+  ],
+  "returncode": 0
+}

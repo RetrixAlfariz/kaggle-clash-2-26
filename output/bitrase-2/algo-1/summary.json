@@ -1,0 +1,139 @@
+{
+  "experiment": "bitrase-2.algo-1",
+  "status": "complete",
+  "primary": "tau1",
+  "primary_research_positive": true,
+  "temperature_sensitivity": "sign reversal at tau2; strong posterior-concentration sensitivity",
+  "selected_temperature": 1,
+  "temperature_selected_from_results": false,
+  "external_reference_kaggle": 0.805,
+  "external_reference_source": "user reported P0",
+  "holdout_accessed": false,
+  "retrained": false,
+  "uploaded": false,
+  "test_inference": false,
+  "dev_comparisons": 3,
+  "canonical_map_replay_sha256": "0f79816fa564ae4db43cd94d16e50611ae85062e0cca9aa76dac94a217e64b51",
+  "runs": {
+    "tau1": {
+      "tau": 1.0,
+      "primary": true,
+      "slot_accuracy": 0.8131738070685292,
+      "entity_f1": 0.9290803412393362,
+      "boundary_f1": 0.9337091028405362,
+      "exact_document_rate": 0.5167794901339479,
+      "bootstrap": {
+        "observed_delta": 0.003820193118965032,
+        "median": 0.0038680758439662783,
+        "ci95": [
+          0.0006902632067645179,
+          0.006877476702243366
+        ],
+        "seed": 20260915,
+        "replicates": 10000,
+        "unit": "paired document; ratio of pooled correct counts to pooled slots",
+        "selection_bias_corrected": false
+      },
+      "research_positive": true,
+      "decode_wall_seconds": 60.780743399998755,
+      "partial_repair_episodes": 255,
+      "audit": {
+        "passed": true,
+        "documents": 6943,
+        "slots": 85336,
+        "correct_slots": 69393,
+        "exact_entities": 79284,
+        "exact_documents": 3588,
+        "documents_improved": 569,
+        "documents_worsened": 450,
+        "documents_same_slot_count": 5924,
+        "documents_changed_prediction": 1139,
+        "max_partition_residual": 1.9895196601282805e-13,
+        "max_slot_norm_residual": 1.8540724511240114e-13,
+        "max_decoder_array_workspace_bytes": 12149696,
+        "max_worker_peak_working_set_bytes": 339795968,
+        "prediction_sha256": "157c8f049b03b8a23940726a9c6c3cc0a9d2ff045b013e77fafb7f154e7b8c76"
+      }
+    },
+    "tau0.5": {
+      "tau": 0.5,
+      "primary": false,
+      "slot_accuracy": 0.8123418018186932,
+      "entity_f1": 0.9311662135558264,
+      "boundary_f1": 0.9357598200056249,
+      "exact_document_rate": 0.5333429353305488,
+      "bootstrap": {
+        "observed_delta": 0.0029881878691290897,
+        "median": 0.002994928183117345,
+        "ci95": [
+          0.001153232199891183,
+          0.004814268562319873
+        ],
+        "seed": 20260915,
+        "replicates": 10000,
+        "unit": "paired document; ratio of pooled correct counts to pooled slots",
+        "selection_bias_corrected": false
+      },
+      "research_positive": false,
+      "decode_wall_seconds": 61.03210240000044,
+      "partial_repair_episodes": 90,
+      "audit": {
+        "passed": true,
+        "documents": 6943,
+        "slots": 85336,
+        "correct_slots": 69322,
+        "exact_entities": 79462,
+        "exact_documents": 3703,
+        "documents_improved": 224,
+        "documents_worsened": 157,
+        "documents_same_slot_count": 6562,
+        "documents_changed_prediction": 447,
+        "max_partition_residual": 2.2737367544323206e-13,
+        "max_slot_norm_residual": 2.2537527399890678e-13,
+        "max_decoder_array_workspace_bytes": 12149696,
+        "max_worker_peak_working_set_bytes": 340615168,
+        "prediction_sha256": "771b4567137ae07bb904f58781dcc15aa5117f789f0bd321f52bce0de7717537"
+      }
+    },
+    "tau2": {
+      "tau": 2.0,
+      "primary": false,
+      "slot_accuracy": 0.7711516827599137,
+      "entity_f1": 0.9188267554138934,
+      "boundary_f1": 0.9232563044904847,
+      "exact_document_rate": 0.432377934610399,
+      "bootstrap": {
+        "observed_delta": -0.038201931189650325,
+        "median": -0.038137106095520804,
+        "ci95": [
+          -0.043582742209106545,
+          -0.032954990783702925
+        ],
+        "seed": 20260915,
+        "replicates": 10000,
+        "unit": "paired document; ratio of pooled correct counts to pooled slots",
+        "selection_bias_corrected": false
+      },
+      "research_positive": false,
+      "decode_wall_seconds": 60.77994789999502,
+      "partial_repair_episodes": 430,
+      "audit": {
+        "passed": true,
+        "documents": 6943,
+        "slots": 85336,
+        "correct_slots": 65807,
+        "exact_entities": 78409,
+        "exact_documents": 3002,
+        "documents_improved": 878,
+        "documents_worsened": 1497,
+        "documents_same_slot_count": 4568,
+        "documents_changed_prediction": 2542,
+        "max_partition_residual": 7.815970093361102e-14,
+        "max_slot_norm_residual": 5.839773109528323e-14,
+        "max_decoder_array_workspace_bytes": 12149696,
+        "max_worker_peak_working_set_bytes": 339701760,
+        "prediction_sha256": "c2ba29d6f40181a2791a36d24a75247332ac2004e1d52021def80b1015dc78df"
+      }
+    }
+  }
+}

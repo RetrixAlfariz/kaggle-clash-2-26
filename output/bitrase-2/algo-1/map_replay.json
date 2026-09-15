@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "documents": 6943,
+  "canonical_actual_sha256": "0f79816fa564ae4db43cd94d16e50611ae85062e0cca9aa76dac94a217e64b51",
+  "canonical_expected_sha256": "0f79816fa564ae4db43cd94d16e50611ae85062e0cca9aa76dac94a217e64b51",
+  "prediction_sha256": "a1e3382156ecadac3da50b056c060037f162ec9204a42c2546d77892aba81aed",
+  "frozen_manifest_sha256": "db29be65e3a2b52f7b402badf75f293ac399afc5940f0f5a23a1a0d68d9dc246",
+  "seconds": 14.347501000011107,
+  "comparison": "all documents; exact counts, ordered triples, coverage; normalized document serialization order only"
+}

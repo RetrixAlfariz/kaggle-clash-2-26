@@ -1,0 +1,19 @@
+test_edges_and_failures (tests.test_slot_mbr.SlotMBRTests.test_edges_and_failures) ... ok
+test_extreme_uniform_and_map_mbr_difference (tests.test_slot_mbr.SlotMBRTests.test_extreme_uniform_and_map_mbr_difference) ... ok
+test_protocol_fixture (tests.test_slot_mbr.SlotMBRTests.test_protocol_fixture) ... ok
+test_randomized_against_independent_enumeration (tests.test_slot_mbr.SlotMBRTests.test_randomized_against_independent_enumeration) ... ok
+test_ties_prefer_skip_then_smaller_start (tests.test_slot_mbr.SlotMBRTests.test_ties_prefer_skip_then_smaller_start) ... ok
+test_complex_displacement_and_sentinel (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_complex_displacement_and_sentinel) ... ok
+test_identical_predictions_have_no_events (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_identical_predictions_have_no_events) ... ok
+test_json_safe_and_validation (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_json_safe_and_validation) ... ok
+test_missing_gold_does_not_terminate_shift (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_missing_gold_does_not_terminate_shift) ... ok
+test_randomized_accounting_partition (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_randomized_accounting_partition) ... ok
+test_shift_repair_and_loss_is_not_repair (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_shift_repair_and_loss_is_not_repair) ... ok
+test_simple_shift_is_repaired (tests.test_slot_diagnostics.SlotDiagnosticsTests.test_simple_shift_is_repaired) ... ok
+test_bootstrap_uses_pooled_slot_counts_and_pairing (tests.test_slot_mbr_runner.ReplayTests.test_bootstrap_uses_pooled_slot_counts_and_pairing) ... ok
+test_only_document_serialization_order_normalized (tests.test_slot_mbr_runner.ReplayTests.test_only_document_serialization_order_normalized) ... ok
+
+----------------------------------------------------------------------
+Ran 14 tests in 0.830s
+
+OK

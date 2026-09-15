@@ -1,5 +1,5 @@
-# Generated frozen encoder arrays (keep cache manifests and reports versionable).
-/output/bitrase-2/**/cache/**/*.npy
+# Generated experiment arrays (keep manifests and reports versionable).
+/output/bitrase-2/**/*.npy
 
 # Python bytecode.
 __pycache__/

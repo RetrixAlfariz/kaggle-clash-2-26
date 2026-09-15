@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "documents": 6943,
+  "coverage": {
+    "gold": 6943,
+    "map": 6943,
+    "mbr": 6943
+  },
+  "invalid_or_missing": [],
+  "invalid_count": 0,
+  "map_counts": {
+    "correct_slots": 69067,
+    "exact_entities": 79511,
+    "slots": 85336
+  },
+  "mbr_counts": {
+    "correct_slots": 69393,
+    "exact_entities": 79284,
+    "slots": 85336
+  },
+  "independent_transitions": {
+    "map_correct_to_mbr_correct": 67340,
+    "map_correct_to_mbr_wrong": 1317,
+    "map_correct_to_mbr_lost": 410,
+    "map_wrong_to_mbr_correct": 1620,
+    "map_wrong_to_mbr_wrong": 8495,
+    "map_wrong_to_mbr_lost": 329,
+    "map_absent_to_mbr_correct": 433,
+    "map_absent_to_mbr_wrong": 79,
+    "map_absent_to_mbr_absent": 5313
+  },
+  "artifact_mechanism_transition_counts": {
+    "gold_count": 85336,
+    "map_count": 85336,
+    "mbr_count": 85336,
+    "episode_entity_counts.REPAIRED": 1472,
+    "episode_entity_counts.RETAINED_DISPLACED": 7234,
+    "episode_entity_counts.LOST": 287,
+    "complete_repairs": 197,
+    "documents_affected": 2128,
+    "new_displacements.count": 1396,
+    "newly_wrong_from_map_correct.count": 1317,
+    "new_episode_count": 728,
+    "model_stats.map.exact_entities": 79511,
+    "model_stats.map.correct_entities": 69067,
+    "model_stats.map.displaced_entities": 10444,
+    "model_stats.map.document_has_displacement": 1983,
+    "model_stats.map.absolute_displacement_one": 9894,
+    "model_stats.map.episodes": 1890,
+    "model_stats.map.simple_episode_entities": 8993,
+    "model_stats.mbr.exact_entities": 79284,
+    "model_stats.mbr.correct_entities": 69393,
+    "model_stats.mbr.displaced_entities": 9891,
+    "model_stats.mbr.document_has_displacement": 2052,
+    "model_stats.mbr.absolute_displacement_one": 9545,
+    "model_stats.mbr.episodes": 2015,
+    "model_stats.mbr.simple_episode_entities": 8802,
+    "transitions.map_correct_to_mbr_correct": 67340,
+    "transitions.map_correct_to_mbr_wrong": 1317,
+    "transitions.map_correct_to_mbr_lost": 410,
+    "transitions.map_wrong_to_mbr_correct": 1620,
+    "transitions.map_wrong_to_mbr_wrong": 8495,
+    "transitions.map_wrong_to_mbr_lost": 329,
+    "transitions.map_absent_to_mbr_correct": 433,
+    "transitions.map_absent_to_mbr_wrong": 79,
+    "transitions.map_absent_to_mbr_absent": 5313
+  },
+  "map_prediction_diagnostic_mismatches": 0,
+  "max_partition_residual": 1.9895196601282805e-13,
+  "max_slot_norm_residual": 1.8540724511240114e-13,
+  "mbr_below_map_utility_count": 0,
+  "prediction_hashes": {
+    "map": "a1e3382156ecadac3da50b056c060037f162ec9204a42c2546d77892aba81aed",
+    "mbr": "157c8f049b03b8a23940726a9c6c3cc0a9d2ff045b013e77fafb7f154e7b8c76"
+  }
+}

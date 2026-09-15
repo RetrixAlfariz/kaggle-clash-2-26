@@ -1,0 +1,28 @@
+{
+  "complete": true,
+  "train_sha256": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966",
+  "head_sha256": "520646a7295797707e11fa24a8f06a5670c9d3f3201e81cf911ff11ec15b3e06",
+  "train_cache_manifest_sha256": "78b5f115520a10d65de64075b35a1569771a350cd6a1ac55a566de7c61c2b9d0",
+  "frozen_sha256": "19aa1942f172d2d5862ae0321f42f78a764c9b52821093ab783458700af7fea4",
+  "files": {
+    "candidates.parquet": "10c034f0fdd120725a1257acae529218f33e3ad1f8add03b152a5389601a5a08",
+    "control.npy": "351cf81ad7cb3dc0c9bb43f260cb1aa55920e16b1157ba06ff13f9522b00c259",
+    "document.npy": "256148706e5e156eae4980313f05b6c07192efb6bf06311f81b9fab9c9085202",
+    "documents.json": "64d09883270fdb2e5a2fee4c699339ea24f52747978b93291b8d9ab968a9f19d",
+    "labels.npy": "ed5aa2b3e19e404824146eb7eabbd156d32b98bd59f8daf4176a4a6ad461f2ea",
+    "pair_neg.npy": "260edb337eb7a27d5d297669bd04d1554d113d8f3d6229f3b3b96128b58e94bc",
+    "pair_pos.npy": "182856e60a364dfdd12c8db1bcb3c875c10d1ba1c005ea0389cf88b23870d8e4",
+    "source_bits.npy": "9616a88b24c4fbd3c245b1cc7f464c27d308591641a6198b047be5c082a1558e",
+    "structure.npy": "bd0e0e36dc860fd26a8330a6b1f91772da91c01597ac113a959ea1b155346417",
+    "target.npy": "a8e65c05ba1f5c76630b39c609cffebc4864c5b335c1147803a1847310eb69a2"
+  },
+  "documents": 6000,
+  "families": 6000,
+  "candidates": 397157,
+  "pairs": 273347,
+  "unaligned_gold": 32,
+  "long_gold": 2,
+  "seconds": 59.6342822000006,
+  "positive": 74305,
+  "negative": 322852
+}

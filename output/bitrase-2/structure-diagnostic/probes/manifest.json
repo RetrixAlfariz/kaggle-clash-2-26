@@ -1,0 +1,20 @@
+{
+  "complete": true,
+  "seconds": 5.470285000003059,
+  "oof_sha256": "9a397a11c0d78eecf013a5669b6329ce0cc7224bd2a037bb095825d43a8a9241",
+  "data_manifest_sha256": "69a77fbb74cfbbdad03477009d1f4fa56074c3d0b52a8e46a25c5290509cc0f7",
+  "sources": {
+    "src/run_structure_diagnostic.py": "85e35f9c4ca7a13135790ddfbd17bfba5fd5592cf22f19b2d2c76281bb783643",
+    "src/document_structure.py": "248dd8cbc1eb3c150bb4e401038eef91aaf397ffd979c3835e3699bb4e26c40b",
+    "src/structure_probe.py": "4eb799674c2b845c9578717888256e7068cd9798f94e7874e96a659956905ae8",
+    "src/structure_families.py": "d584e31362cb06aeeafb23607a94490e5538f87b7f820a06532816cb94424559",
+    "src/span_probe.py": "9e8e868ca7b2b5f0f6ab5a743fa072a5e61ad70d7dd5cd6d7b7416b34d7bd907",
+    "src/audit_template_similarity.py": "374b8e6640da102cfdabb902814a021c52639d8f3ec361493ae81d7126cda510",
+    "tests/test_document_structure.py": "e2e3227bfba71914decc6925b489e56e2313cbcac58a4f06c25e204aefcf13b4",
+    "tests/test_structure_probe.py": "66bc517fb668bd93025b4c6d2eda9be9cc7b863b068b3fe195085b7df187e001",
+    "tests/test_structure_families.py": "bc0b74d71411079ef53d1c29df477bca70f87aabdefc23cafb72dbdb10cbe829",
+    "tests/test_structure_diagnostic.py": "cad7a10397aa4c77c692a4629bc36cc219b63eee2eb5f8d05e18df59b394a666",
+    "note/bitrase-2/structure-diagnostic/protocol.md": "99d444caa62b9062bdd1fb9aa1d82a39597b411428c1c61c744fa9f2c47c363a"
+  },
+  "fits": 42
+}

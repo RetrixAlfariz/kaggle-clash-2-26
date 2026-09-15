@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "documents": 6943,
+  "checks": [
+    "P1 historical prediction hashes",
+    "unique complete document and slot coverage",
+    "same structure count at all temperatures",
+    "independent aggregate correctness",
+    "frozen positional transition counts"
+  ],
+  "source_sha256": "ca4ada22ca99412d6f9dc6df0ec752adce48b9e7394461394b3398876fee5e48"
+}

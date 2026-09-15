@@ -1,0 +1,37 @@
+{
+  "passed": true,
+  "independent_agent_checks": {
+    "train_cache_document_alignment": true,
+    "family_fold_isolation": true,
+    "control_structure_dimensions": [
+      34,
+      19
+    ],
+    "finite_features": true,
+    "all_candidate_exact_targets": true,
+    "sampled_newline_adjacency_parity_rows": 100,
+    "source_and_artifact_hashes": true,
+    "complete_pair_multiset_matches_same_doc_label_top4_rule": true
+  },
+  "independent_metric_recomputation": [
+    {
+      "variant": "control",
+      "auc": 0.997547890735308,
+      "logloss": 0.04566273082376934,
+      "pair_accuracy": 0.9759133994519786
+    },
+    {
+      "variant": "structural",
+      "auc": 0.9975651819957002,
+      "logloss": 0.0455119404990566,
+      "pair_accuracy": 0.975909741098311
+    }
+  ],
+  "metric_method": "Wilcoxon rank-sum AUC with average tie ranks; direct binary log-loss and pair wins; no project metric functions",
+  "grouping_limitation": {
+    "selected_families": 6000,
+    "selected_documents": 6000,
+    "all_selected_families_singleton": true,
+    "broad_template_isolation_established": false
+  }
+}

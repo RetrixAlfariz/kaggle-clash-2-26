@@ -1,0 +1,21 @@
+test_colon_relations_and_nonblank_line_adjacency (tests.test_document_structure.DocumentStructureTests.test_colon_relations_and_nonblank_line_adjacency) ... ok
+test_invalid_bounds_rejected (tests.test_document_structure.DocumentStructureTests.test_invalid_bounds_rejected) ... ok
+test_invalid_span_interval_rejected_and_convenience_api (tests.test_document_structure.DocumentStructureTests.test_invalid_span_interval_rejected_and_convenience_api) ... ok
+test_paragraph_indices_boundaries_and_blank_line_handling_crlf (tests.test_document_structure.DocumentStructureTests.test_paragraph_indices_boundaries_and_blank_line_handling_crlf) ... ok
+test_schema_and_control_newline_adjacency_match_encoder_flags (tests.test_document_structure.DocumentStructureTests.test_schema_and_control_newline_adjacency_match_encoder_flags) ... ok
+test_single_line_and_document_edges_are_finite_and_normalized (tests.test_document_structure.DocumentStructureTests.test_single_line_and_document_edges_are_finite_and_normalized) ... ok
+test_fit_predict_learns_signal_and_reports_convergence (tests.test_structure_probe.StructureProbeTests.test_fit_predict_learns_signal_and_reports_convergence) ... ok
+test_fit_predict_rejects_one_class_and_bad_weights (tests.test_structure_probe.StructureProbeTests.test_fit_predict_rejects_one_class_and_bad_weights) ... ok
+test_standardization_uses_training_rows_and_handles_constant_features (tests.test_structure_probe.StructureProbeTests.test_standardization_uses_training_rows_and_handles_constant_features) ... ok
+test_weighted_auc_counts_ties_as_half_and_respects_weights (tests.test_structure_probe.StructureProbeTests.test_weighted_auc_counts_ties_as_half_and_respects_weights) ... ok
+test_weighted_logloss_matches_weighted_formula_and_clips_edges (tests.test_structure_probe.StructureProbeTests.test_weighted_logloss_matches_weighted_formula_and_clips_edges) ... ok
+test_exact_normalized_and_numeric_masked_templates_join (tests.test_structure_families.StructureFamilyTests.test_exact_normalized_and_numeric_masked_templates_join) ... ok
+test_rejects_sample_overflow_and_insufficient_families (tests.test_structure_families.StructureFamilyTests.test_rejects_sample_overflow_and_insufficient_families) ... ok
+test_sampling_is_deterministic_and_keeps_whole_families (tests.test_structure_families.StructureFamilyTests.test_sampling_is_deterministic_and_keeps_whole_families) ... ok
+test_exact_cluster_weighted_auc_with_ties (tests.test_structure_diagnostic.DiagnosticTests.test_exact_cluster_weighted_auc_with_ties) ... ok
+test_pair_weighting_and_improvement_direction (tests.test_structure_diagnostic.DiagnosticTests.test_pair_weighting_and_improvement_direction) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.150s
+
+OK
