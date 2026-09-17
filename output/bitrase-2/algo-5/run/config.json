@@ -1,0 +1,19 @@
+{
+  "epochs": [
+    3,
+    4
+  ],
+  "lr": 0.0003,
+  "weight_decay": 0.01,
+  "clip": 1,
+  "batch": 32,
+  "seed": 2026,
+  "positives_weight": 4,
+  "hard_fp_weight": 4,
+  "near_only_weight": 2,
+  "other_weight": 1,
+  "pretrained": false,
+  "adaptive_development": true,
+  "prior_eval": "algo-4 EVAL2, now reused for development",
+  "no_dev_holdout_test": true
+}

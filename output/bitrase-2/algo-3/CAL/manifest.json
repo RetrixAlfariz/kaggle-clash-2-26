@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "split": "CAL",
+  "documents": 1000,
+  "files": {
+    "boundaries.npy": "d19c212b3d5773d457f39e76bf7fcb9b25ef6cd84369c044229e68511b184452",
+    "hidden.npy": "c75429b4b03e603dcf187f2b02e3ee5e8825d9c9d96bdbdaeef8412cb1100fb5",
+    "logits.npy": "ea0c9f8338981e311c1e4c4cd4990a04f2866b25eecad1d31af66ccb0e143e90",
+    "metadata.json": "ea9232f5a82b26633538acc5c633f53947ca74fc5f28532de905296d1e12789a",
+    "pairs.npy": "16bf49393040a492340a1f24f5b5d4d1d9405ddac7716072e270875d4c71afdb",
+    "span_offsets.npy": "55f5e8bed649278b698ccab5c81a3463e5774a386489b5f5b8779684f0f557ea",
+    "token_offsets.npy": "7e5c6d429802eeb4a7140c4c993f077584bcc3752b4b00c02e1614381c8735d1"
+  }
+}

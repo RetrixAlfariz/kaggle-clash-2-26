@@ -1,0 +1,15 @@
+{
+  "seed": 2026,
+  "encoder_epochs": 4,
+  "head_epochs": 2,
+  "counts": {
+    "FIT": 51582,
+    "CAL": 1000,
+    "EVAL": 3000
+  },
+  "split_sha256": "67b8e61bfdb92685bdd5d4449669f74559a0a3ac596859f9f67d8338e3c68554",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "torch": "2.8.0+cu128",
+  "pretrained": false,
+  "dev_accessed": false
+}

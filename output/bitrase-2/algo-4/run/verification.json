@@ -1,0 +1,14 @@
+{
+  "training_verified": true,
+  "counts": {
+    "FIT": 52582,
+    "EVAL": 3000
+  },
+  "supported_fit": 52423,
+  "ce_exposure_matched": true,
+  "lambda_reconciled": true,
+  "all_competitors_feasible_incorrect": true,
+  "source_hashes_unchanged": true,
+  "evaluation_predictions_reconciled": true,
+  "eval_slots": 36794
+}

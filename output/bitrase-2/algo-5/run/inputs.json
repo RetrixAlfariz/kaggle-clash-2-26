@@ -1,0 +1,9 @@
+{
+  "src/train_span_refinement.py": "0553a8562b4dd985c04a273d76ee7d2182b4a376df53a644151d9d6723f82287",
+  "src/train_global_ranking.py": "62224984d6b6c35be52d6d778bc397d3c08ecaac8fac2a6813c67e7499583a06",
+  "src/span_probe.py": "9e8e868ca7b2b5f0f6ab5a743fa072a5e61ad70d7dd5cd6d7b7416b34d7bd907",
+  "note/bitrase-2/algo-5/protocol.md": "2688693439d37ff01cb546c2dd4ff6a1268f6afe37ef5e01710ee2d1f86f85d5",
+  "output/bitrase-2/algo-4/run/control_epoch2.pt": "c6514f929613571724d776ad09284aa19f19900f251fe8dad4c2857e18f1dea4",
+  "output/bitrase-2/algo-4/run/assignments.parquet": "4c8d90687117df5f8d989656173531973061341d99e4af59e7941dc44d64dc33",
+  "output/bitrase-2/algo-4/run/cache/encoder_epoch4.pt": "305b26f92d9db7b98870718116f2244d23cefb15b9638ec7dd266c3433c61de0"
+}

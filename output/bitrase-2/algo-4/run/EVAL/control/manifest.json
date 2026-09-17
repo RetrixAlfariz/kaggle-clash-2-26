@@ -1,0 +1,12 @@
+{
+  "complete": true,
+  "documents": 3000,
+  "files": {
+    "boundaries.npy": "6d80e49fe3cc474765d59c76fb5a7eb13e0142f5da6def59ff36433d2ce854a2",
+    "logits.npy": "1fef5af177fe8fe8677c3ed1cb24dfe0fe041d5619d09c266b89cdb4b09a7e22",
+    "metadata.json": "dd359763b4ecbf02b82880654834c1a1a4fcd7972d108c5e58b0f513feb320c3",
+    "pairs.npy": "9e2c924e601ba08205d58a46820db8ed2b4d97481554ea90a25bc099a36b625e",
+    "span_offsets.npy": "ecbe75f74a6247f9192eaae6329de356024bad8c487bc1f22a920d0b077614de",
+    "token_offsets.npy": "91301f102ded0ce99a65615c066710e1f6e4c0f731fcd5e2bcc8f7c9ab0f4794"
+  }
+}

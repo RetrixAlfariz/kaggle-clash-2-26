@@ -1,0 +1,127 @@
+[
+  {
+    "key": "prepared_train",
+    "path": "output/prepared/v1/train.parquet",
+    "sha256": "24872364caa74c3ad690786dcbfc683dc8c4184ae1dc41dc813cd36797494966"
+  },
+  {
+    "key": "prepared_assignments",
+    "path": "output/prepared/v1/split_assignments.parquet",
+    "sha256": "a6d398e3845d096540b44d30909267fca45118515ac7afe923ee0f94332d08ee"
+  },
+  {
+    "key": "prepared_manifest",
+    "path": "output/prepared/v1/manifest.json",
+    "sha256": "89b82c23b3053fc429b2cd6fd8a532c39fcc8758a88af0e4263ffc14b05e3848"
+  },
+  {
+    "key": "family_memberships",
+    "path": "output/bitrase-2/algo-3/grouping.json",
+    "sha256": "7033749ec6ba19acae5506d0f1401a5e64755306f726a5fe0950416214740c4b"
+  },
+  {
+    "key": "algo3_roles",
+    "path": "output/bitrase-2/algo-3/assignments.parquet",
+    "sha256": "67b8e61bfdb92685bdd5d4449669f74559a0a3ac596859f9f67d8338e3c68554"
+  },
+  {
+    "key": "structure_memberships",
+    "path": "output/bitrase-2/structure-diagnostic/data/documents.json",
+    "sha256": "64d09883270fdb2e5a2fee4c699339ea24f52747978b93291b8d9ab968a9f19d"
+  },
+  {
+    "key": "structure_manifest",
+    "path": "output/bitrase-2/structure-diagnostic/data/manifest.json",
+    "sha256": "69a77fbb74cfbbdad03477009d1f4fa56074c3d0b52a8e46a25c5290509cc0f7"
+  },
+  {
+    "key": "p0_sampling",
+    "path": "output/bitrase-2/p0/seed2026/sampling_documents.parquet",
+    "sha256": "a47271c633dbcb7b485288758f3db7f28d16198260fa7d3ca0c5ba639685b206"
+  },
+  {
+    "key": "p0_training_metrics",
+    "path": "output/bitrase-2/p0/seed2026/training_log.json",
+    "sha256": "6bcdab5501c7f840b47de3f43bb4c5f707de039bd61feb89f8b7501269bf2afb"
+  },
+  {
+    "key": "p0_sampling_report",
+    "path": "output/bitrase-2/p0/seed2026/sampling_report.json",
+    "sha256": "0a13d7826b9fbd441837cea2d6ee0c502f8cd935e698db57807beff0b0f679de"
+  },
+  {
+    "key": "p0_diagnostic_interpretation",
+    "path": "note/bitrase-2/p0/research_questions.md",
+    "sha256": "36517d245ec84d7b3f0f6b951872b59d89cc4057dae2093dbb134ab8bc49b386"
+  },
+  {
+    "key": "p0_training_source",
+    "path": "src/run_span_probe.py",
+    "sha256": "ef37281ab1826e4bc43e0e807133594fca500ef5b717db32778e772a109f4821"
+  },
+  {
+    "key": "p0_sampling_source",
+    "path": "src/span_probe.py",
+    "sha256": "9e8e868ca7b2b5f0f6ab5a743fa072a5e61ad70d7dd5cd6d7b7416b34d7bd907"
+  },
+  {
+    "key": "p0_protocol",
+    "path": "note/bitrase-2/p0/protocol.md",
+    "sha256": "610574769a02e135a737ec238dfeb20a0a070fbf3cfe3a5e7a5187d85ab400be"
+  },
+  {
+    "key": "probe_source",
+    "path": "src/baseline_probe.py",
+    "sha256": "39c8a623501e3fb7449d2b6314e94363e6167b042275f93dd5c54b948a48b8f2"
+  },
+  {
+    "key": "probe_report",
+    "path": "output/baseline_probe/report.json",
+    "sha256": "ba10e3553de638cda5e4908c4d360ce427f7788d0f235f8188c60ea2841354db"
+  },
+  {
+    "key": "preparation_source",
+    "path": "src/prepare_data.py",
+    "sha256": "de3b23ddda58919e9935681eb9067d73bdb31634300888032c33b0b7e501083b"
+  },
+  {
+    "key": "data_understanding_report",
+    "path": "note/REPORT.md",
+    "sha256": "c562d25ed8a22dc3d613571ce441f96b56cfe000ec96785e73fcded38be08b3d"
+  },
+  {
+    "key": "honorific_data_audit",
+    "path": "output/experiments88/honorific_train_audit.json",
+    "sha256": "d0741ab8999456143bc6c22acac07816834764fbadb2616a9237873b7a5c9c7b"
+  },
+  {
+    "key": "style_source",
+    "path": "src/run_document_style.py",
+    "sha256": "abdf1aac33fa94f721c117890b3df05aa57f18578624365c56cf0ff5898c113e"
+  },
+  {
+    "key": "style_report",
+    "path": "note/bitrase-1.algo-5/report.md",
+    "sha256": "fd4a3bf4f1c0b1ea76ad698be064772b4459969914d11ff85f3f7de7cc74f5e2"
+  },
+  {
+    "key": "algo3_training_source",
+    "path": "src/train_scale_ranking.py",
+    "sha256": "605e2d8e6152c1fa97540e393af01e1be910a1babe718ee7e403d25343d5750f"
+  },
+  {
+    "key": "algo3_protocol",
+    "path": "note/bitrase-2/algo-3/protocol.md",
+    "sha256": "f2137d3150cf884da9f350ba4631d523dc2c4bf966217afec9c855498f98c923"
+  },
+  {
+    "key": "family_source",
+    "path": "src/structure_families.py",
+    "sha256": "d584e31362cb06aeeafb23607a94490e5538f87b7f820a06532816cb94424559"
+  },
+  {
+    "key": "structure_protocol",
+    "path": "note/bitrase-2/structure-diagnostic/protocol.md",
+    "sha256": "99d444caa62b9062bdd1fb9aa1d82a39597b411428c1c61c744fa9f2c47c363a"
+  }
+]

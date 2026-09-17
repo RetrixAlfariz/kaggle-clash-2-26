@@ -1,0 +1,8 @@
+{
+  "complete": true,
+  "inputs_unchanged": true,
+  "ce_exposure_matched": true,
+  "encoder_sha256": "305b26f92d9db7b98870718116f2244d23cefb15b9638ec7dd266c3433c61de0",
+  "control_sha256": "c6514f929613571724d776ad09284aa19f19900f251fe8dad4c2857e18f1dea4",
+  "challenger_sha256": "69056ed876153ffafbf9199c5174e7be682a93f32e60395f8ae20dafe62099e6"
+}

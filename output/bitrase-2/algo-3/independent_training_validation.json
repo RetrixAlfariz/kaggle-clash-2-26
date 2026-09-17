@@ -1,0 +1,38 @@
+{
+  "complete": true,
+  "validation": "independent train-only artifact integrity, split reconstruction, and role coverage",
+  "prepared_train_documents": 55582,
+  "family_count": 55581,
+  "role_document_counts": {
+    "FIT": 51582,
+    "CAL": 1000,
+    "EVAL": 3000
+  },
+  "assignments_sha256": "67b8e61bfdb92685bdd5d4449669f74559a0a3ac596859f9f67d8338e3c68554",
+  "training_inputs_verified": 10,
+  "training_complete_sha256": "411ac9d17bee990068daadab6caf840d5382cd4eee363dfc1f43de53c40f4d30",
+  "checkpoints_and_vocab": {
+    "encoder_epoch4.pt": "64e5e4b612e135838c9d6f52f72287bb3f1af3ab8362355f2ee9d30a5aeadaef",
+    "head_epoch2.pt": "34ba5456add94c74f3083933559b594cf5808d528221d1a26b0906d618b1c816",
+    "vocab.json": "4c49eb2513b53ef10475a0445b862da2c8880d9d09821c2f011d8e1dee7594ef"
+  },
+  "frozen_role_artifacts": {
+    "CAL": {
+      "documents": 1000,
+      "manifest_sha256": "6d80e48379a8b4d9807ae5024762ba84b3768b88a69c44371e13031acf65b43c",
+      "metadata_sha256": "ea9232f5a82b26633538acc5c633f53947ca74fc5f28532de905296d1e12789a"
+    },
+    "EVAL": {
+      "documents": 3000,
+      "manifest_sha256": "95d70e7e3c4ea71b324aa35546247dce5c2a69ef0e0779eca46c15437fc70c8e",
+      "metadata_sha256": "832addf38a5f940d3ba6a331f5f26f4173aee27a7a43d06274842c594f6bdb1b"
+    }
+  },
+  "data_access": {
+    "prepared_train": "loaded for ID coverage only",
+    "dev": false,
+    "holdout": false,
+    "test": false,
+    "CAL_EVAL_labels_used": false
+  }
+}

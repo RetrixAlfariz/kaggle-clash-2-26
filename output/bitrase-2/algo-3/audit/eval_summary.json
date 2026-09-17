@@ -1,0 +1,145 @@
+{
+  "schema": "bitrase-2.algo-3.scale-ranking-audit.v1",
+  "fit": {
+    "beta": 0.8407225608825684,
+    "bounds": [
+      0.25,
+      4.0
+    ],
+    "iterations": 18,
+    "boundary_solution": null,
+    "cal_docs_total": 1000,
+    "cal_docs_supported": 998,
+    "cal_slots_supported": 12292,
+    "cal_nll_per_slot_beta1": 0.2911725865844859,
+    "cal_nll_per_slot_fitted": 0.28268320020969867,
+    "cal_nll_improvement_fraction": 0.029155857267916207,
+    "cal_input_hashes": {
+      "logits.npy": "ea0c9f8338981e311c1e4c4cd4990a04f2866b25eecad1d31af66ccb0e143e90",
+      "pairs.npy": "16bf49393040a492340a1f24f5b5d4d1d9405ddac7716072e270875d4c71afdb",
+      "span_offsets.npy": "55f5e8bed649278b698ccab5c81a3463e5774a386489b5f5b8779684f0f557ea",
+      "token_offsets.npy": "7e5c6d429802eeb4a7140c4c993f077584bcc3752b4b00c02e1614381c8735d1",
+      "boundaries.npy": "d19c212b3d5773d457f39e76bf7fcb9b25ef6cd84369c044229e68511b184452",
+      "metadata.json": "ea9232f5a82b26633538acc5c633f53947ca74fc5f28532de905296d1e12789a",
+      "manifest.json": "6d80e48379a8b4d9807ae5024762ba84b3768b88a69c44371e13031acf65b43c"
+    },
+    "diagnostic_source_hashes": {
+      "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+      "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+      "tests/test_scale_ranking_audit.py": "70363c001ab742cc7ecca594502bf67c30d172a5f3d3b2583105a5aab89ef57a",
+      "note/bitrase-2/algo-3/protocol.md": "f2137d3150cf884da9f350ba4631d523dc2c4bf966217afec9c855498f98c923"
+    }
+  },
+  "eval_input_hashes": {
+    "logits.npy": "2062cfb54c3f0b01aff0839676b54f677d18447b9928f8b9b91df1a3462da3cb",
+    "pairs.npy": "83b78a746616ca5f85bd777109606c3fde390e7631616e940c8d914e1f4721df",
+    "span_offsets.npy": "654a3e23e36058da755511cd3fe27009ff28ef47f2268b5fe4f525d5c813d03d",
+    "token_offsets.npy": "179a59cdd1004a3f852ac39a021d7c9a9b939ba106bbb55d763cab8eaf3a03f7",
+    "boundaries.npy": "028d24113450ad55f7b54b33d81da15953c067b02712a989fb80e37c05a50894",
+    "metadata.json": "832addf38a5f940d3ba6a331f5f26f4173aee27a7a43d06274842c594f6bdb1b",
+    "manifest.json": "95d70e7e3c4ea71b324aa35546247dce5c2a69ef0e0779eca46c15437fc70c8e"
+  },
+  "eval_docs": 3000,
+  "eval_supported_docs": 2992,
+  "eval_supported_slots": 36741,
+  "structured_nll_per_slot": {
+    "structured_nll_tau1_per_slot": 0.28614863467806295,
+    "structured_nll_fitted_per_slot": 0.2807739566279954
+  },
+  "structured_nll_paired_doc_bootstrap": {
+    "n": 2992,
+    "relative_improvement": 0.0187828191321422,
+    "ci95": [
+      0.010798611821272503,
+      0.02627348041050579
+    ],
+    "replicates": 2000,
+    "seed": 20260917,
+    "gate_pass": true
+  },
+  "ranking": {
+    "supported_docs": 2992,
+    "map_gold_docs": 1526,
+    "gold_vs_strongest_wrong": {
+      "strict_win": 1525,
+      "tie": 2,
+      "loss": 1465
+    },
+    "gold_minus_strongest_wrong_gap_mean": -0.9514073968571137
+  },
+  "mbr": {
+    "tau1_correct_slots": 29569,
+    "fitted_correct_slots": 29397,
+    "map_correct_slots": 29414,
+    "all_eval_slots": 36842,
+    "map_accuracy": 0.7983822810922316,
+    "tau1_accuracy": 0.802589435969817,
+    "fitted_accuracy": 0.7979208512024321,
+    "paired_doc_bootstrap": {
+      "n": 3000,
+      "mean": -0.0046685847673850495,
+      "ci95": [
+        -0.007336465230229318,
+        -0.0019926285917121625
+      ],
+      "replicates": 2000,
+      "seed": 20260917,
+      "gain_percentage_points": -0.46685847673850495,
+      "gate_pass": false
+    },
+    "expected_gain_tau1_vs_map_per_slot": 0.0063128919699078695,
+    "expected_gain_fitted_vs_map_per_slot": 0.008051525945031324,
+    "realized_gain_tau1_vs_map_per_slot": 0.004207154877585365,
+    "realized_gain_fitted_vs_map_per_slot": -0.0004614298897996851
+  },
+  "by_label": {
+    "NAME": {
+      "slots": 11244,
+      "tau1_accuracy": 0.7754357879758094,
+      "fitted_accuracy": 0.7702774813233725
+    },
+    "DATE": {
+      "slots": 7103,
+      "tau1_accuracy": 0.8176826692946643,
+      "fitted_accuracy": 0.8124736027030832
+    },
+    "EMAIL": {
+      "slots": 4144,
+      "tau1_accuracy": 0.846042471042471,
+      "fitted_accuracy": 0.8402509652509652
+    },
+    "PHONE": {
+      "slots": 4019,
+      "tau1_accuracy": 0.8375217715849714,
+      "fitted_accuracy": 0.8325454093057975
+    },
+    "ADDRESS": {
+      "slots": 3464,
+      "tau1_accuracy": 0.7797344110854504,
+      "fitted_accuracy": 0.7754041570438799
+    },
+    "USERNAME": {
+      "slots": 3329,
+      "tau1_accuracy": 0.749774707119255,
+      "fitted_accuracy": 0.7452688495043557
+    },
+    "JOB_TITLE": {
+      "slots": 3539,
+      "tau1_accuracy": 0.8400678157671658,
+      "fitted_accuracy": 0.8392201186775925
+    }
+  },
+  "claims_limit": "Descriptive calibration/ranking evidence on the supplied split caches; no causal attribution or generalization claim.",
+  "diagnostic_source_hashes_before": {
+    "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "tests/test_scale_ranking_audit.py": "70363c001ab742cc7ecca594502bf67c30d172a5f3d3b2583105a5aab89ef57a",
+    "note/bitrase-2/algo-3/protocol.md": "f2137d3150cf884da9f350ba4631d523dc2c4bf966217afec9c855498f98c923"
+  },
+  "diagnostic_source_hashes_after": {
+    "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "tests/test_scale_ranking_audit.py": "70363c001ab742cc7ecca594502bf67c30d172a5f3d3b2583105a5aab89ef57a",
+    "note/bitrase-2/algo-3/protocol.md": "f2137d3150cf884da9f350ba4631d523dc2c4bf966217afec9c855498f98c923"
+  }
+}

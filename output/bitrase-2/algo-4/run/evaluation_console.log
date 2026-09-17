@@ -1,0 +1,206 @@
+EVAL decoded 100/3000
+EVAL decoded 200/3000
+EVAL decoded 300/3000
+EVAL decoded 400/3000
+EVAL decoded 500/3000
+EVAL decoded 600/3000
+EVAL decoded 700/3000
+EVAL decoded 800/3000
+EVAL decoded 900/3000
+EVAL decoded 1000/3000
+EVAL decoded 1100/3000
+EVAL decoded 1200/3000
+EVAL decoded 1300/3000
+EVAL decoded 1400/3000
+EVAL decoded 1500/3000
+EVAL decoded 1600/3000
+EVAL decoded 1700/3000
+EVAL decoded 1800/3000
+EVAL decoded 1900/3000
+EVAL decoded 2000/3000
+EVAL decoded 2100/3000
+EVAL decoded 2200/3000
+EVAL decoded 2300/3000
+EVAL decoded 2400/3000
+EVAL decoded 2500/3000
+EVAL decoded 2600/3000
+EVAL decoded 2700/3000
+EVAL decoded 2800/3000
+EVAL decoded 2900/3000
+EVAL decoded 3000/3000
+{
+  "schema": "bitrase-2.algo-4.global-ranking-eval.v1",
+  "eval_docs": 3000,
+  "eval_slots": 36794,
+  "families": 3000,
+  "cache_hashes": {
+    "control": {
+      "logits.npy": "1fef5af177fe8fe8677c3ed1cb24dfe0fe041d5619d09c266b89cdb4b09a7e22",
+      "pairs.npy": "9e2c924e601ba08205d58a46820db8ed2b4d97481554ea90a25bc099a36b625e",
+      "span_offsets.npy": "ecbe75f74a6247f9192eaae6329de356024bad8c487bc1f22a920d0b077614de",
+      "token_offsets.npy": "91301f102ded0ce99a65615c066710e1f6e4c0f731fcd5e2bcc8f7c9ab0f4794",
+      "boundaries.npy": "6d80e49fe3cc474765d59c76fb5a7eb13e0142f5da6def59ff36433d2ce854a2",
+      "metadata.json": "dd359763b4ecbf02b82880654834c1a1a4fcd7972d108c5e58b0f513feb320c3",
+      "manifest.json": "baf18cd13379798a08051c4f425a7585fdae27531329a6a839e3e23e768c492a"
+    },
+    "challenger": {
+      "logits.npy": "3684088793cdb2dfd88a81256ff6ebf513262c163b7c4547ee785d8ac7728aee",
+      "pairs.npy": "9e2c924e601ba08205d58a46820db8ed2b4d97481554ea90a25bc099a36b625e",
+      "span_offsets.npy": "ecbe75f74a6247f9192eaae6329de356024bad8c487bc1f22a920d0b077614de",
+      "token_offsets.npy": "91301f102ded0ce99a65615c066710e1f6e4c0f731fcd5e2bcc8f7c9ab0f4794",
+      "boundaries.npy": "6d80e49fe3cc474765d59c76fb5a7eb13e0142f5da6def59ff36433d2ce854a2",
+      "metadata.json": "dd359763b4ecbf02b82880654834c1a1a4fcd7972d108c5e58b0f513feb320c3",
+      "manifest.json": "59dbecb761e8be7a13047a2cc6a6381dcbd200161abc8cb8b90af34a27daaf89"
+    }
+  },
+  "metrics": {
+    "map": {
+      "control": {
+        "correct_slots": 29799,
+        "all_slots": 36794,
+        "accuracy": 0.8098874816546175,
+        "entity_f1": {
+          "true_positive": 34334,
+          "predicted": 36794,
+          "gold": 36794,
+          "precision": 0.9331412730336468,
+          "recall": 0.9331412730336468,
+          "f1": 0.9331412730336468
+        }
+      },
+      "challenger": {
+        "correct_slots": 9833,
+        "all_slots": 36794,
+        "accuracy": 0.267244659455346,
+        "entity_f1": {
+          "true_positive": 14499,
+          "predicted": 36794,
+          "gold": 36794,
+          "precision": 0.39405881393705494,
+          "recall": 0.39405881393705494,
+          "f1": 0.39405881393705494
+        }
+      }
+    },
+    "mbr": {
+      "control": {
+        "correct_slots": 29869,
+        "all_slots": 36794,
+        "accuracy": 0.8117899657552862,
+        "entity_f1": {
+          "true_positive": 34190,
+          "predicted": 36794,
+          "gold": 36794,
+          "precision": 0.9292275914551286,
+          "recall": 0.9292275914551286,
+          "f1": 0.9292275914551286
+        }
+      },
+      "challenger": {
+        "correct_slots": 9821,
+        "all_slots": 36794,
+        "accuracy": 0.2669185193238028,
+        "entity_f1": {
+          "true_positive": 14525,
+          "predicted": 36794,
+          "gold": 36794,
+          "precision": 0.3947654508887319,
+          "recall": 0.3947654508887319,
+          "f1": 0.3947654508887319
+        }
+      }
+    }
+  },
+  "paired_family_bootstrap": {
+    "map": {
+      "families": 3000,
+      "docs": 3000,
+      "gain": -0.5426428221992716,
+      "gain_percentage_points": -54.26428221992716,
+      "ci95": [
+        -0.554021843336292,
+        -0.5305769783127215
+      ],
+      "replicates": 2000,
+      "seed": 20260919,
+      "minimum_gain": 0.002,
+      "gate_pass": false
+    },
+    "mbr_tau1": {
+      "families": 3000,
+      "docs": 3000,
+      "gain": -0.5448714464314834,
+      "gain_percentage_points": -54.48714464314834,
+      "ci95": [
+        -0.5561744718503427,
+        -0.5331996387855811
+      ],
+      "replicates": 2000,
+      "seed": 20260919,
+      "minimum_gain": 0.002,
+      "gate_pass": false
+    }
+  },
+  "gates": {
+    "map_pass": false,
+    "mbr_tau1_pass": false
+  },
+  "gold_vs_strongest_wrong": {
+    "control": {
+      "supported_docs": 2991,
+      "map_gold_docs": 1625,
+      "strict_win": 1625,
+      "tie": 0,
+      "loss": 1366,
+      "mean_gold_minus_strongest_wrong_gap": -0.6043482539600521
+    },
+    "challenger": {
+      "supported_docs": 2991,
+      "map_gold_docs": 47,
+      "strict_win": 47,
+      "tie": 0,
+      "loss": 2944,
+      "mean_gold_minus_strongest_wrong_gap": -67.44129146810229
+    }
+  },
+  "local_span_ranking_supported_docs": 2991,
+  "local_span_ranking": {
+    "control": {
+      "slots": 36685,
+      "supported_slots": 36685,
+      "slots_with_feasible_alternatives": 36685,
+      "gold_strict_win": 34839,
+      "tie": 0,
+      "gold_strict_loss": 1846,
+      "mean_gold_minus_strongest_alternative_gap": 7.545643939657833
+    },
+    "challenger": {
+      "slots": 36685,
+      "supported_slots": 36685,
+      "slots_with_feasible_alternatives": 36685,
+      "gold_strict_win": 16150,
+      "tie": 0,
+      "gold_strict_loss": 20535,
+      "mean_gold_minus_strongest_alternative_gap": -2.0952905567406823
+    }
+  },
+  "bootstrap": {
+    "unit": "whole group_id family, sampled with replacement; singleton documents form singleton clusters",
+    "replicates": 2000,
+    "seed": 20260919,
+    "gate": "gain >= 0.002 slot accuracy (+0.20 percentage points) and bootstrap 95% lower bound > 0"
+  },
+  "claims_limit": "One paired EVAL2 comparison of the frozen final heads. Gains are descriptive for this split and do not guarantee external Kaggle performance.",
+  "source_hashes": {
+    "src/evaluate_global_ranking.py": "713bab1116384acb380052fd2f36ee238adf07e935d85f4b8e4ab8743bccbdab",
+    "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "src/slot_diagnostics.py": "364d375de98dfcf833523c6cfb1c0e93391d74d153b54a9754d4e418e699c975"
+  },
+  "source_hashes_after": {
+    "src/evaluate_global_ranking.py": "713bab1116384acb380052fd2f36ee238adf07e935d85f4b8e4ab8743bccbdab",
+    "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "src/slot_diagnostics.py": "364d375de98dfcf833523c6cfb1c0e93391d74d153b54a9754d4e418e699c975"
+  }
+}

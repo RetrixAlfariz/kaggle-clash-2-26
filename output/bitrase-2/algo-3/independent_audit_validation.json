@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "documents": 3000,
+  "slots": 36842,
+  "independently_recomputed_counts": {
+    "map_gold_correct": 29414,
+    "mbr_tau1_correct": 29569,
+    "mbr_fitted_correct": 29397
+  },
+  "independent_partition_checks": [
+    "DOC_000021",
+    "DOC_000023",
+    "DOC_000206",
+    "DOC_000285",
+    "DOC_000294",
+    "DOC_000335",
+    "DOC_000421",
+    "DOC_000452",
+    "DOC_000603",
+    "DOC_000618",
+    "DOC_000624",
+    "DOC_000637",
+    "DOC_000704",
+    "DOC_000730",
+    "DOC_000756",
+    "DOC_000758",
+    "DOC_000865",
+    "DOC_000935",
+    "DOC_000960",
+    "DOC_000992"
+  ],
+  "source_sha256": "2852657838d181b411b87ddd53db70979b146c1723a05c1044f82b597de179af",
+  "hashes": {
+    "calibration.json": "c4376f83bf0266ccbc04b6e80f1d015e2787e6515238881b97abfcdee0923ed0",
+    "eval_documents.json": "fd0ee991016709569929cb95b430cfb3de3f634a9ef33a8e187098bb08d70c38",
+    "eval_summary.json": "f70adcab906f2c3e968854f41c5208e1d1dc17431bd8081def6e3660917d320b"
+  }
+}

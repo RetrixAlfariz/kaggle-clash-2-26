@@ -1,0 +1,14 @@
+{
+  "complete": true,
+  "split": "EVAL",
+  "documents": 3000,
+  "files": {
+    "boundaries.npy": "028d24113450ad55f7b54b33d81da15953c067b02712a989fb80e37c05a50894",
+    "hidden.npy": "c830796ad4eed025715e641350442eaf6e51574520b7463bf955cdbb643aaf6c",
+    "logits.npy": "2062cfb54c3f0b01aff0839676b54f677d18447b9928f8b9b91df1a3462da3cb",
+    "metadata.json": "832addf38a5f940d3ba6a331f5f26f4173aee27a7a43d06274842c594f6bdb1b",
+    "pairs.npy": "83b78a746616ca5f85bd777109606c3fde390e7631616e940c8d914e1f4721df",
+    "span_offsets.npy": "654a3e23e36058da755511cd3fe27009ff28ef47f2268b5fe4f525d5c813d03d",
+    "token_offsets.npy": "179a59cdd1004a3f852ac39a021d7c9a9b939ba106bbb55d763cab8eaf3a03f7"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "beta": 0.8407225608825684,
+  "bounds": [
+    0.25,
+    4.0
+  ],
+  "iterations": 18,
+  "boundary_solution": null,
+  "cal_docs_total": 1000,
+  "cal_docs_supported": 998,
+  "cal_slots_supported": 12292,
+  "cal_nll_per_slot_beta1": 0.2911725865844859,
+  "cal_nll_per_slot_fitted": 0.28268320020969867,
+  "cal_nll_improvement_fraction": 0.029155857267916207,
+  "cal_input_hashes": {
+    "logits.npy": "ea0c9f8338981e311c1e4c4cd4990a04f2866b25eecad1d31af66ccb0e143e90",
+    "pairs.npy": "16bf49393040a492340a1f24f5b5d4d1d9405ddac7716072e270875d4c71afdb",
+    "span_offsets.npy": "55f5e8bed649278b698ccab5c81a3463e5774a386489b5f5b8779684f0f557ea",
+    "token_offsets.npy": "7e5c6d429802eeb4a7140c4c993f077584bcc3752b4b00c02e1614381c8735d1",
+    "boundaries.npy": "d19c212b3d5773d457f39e76bf7fcb9b25ef6cd84369c044229e68511b184452",
+    "metadata.json": "ea9232f5a82b26633538acc5c633f53947ca74fc5f28532de905296d1e12789a",
+    "manifest.json": "6d80e48379a8b4d9807ae5024762ba84b3768b88a69c44371e13031acf65b43c"
+  },
+  "diagnostic_source_hashes": {
+    "src/scale_ranking_audit.py": "caaab11377807b9ecd88d76995255463e525e0ef08b71020a012eb8b9ac38047",
+    "src/slot_mbr.py": "ba8913abbb8000ec8e7e5dc330ff7cd93bbbaa1d3c1022b0993e207b3911408c",
+    "tests/test_scale_ranking_audit.py": "70363c001ab742cc7ecca594502bf67c30d172a5f3d3b2583105a5aab89ef57a",
+    "note/bitrase-2/algo-3/protocol.md": "f2137d3150cf884da9f350ba4631d523dc2c4bf966217afec9c855498f98c923"
+  }
+}

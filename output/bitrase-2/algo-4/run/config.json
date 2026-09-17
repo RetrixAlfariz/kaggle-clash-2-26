@@ -1,0 +1,30 @@
+{
+  "seed": 2026,
+  "split_seed": 20260919,
+  "encoder_epochs": 4,
+  "head_epochs": 2,
+  "batch_size": 32,
+  "lr": 0.001,
+  "weight_decay": 0.01,
+  "clip": 1.0,
+  "head_precision": "float32",
+  "tf32": false,
+  "eligible_documents": 46045,
+  "FIT": 52582,
+  "EVAL": 3000,
+  "workers": 4,
+  "lambda_docs": 512,
+  "lambda_epsilon": 1e-12,
+  "zero_rank_norm": 1e-12,
+  "lambda_bounds": [
+    0.01,
+    100
+  ],
+  "exposure_policy": "Prior in-sample training diagnostics permitted; dedicated evaluation/calibration/probes and unknowns excluded at family level.",
+  "authorization": "User requested autonomous improvements toward 82%; operational exposure decision documented before selection.",
+  "exposure_registry_sha256": "39d5911fee8dd46c2fb9d6da35469df856b93cb8e57f5720043c551e218f680f",
+  "assignment_sha256": "4c8d90687117df5f8d989656173531973061341d99e4af59e7941dc44d64dc33",
+  "no_dev_holdout_test": true,
+  "pretrained": false,
+  "target_internal_exact_slot": 0.82
+}

@@ -1,0 +1,129 @@
+Encoder epoch 1/4 step 250/1644 loss 0.31603
+Encoder epoch 1/4 step 500/1644 loss 0.19726
+Encoder epoch 1/4 step 750/1644 loss 0.15518
+Encoder epoch 1/4 step 1000/1644 loss 0.13324
+Encoder epoch 1/4 step 1250/1644 loss 0.11961
+Encoder epoch 1/4 step 1500/1644 loss 0.11037
+{'epoch': 1, 'loss': 0.10592386519523034, 'seconds': 87.08244959999865}
+Encoder epoch 2/4 step 250/1644 loss 0.05832
+Encoder epoch 2/4 step 500/1644 loss 0.05829
+Encoder epoch 2/4 step 750/1644 loss 0.05786
+Encoder epoch 2/4 step 1000/1644 loss 0.05702
+Encoder epoch 2/4 step 1250/1644 loss 0.05687
+Encoder epoch 2/4 step 1500/1644 loss 0.05653
+{'epoch': 2, 'loss': 0.056380438380206024, 'seconds': 85.27222039998742}
+Encoder epoch 3/4 step 250/1644 loss 0.05311
+Encoder epoch 3/4 step 500/1644 loss 0.05312
+Encoder epoch 3/4 step 750/1644 loss 0.05263
+Encoder epoch 3/4 step 1000/1644 loss 0.05268
+Encoder epoch 3/4 step 1250/1644 loss 0.05250
+Encoder epoch 3/4 step 1500/1644 loss 0.05248
+{'epoch': 3, 'loss': 0.05229621879024289, 'seconds': 86.40825449999829}
+Encoder epoch 4/4 step 250/1644 loss 0.05033
+Encoder epoch 4/4 step 500/1644 loss 0.05016
+Encoder epoch 4/4 step 750/1644 loss 0.04991
+Encoder epoch 4/4 step 1000/1644 loss 0.04964
+Encoder epoch 4/4 step 1250/1644 loss 0.04972
+Encoder epoch 4/4 step 1500/1644 loss 0.04956
+{'epoch': 4, 'loss': 0.04944004283750547, 'seconds': 86.03461049999169}
+FIT hidden 6400/52582
+FIT hidden 12800/52582
+FIT hidden 19200/52582
+FIT hidden 25600/52582
+FIT hidden 32000/52582
+FIT hidden 38400/52582
+FIT hidden 44800/52582
+FIT hidden 51200/52582
+Mining 0/512 elapsed 2.2s
+E:\Developen\Github\kaggle-clash-2-26\src\train_global_ranking.py:228: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\torch\csrc\autograd\generated\python_variable_methods.cpp:836.)
+  if not all(np.isfinite(x) for x in (float(ce),float(rank),cn,rn)): raise ValueError('Invalid gradient measurement')
+Frozen lambda=1.29821214; supported FIT=52423
+control epoch1 0/52582 CE=2.297628 rank=0.0000
+control epoch1 6400/52582 CE=0.020263 rank=0.0000
+control epoch1 12800/52582 CE=0.011115 rank=0.0000
+control epoch1 19200/52582 CE=0.007974 rank=0.0000
+control epoch1 25600/52582 CE=0.006387 rank=0.0000
+control epoch1 32000/52582 CE=0.005414 rank=0.0000
+control epoch1 38400/52582 CE=0.004763 rank=0.0000
+control epoch1 44800/52582 CE=0.004294 rank=0.0000
+control epoch1 51200/52582 CE=0.003936 rank=0.0000
+control epoch2 0/52582 CE=0.001229 rank=0.0000
+control epoch2 6400/52582 CE=0.001378 rank=0.0000
+control epoch2 12800/52582 CE=0.001401 rank=0.0000
+control epoch2 19200/52582 CE=0.001392 rank=0.0000
+control epoch2 25600/52582 CE=0.001390 rank=0.0000
+control epoch2 32000/52582 CE=0.001385 rank=0.0000
+control epoch2 38400/52582 CE=0.001380 rank=0.0000
+control epoch2 44800/52582 CE=0.001378 rank=0.0000
+control epoch2 51200/52582 CE=0.001378 rank=0.0000
+Mining 0/52582 elapsed 2.1s
+Mining 2048/52582 elapsed 15.5s
+Mining 4096/52582 elapsed 28.9s
+Mining 6144/52582 elapsed 42.6s
+Mining 8192/52582 elapsed 55.8s
+Mining 10240/52582 elapsed 69.1s
+Mining 12288/52582 elapsed 83.0s
+Mining 14336/52582 elapsed 97.5s
+Mining 16384/52582 elapsed 111.6s
+Mining 18432/52582 elapsed 126.3s
+Mining 20480/52582 elapsed 140.0s
+Mining 22528/52582 elapsed 153.9s
+Mining 24576/52582 elapsed 168.4s
+Mining 26624/52582 elapsed 181.5s
+Mining 28672/52582 elapsed 190.8s
+Mining 30720/52582 elapsed 199.8s
+Mining 32768/52582 elapsed 208.9s
+Mining 34816/52582 elapsed 222.3s
+Mining 36864/52582 elapsed 233.3s
+Mining 38912/52582 elapsed 244.0s
+Mining 40960/52582 elapsed 257.7s
+Mining 43008/52582 elapsed 271.2s
+Mining 45056/52582 elapsed 284.4s
+Mining 47104/52582 elapsed 298.1s
+Mining 49152/52582 elapsed 311.5s
+Mining 51200/52582 elapsed 322.5s
+challenger epoch1 0/52582 CE=2.297628 rank=1.1176
+challenger epoch1 6400/52582 CE=0.021123 rank=0.0063
+challenger epoch1 12800/52582 CE=0.011563 rank=0.0032
+challenger epoch1 19200/52582 CE=0.008284 rank=0.0021
+challenger epoch1 25600/52582 CE=0.006625 rank=0.0016
+challenger epoch1 32000/52582 CE=0.005610 rank=0.0013
+challenger epoch1 38400/52582 CE=0.004929 rank=0.0011
+challenger epoch1 44800/52582 CE=0.004440 rank=0.0009
+challenger epoch1 51200/52582 CE=0.004065 rank=0.0008
+Mining 0/52582 elapsed 2.2s
+Mining 2048/52582 elapsed 16.4s
+Mining 4096/52582 elapsed 30.4s
+Mining 6144/52582 elapsed 44.1s
+Mining 8192/52582 elapsed 57.7s
+Mining 10240/52582 elapsed 71.5s
+Mining 12288/52582 elapsed 85.5s
+Mining 14336/52582 elapsed 99.8s
+Mining 16384/52582 elapsed 113.7s
+Mining 18432/52582 elapsed 126.8s
+Mining 20480/52582 elapsed 140.6s
+Mining 22528/52582 elapsed 154.5s
+Mining 24576/52582 elapsed 164.0s
+Mining 26624/52582 elapsed 173.7s
+Mining 28672/52582 elapsed 183.0s
+Mining 30720/52582 elapsed 192.3s
+Mining 32768/52582 elapsed 201.4s
+Mining 34816/52582 elapsed 210.9s
+Mining 36864/52582 elapsed 220.9s
+Mining 38912/52582 elapsed 236.2s
+Mining 40960/52582 elapsed 249.2s
+Mining 43008/52582 elapsed 259.2s
+Mining 45056/52582 elapsed 273.2s
+Mining 47104/52582 elapsed 287.5s
+Mining 49152/52582 elapsed 300.5s
+Mining 51200/52582 elapsed 314.3s
+challenger epoch2 0/52582 CE=0.001199 rank=0.7192
+challenger epoch2 6400/52582 CE=0.031309 rank=0.5656
+challenger epoch2 12800/52582 CE=0.030610 rank=0.5391
+challenger epoch2 19200/52582 CE=0.030332 rank=0.5265
+challenger epoch2 25600/52582 CE=0.029673 rank=0.5158
+challenger epoch2 32000/52582 CE=0.029841 rank=0.5102
+challenger epoch2 38400/52582 CE=0.029670 rank=0.5043
+challenger epoch2 44800/52582 CE=0.029584 rank=0.5008
+challenger epoch2 51200/52582 CE=0.029641 rank=0.4966
